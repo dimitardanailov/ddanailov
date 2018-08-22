@@ -7,7 +7,7 @@ Status: Draft version
 ## Module - Git
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | Git intro | | 1 hour |
 | #2 | Git - Tips and tricks | | 1 hour |
 | #3 | Feature Branches and Toggles in a Post-GitHub World | | 1 hour |
@@ -19,7 +19,7 @@ Status: Draft version
 ### Introduction to Design Patterns: Creational & Structural Patterns
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | Singleton | | 0.5 hour |
 | #2 | Factory Method Pattern | | 0.5 hour |
 | #3 | Facade Pattern | | 0.5 hour |
@@ -34,7 +34,7 @@ Status: Draft version
 ### Behavioural Design Patterns
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | Template Method Pattern | | 0.5 hour |
 | #2 | Chain of Responsibility Pattern | | 0.5 hour |
 | #3 | State Pattern | | 0.5 hour |
@@ -48,7 +48,7 @@ Status: Draft version
 ### Working with Design Patterns & Anti-patterns
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | MVC Pattern | | 1 hour |
 | #2 | SOLID - Single responsibility principle | | 0.5 hour |
 | #3 | SOLID - Open/closed principle | | 0.5 hour |
@@ -62,7 +62,7 @@ Status: Draft version
 ## Module - Diagrams
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | UML - Introduction | | 2 Hour |
 | #2 | UML and Design Patterns | | 2 Hour |
 | #2 | Workflow | | 1 Hour |
@@ -73,7 +73,7 @@ Status: Draft version
 ## Module - Database
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | CAP Theorem | | 0.5 hour | 
 | #2 | Introduction to NoSQL | | 1 hour | 
 | #3 | Clusters and Sharding | | 1 hour | 
@@ -86,7 +86,7 @@ Status: Draft version
 ### Cloud Design Patterns
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | Backends For Frontends | | 2 hours |
 | #2 | CQRS - Command Query Responsibility Segregation | | 2 hours |
 | #3 | Retry | | 2 hours |
@@ -98,7 +98,7 @@ Status: Draft version
 ### Microservices
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | Introduction to microservices approach | | 1 hour |
 | #2 | Security | | 1 hour |
 | #3 | Principles Of Microservices | | 1 hour |
@@ -110,7 +110,7 @@ Status: Draft version
 ### Serverless
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | Serveless Introduction | | 0.5 hour |
 | #2 | AWS lambda functions | | 0.5 hour |
 
@@ -119,7 +119,7 @@ Status: Draft version
 ### Examples of microservice architecture
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | Microsoft service fabric | | 1 hour |
 | #2 | Create highly scalable web application microservices with Node.js | | 1 hour |
 
@@ -128,7 +128,7 @@ Status: Draft version
 ### Creating a Nodejs application
 
 | #  | Lecture | Date | Duration |
-| -- |--------:| :---:| :-------:|
+| -- |:--------| :---:| :-------:|
 | #1 | Workshop - Part 1 | | 2 hours |
 | #2 | Workshop - Part 2 | | 2 hours |
 | #3 | Workshop - Part 3 | | 2 hours |
