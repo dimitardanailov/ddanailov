@@ -2,7 +2,7 @@
 
 Status: Draft version
 
-*Total*:  Hours
+*Total*: 46 Hours
 
 ## Module - Git
 
@@ -12,7 +12,7 @@ Status: Draft version
 | #2 | Git - Tips and tricks | | 1 hour |
 | #3 | Feature Branches and Toggles in a Post-GitHub World | | 1 hour |
 
-*Total*: 2 Hours
+*Total*: 3 Hours
 
 ## Module - Design Patterns
 
