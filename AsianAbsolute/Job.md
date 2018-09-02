@@ -88,7 +88,7 @@ Please send us your solutions.
 
 Picture !!!
 
-![The team at Asian Absolute with their TWB mugs](https://www.translatorswithoutborders.org/blog/twb-in-kind-sponsor/)
+![The team at Asian Absolute with their TWB mugs](https://i1.wp.com/www.translatorswithoutborders.org/blog/wp-content/uploads/2016/07/Asian-Absolute.jpg)
 
 ## About Asian absolute
 
