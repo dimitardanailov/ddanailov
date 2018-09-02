@@ -8,7 +8,7 @@ Experience level: `Mid-Level`
 
 Role: `Asp.net MVC and Azure Developr`
 
-Industry: `Translation, Localization and Marketing agency
+Industry: `Translation, Localization and Marketing agency`
 
 Company size: ???
 
@@ -82,11 +82,13 @@ Please send us your solutions.
   - There is also the option to work from home
   - Very interesting projects
   - Exceptional learning possibilities
-  - Your work will be directed and supervised by an experienced Solutions Architect, providing great opportunities for professional development.
+  - Your work will be directed and supervised by an [experienced Solutions Architect](https://github.com/dimitardanailov/ddanailov), providing great opportunities for professional development.
 
 ## Life at Asian Absolute
 
 Picture !!!
+
+![The team at Asian Absolute with their TWB mugs](https://www.translatorswithoutborders.org/blog/twb-in-kind-sponsor/)
 
 ## About Asian absolute
 
