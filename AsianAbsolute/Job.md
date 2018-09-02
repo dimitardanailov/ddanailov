@@ -1,21 +1,20 @@
-# Title
-ASP.NET MVC / Azure Developer
+# ASP.NET MVC / Azure Developer
 
 ## About this job
 
-Job type: *Full-time*
+Job type: `Full-time`
 
-Experience level: *Mid-Level*
+Experience level: `Mid-Level`
 
-Role: *Asp.net MVC and Azure Developr*
+Role: `Asp.net MVC and Azure Developr`
 
-Industry: *Translation and Project Management ??*
+Industry: `Translation, Localization and Marketing agency
 
 Company size: ???
 
-Company type: *Private*
+Company type: `Private`
 
-Contract duration: The initial full-time contract will run for 6 months and may be extended to a total of 12 months.
+Contract duration: `The initial full-time contract will run for 6 months and may be extended to a total of 12 months`
 
 ## Technologies:
 
@@ -26,11 +25,24 @@ Contract duration: The initial full-time contract will run for 6 months and may 
 
 ## Job Description
 
-You’ll be working on Smart Base, our brand platform which are used by Project Managers, Vendors. We started development of SmartBase since 2012 ??? on Visual Basic. On 2014 we started migration from Visual Basic to Azure through Asp.Net MVC. We start by solving a problem of better Project Manament Productivity by cloud solutions, Amazon S3. Since you'll be working in SmartBase, your main repsonsibility will be backend, but you should be able to adapt the frontend just as easy to connect to your new features. We don't have the luxury of a big front- and backend team, yet ;-)
+You’ll be working on Smart Base, our brand platform which are used by Project Managers, Vendors. We started development of SmartBase since 2012 ??? on Visual Basic. On 2014 we started migration from Visual Basic to Azure through Asp.Net MVC. We start by solving a problem of better Project Manament Productivity through cloud solutions, Amazon S3. Since you'll be working in SmartBase, your main repsonsibility will be backend, but you should be able to adapt the frontend just as easy to connect to your new features. We don't have the luxury of a big front- and backend team, yet ;-)
 
-Smart Base grows every year and WE need a DEVELOPER to helps with this.
+Smart Base grows every year and WE need a DEVELOPER to help with this.
 
-## We expect *from you*
+## SmartBase Overview
+
+Existing modules include:
+
+  - Client database and CRM functionality
+  - Supplier database
+  - Project management system, including client and supplier details, deadlines, details of services and tasks
+  - Quote and Purchase Order generation
+  - Generation of sales invoices
+  - Vendor Portal, allowing suppliers to log in and submit invoices against Purchase Orders
+  - Client Portal, allowing clients to create new projects and upload files
+  - Analysis functions
+
+## We expect `from you`
 
 Web development is your favourite activity anyway? Are your interested in .Net, Cloud and Azure solutions ? Are you a keen learner ? Do you like tinkering with the latest web technology? Then you will definitely have an interesting time at SmartBase. You know your way around in software development. You're handling both backend and frontend development with ease. You know the definition of done is not: it works for me?! So you don't hesitate to actually test your software on Azure? You can give and receive code-reviews as a professional who wants to improve him/herself and colleagues? You know what version control is and why you should be using it.
 
@@ -61,10 +73,11 @@ Please send us your solutions.
 
 ## What to expect from us
   
-  - You'll be joining the team of Project Mangers, one Software Architect. A healthy combination of business savvy and software people. 
+  - You'll be joining the (remote working) team of Project Mangers and a Software Architect. A healthy combination of business savvy and software people. ???
 
 ## We offer you
 
+  - Flexibility in working time and place
   - A good salary
   - There is also the option to work from home
   - Very interesting projects
