@@ -67,7 +67,7 @@ We want to receive solutions of these code challenges:
   - [A Chain adding function](https://www.codewars.com/kata/a-chain-adding-function) 
   - [Counting Duplicates](https://www.codewars.com/kata/counting-duplicates)
 
-We're hiring YOU !!! Not your friends :) 
+`We're hiring YOU !!! Not your friends :)` 
 
 Please send us your solutions.
 
@@ -118,4 +118,4 @@ Our clients are:
   - Code screening (No)
   - Hallway usability testing (No)
 
-Lear more about Asian Absolute: [Link](https://asianabsolute.co.uk)
+Learn more about Asian Absolute: [Link ???](https://asianabsolute.co.uk)
