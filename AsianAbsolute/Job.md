@@ -10,7 +10,7 @@ Role: `Asp.net MVC and Azure Developr`
 
 Industry: `Translation, Localization and Marketing agency`
 
-Company size: ???
+Company size: `50 in-house staff across offices on 5 continents; 5,000 translators worldwide`
 
 Company type: `Private`
 
@@ -74,6 +74,10 @@ Please send us your solutions.
 ## What to expect from us
   
   - You'll be joining the (remote working) team of Project Mangers and a Software Architect. A healthy combination of business savvy and software people. ???
+  - Your work will be used every day by colleagues and partners in scores of different countries such
+  as Panama, the UK, Thailand, Singapore, China and Australia, and of course the large Bulgaria team.
+  - A multicultural and friendly environment, where you will make a meaningful difference to the lives
+  of your grateful colleagues.
 
 ## We offer you
 
