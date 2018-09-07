@@ -98,7 +98,7 @@ Please send us your solutions.
 
 ![Life at Asian Absolute](https://raw.githubusercontent.com/dimitardanailov/ddanailov/master/AsianAbsolute/Life%20as%20Asian%20Absolute.jpg)
 
-## About Asian absolute
+## About Asian Absolute
 
 Asian Absolute is a fast-growing translation, localization and marketing agency serving organizations with interests in East Asia. Our client list includes many of the worldi's largest companies and brands and we offer a dynamic, friendly working environment.
 
