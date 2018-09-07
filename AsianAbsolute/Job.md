@@ -96,8 +96,6 @@ Please send us your solutions.
 
 ## Life at Asian Absolute
 
-Picture !!!
-
 ![Life at Asian Absolute](https://raw.githubusercontent.com/dimitardanailov/ddanailov/master/AsianAbsolute/Life%20as%20Asian%20Absolute.jpg)
 
 ## About Asian absolute
