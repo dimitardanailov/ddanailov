@@ -19,8 +19,9 @@ Contract duration: `The initial full-time contract will run for 6 months and may
 ## Technologies:
 
   - Asp.Net MVC
+  - MSSQL
   - Azure
-  - jQuery and Bootstrap
+  - Javascript, jQuery and Bootstrap
   - Amazon S3
 
 ## Job Description
