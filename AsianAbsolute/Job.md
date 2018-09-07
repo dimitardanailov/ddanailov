@@ -98,7 +98,7 @@ Please send us your solutions.
 
 Picture !!!
 
-![The team at Asian Absolute with their TWB mugs](https://i1.wp.com/www.translatorswithoutborders.org/blog/wp-content/uploads/2016/07/Asian-Absolute.jpg)
+![Life at Asian Absolute](https://raw.githubusercontent.com/dimitardanailov/ddanailov/master/AsianAbsolute/Life%20as%20Asian%20Absolute.jpg)
 
 ## About Asian absolute
 
