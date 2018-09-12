@@ -16,7 +16,7 @@ Company type: `Private`
 
 Contract duration: `The initial full-time contract will run for 6 months and may be extended to a total of 12 months`
 
-Due date: `28 September`
+Closing date for applications: `28 September`
 
 ## Technologies:
 
