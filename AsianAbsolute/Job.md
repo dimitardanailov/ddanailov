@@ -16,6 +16,8 @@ Company type: `Private`
 
 Contract duration: `The initial full-time contract will run for 6 months and may be extended to a total of 12 months`
 
+Due date: 28 September
+
 ## Technologies:
 
   - Asp.Net MVC
@@ -79,7 +81,7 @@ Please send us your solutions.
 
 ## What to expect from us
   
-  - You'll be joining the (remote working) team of Project Mangers and a Software Architect. A healthy combination of business savvy and software people. ???
+  - You'll be joining the (remote working) team of Project Mangers and a Software Architect. A healthy combination of business savvy and software people.
   - Your work will be used every day by colleagues and partners in scores of different countries such
   as Panama, the UK, Thailand, Singapore, China and Australia, and of course the large Bulgaria team.
   - A multicultural and friendly environment, where you will make a meaningful difference to the lives
@@ -100,7 +102,7 @@ Please send us your solutions.
 
 ## About Asian Absolute
 
-Asian Absolute is a fast-growing translation, localization and marketing agency serving organizations with interests in East Asia. Our client list includes many of the worldi's largest companies and brands and we offer a dynamic, friendly working environment.
+Asian Absolute is a fast-growing translation, localization and marketing agency serving organizations with interests in East Asia. Our client list includes many of the world's largest companies and brands and we offer a dynamic, friendly working environment.
 
 Our clients include:
 
