@@ -16,4 +16,7 @@ Articles:
 - [Productivity with VS Code (Tips and Tricks)](https://medium.com/@d_danailov/productivity-with-vs-code-tips-and-tricks-51ae11e2e087)
 - [Polymer vs Angular vs React: Using Web Components to Evolve the Experience](https://mentormate.com/blog/polymer-vs-angular-future-web-apps/)
 
+Open Source Contribution:
+- [https://github.com/devtools-html/debugger.html](https://github.com/devtools-html/debugger.html/pulls/dimitardanailov)
+- [https://github.com/Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/pulls/dimitardanailov)
 
