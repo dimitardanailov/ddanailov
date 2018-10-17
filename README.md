@@ -20,3 +20,5 @@ Open Source Contribution:
 - [https://github.com/devtools-html/debugger.html](https://github.com/devtools-html/debugger.html/pulls/dimitardanailov)
 - [https://github.com/Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/pulls/dimitardanailov)
 
+npm packages 
+- [@types/chai-fs](https://www.npmjs.com/package/@types/chai-fs)
