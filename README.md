@@ -1,3 +1,5 @@
+![https://www.codewars.com/users/dimitardanailov/badges/large](https://www.codewars.com/users/dimitardanailov/badges/large)
+
 My name is Dimitar Danailov and I'm a software engineer since 2008. 
 
 Interests: Machine Learning, AI, Voice and Image Recognition, Microservices, Kubernetes and Software architectures.
