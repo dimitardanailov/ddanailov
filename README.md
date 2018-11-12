@@ -1,4 +1,4 @@
-![https://www.codewars.com/users/dimitardanailov/badges/large](https://www.codewars.com/users/dimitardanailov/badges/large)
+![https://www.codewars.com/users/dimitardanailov/badges/small](https://www.codewars.com/users/dimitardanailov/badges/small)
 
 My name is Dimitar Danailov and I'm a software engineer since 2008. 
 
