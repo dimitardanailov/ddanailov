@@ -23,4 +23,4 @@ I'm supporthing these open source projects:
 - [@types/chai-fs](https://www.npmjs.com/package/@types/chai-fs)
 
 Trainings: 
-- [Building Evolutionary Architectures](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures/)
+- [Building Evolutionary Architectures](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures/). Tutor: Neal Ford
