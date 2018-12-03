@@ -21,6 +21,7 @@ I'm supporthing these open source projects:
 - [https://github.com/devtools-html/debugger.html](https://github.com/devtools-html/debugger.html/pulls/dimitardanailov)
 - [https://github.com/Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/pulls/dimitardanailov)
 - [@types/chai-fs](https://www.npmjs.com/package/@types/chai-fs)
+- [https://github.com/node-organic](https://github.com/node-organic)
 
 Trainings: 
-- [Building Evolutionary Architectures](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures/). Tutor: Neal Ford
+- [Building Evolutionary Architectures](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures/). Tutor: [Neal Ford](http://nealford.com/)
