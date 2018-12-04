@@ -12,6 +12,7 @@ I'm learning subjects such as: AI, Voice and Image Recognition, Microservices, K
 My professional achievements are: 
 
 - [Last five years I worked like a CTO, Team Leader and Software and Technical Architect](https://github.com/dimitardanailov/ddanailov/blob/master/Dimitar%20Danailov%20-%20Resume.pdf)
+- [Certificates](https://github.com/dimitardanailov/ddanailov/tree/master/certificates)
 - My [stackoverflow profile](https://stackoverflow.com/users/609707/d-danailov) has 7000+ points
 - I'm member of [Firefox DevTools Team](https://github.com/devtools-html)
 
