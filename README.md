@@ -23,6 +23,23 @@ I'm supporthing these open source projects:
 - [@types/chai-fs](https://www.npmjs.com/package/@types/chai-fs)
 - [https://github.com/node-organic](https://github.com/node-organic)
 
+Core Technical Skills:
+
+|         |            |   |
+| :-----: |:----------:| :-----:|
+| JavaScript | Nodejs | Polymer / Web Components |
+| TypeScript | React | Jest and Mocha |
+| D3js | Gulp | Docker |
+| Asp.NET | Android | PHP / Laravel |
+| Linux | BashScript | Java |
+| Apache | Nginx | MySQL |
+| MSSQL | PostgreSQL | Oracle PL/SQL |
+| Git | AWS | Azure |
+| Heroku | EngineYard | OpenShift |
+| Webpack | Vagrant | NoSQL |
+| Kubernates | Salesforce Commerce Cloud (SFC) | Objective - C |
+| Software Architectures | Ruby on Rails | |
+
 Technical articles: 
 
 - [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
