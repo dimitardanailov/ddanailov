@@ -34,8 +34,8 @@ Trainings:
 
 International conferencies: 
 - [FOSDEM is the biggest open source conference](https://fosdem.org/2019/). Editions: 2011 and 2015 - 2018
-- [IoT Tech Expo](https://www.iottechexpo.com/) - Edition: Amsterdam (2018)
-- [.Net Developer Days](http://net.developerdays.pl) - Edition: 2018
-- [Google Next, Location: London](https://cloud.withgoogle.com/next18/london) - Edition: 2018
+- [IoT Tech Expo is the biggest Tech Expo at Europe with subjects: #IoT, #AI, #BlockChain](https://www.iottechexpo.com/) - Edition: Amsterdam (2018)
+- [.Net Developer Days is the biggest .Net Developers Conference at Central and Eastern Europe](http://net.developerdays.pl) - Edition: 2018
+- [Google Next, Location: London is one of the biggest cloud conferences at Europe and biggest Google conference at Europe](https://cloud.withgoogle.com/next18/london) - Edition: 2018
 
 Non - tech info about me: I'm a traveler, fan of Juventus and a sport guy.
