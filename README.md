@@ -1,15 +1,21 @@
 ![https://www.codewars.com/users/dimitardanailov/badges/small](https://www.codewars.com/users/dimitardanailov/badges/small)
 
-My name is Dimitar Danailov. I'm a software engineer since 2008. I have experience with 
+My name is Dimitar Danailov. I've been working such as software engineer since 2010. 
+
+My technical background includes: 
 - Software architectures;
-- Front - end frameworks and libraries (Polymer, React, D3js and Angularjs);
+- Project Management;
+- Technical and Technical Lead;
+- UI and UX experience;
+- Front - end experience. Technical stack includes: Polymer, React, D3js, Custom Elements v1, Angular, Vanilla Javascript;
+- Backend experience. Technologies: Nodejs, Asp.Net, PHP, Ruby on Rails
 - Cloud providers(Azure, AWS, Heroku, Engine Yard, Google Cloud);
-- Mobile applications(Android, iOS and Hybrid); 
+- Mobile applications(Android, iOS and Hybrid);
 - DevOps Experience;
 
-I'm studying subjects such as: AI, Voice and Image Recognition, Microservices, Kubernetes.
+I've been studying: Artificial intelligence, Voice and Image Recognition, Microservices, Kubernetes.
 
-My professional achievements are: 
+Professional achievements are: 
 
 - [Last five years I worked like a CTO, Team Leader and Software and Technical Architect](https://github.com/dimitardanailov/ddanailov/blob/master/Dimitar%20Danailov%20-%20Resume.pdf)
 - My [stackoverflow profile](https://stackoverflow.com/users/609707/d-danailov) has 7000+ points
