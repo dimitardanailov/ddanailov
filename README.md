@@ -19,12 +19,12 @@ I've been studying: Artificial intelligence, Voice and Image Recognition, Micros
 
 ---
 
-### Professional achievements are: 
+### Experience : 
 
-- [Last five years I worked like a CTO, Team Leader and Software and Technical Architect](https://github.com/dimitardanailov/ddanailov/blob/master/Dimitar%20Danailov%20-%20Resume.pdf)
-- My [stackoverflow profile](https://stackoverflow.com/users/609707/d-danailov) has 7000+ points
-- I'm a member of [Firefox DevTools Team](https://github.com/devtools-html)
-- [Certificates](https://github.com/dimitardanailov/ddanailov/tree/master/certificates)
+- Independent contractor: August 2018 - March 2019
+- Technical Architect: December 2017 - April 2018
+- Software Architect November 2015 - October 2018
+- CTO: June 2014 - October 2015
 
 ---
 
@@ -34,7 +34,7 @@ I've been studying: Artificial intelligence, Voice and Image Recognition, Micros
 
 `Heidi Lund, Associate Product Manager at Questar Assessment Inc.` (October 2017)
 
-> "“Dimitar Danailov led the development work on our primary project management and production application from 2013 to 2015. He and his team took over the responsibility for supporting and updating our existing application written in VB on ASP.NET, and they developed a new application written in C# on ASP.NET MVC. Both applications ran on Microsoft Azure and used a SQL database. The applications covered functionality ranging from CRM, a vendor database, production tasks for our operations team working on translation and localisation projects, and finance. I was impressed by Dimitar’s technical skills – as a solutions architect designing both front-end and back-end, his efficient coding and his ability to propose elegant solutions to meet our requirements. Dimitar was proactive in suggesting new technical approaches to overcome our particular challenges and I appreciated his willingness to research new technologies specifically for our project. Dimitar displayed admirable personal commitment in investing his personal time to work on our project and I considered him a true partner in our endeavour. I have no hesitation in recommending Dimitar and I am confident that he will be an asset to any employer."
+> "Dimitar Danailov led the development work on our primary project management and production application from 2013 to 2015. He and his team took over the responsibility for supporting and updating our existing application written in VB on ASP.NET, and they developed a new application written in C# on ASP.NET MVC. Both applications ran on Microsoft Azure and used a SQL database. The applications covered functionality ranging from CRM, a vendor database, production tasks for our operations team working on translation and localisation projects, and finance. I was impressed by Dimitar’s technical skills – as a solutions architect designing both front-end and back-end, his efficient coding and his ability to propose elegant solutions to meet our requirements. Dimitar was proactive in suggesting new technical approaches to overcome our particular challenges and I appreciated his willingness to research new technologies specifically for our project. Dimitar displayed admirable personal commitment in investing his personal time to work on our project and I considered him a true partner in our endeavour. I have no hesitation in recommending Dimitar and I am confident that he will be an asset to any employer."
 
 `Henry Clough, Managing Director Asian Absolute` (October 2015)
 
@@ -45,6 +45,10 @@ I've been studying: Artificial intelligence, Voice and Image Recognition, Micros
 ---
 
 ### Open source
+
+- My [stackoverflow profile](https://stackoverflow.com/users/609707/d-danailov) has 7000+ points
+- I'm a member of [Firefox DevTools Team](https://github.com/devtools-html)
+- [Certificates](https://github.com/dimitardanailov/ddanailov/tree/master/certificates)
 
 I'm a founder of: 
 - [https://github.com/dimitardanailov/gmail-helper](https://github.com/dimitardanailov/gmail-helper)
@@ -68,7 +72,7 @@ I'm supporthing these open source projects:
 | React | JSX | TypeScript |
 | Webpack | D3js | Gulp |
 | Lerna | Babel | Grunt |
-| Yeoman | [Oval](https://github.com/node-organic/organic-oval) |  |
+| Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
 
 ##### JavaScript Backend skills: 
 
@@ -81,9 +85,9 @@ I'm supporthing these open source projects:
 
 |               |               |       |
 | :-----------: | :-----------: | :---: |
-| Azure | AWS | Google Cloud** |
+| Azure | AWS | Google Cloud |
 | Docker and Vagrant | Heroku | Engine Yard |
-| OpenShift** | Kubernetes** | Jenkins** | 
+| OpenShift | Kubernetes | Jenkins | 
 
 #### Mobile experience
 
