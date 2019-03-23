@@ -50,10 +50,19 @@ I've been studying: Artificial intelligence, Voice and Image Recognition, Micros
 - I'm a member of [Firefox DevTools Team](https://github.com/devtools-html)
 - [Certificates](https://github.com/dimitardanailov/ddanailov/tree/master/certificates)
 
-I'm a founder of: 
-- [https://github.com/dimitardanailov/gmail-helper](https://github.com/dimitardanailov/gmail-helper)
+### Open source projects (Founder)
 
-I'm supporthing these open source projects:
+##### [Gmail Helper](https://github.com/dimitardanailov/gmail-helper)
+
+Gmail helper creates gmail labels and features. Technologies: Custom Elements v1, Redux, Webpack, Lerna, Mocha, Chai, Karma
+
+##### [Tantalus](https://github.com/dimitardanailov/tantalus)
+
+Tantalus is a Nodejs Microservices. Project uploads big streams from custom cloud provider to AWS. Tantalus uses: [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver), [routing-controllers](https://github.com/typestack/routing-controllers), [tus.io](https://tus.io), Typescript.
+
+I did article post about my progress: [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
+
+### Open source projects (Participiant)
 
 - [https://github.com/devtools-html/debugger.html](https://github.com/devtools-html/debugger.html/pulls/dimitardanailov)
 - [https://github.com/Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/pulls/dimitardanailov)
@@ -68,47 +77,34 @@ I'm supporthing these open source projects:
 
 |               |               |       |
 | :-----------: | :-----------: | :---: |
+| | Front - end skills | |
 | [JavaScript / Vanilla ](https://www.codewars.com/users/dimitardanailov/badges/small) | [Custom Elements v1](https://github.com/dimitardanailov/gmail-helper) | Polymer / WebComponents |
 | React | JSX | TypeScript |
 | Webpack | D3js | Gulp |
 | Lerna | Babel | Grunt |
 | Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
-
-##### JavaScript Backend skills: 
-
-|         |            |   |
-| :-----: |:----------:| :-----:|
+| | | |
+| | JavaScript Backend skills | |
 | Nodejs | Express | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
 | [routing-controllers](https://github.com/typestack/routing-controllers) | [tus.io](https://tus.io) | [node organic](https://github.com/node-organic) |
-
-##### Cloud experience
-
-|               |               |       |
-| :-----------: | :-----------: | :---: |
+| | | |
+| | Cloud experience | |
 | Azure | AWS | Google Cloud |
 | Docker and Vagrant | Heroku | Engine Yard |
 | OpenShift | Kubernetes | Jenkins | 
-
-#### Mobile experience
-
-|               |               |       |
-| :-----------: | :-----------: | :---: |
+| Grafana | | |
+| | | |
+| | Mobile experience | |
 | Android | Objective - C | Swift |
-
-#### Additional experience
-
-|               |               |       |
-| :-----------: | :-----------: | :---: |
+| | | |
+| | Additional experience | |
 | PHP / Laravel | Asp.NET | Ruby on Rails |
 | Linux | BashScript | Apache |
 | Nginx | MySQL | PostgreSQL | Oracle PL/SQL |
-
-#### Additional Skills:
-
-|               |               |       |
-| :-----------: | :-----------: | :---: |
+| | | |
+| | Additional experience | |
 | Blockchain | Hadoop | Electron |
-| Nwjs | Google Chrome | Go |
+| Nwjs | Google Chrome Extensions | Go |
 | Qt | Salesforce Commerce Cloud (SFC) |  |
 
 ### Technical articles: 
