@@ -23,7 +23,7 @@ I've been studying: Artificial intelligence, Voice and Image Recognition, Micros
 
 - Independent contractor: August 2018 - March 2019
 - Technical Architect: December 2017 - April 2018
-- Software Architect November 2015 - October 2018
+- Software Architect November 2015 - October 2017
 - CTO: June 2014 - October 2015
 
 ---
@@ -83,6 +83,10 @@ I did article post about my progress: [Nodejs Microservice: Importing millions r
 | Webpack | D3js | Gulp |
 | Lerna | Babel | Grunt |
 | Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
+| | | |
+| | JavaScript Test Libraries | |
+| Mocha | Chai | Jest |
+| Jasmine | Karma | TestCafe |
 | | | |
 | | JavaScript Backend skills | |
 | Nodejs | Express | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
