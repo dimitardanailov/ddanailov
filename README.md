@@ -21,10 +21,18 @@ I've been studying: Artificial intelligence, Voice and Image Recognition, Micros
 
 ### Experience : 
 
+##### Positions
+
 - Independent contractor: August 2018 - March 2019
 - Technical Architect: December 2017 - April 2018
 - Software Architect November 2015 - October 2017
 - CTO: June 2014 - October 2015
+- Team Leader - June 2011 - June 2014
+- Developer June 2010 - June 2014
+
+##### Project Management Methodologies
+
+I've experience such as an Agile and Scrum coach. My experience includes Agile and Scrum, Kanban, Lean and Waterfall teams and projects.
 
 ---
 
@@ -41,6 +49,16 @@ I've been studying: Artificial intelligence, Voice and Image Recognition, Micros
 > "Even though my time with Dimitar was limited, I found him consistently pleasant, professional, and tackled all programming assignments with dedication and a view of total success. Besides being a joy to work with, Dimitar is a take - charge person who is able to present creative ideas and communicate the benefits. I highly recommend Dimitar for employment. He is a team player and would make a great asset of any organization."
 
 `Ashton Cunningham, IT Manager Campion` (October 2015)
+
+### Team members
+
+> "Dimitar is an outstanding mentor. His guidance helped me progress with Ruby on Rails with ease and discover more about developing web-based software. Even after my internship at 158ltd ended, he continued assisting me with advice. Definitely a great person to learn from and to work with!" 
+
+- Hristo Georgiev (Software Engineer at Avrios)`
+
+> "Dimitar is a personable individual that gets on well with those around him. He is focused and dedicated to producing his very best at all times. He has shown that he is able to deal with uncertainty and dislocation. He is very good software engineer knows a lot of technologies. Also great teamleader. I recommend him highly – he will not let you down!"
+
+`Cvetan Himchev (Senior Application Developer)`
 
 ---
 
