@@ -87,7 +87,17 @@ Gmail helper creates gmail labels and features. Technologies: Custom Elements v1
 
 Tantalus is a Nodejs Microservices. Project uploads big streams from custom cloud provider to AWS. Tantalus uses: [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver), [routing-controllers](https://github.com/typestack/routing-controllers), [tus.io](https://tus.io), Typescript.
 
-I did article post about my progress: [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
+I wrote series of articles about my Microservices journey: [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
+
+### Open source projects (Co - founder)
+
+##### [MyTeletouch](https://github.com/MyTeletouch)
+
+[MyTeletouch](https://www.indiegogo.com/projects/myteletouch-control-tv-pc-from-smartphone#/) is a winner of a lot of awards at Bulgaria (such as Best IoT Project - 2016). MyTeletouch did a succesful Indiegogo campaign end of 2016 - first quoter of 2017. 
+
+Technology stack: IoT, Raspberry Pi, [Asp.Net MVC](https://github.com/MyTeletouch/web)
+
+Organization: https://github.com/MyTeletouch
 
 ### Open source projects (Participiant)
 
