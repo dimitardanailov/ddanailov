@@ -74,3 +74,20 @@ git init
 git  commit -m "I am removing all previous commits"
 git push <remote_name> <branch_name> -f
 ```
+
+### Resources
+
+##### First steps:
+
+- [Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY&t=2922s)
+- [http://learngitbranching.js.org/](http://learngitbranching.js.org/)
+- [Mastering Git](https://www.youtube.com/playlist?list=PL4KQBOUw6E7uJFgKP3gBAKooqY0a9a6Np)
+- [Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1)
+- [Git Cheatsheet](http://ndpsoftware.com/git-cheatsheet/previous/git-cheatsheet.html)
+- [Escape the git mess](http://justinhileman.info/article/git-pretty/git-pretty.png)
+- [Are git forks actually git clones?](http://stackoverflow.com/questions/6286571/are-git-forks-actually-git-clones)
+- [Git Tips & Tricks](https://about.gitlab.com/2016/12/08/git-tips-and-tricks)
+
+##### Committing Rules and Responsibilities
+- [Processing JIRA Software issues with Smart Commit messages](https://confluence.atlassian.com/bitbucket/processing-jira-software-issues-with-smart-commit-messages-298979931.html#id-_smart_commits_commands1-transition)
+- [Mozilla: Committing rules and responsibilities](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Committing_Rules_and_Responsibilities)
