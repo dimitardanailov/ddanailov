@@ -1,6 +1,6 @@
-[FOR HIRE][REMOTE][FULLTIME][CONTRACT]
-- Software architect, Team Leader and full stack developer
-- 9+ years experience
+[FOR HIRE][REMOTE or Local][FULLTIME][CONTRACT]
+
+Expertise: Software architect, Team Leader and full stack developer. I have 9+ years working experience
 
 :tada: Skills :tada: :
 -------
@@ -15,3 +15,19 @@
 :cloud:  Azure, AWS, AWS Lambda functions and Serverless(little exp), Google Cloud and Kubernates (little exp)
 
 Portfolio: https://github.com/dimitardanailov/ddanailov
+
+---- 
+
+"Talk is cheap show me the code" -> Linus torvalds
+
+:grapes: Gmail helper creates gmail labels and features. Technologies: Custom Elements v1, Redux, Webpack, Lerna, Mocha, Chai, Karma
+
+Source code: https://github.com/dimitardanailov/gmail-helper
+
+:cocktail: Tantalus is a Nodejs Microservices. Project uploads big streams from custom cloud provider to AWS. Tantalus uses: NodeServer Generator, routing-controllers, tus.io, Typescript.
+
+Source code: https://github.com/dimitardanailov/tantalus
+
+:snake: MyTeletouch is a winner of a lot of awards at Bulgaria (such as Best IoT Project - 2016). MyTeletouch did a succesful Indiegogo campaign end of 2016 - first quoter of 2017.
+
+Source code: https://github.com/MyTeletouch
