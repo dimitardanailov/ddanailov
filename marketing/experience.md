@@ -1,6 +1,6 @@
 [FOR HIRE][REMOTE or Local][FULLTIME][CONTRACT]
 
-Expertise: Software architect, Team Leader and full stack developer. I have 9+ years working experience
+Expertise: Software architect, Team Leader and full stack developer. I have 9+ years working experience.
 
 :tada: Skills :tada: :
 -------
@@ -31,3 +31,7 @@ Source code: https://github.com/dimitardanailov/tantalus
 :snake: MyTeletouch is a winner of a lot of awards at Bulgaria (such as Best IoT Project - 2016). MyTeletouch did a succesful Indiegogo campaign end of 2016 - first quoter of 2017.
 
 Source code: https://github.com/MyTeletouch
+
+---- 
+
+Current location: I'm living at Varna, Bulgaria. My country is part of EU
