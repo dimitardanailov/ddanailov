@@ -4,15 +4,15 @@ Expertise: Software architect, Team Leader and full stack developer. I have 9+ y
 
 :tada: Skills :tada: :
 -------
-:police_car:  Web technologies (HTML5, CSS3, ES7+)
+:police_car:  Web technologies (HTML5, CSS3, ES7+, a11y)
 :boom:  Typescript, Flow, Prettier
-:fire:  React, Redux, Custom Elements v1, D3js, Polymer
+:fire:  React, Redux, Custom Elements v1, D3js, Polymer, Angular and Vuew (little exp)
 :grapes:  Feature Flags, Microservices, Fitness functions
-:cocktail:  MongoDB (Mongoose), Firbase, SQlite, MySQL and MSSQL, Hadoop (little exp)
+:cocktail:  MongoDB (Mongoose), Firebase, SQlite, MySQL and MSSQL, Hadoop (little exp)
 :battery: Travic CI, Circle CI, Jenkins, Groovy (little exp)
 :shield: Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant
 :snake:  Nodejs (Express), Aspnet MVC, Laravel and Ruby on Rails
-:headphones: Android, Swift and Objective - C (little exp)
+:headphones: Android, Swift and Objective - C (little exp), Native Script (little exp)
 :cloud:  Azure, AWS, AWS Lambda functions and Serverless(little exp), Google Cloud and Kubernates (little exp)
 
 Portfolio: https://github.com/dimitardanailov/ddanailov
