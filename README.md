@@ -117,7 +117,7 @@ Organization: https://github.com/MyTeletouch
 | | Front - end skills | |
 | [JavaScript / Vanilla ](https://www.codewars.com/users/dimitardanailov/badges/small) | [Custom Elements v1](https://github.com/dimitardanailov/gmail-helper) | Polymer / WebComponents |
 | React | JSX | TypeScript |
-| Webpack | D3js | Gulp |
+| Webpack | [D3js](https://github.com/dimitardanailov/d3-examples) | Gulp |
 | Lerna | Babel | Grunt |
 | Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
 | | | |
@@ -131,9 +131,9 @@ Organization: https://github.com/MyTeletouch
 | | | |
 | | Cloud experience | |
 | Azure | AWS | Google Cloud |
-| Docker and Vagrant | Heroku | Engine Yard |
-| OpenShift | Kubernetes | Jenkins | 
-| Grafana | | |
+| Docker | Heroku | Engine Yard |
+| Grafana | [Vagrant](https://github.com/dimitardanailov/vagrant-configuration-ruby-on-rails) | Jenkins |
+| OpenShift | Kubernetes | | 
 | | | |
 | | Mobile experience | |
 | Android | Objective - C | Swift |
