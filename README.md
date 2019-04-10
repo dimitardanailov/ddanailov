@@ -23,7 +23,9 @@ I've been studying: Artificial intelligence, Voice and Image Recognition, Micros
 
 ##### Positions
 
-- Independent contractor: August 2018 - March 2019
+- Full Stack Developer (Independent contractor): August 2018 - until now
+- Cloud Architect: August 2018 - until now
+- iOS Developer and Android Team Lead: June - August 2018
 - Technical Architect: December 2017 - April 2018
 - Software Architect November 2015 - October 2017
 - CTO: June 2014 - October 2015
@@ -108,6 +110,17 @@ Organization: https://github.com/MyTeletouch
 
 ---
 
+### Ideal roles & experience
+
+- Software architect: 2 - 4 years
+- Frontend Engineer: 6 - 8 years      
+- Javascript Backend Engineer: 4 - 6 years
+- Fullstack Engineer: 6 - 8 years
+- Engineering Manager: 2 - 4 years
+- Product Manager < 1 year
+
+---
+
 ### Technical background
 
 ##### Front - end skills
@@ -128,6 +141,7 @@ Organization: https://github.com/MyTeletouch
 | | JavaScript Backend skills | |
 | Nodejs | Express | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
 | [routing-controllers](https://github.com/typestack/routing-controllers) | [tus.io](https://tus.io) | [node organic](https://github.com/node-organic) |
+| [grpc.io](https://grpc.io/) | | |
 | | | |
 | | Cloud experience | |
 | Azure | AWS | Google Cloud |
