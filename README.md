@@ -28,9 +28,9 @@ I've been studying:
 ##### Positions
 
 - Full Stack Developer (Independent contractor): August 2018 - until now
-- Cloud Architect: August 2018 - until now
-- iOS Developer and Android Team Lead: June - August 2018
-- Technical Architect: December 2017 - April 2018
+- Azure Cloud Architect: August 2018 - until now
+- iOS Developer (Objective - C) and Android Team Lead: June - August 2018
+- Technical Architect (Salesforce Commerce Cloud): December 2017 - April 2018
 - Software Architect November 2015 - October 2017
 - CTO: June 2014 - October 2015
 - Team Leader - June 2011 - June 2014
