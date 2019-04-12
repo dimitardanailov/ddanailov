@@ -133,6 +133,7 @@ Organization: https://github.com/MyTeletouch
 | Webpack | [D3js](https://github.com/dimitardanailov/d3-examples) | Gulp |
 | Lerna | Babel | Grunt |
 | Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
+| AngularJS (v1) | Vuejs | jQuery |
 | | | |
 | | JavaScript Test Libraries | |
 | Mocha | Chai | Jest |
