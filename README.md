@@ -15,7 +15,11 @@ My technical background includes:
 - Mobile applications(Android, iOS and Hybrid);
 - DevOps Experience;
 
-I've been studying: Artificial intelligence, Voice and Image Recognition, Microservices, Kubernetes.
+I've been studying: 
+- [Artificial intelligence](https://www.coursera.org/learn/introduction-tensorflow/home/welcome);
+- Voice and Image Recognition;
+- [Microservices, Feature Toggles, Service-based architecture](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures); 
+- Kubernetes;
 
 ---
 
