@@ -13,11 +13,6 @@ Answer: A technique to reduce the information in an image while maintaining feat
 
 Answer: They isolate features in images
 
-!!! 
-They make the image smaller
-They make the image clearer
-They make processing of images faster
-
 4) After passing a 3x3 filter over a 28x28 image, how big will the output be?
 
 Answer: 26x26

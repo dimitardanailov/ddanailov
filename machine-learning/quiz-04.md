@@ -4,18 +4,9 @@ Using Image Generator, how do you label images?
 
 Answer: It’s based on the directory the image is contained in
 
-!!! 
-TensorFlow figures it out from the contents
-You have to manually do it
-
 2) What method on the Image Generator is used to normalize the image?
 
-Answer: 
-
-!!! 
-normalize
-normalize_image
-Rescale_image
+Answer: rescale
 
 3) How did we specify the training size for the images?
 
