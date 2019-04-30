@@ -91,3 +91,8 @@ git push <remote_name> <branch_name> -f
 ##### Committing Rules and Responsibilities
 - [Processing JIRA Software issues with Smart Commit messages](https://confluence.atlassian.com/bitbucket/processing-jira-software-issues-with-smart-commit-messages-298979931.html#id-_smart_commits_commands1-transition)
 - [Mozilla: Committing rules and responsibilities](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Committing_Rules_and_Responsibilities)
+
+##### Trunk Development
+
+- [Trunk base development](https://trunkbaseddevelopment.com/)
+- [GOTO 2017 • Feature Branches and Toggles in a Post-GitHub World • Sam Newman](https://youtu.be/lqRQYEHAtpk)
