@@ -102,9 +102,13 @@ Tantalus is a Nodejs Microservices. Project uploads big streams from custom clou
 
 I wrote series of articles about my Microservices journey: [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
 
-#### [Google Maps Cluster Markers](https://github.com/dimitardanailov/googlemapsclustermarkers)
+##### [Google Maps Cluster Markers](https://github.com/dimitardanailov/googlemapsclustermarkers)
 
 Android application with main focus google maps clusterization. Application uses [Google Maps Android API utility library](http://googlemaps.github.io/android-maps-utils/). Live demo: https://www.youtube.com/watch?v=5ZnVraO1mT4. Video has more than 5500+ viewers
+
+##### [Objective - c and AWS playground](https://github.com/dimitardanailov/objc-aws-playground)
+
+Repository uses [AWSS3TransferUtility](https://aws-amplify.github.io/aws-sdk-ios/docs/reference/Classes/AWSS3TransferUtility.html) to upload and download files from AWS. Demo of application: https://www.youtube.com/watch?v=o1pNdjg-uLY 
 
 ### Open source projects (Co - founder)
 
