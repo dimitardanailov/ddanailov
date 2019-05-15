@@ -1,4 +1,4 @@
-[FOR HIRE][REMOTE or Local][FULLTIME][CONTRACT]
+[FOR HIRE][Remote or Local][FULLTIME][CONTRACT]
 
 Expertise: Software architect, Team Leader and full stack developer. I have 9+ years working experience.
 
