@@ -13,7 +13,7 @@ My technical background includes:
 - Backend experience. (Nodejs, Asp.Net, PHP, Ruby on Rails);
 - Cloud providers(Azure, AWS, Heroku, Engine Yard, Google Cloud);
 - Mobile applications(Android, iOS and Hybrid);
-- DevOps Experience;
+- DevOps and Linux Experience;
 
 I've been studying: 
 - [Artificial intelligence](https://www.coursera.org/learn/introduction-tensorflow/home/welcome);
@@ -39,6 +39,13 @@ I've been studying:
 ##### Project Management Methodologies
 
 I've experience such as an Agile and Scrum coach. My experience includes Agile and Scrum, Kanban, Lean and Waterfall teams and projects.
+
+##### Startup weekend awards
+- Startup Weekend Sofia May 2014 - Third Place 
+- Startup Weekend Sofia November 2013 - Award of SuperHosting.bg
+- Startup Weekend Sofia November 2013 - Award of Vivakom
+- Startup Weekend Sofia November 2013 - Third Place
+- Startup Weekend Sofia April 2013 - Second Place
 
 ---
 
@@ -95,6 +102,10 @@ Tantalus is a Nodejs Microservices. Project uploads big streams from custom clou
 
 I wrote series of articles about my Microservices journey: [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
 
+#### [Google Maps Cluster Markers](https://github.com/dimitardanailov/googlemapsclustermarkers)
+
+Android application with main focus google maps clusterization. Application uses [Google Maps Android API utility library](http://googlemaps.github.io/android-maps-utils/). Live demo: https://www.youtube.com/watch?v=5ZnVraO1mT4. Video has more than 5500+ viewers
+
 ### Open source projects (Co - founder)
 
 ##### [MyTeletouch](https://github.com/MyTeletouch)
@@ -147,6 +158,10 @@ Organization: https://github.com/MyTeletouch
 | Nodejs | Express | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
 | [routing-controllers](https://github.com/typestack/routing-controllers) | [tus.io](https://tus.io) | [node organic](https://github.com/node-organic) |
 | [grpc.io](https://grpc.io/) | | |
+| | | |
+| | Azure | |
+| Azure App Services | Azure SQL Databases | Kusto Query Language |
+| Azure Log Analytics | Azure Sync Data | |
 | | | |
 | | Cloud experience | |
 | Azure | AWS | Google Cloud |
