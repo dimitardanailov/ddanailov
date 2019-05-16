@@ -1,10 +1,10 @@
 ![https://www.codewars.com/users/dimitardanailov/badges/small](https://www.codewars.com/users/dimitardanailov/badges/small)
 
-My name is Dimitar Danailov. I've been working such as software engineer since 2010. 
+My name is Dimitar Danailov. I've been working as a software engineer since 2010. 
 
-### Expertise
+### Expertise / Technical background
 
-My technical background includes: 
+- Working with Remote teams (US, UK, Australia)
 - Software architectures;
 - Project Management;
 - Software and Technical Lead;
@@ -15,7 +15,8 @@ My technical background includes:
 - Mobile applications(Android, iOS and Hybrid);
 - DevOps and Linux Experience;
 
-I've been studying: 
+#### Goals and passions for this year
+
 - [Artificial intelligence](https://www.coursera.org/learn/introduction-tensorflow/home/welcome);
 - Voice and Image Recognition;
 - [Microservices, Feature Toggles, Service-based architecture](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures); 
@@ -28,7 +29,7 @@ I've been studying:
 ##### Positions
 
 - Full Stack Developer (Independent contractor): August 2018 - until now
-- Azure Cloud Architect: August 2018 - until now
+- Azure Cloud Architect (Independent contractor): August 2018 - until now
 - iOS Developer (Objective - C) and Android Team Lead: June - August 2018
 - Technical Architect (Salesforce Commerce Cloud): December 2017 - April 2018
 - Software Architect November 2015 - October 2017
@@ -38,7 +39,7 @@ I've been studying:
 
 ##### Project Management Methodologies
 
-I've experience such as an Agile and Scrum coach. My experience includes Agile and Scrum, Kanban, Lean and Waterfall teams and projects.
+I've experience as an Agile and Scrum coach. My experience includes Agile and Scrum, Kanban, Lean and Waterfall teams and projects.
 
 ##### Startup weekend awards
 - Startup Weekend Sofia May 2014 - Third Place 
@@ -98,7 +99,7 @@ Gmail helper creates gmail labels and features. Technologies: Custom Elements v1
 
 ##### [Tantalus](https://github.com/dimitardanailov/tantalus)
 
-Tantalus is a Nodejs Microservices. Project uploads big streams from custom cloud provider to AWS. Tantalus uses: [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver), [routing-controllers](https://github.com/typestack/routing-controllers), [tus.io](https://tus.io), Typescript.
+Tantalus is a Nodejs Microservices application. Project uploads big streams from custom cloud provider to AWS. Tantalus uses: [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver), [routing-controllers](https://github.com/typestack/routing-controllers), [tus.io](https://tus.io), Typescript.
 
 I wrote series of articles about my Microservices journey: [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
 
@@ -114,7 +115,8 @@ Repository uses [AWSS3TransferUtility](https://aws-amplify.github.io/aws-sdk-ios
 
 ##### [MyTeletouch](https://github.com/MyTeletouch)
 
-[MyTeletouch](https://www.indiegogo.com/projects/myteletouch-control-tv-pc-from-smartphone#/) is a winner of a lot of awards at Bulgaria (such as Best IoT Project - 2016). MyTeletouch did a succesful Indiegogo campaign end of 2016 - first quoter of 2017. 
+[MyTeletouch](https://www.indiegogo.com/projects/myteletouch-control-tv-pc-from-smartphone#/). Project won the title best Bulgarian IoT project for 2016 
+MyTeletouch did a succesful Indiegogo campaign end of 2016 - first quoter of 2017. 
 
 Technology stack: IoT, Raspberry Pi, [Asp.Net MVC](https://github.com/MyTeletouch/web)
 
