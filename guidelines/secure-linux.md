@@ -85,3 +85,23 @@ Change the content of this file to:
 ```
 
 Save and close that file. Viola! No more IP spoofing.
+
+### Firewall with UFW
+
+UFW, or Uncomplicated Firewall, is an interface to iptables that is geared towards simplifying the process of configuring a firewall. While iptables is a solid and flexible tool, it can be difficult for beginners to learn how to use it to properly configure a firewall. If you're looking to get started securing your network, and you're not sure which tool to use, UFW may be the right choice for you.
+
+If you're just getting started with your firewall, the first rules to define are your default policies. These rules control how to handle traffic that does not explicitly match any other rules. By default, UFW is set to deny all incoming connections and allow all outgoing connections. This means anyone trying to reach your server would not be able to connect, while any application within the server would be able to reach the outside world.
+
+Let's set your UFW rules back to the defaults so we can be sure that you'll be able to follow along with this tutorial. To set the defaults used by UFW, use these commands:
+
+```bash
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+```
+
+To enable UFW, use this command:
+
+```bash
+sudo ufw enable
+```
+
