@@ -88,6 +88,7 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 ### Open source
 
 - My [stackoverflow profile](https://stackoverflow.com/users/609707/d-danailov) has 7000+ points
+- [https://bl.ocks.org/dimitardanailov](https://bl.ocks.org/dimitardanailov)
 - I'm a member of [Firefox DevTools Team](https://github.com/devtools-html)
 - [Certificates](https://github.com/dimitardanailov/ddanailov/tree/master/certificates)
 
