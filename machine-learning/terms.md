@@ -14,3 +14,8 @@
 - **Epoch** - A full pass over the entire training dataset
 - **Forward pass** - The compulation of output values from input
 - **Backward pass(backpropagation)** - The calculation of the internal variables adjustments according to the optimizer algorithm, starting from the output layer and working back through each layer to the input.
+
+### Problems
+
+- **Regression** - A model that outputs a single value. For example, an estimate of a house’s value.
+- **Classification** - A model that outputs a probability distribition across several categories. For example, in Fashion MNIST, the output was 10 probabilities, one for each of the different types of clothing. Remember, we use Softmax as the activation function in our last Dense layer to create this probability ditribution.
