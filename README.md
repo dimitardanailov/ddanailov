@@ -1,6 +1,6 @@
 ![https://www.codewars.com/users/dimitardanailov/badges/small](https://www.codewars.com/users/dimitardanailov/badges/small)
 
-My name is Dimitar Danailov. I've been working as a software engineer since 2010. 
+My name is Dimitar Danailov and my professional experience is nine years.
 
 ### Expertise / Technical background
 
@@ -165,7 +165,7 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 | | JavaScript Backend skills | |
 | Nodejs | Express | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
 | [routing-controllers](https://github.com/typestack/routing-controllers) | [tus.io](https://tus.io) | [node organic](https://github.com/node-organic) |
-| [grpc.io](https://grpc.io/) | | |
+| [grpc.io](https://grpc.io/) | [Nestjs](https://nestjs.com) | |
 | | | |
 | | Azure | |
 | Azure App Services | Azure SQL Databases | Kusto Query Language |
