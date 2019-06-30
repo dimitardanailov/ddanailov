@@ -1,8 +1,8 @@
 ### My personal story and superpowers
 
-My personal journey begun before nine years ago. For these period I "visited" a signification amount of kingdoms 👑. My roles were "warrior" (backend developer), "engineer" (front - end developer), "magician" (team leader and software architect), "the assassin" (freelancer) and even the "main officer" (CTO). 
+My personal journey begun before nine years ago. For this period I "visited" a significant amount of kingdoms 👑. My roles were "warrior" (backend developer), "engineer" (front - end developer), "magician" (team leader and software architect), "the assassin" (freelancer) and even the "main officer" (CTO).
 
-When I worked like a warrior 💪 I wrote a significant amount of scripts which automated some boring repetitive tasks for my stakeholders and the end - users.
+When I worked as a warrior 💪 I wrote a significant amount of scripts which automated some boring, repetitive tasks for my stakeholders and the end - users.
 
 To be an engineer 🛠 is an awesome job because your main focus is creating a beautiful and helpful instruments which reduce the main pain of each system: Adding or filtering data.
 
