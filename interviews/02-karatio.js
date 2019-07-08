@@ -83,7 +83,7 @@ uniqueDomains.forEach(setElement => {
   
   domains.forEach(domain => {
     // Reg exp should check to end of string
-    let regExp = new RegExp(setElement)
+    let regExp = new RegExp(setElement + '$')
     if (regExp.test(domain.domains)) {
       total = total + domain.clicks
     }
