@@ -1,4 +1,49 @@
 ```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)    
+| where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "BytesReceived"
+| summarize sum(Total / 1000) by bin(TimeGenerated, 60s)
+| project-rename sum_BytesReceived_kb=sum_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)    
+| where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "Http404"
+| summarize sum(Total) by bin(TimeGenerated, 60s)
+| project-rename Http404_total_erors=sum_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)    
+| where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "Http401"
+| summarize sum(Total) by bin(TimeGenerated, 60s)
+| project-rename Http401_total_erors=sum_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)    
+| where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "Http3xx"
+| summarize sum(Total) by bin(TimeGenerated, 60s)
+| project-rename Http3xx_total_erors=sum_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)    
+| where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "Http2xx"
+| summarize sum(Total) by bin(TimeGenerated, 60s)
+| project-rename Http2xx_total_erors=sum_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
 AzureMetrics 
 | where $__timeFilter(TimeGenerated)    
 | where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "MemoryWorkingSet"
