@@ -38,6 +38,10 @@ I'm looking for the next kingdom 🏯
 
 ##### Positions
 
+- Founder of Company: August 2018 - until now
+	- React Developer: April 2019 - until now
+	- Azure Consultant: August 2018 - until now
+	- Nodejs Developer: August 2018 - March 20219
 - Full Stack Developer (Independent contractor): August 2018 - until now
 - Azure Cloud Architect (Independent contractor): August 2018 - until now
 - iOS Developer (Objective - C) and Android Team Lead: June - August 2018
