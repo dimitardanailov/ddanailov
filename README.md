@@ -27,6 +27,7 @@ I'm looking for the next kingdom 🏯
 
 #### Goals and passions for this year
 
+- Native Web Components and React 
 - [Artificial intelligence](https://www.coursera.org/learn/introduction-tensorflow/home/welcome);
 - Voice and Image Recognition;
 - [Microservices, Feature Toggles, Service-based architecture](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures); 
@@ -42,8 +43,6 @@ I'm looking for the next kingdom 🏯
 	- React Developer: April 2019 - until now
 	- Azure Consultant: August 2018 - until now
 	- Nodejs Developer: August 2018 - March 20219
-- Full Stack Developer (Independent contractor): August 2018 - until now
-- Azure Cloud Architect (Independent contractor): August 2018 - until now
 - iOS Developer (Objective - C) and Android Team Lead: June - August 2018
 - Technical Architect (Salesforce Commerce Cloud): December 2017 - April 2018
 - Software Architect November 2015 - October 2017
