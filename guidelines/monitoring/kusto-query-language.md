@@ -1,6 +1,23 @@
 ```sql
 AzureMetrics
 | where $__timeFilter(TimeGenerated)    
+| where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "Requests"
+| summarize sum(Total) by bin(TimeGenerated, 60s)
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)    
+| where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "Http5xx"
+| summarize sum(Total) by bin(TimeGenerated, 60s)
+| project-rename Http5xx_total_erors=sum_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)    
 | where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "BytesReceived"
 | summarize sum(Total / 1000) by bin(TimeGenerated, 60s)
 | project-rename sum_BytesReceived_kb=sum_Total 
