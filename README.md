@@ -206,6 +206,7 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 
 ### Technical articles: 
 
+- [Git useful commands](https://medium.com/@d_danailov/git-useful-commands-b3c4dcd0dd97)
 - [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
 - [Productivity with VS Code (Tips and Tricks)](https://medium.com/@d_danailov/productivity-with-vs-code-tips-and-tricks-51ae11e2e087)
 - [Polymer vs Angular vs React: Using Web Components to Evolve the Experience](https://mentormate.com/blog/polymer-vs-angular-future-web-apps/)
