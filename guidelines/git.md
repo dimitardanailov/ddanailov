@@ -81,7 +81,6 @@ git push <remote_name> <branch_name> -f
 
 - [Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY&t=2922s)
 - [http://learngitbranching.js.org/](http://learngitbranching.js.org/)
-- [Mastering Git](https://www.youtube.com/playlist?list=PL4KQBOUw6E7uJFgKP3gBAKooqY0a9a6Np)
 - [Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1)
 - [Git Cheatsheet](http://ndpsoftware.com/git-cheatsheet/previous/git-cheatsheet.html)
 - [Escape the git mess](http://justinhileman.info/article/git-pretty/git-pretty.png)
