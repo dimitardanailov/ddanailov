@@ -39,10 +39,18 @@ I'm looking for the next kingdom 🏯
 
 ##### Positions
 
+###### Danailov Consulting (August 2018 - until now)
+
+Position and contracts:
+
+- React Developer: April 2019 - until now
+- Azure Consultant: August 2018 - until now
+- Nodejs Developer: August 2018 - March 2019
+
 - Founder of Company: August 2018 - until now
-	- React Developer: April 2019 - until now
-	- Azure Consultant: August 2018 - until now
-	- Nodejs Developer: August 2018 - March 2019
+	- 
+	- 
+	- 
 - iOS Developer (Objective - C) and Android Team Lead: June - August 2018
 - Technical Architect (Salesforce Commerce Cloud): December 2017 - April 2018
 - Software Architect November 2015 - October 2017
