@@ -14,16 +14,16 @@ I'm looking for the next kingdom 🏯
 
 ### Expertise / Technical background
 
-- Working with Remote teams (US, UK, Australia)
+- Working with Remote teams (US, UK, Australia, Indonesia, Singapore);
 - Software architectures;
-- Project Management;
 - Software and Technical Lead;
-- UI and UX experience;
 - Front - end experience (Polymer, React, D3js, Custom Elements v1, Vanilla Javascript);
 - Backend experience. (Nodejs, Asp.Net, PHP, Ruby on Rails);
 - Cloud providers(Azure, AWS, Heroku, Engine Yard, Google Cloud);
-- Mobile applications(Android, iOS and Hybrid);
 - DevOps and Linux Experience;
+- Mobile applications(Android, iOS and Hybrid);
+- UI and UX experience;
+- Project Management;
 
 #### Goals and passions for this year
 
