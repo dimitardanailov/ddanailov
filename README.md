@@ -214,7 +214,7 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 | | Additional experience | |
 | Blockchain | Hadoop | Electron |
 | Nwjs | Google Chrome Extensions | Go |
-| Qt | Salesforce Commerce Cloud (SFC) |  |
+| Qt | Salesforce Commerce Cloud (SFC) | Tensorflow |
 
 ### Technical articles: 
 
