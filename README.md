@@ -106,6 +106,65 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 
 ---
 
+
+### Ideal roles & experience
+
+- Software architect: 2 - 4 years
+- Frontend Engineer: 6 - 8 years      
+- Javascript Backend Engineer: 4 - 6 years
+- Fullstack Engineer: 6 - 8 years
+- Engineering Manager: 2 - 4 years
+- Product Manager < 1 year
+
+---
+
+### Technical background
+
+|               |               |       |
+| :-----------: | :-----------: | :---: |
+| | Front - end skills | |
+| [JavaScript / Vanilla ](https://www.codewars.com/users/dimitardanailov/badges/small) | [Custom Elements v1](https://github.com/dimitardanailov/gmail-helper) | Polymer / WebComponents |
+| React | JSX | Flow |
+| Yarn | [D3js](https://github.com/dimitardanailov/d3-examples) | Gulp |
+| Lerna | Babel | Grunt |
+| Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
+| TypeScript | Webpack | jQuery |
+| GraphQL | AngularJS (v1) | Vuejs |
+| | | |
+| | JavaScript Test Libraries | |
+| Mocha | Chai | Jest |
+| Jasmine | Karma | TestCafe |
+| | | |
+| | JavaScript Backend skills | |
+| Nodejs | Express | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
+| [routing-controllers](https://github.com/typestack/routing-controllers) | [tus.io](https://tus.io) | [node organic](https://github.com/node-organic) |
+| [grpc.io](https://grpc.io/) | [Nestjs](https://nestjs.com) | |
+| | | |
+| | Azure | |
+| Azure App Services | Azure SQL Databases | Kusto Query Language |
+| Azure Log Analytics | Azure Sync Data | |
+| | | |
+| | Cloud experience | |
+| Azure | AWS | Google Cloud |
+| Docker | Heroku | Engine Yard |
+| Grafana | [Vagrant](https://github.com/dimitardanailov/vagrant-configuration-ruby-on-rails) | Jenkins |
+| OpenShift | Kubernetes | | 
+| | | |
+| | Mobile experience | |
+| Android | Objective - C | Swift |
+| | | |
+| | Additional experience | |
+| PHP / Laravel | Asp.NET | Ruby on Rails |
+| Linux | BashScript | Apache |
+| Nginx | MySQL | PostgreSQL | Oracle PL/SQL |
+| | | |
+| | Additional experience | |
+| Blockchain | Hadoop | Electron |
+| Nwjs | Google Chrome Extensions | Go |
+| Qt | Salesforce Commerce Cloud (SFC) | Tensorflow |
+
+---
+
 ### Open source
 
 - My [stackoverflow profile](https://stackoverflow.com/users/609707/d-danailov) has 7000+ points
@@ -157,64 +216,6 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 - [https://github.com/node-organic](https://github.com/node-organic)
 
 ---
-
-### Ideal roles & experience
-
-- Software architect: 2 - 4 years
-- Frontend Engineer: 6 - 8 years      
-- Javascript Backend Engineer: 4 - 6 years
-- Fullstack Engineer: 6 - 8 years
-- Engineering Manager: 2 - 4 years
-- Product Manager < 1 year
-
----
-
-### Technical background
-
-##### Front - end skills
-
-|               |               |       |
-| :-----------: | :-----------: | :---: |
-| | Front - end skills | |
-| [JavaScript / Vanilla ](https://www.codewars.com/users/dimitardanailov/badges/small) | [Custom Elements v1](https://github.com/dimitardanailov/gmail-helper) | Polymer / WebComponents |
-| React | JSX | Flow |
-| Yarn | [D3js](https://github.com/dimitardanailov/d3-examples) | Gulp |
-| Lerna | Babel | Grunt |
-| Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
-| TypeScript | Webpack | jQuery |
-| GraphQL | AngularJS (v1) | Vuejs |
-| | | |
-| | JavaScript Test Libraries | |
-| Mocha | Chai | Jest |
-| Jasmine | Karma | TestCafe |
-| | | |
-| | JavaScript Backend skills | |
-| Nodejs | Express | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
-| [routing-controllers](https://github.com/typestack/routing-controllers) | [tus.io](https://tus.io) | [node organic](https://github.com/node-organic) |
-| [grpc.io](https://grpc.io/) | [Nestjs](https://nestjs.com) | |
-| | | |
-| | Azure | |
-| Azure App Services | Azure SQL Databases | Kusto Query Language |
-| Azure Log Analytics | Azure Sync Data | |
-| | | |
-| | Cloud experience | |
-| Azure | AWS | Google Cloud |
-| Docker | Heroku | Engine Yard |
-| Grafana | [Vagrant](https://github.com/dimitardanailov/vagrant-configuration-ruby-on-rails) | Jenkins |
-| OpenShift | Kubernetes | | 
-| | | |
-| | Mobile experience | |
-| Android | Objective - C | Swift |
-| | | |
-| | Additional experience | |
-| PHP / Laravel | Asp.NET | Ruby on Rails |
-| Linux | BashScript | Apache |
-| Nginx | MySQL | PostgreSQL | Oracle PL/SQL |
-| | | |
-| | Additional experience | |
-| Blockchain | Hadoop | Electron |
-| Nwjs | Google Chrome Extensions | Go |
-| Qt | Salesforce Commerce Cloud (SFC) | Tensorflow |
 
 ### Technical articles: 
 
