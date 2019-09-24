@@ -1,6 +1,15 @@
 ```sql
 AzureMetrics
 | where $__timeFilter(TimeGenerated)    
+| where Resource == "" and SubscriptionId == "" and MetricName == "Storage"
+| summarize avg(Average / (1024*1024*1024)) by bin(TimeGenerated, 60s)
+| project-rename Average_GB=avg_  
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)    
 | where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "Requests"
 | summarize sum(Total) by bin(TimeGenerated, 60s)
 | sort by TimeGenerated asc
