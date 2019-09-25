@@ -23,7 +23,7 @@ I'm looking for the next kingdom 🏯
 - DevOps and Linux Experience;
 - Mobile applications(Android, iOS and Hybrid);
 - UI and UX experience;
-- Project Management;
+- Project Management (Jira, Trello);
 
 #### Goals and passions for this year
 
