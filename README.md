@@ -219,6 +219,7 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 
 ### Technical articles: 
 
+- [How to protect my Ubuntu server ?](https://medium.com/@d_danailov/how-to-protect-my-ubuntu-server-6a2ecc056722)
 - [Git useful commands](https://medium.com/@d_danailov/git-useful-commands-b3c4dcd0dd97)
 - [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
 - [Productivity with VS Code (Tips and Tricks)](https://medium.com/@d_danailov/productivity-with-vs-code-tips-and-tricks-51ae11e2e087)
