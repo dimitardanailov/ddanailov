@@ -1,5 +1,32 @@
 ```sql
 AzureMetrics
+| where $__timeFilter(TimeGenerated)
+| where Resource == "" and SubscriptionId == "" and MetricName == "dtu_consumption_percent"
+| summarize avg(Total) by bin(TimeGenerated, 60s)
+| project-rename avg_total_dtu_consumption_percent=avg_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)
+| where Resource == "" and SubscriptionId == "" and MetricName == "dtu_used"
+| summarize avg(Total) by bin(TimeGenerated, 60s)
+| project-rename avg_total_dtu_used=avg_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
+| where $__timeFilter(TimeGenerated)   
+| where Resource == "" and SubscriptionId == "" and MetricName == "deadlock"
+| summarize sum(Total) by bin(TimeGenerated, 60s) 
+| project-rename total_deadlock=sum_Total 
+| sort by TimeGenerated asc
+```
+
+```sql
+AzureMetrics
 | where $__timeFilter(TimeGenerated)    
 | where Resource == "" and SubscriptionId == "" and MetricName == "Storage"
 | summarize avg(Average / (1024*1024*1024)) by bin(TimeGenerated, 60s)
