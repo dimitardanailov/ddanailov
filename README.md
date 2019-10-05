@@ -130,6 +130,7 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 | Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
 | TypeScript | Webpack | jQuery |
 | GraphQL | AngularJS (v1) | Vuejs |
+| PWA | | |
 | | | |
 | | JavaScript Test Libraries | |
 | Mocha | Chai | Jest |
