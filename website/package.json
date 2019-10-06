@@ -5,5 +5,9 @@
   "repository": "https://github.com/dimitardanailov",
   "author": "Dimitar Danailov<dimityr.danailov@gmail.com>",
   "license": "MIT",
-  "description": "Javascript contractor"
+  "description": "Javascript contractor",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
 }
