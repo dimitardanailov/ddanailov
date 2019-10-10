@@ -44,7 +44,7 @@ I'm looking for the next kingdom 🏯
 Remote contractor with [Getcraft.com](https://getcraft.com), [Asian Absolute](https://asianabsolute.co.uk), [Sashido.io](https://www.sashido.io/en), (Camplight)[https://camplight.net], (Consento)[https://consento.bg], 
 [https://www.scalewest.com](https://www.scalewest.com), [Newly.com] (https://getnewly.com)
 
-- React Developer: April 2019 - until now
+- React Developer and IT consultant: April 2019 - until now
 - Azure Consultant: August 2018 - until now
 - Nodejs Developer: August 2018 - March 2019
 - Founder of Company: August 2018 - until now
