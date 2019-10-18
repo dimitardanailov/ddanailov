@@ -191,11 +191,11 @@ Gmail helper creates gmail labels and features. Technologies: Custom Elements v1
 
 Tantalus is a Nodejs Microservices application. Project uploads big streams from custom cloud provider to AWS. Tantalus uses: [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver), [routing-controllers](https://github.com/typestack/routing-controllers), [tus.io](https://tus.io), Typescript.
 
+I wrote series of articles about my Microservices journey: [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
+
 ##### [Push notification playgroung](https://github.com/dimitardanailov/push-notifications)
 
-I worked on Research and Development task with subject: Push notifications. 
-
-I wrote series of articles about my Microservices journey: [Nodejs Microservice: Importing millions records on Amazon S3](https://medium.com/@d_danailov/nodejs-microservice-importing-millions-records-on-amazon-s3-introduction-chapter-1-fafc208e40ad)
+Push notification playground. 
 
 ##### [Google Maps Cluster Markers](https://github.com/dimitardanailov/googlemapsclustermarkers)
 
