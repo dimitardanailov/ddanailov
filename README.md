@@ -70,13 +70,6 @@ Positions:
 
 I've experience as an Agile and Scrum coach. My experience includes Agile and Scrum, Kanban, Lean and Waterfall teams and projects.
 
-##### Startup weekend awards
-- Startup Weekend Sofia May 2014 - Third Place 
-- Startup Weekend Sofia November 2013 - Award of SuperHosting.bg
-- Startup Weekend Sofia November 2013 - Award of Vivakom
-- Startup Weekend Sofia November 2013 - Third Place
-- Startup Weekend Sofia April 2013 - Second Place
-
 ---
 
 ### Client feedback: 
@@ -118,10 +111,10 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 ### Ideal roles & experience
 
 - Software architect: 2 - 4 years
+- Engineering Manager: 2 - 4 years
 - Frontend Engineer: 6 - 8 years      
 - Javascript Backend Engineer: 4 - 6 years
 - Fullstack Engineer: 6 - 8 years
-- Engineering Manager: 2 - 4 years
 - Product Manager < 1 year
 
 ---
@@ -223,6 +216,13 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 - [https://github.com/Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/pulls/dimitardanailov)
 - [@types/chai-fs](https://www.npmjs.com/package/@types/chai-fs)
 - [https://github.com/node-organic](https://github.com/node-organic)
+
+### Startup weekend awards
+- Startup Weekend Sofia May 2014 - Third Place 
+- Startup Weekend Sofia November 2013 - Award of SuperHosting.bg
+- Startup Weekend Sofia November 2013 - Award of Vivakom
+- Startup Weekend Sofia November 2013 - Third Place
+- Startup Weekend Sofia April 2013 - Second Place
 
 ---
 
