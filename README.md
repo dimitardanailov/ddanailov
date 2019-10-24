@@ -53,7 +53,7 @@ Remote contractor with
 - [Newly.com] (https://getnewly.com)
 
 Positions:
-- React Developer and IT consultant: April 2019 - until now
+- React Developer, DevOps and IT consultant: April 2019 - until now
 - Azure Consultant: August 2018 - until now
 - Nodejs Developer: August 2018 - March 2019
 
