@@ -1,5 +1,32 @@
 function Home() {
-  return <div>Welcome to Next.js!</div>;
+  return (
+    <div>
+      <h1>Dear Guest,</h1>
+      <p>My name is Dimitar Danailov.</p>
+      <p>I'm a consultant, a mentor, and I love open source software.</p>
+      <p>Projects:</p>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/dimitardanailov/gmail-helper"
+            title="Native web componets"
+          >
+            Gmail Helper
+          </a>
+          : Gmail helper creates gmail labels and features. Technologies: Custom
+          Elements v1, Redux, Webpack, Lerna, Mocha, Chai, Karma
+        </li>
+        <li>
+          <a href="https://github.com/dimitardanailov/tantalus" title="Nodejs">
+            Tantalus
+          </a>
+          is a Nodejs Microservices application. Project uploads big streams
+          from custom cloud provider to AWS. Tantalus uses: NodeServer
+          Generator, routing-controllers, tus.io, Typescript.
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 export default Home;
