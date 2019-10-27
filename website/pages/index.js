@@ -24,6 +24,14 @@ function Home() {
           from custom cloud provider to AWS. Tantalus uses: NodeServer
           Generator, routing-controllers, tus.io, Typescript.
         </li>
+        <li>
+          <a
+            href="https://github.com/dimitardanailov/push-notifications"
+            title="Push notification demo"
+          >
+            Push notification playground
+          </a>
+        </li>
       </ul>
     </div>
   );
