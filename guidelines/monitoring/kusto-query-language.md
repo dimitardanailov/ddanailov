@@ -121,6 +121,14 @@ AzureMetrics
 | sort by TimeGenerated asc
 ```
 
+```sql
+AzureMetrics 
+| where $__timeFilter(TimeGenerated) 
+| where ResourceProvider == "MICROSOFT.WEB" and ResourceId == "" and MetricName == "Threads"
+| summarize avg(Total) by bin(TimeGenerated, 5s)
+| sort by TimeGenerated asc
+```
+
 
 This includes the following matrices names:
 - CpuTime
