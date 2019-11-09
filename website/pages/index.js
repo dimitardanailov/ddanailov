@@ -35,9 +35,9 @@ function Home() {
         <li>
           <a
             href="https://github.com/dimitardanailov/react-components"
-            title="Push notification demo"
+            title="React playground"
           >
-            Push notification playground
+            React components
           </a>
         </li>
       </ul>
