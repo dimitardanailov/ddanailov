@@ -41,6 +41,12 @@ function Home() {
           </a>
         </li>
       </ul>
+      <section>
+        <ul>
+          My company wants to build Raving fans and Servant leadership. I'm
+          working with two companies right now.
+        </ul>
+      </section>
     </div>
   );
 }
