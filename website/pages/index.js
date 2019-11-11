@@ -43,8 +43,11 @@ function Home() {
       </ul>
       <section>
         <ul>
-          My company wants to build Raving fans and Servant leadership. I'm
-          working with two companies right now.
+          <li>
+            My company wants to build Raving fans and Servant leadership. I'm
+            working with two companies right now.
+          </li>
+          <li>Partners from Indonesia and Australia.</li>
         </ul>
       </section>
     </div>
