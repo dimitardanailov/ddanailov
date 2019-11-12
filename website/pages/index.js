@@ -4,6 +4,13 @@ function Home() {
       <h1>Dear Guest,</h1>
       <p>My name is Dimitar Danailov.</p>
       <p>I'm a consultant, a mentor, and I love open source software.</p>
+
+      1. Clients
+      2. Client feedback
+      3. Mentorship
+      4. Mentorship feedback
+      5. Open source projects
+
       <p>Projects:</p>
       <ul>
         <li>
