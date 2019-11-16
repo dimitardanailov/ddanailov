@@ -86,6 +86,7 @@ function Home() {
           </a>
         </div>
       </section>
+      <p>Website: v1.0.0</p>
     </div>
   );
 }
