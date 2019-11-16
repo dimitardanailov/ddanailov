@@ -75,17 +75,15 @@ function Home() {
           : React catalog with different useful components.
         </li>
       </ul>
-      <section>
-        <div>
-          Contacts:{' '}
-          <a
-            href="mailto:dimityr.danailov@gmail.com"
-            title="Javascript Consultant"
-          >
-            dimityr.danailov@gmail.com
-          </a>
-        </div>
-      </section>
+      <p>
+        Contacts:
+        <a
+          href="mailto:dimityr.danailov@gmail.com"
+          title="Javascript Consultant"
+        >
+          dimityr.danailov@gmail.com
+        </a>
+      </p>
       <p>Website: v1.0.0</p>
     </div>
   );
