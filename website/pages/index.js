@@ -62,6 +62,7 @@ function Home() {
           >
             Push notification playground
           </a>
+          : Google Chrome and Firefox push notifications playground
         </li>
         <li>
           <a
@@ -71,6 +72,7 @@ function Home() {
           >
             React components
           </a>
+          : React catalog with different useful components.
         </li>
       </ul>
       <section>
