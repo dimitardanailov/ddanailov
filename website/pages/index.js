@@ -1,22 +1,25 @@
+/* eslint-disable react/jsx-no-target-blank */
 function Home() {
   return (
     <div>
       <h1>Dear Guest,</h1>
-      <p>My name is Dimitar Danailov.</p>
+      <p>
+        Founder of #Javascript Consulting Company. Open source lover and
+        contributor:
+        <a href="https://github.com/firefox-devtools/debugger" target="_blank">
+          @FirefoxDevTools
+        </a>
+      </p>
       <p>I'm a consultant, a mentor, and I love open source software.</p>
-
-      1. Clients
-      2. Client feedback
-      3. Mentorship
-      4. Mentorship feedback
-      5. Open source projects
-
+      1. Clients 2. Client feedback 3. Mentorship 4. Mentorship feedback 5. Open
+      source projects
       <p>Projects:</p>
       <ul>
         <li>
           <a
             href="https://github.com/dimitardanailov/gmail-helper"
-            title="Native web componets"
+            target="_blank"
+            title="Native web componets consultant"
           >
             Gmail Helper
           </a>
@@ -24,7 +27,11 @@ function Home() {
           Elements v1, Redux, Webpack, Lerna, Mocha, Chai, Karma
         </li>
         <li>
-          <a href="https://github.com/dimitardanailov/tantalus" title="Nodejs">
+          <a
+            href="https://github.com/dimitardanailov/tantalus"
+            title="Nodejs consultant"
+            target="_blank"
+          >
             Tantalus
           </a>
           is a Nodejs Microservices application. Project uploads big streams
@@ -35,6 +42,7 @@ function Home() {
           <a
             href="https://github.com/dimitardanailov/push-notifications"
             title="Push notification demo"
+            target="_blank"
           >
             Push notification playground
           </a>
@@ -43,6 +51,7 @@ function Home() {
           <a
             href="https://github.com/dimitardanailov/react-components"
             title="React playground"
+            target="_blank"
           >
             React components
           </a>
