@@ -4,16 +4,32 @@ function Home() {
     <div>
       <h1>Dear Guest,</h1>
       <p>
-        Founder of #Javascript Consulting Company. Open source lover and
-        contributor:
-        <a href="https://github.com/firefox-devtools/debugger" target="_blank">
-          @FirefoxDevTools
-        </a>
+        My personal journey begun before ten years ago. For these period I
+        "visited" a signification amount of kingdoms 👑. My roles were "warrior"
+        (backend developer), "engineer" (front - end developer), "magician"
+        (team leader and software architect), "the assassin" (freelancer) and
+        even the "main officer" (CTO).
       </p>
-      <p>I'm a consultant, a mentor, and I love open source software.</p>
-      1. Clients 2. Client feedback 3. Mentorship 4. Mentorship feedback 5. Open
-      source projects
-      <p>Projects:</p>
+      <p>
+        When I worked like a warrior 💪 I wrote a significant amount of scripts
+        which automated some boring repetitive tasks for my stakeholders and the
+        end - users.
+      </p>
+      <p>
+        To be an engineer 🛠 is an awesome job because your main focus is
+        creating a beautiful and helpful instruments which reduce the main pain
+        of each system: Adding or filtering data.
+      </p>
+      <p>
+        The magician role 🧙‍♀️ was a tough and motivational task. My leadership
+        skills cut the deadlines, improve code quality and the final result was:
+        strong and long partnership.
+      </p>
+      <p>
+        Like an assassin 🔪 I learned how to be a solo player. I improved my
+        skills to complete: fast and efficient stakeholders requirements.
+      </p>
+      <p>Open source projects 🦉:</p>
       <ul>
         <li>
           <a
@@ -58,13 +74,15 @@ function Home() {
         </li>
       </ul>
       <section>
-        <ul>
-          <li>
-            My company wants to build Raving fans and Servant leadership. I'm
-            working with two companies right now.
-          </li>
-          <li>Partners from Indonesia and Australia.</li>
-        </ul>
+        <div>
+          Contacts:{' '}
+          <a
+            href="mailto:dimityr.danailov@gmail.com"
+            title="Javascript Consultant"
+          >
+            dimityr.danailov@gmail.com
+          </a>
+        </div>
       </section>
     </div>
   );
