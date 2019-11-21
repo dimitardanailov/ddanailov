@@ -146,6 +146,8 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 | Azure App Services | Azure SQL Databases | Kusto Query Language |
 | Azure Log Analytics | Azure Sync Data | |
 | | | |
+| | GCloud | |
+| AppEngine |  | |
 | | Cloud experience | |
 | Azure | AWS | Google Cloud |
 | Docker | Heroku | Engine Yard |
