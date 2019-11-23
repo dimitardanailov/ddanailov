@@ -1,11 +1,5 @@
 {
-  "hosting": {
-    "public": "public",
-    "site": "danailov",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+  "projects": {
+    "default": "firebaseplaygrounds"
   }
 }
