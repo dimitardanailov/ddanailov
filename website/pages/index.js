@@ -29,7 +29,7 @@ function Home() {
         Like an assassin 🔪 I learned how to be a solo player. I improved my
         skills to complete: fast and efficient stakeholders requirements.
       </p>
-      <p>Open source projects 🦉:</p>
+      <p>Open source projects 🦉</p>
       <ul>
         <li>
           <a
@@ -75,6 +75,27 @@ function Home() {
           : React catalog with different useful components.
         </li>
       </ul>
+      <h3>Skills</h3>
+      <ul>
+        <li>
+          🔥 React, Redux, Custom Elements v1, D3js, Polymer, Angular and
+          Vuew(junior)
+        </li>
+        <li>🛡 Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant</li>
+        <li>🚓 Web technologies (HTML5, CSS3, ES7+, a11y)</li>
+        <li>
+          ⛅️ Azure, AWS, AWS Lambda functions and Serverless, Google Cloud and
+          Kubernates
+        </li>
+        <li>💥 Typescript, Flow, Prettier</li>
+        <li>🍇 Feature Flags, Microservices, Fitness functions</li>
+        <li>
+          🍸 MongoDB (Mongoose), Firebase, SQlite, MySQL and MSSQL,
+          Hadoop(jinior)
+        </li>
+        <li>🔋 Travic CI, Circle CI, Jenkins, Groovy</li>
+        <li>🎧 Android, Swift and Objective - C (jinior)</li>
+      </ul>
       <p>
         Contacts:
         <a
@@ -84,7 +105,7 @@ function Home() {
           dimityr.danailov@gmail.com
         </a>
       </p>
-      <p>Website: v1.0.0</p>
+      <p>Website: v1.1.0</p>
     </div>
   );
 }
