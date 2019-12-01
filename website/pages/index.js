@@ -78,8 +78,8 @@ function Home() {
       <h3>Skills</h3>
       <ul>
         <li>
-          🔥 React, Redux, Custom Elements v1, D3js, Polymer, Angular and
-          Vuew(junior)
+          🔥 React and Monorepo, Redux, Custom Elements v1, D3js, Polymer,
+          Angular and Vuew(junior)
         </li>
         <li>🛡 Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant</li>
         <li>🚓 Web technologies (HTML5, CSS3, ES7+, a11y)</li>
