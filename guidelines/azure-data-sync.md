@@ -8,3 +8,20 @@
 - [Sync data across multiple cloud and on-premises databases with SQL Data Sync](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-sync-data)
 - [Tutorial: Set up SQL Data Sync between Azure SQL Database and SQL Server on-premises](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-sql-data-sync#add-on-prem)
 - [Best practices for SQL Data Sync](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-best-practices-data-sync)
+
+### Exe
+
+Instalations tips related with .exe instalations
+
+
+```powershell
+$env:COMPUTERNAME
+
+$env:UserName
+```
+
+Installation tip:
+
+```powershel
+$env:COMPUTERNAME\$env:UserName
+```
