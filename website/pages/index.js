@@ -87,6 +87,7 @@ function Home() {
           ⛅️ Azure, AWS, AWS Lambda functions and Serverless, Google Cloud and
           Kubernates
         </li>
+        <li>Experience with monitoring tools: Kusto Query language</li>
         <li>💥 Typescript, Flow, Prettier</li>
         <li>🍇 Feature Flags, Microservices, Fitness functions</li>
         <li>
