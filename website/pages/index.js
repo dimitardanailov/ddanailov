@@ -78,8 +78,8 @@ function Home() {
       <h3>Skills</h3>
       <ul>
         <li>
-          🔥 React and Monorepo, Redux, Custom Elements v1, D3js, Polymer,
-          Angular and Vuew(junior)
+          🔥 React and Monorepo, Redux, Custom Elements v1, D3js, Safari Push
+          notifications, Polymer, Monorepo, Draftjs
         </li>
         <li>🛡 Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant</li>
         <li>🚓 Web technologies (HTML5, CSS3, ES7+, a11y)</li>
@@ -106,7 +106,7 @@ function Home() {
           dimityr.danailov@gmail.com
         </a>
       </p>
-      <p>Website: v1.1.0</p>
+      <p>Website: v1.1.1</p>
     </div>
   );
 }
