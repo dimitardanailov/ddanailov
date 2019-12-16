@@ -96,6 +96,9 @@ function Home() {
         </li>
         <li>🔋 Travic CI, Circle CI, Jenkins, Groovy</li>
         <li>🎧 Android, Swift and Objective - C (jinior)</li>
+        <li>
+          Nodejs, PHP, Golang
+        </li>
       </ul>
       <p>
         Contacts:
