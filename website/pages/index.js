@@ -62,7 +62,7 @@ function Home() {
           >
             Push notification playground
           </a>
-          : Google Chrome and Firefox push notifications playground
+          : Google Chrome and Firefox push notifications playground, Docker Safari APN creator
         </li>
         <li>
           <a
