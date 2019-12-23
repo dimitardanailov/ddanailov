@@ -1,11 +1,16 @@
 import MainLayout from '../layouts/MainLayout';
 
-function Home() {
-  return (
-    <div>
-      <MainLayout />
-    </div>
-  );
-}
+import PersonalStory from '../components/PersonalStory';
+import OpenSourceProjects from '../components/OpenSourceProjects';
+import Skills from '../components/Skills';
 
-export default Home;
+const Page = () => (
+  <div>
+    <h1>Dear Guest,</h1>
+    <PersonalStory />
+    <OpenSourceProjects />
+    <Skills />
+  </div>
+);
+
+export default MainLayout(Page);
