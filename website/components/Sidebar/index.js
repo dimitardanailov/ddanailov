@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import img from './black.gif';
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   position: relative;
 
   display: block;
@@ -13,18 +13,19 @@ const Text = styled.h4`
   position: relative;
 
   display: block;
+  margin: 0;
   color: #f9f9f9;
   text-align: center;
 
   text-shadow: 0 0 4px #000;
 
-  font-size: 2.75em;
+  font-size: 2.75rem;
 `;
 
 function Sidebar() {
   return (
     <Wrapper>
-      <Text>dimitar danailov (a.k.a mitco)</Text>
+      <Text>mitco</Text>
     </Wrapper>
   );
 }
