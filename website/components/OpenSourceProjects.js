@@ -24,7 +24,7 @@ function OpenSourceProjects() {
           >
             Tantalus
           </a>
-          is a Nodejs Microservices application. Project uploads big streams
+          : is a Nodejs Microservices application. Project uploads big streams
           from custom cloud provider to AWS. Tantalus uses: NodeServer
           Generator, routing-controllers, tus.io, Typescript.
         </li>
