@@ -25,7 +25,7 @@ const Text = styled.h4`
 function Sidebar() {
   return (
     <Wrapper>
-      <Text>mitco</Text>
+      <Text>&lt;danailov&nbsp;&frasl;&gt;</Text>
     </Wrapper>
   );
 }
