@@ -7,6 +7,8 @@
   "license": "MIT",
   "description": "Javascript contractor",
   "scripts": {
+    "clean": "yarn clean:public",
+    "clean:public": "rm -rf ./public & mkdir public",
     "dev": "next",
     "build": "next build",
     "start": "next start",
