@@ -1,6 +1,6 @@
 {
   "name": "dimitar-danailov-portfolio",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "main": "index.js",
   "repository": "https://github.com/dimitardanailov",
   "author": "Dimitar Danailov<dimityr.danailov@gmail.com>",
@@ -14,7 +14,7 @@
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "publish": "yarn gulp && firebase deploy --only hosting:dimitar"
+    "publish": "yarn run build && yarn gulp && firebase deploy --only hosting:dimitar"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
