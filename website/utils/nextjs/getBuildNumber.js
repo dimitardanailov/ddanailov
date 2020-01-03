@@ -11,7 +11,7 @@ module.exports = function() {
         calbackErr(err);
       }
 
-      resolve(data);
+      resolve(data.toString());
     });
   });
 
