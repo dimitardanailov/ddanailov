@@ -1,6 +1,6 @@
 ___ 
 
-ddanailov consulting uses: 
+Danailov consulting uses: 
 - nextjs
 - gulp
 - firebase
