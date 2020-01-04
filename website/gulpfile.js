@@ -1,11 +1,16 @@
 const { src, dest, series } = require('gulp');
 
-const { PUBLIC_DIR, STATIC_DIR, NEXT_BUILD_DIR } = require('./utils/folders');
+const {
+  PUBLIC_DIR,
+  STATIC_DIR,
+  NEXT_BUILD_DIR,
+  PUBLIC_DIR_CHUNKS,
+} = require('./utils/folders');
 const getBuildNumber = require('./utils/nextjs/getBuildNumber');
 
 async function copyChunk() {
   const path = `${NEXT_BUILD_DIR}/static/chunks/*.js`;
-  return src(path).pipe(dest(PUBLIC_DIR));
+  return src(path).pipe(dest(PUBLIC_DIR_CHUNKS));
 }
 
 async function copyNextResources() {
