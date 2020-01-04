@@ -18,4 +18,15 @@ module.exports.NEXT_BUILD_DIR = path.resolve(BASE_DIR, '.next');
 /**
  * PUBLIC_DIR stores files which should be deployed on firebase.
  */
-module.exports.PUBLIC_DIR = path.resolve(BASE_DIR, 'public');
+const PUBLIC_DIR = path.resolve(BASE_DIR, 'public');
+module.exports.PUBLIC_DIR = PUBLIC_DIR;
+
+/**
+ * PUBLIC_DIR_CHUNKS stores all nextjs chunks files.
+ */
+module.exports.PUBLIC_DIR_CHUNKS = path.resolve(
+  PUBLIC_DIR,
+  '_next',
+  'static',
+  'chunks'
+);
