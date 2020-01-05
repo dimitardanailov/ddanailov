@@ -1,10 +1,10 @@
 ___ 
 
-Danailov consulting uses: 
+I'm a founder of Danailov Consulting(https://dimitar.web.app). I decided to create a my portolio from scratch. Platform uses: 
 - nextjs
 - gulp
 - firebase
+- material.io
+- styled components
 
-to deploy on firebase information about my portfolio.
 
-Website: https://dimitar.web.app
