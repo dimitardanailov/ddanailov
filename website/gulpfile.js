@@ -8,6 +8,14 @@ const {
 } = require('./utils/folders');
 const getBuildNumber = require('./utils/nextjs/getBuildNumber');
 
+async function copyStaticResources() {
+  const buildNumber = await getBuildNumber();
+  const source = `${NEXT_BUILD_DIR}/static/${buildNumber}/pages/*.js`;
+  const destination = `${PUBLIC_DIR}/_next/static/${buildNumber}/pages`;
+
+  return src(source).pipe(dest(destination));
+}
+
 async function copyChunk() {
   const path = `${NEXT_BUILD_DIR}/static/chunks/*.js`;
   return src(path).pipe(dest(PUBLIC_DIR_CHUNKS));
@@ -24,4 +32,9 @@ function copyPage404() {
   return src(`${STATIC_DIR}/404.html`).pipe(dest(PUBLIC_DIR));
 }
 
-exports.default = series(copyChunk, copyNextResources, copyPage404);
+exports.default = series(
+  copyStaticResources,
+  copyChunk,
+  copyNextResources,
+  copyPage404
+);
