@@ -10,7 +10,7 @@ function MainFooter() {
           dimityr.danailov@gmail.com
         </a>
       </p>
-      <p>Website: v1.4.0</p>
+      <p>Website: v1.4.9</p>
     </footer>
   );
 }
