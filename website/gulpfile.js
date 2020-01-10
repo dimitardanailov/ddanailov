@@ -35,6 +35,10 @@ async function copyNextResources() {
   return src(path).pipe(dest(PUBLIC_DIR));
 }
 
+function copyRobotTxt() {
+  return src(`${STATIC_DIR}/robots.txt`).pipe(dest(PUBLIC_DIR));
+}
+
 function copyPage404() {
   return src(`${STATIC_DIR}/404.html`).pipe(dest(PUBLIC_DIR));
 }
@@ -44,5 +48,6 @@ exports.default = series(
   copyStaticResources,
   copyChunk,
   copyNextResources,
-  copyPage404
+  copyPage404,
+  copyRobotTxt
 );
