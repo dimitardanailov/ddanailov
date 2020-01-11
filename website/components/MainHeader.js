@@ -13,6 +13,12 @@ function MainHeader() {
         />
         <meta name="author" content="Dimitar Danailov" />
         <meta charSet="utf-8" />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-156006558-1"
+        ></script>
+        <script async src="http://ddanailov.dev/ga.js"></script>
       </Head>
       <style jsx global>{`
         html,
