@@ -4,16 +4,24 @@ import img from './black.gif';
 const Wrapper = styled.section`
   position: relative;
 
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: #1d1d1d;
   background-image: url(${img});
+
+  padding: 10px;
 `;
 
 const Text = styled.h4`
   position: relative;
 
   display: block;
+  text: align-center;
   margin: 0;
+  padding: 0;
+
   color: #f9f9f9;
   text-align: center;
 
