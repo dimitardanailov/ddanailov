@@ -1,12 +1,21 @@
 import MainHeader from '../components/MainHeader';
 import MainFooter from '../components/MainFooter';
 
+import styled from 'styled-components';
+
+const Container = styled.section`
+  position: relative;
+
+  min-height: 100%;
+`;
+
+
 const MainLayout = Page => () => (
-  <div>
+  <Container>
     <MainHeader />
     <Page />
     <MainFooter />
-  </div>
+  </Container>
 );
 
 export default MainLayout;
