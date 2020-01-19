@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 const Footer = styled.footer`
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  height: 60px;  
 
   text-align: center;
 `;
@@ -15,7 +19,7 @@ function MainFooter() {
           title="Javascript Consultant"
         >dimityr.danailov@gmail.com</a>
       </div>
-      <div>Website: v1.5.0</div>
+      <div>Website: v1.6.0</div>
     </Footer>
   );
 }
