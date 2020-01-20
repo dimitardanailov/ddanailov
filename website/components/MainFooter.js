@@ -19,7 +19,6 @@ function MainFooter() {
           title="Javascript Consultant"
         >dimityr.danailov@gmail.com</a>
       </div>
-      <div>Website: v1.6.0</div>
     </Footer>
   );
 }
