@@ -12,7 +12,7 @@ function Skills() {
         <li>🚓 Web technologies (HTML5, CSS3, ES7+, a11y);</li>
         <li>
           ⛅️ Azure, AWS, AWS Lambda functions and Serverless, Google Cloud and
-          Kubernates, Experience with monitoring tools: Kusto Query language;
+          Kubernetes, Experience with monitoring tools: Kusto Query language;
         </li>
         <li>💥 Typescript, Flow, Prettier;</li>
         <li>🍇 Feature Flags, Microservices, Fitness functions;</li>
