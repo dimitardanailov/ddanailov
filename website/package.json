@@ -1,6 +1,6 @@
 {
   "name": "dimitar-danailov-portfolio",
-  "version": "1.6.2",
+  "version": "1.6.4",
   "main": "index.js",
   "repository": "https://github.com/dimitardanailov",
   "author": "Dimitar Danailov<dimityr.danailov@gmail.com>",
@@ -8,13 +8,13 @@
   "description": "Javascript contractor",
   "scripts": {
     "clean": "yarn clean:public",
-    "clean:public": "rm -rf ./public & mkdir public",
+    "clean:public": "rm -rf ./public & mkdir -p public",
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "publish": "yarn run build && yarn gulp && firebase deploy --only hosting:dimitar"
+    "publish": "yarn clean && yarn build && yarn gulp && firebase deploy --only hosting:dimitar"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
