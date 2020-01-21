@@ -15,6 +15,14 @@ async function copyRuntimeResources() {
   return src(source).pipe(dest(destination));
 }
 
+async function copyBuildManifest() {
+  const buildNumber = await getBuildNumber();
+  const source = `${NEXT_BUILD_DIR}/static/${buildNumber}/_buildManifest.js`;
+  const destination = `${PUBLIC_DIR}/_next/static/${buildNumber}`;
+
+  return src(source).pipe(dest(destination));
+}
+
 async function copyStaticResources() {
   const buildNumber = await getBuildNumber();
   const source = `${NEXT_BUILD_DIR}/static/${buildNumber}/pages/*.js`;
@@ -41,6 +49,7 @@ function copyStaticFiles() {
 
 exports.default = series(
   copyRuntimeResources,
+  copyBuildManifest,
   copyStaticResources,
   copyChunk,
   copyNextResources,
