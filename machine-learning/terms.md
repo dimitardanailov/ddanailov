@@ -26,6 +26,7 @@ The model Optimizer affects Accuracy
 
 - It does not improve inference accuracy;
 - Some changes, such as lowering precision, can lower accuracy;
+- Losess in Accuracy are minimized;
 
 ### Problems
 
