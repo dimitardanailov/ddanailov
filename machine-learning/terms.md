@@ -19,8 +19,13 @@
 
 What is the model optimizer?
 
-- Converts models from multiple frameworks to an Intermediate Representation(IR) for the Inference Engine
-- Can perform various optimizations to shrink & speed up
+- Converts models from multiple frameworks to an Intermediate Representation(IR) for the Inference Engine;
+- Can perform various optimizations to shrink & speed up;
+
+The model Optimizer affects Accuracy
+
+- It does not improve inference accuracy;
+- Some changes, such as lowering precision, can lower accuracy;
 
 ### Problems
 
