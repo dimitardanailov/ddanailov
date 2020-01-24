@@ -28,6 +28,20 @@ The model Optimizer affects Accuracy
 - Some changes, such as lowering precision, can lower accuracy;
 - Losess in Accuracy are minimized;
 
+### Optimization Techniques
+
+##### Quantization
+
+Quantization is related to the topic of precision I mentioned before, or how many bits are used to represents the weights and biases of the model. During training. having these very accurate numbers can be helpful, but it's often the case in inference that the precision can be reduced without substantial loss of accuracy. Quantization is the process of reducing the precision of a model.
+
+##### Freezing 
+
+Freezing in this context is used for TensorFlow models. Freezing TensorFlow models will remove certain options and metadata only needed for training, sucs as those related to backpropagation. Freezing a TensorFlow model is usually a good idea whether before performing direct inference or converting wit the Model Optimizer.
+
+##### Fusion
+
+Fusion relates to combining multiple layer operations into a single operation. For example, a batch normalization layer, activation layer, and convolutional layer could be combined into a single operation. This can be particularly useful for GPU inference, where the seperate operations may occurs on seperate GPU kernels, while a fused operation occurs on one kernel, thereby incurring less overhead in switching from one kernel to the next.
+
 ### Problems
 
 - **Regression** - A model that outputs a single value. For example, an estimate of a house’s value.
