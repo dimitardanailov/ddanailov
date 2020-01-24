@@ -15,6 +15,13 @@
 - **Forward pass** - The compulation of output values from input
 - **Backward pass(backpropagation)** - The calculation of the internal variables adjustments according to the optimizer algorithm, starting from the output layer and working back through each layer to the input.
 
+### Model Optimizer
+
+What is the model optimizer?
+
+- Converts models from multiple frameworks to an Intermediate Representation(IR) for the Inference Engine
+- Can perform various optimizations to shrink & speed up
+
 ### Problems
 
 - **Regression** - A model that outputs a single value. For example, an estimate of a house’s value.
