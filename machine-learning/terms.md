@@ -48,6 +48,14 @@ Fusion relates to combining multiple layer operations into a single operation. F
 - Conv2D (TF), Convolution (Caffe) and Conv (ONNX) are all a `Convolution` layer in an IR;
 - Have any desired optimizations performed;
 
+Intermediate Representations (IR) details
+
+Requires two file types: 
+- `.xml` - model architecture
+- `.bin` - weights and biases
+
+The two files are required by inference.
+
 ### Problems
 
 - **Regression** - A model that outputs a single value. For example, an estimate of a house’s value.
