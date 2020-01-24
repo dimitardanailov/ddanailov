@@ -42,6 +42,12 @@ Freezing in this context is used for TensorFlow models. Freezing TensorFlow mode
 
 Fusion relates to combining multiple layer operations into a single operation. For example, a batch normalization layer, activation layer, and convolutional layer could be combined into a single operation. This can be particularly useful for GPU inference, where the seperate operations may occurs on seperate GPU kernels, while a fused operation occurs on one kernel, thereby incurring less overhead in switching from one kernel to the next.
 
+### What are Intermediate Representations (IR) ?
+
+- IRs are like a shared of neural network layers;
+- Conv2D (TF), Convolution (Caffe) and Conv (ONNX) are all a `Convolution` layer in an IR;
+- Have any desired optimizations performed;
+
 ### Problems
 
 - **Regression** - A model that outputs a single value. For example, an estimate of a house’s value.
