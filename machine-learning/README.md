@@ -56,6 +56,15 @@ Requires two file types:
 
 The two files are required by inference.
 
+### Why Cut a model ?
+
+- Mostly applicable for TensorFlow models
+- Pre/post-procesing
+- Un-used parts
+- Too complex/unsupported ops
+- SSD models post-processing
+- Lacalize an issue
+
 ### Problems
 
 - **Regression** - A model that outputs a single value. For example, an estimate of a house’s value.
