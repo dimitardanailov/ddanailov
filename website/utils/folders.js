@@ -28,5 +28,5 @@ module.exports.PUBLIC_DIR_CHUNKS = path.resolve(
   PUBLIC_DIR,
   '_next',
   'static',
-  'chunks'
+  'chunks',
 );
