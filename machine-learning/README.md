@@ -56,6 +56,12 @@ Requires two file types:
 
 The two files are required by inference.
 
+### What is the Inference Engine?
+
+- Runs the actual inference on a model(IR) at the edge
+- Optimized for Inter Hardware
+- Provides a straightforward API so you can focus more on your edge application self
+
 ### Why Cut a model ?
 
 - Mostly applicable for TensorFlow models
