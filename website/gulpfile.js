@@ -53,5 +53,5 @@ exports.default = series(
   copyStaticResources,
   copyChunk,
   copyNextResources,
-  copyStaticFiles
+  copyStaticFiles,
 );

@@ -33,7 +33,7 @@ const Slogan = styled.div`
   margin: 10px 0 10px;
   font-size: 2rem;
   font-weight: bold;
-`
+`;
 
 const Page = () => (
   <PageTemplate>
@@ -45,7 +45,6 @@ const Page = () => (
       <OpenSourceProjects />
       <Skills />
     </PageHolder>
-
   </PageTemplate>
 );
 

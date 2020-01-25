@@ -5,7 +5,7 @@ const Footer = styled.footer`
   bottom: 0;
   width: 100%;
 
-  height: 60px;  
+  height: 60px;
 
   text-align: center;
 `;
@@ -14,10 +14,13 @@ function MainFooter() {
   return (
     <Footer>
       <div>
-        Contacts: <a
+        Contacts:{' '}
+        <a
           href="mailto:dimityr.danailov@gmail.com"
           title="Javascript Consultant"
-        >dimityr.danailov@gmail.com</a>
+        >
+          dimityr.danailov@gmail.com
+        </a>
       </div>
     </Footer>
   );

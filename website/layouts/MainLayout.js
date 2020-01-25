@@ -9,7 +9,6 @@ const Container = styled.section`
   min-height: 100%;
 `;
 
-
 const MainLayout = Page => () => (
   <Container>
     <MainHeader />
