@@ -15,7 +15,20 @@
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint . --fix",
-    "publish": "yarn clean && yarn build && yarn gulp && firebase deploy --only hosting:dimitar"
+    "publish": "yarn clean && yarn build && yarn gulp && firebase deploy --only hosting:dimitar",
+    "reports": "npx jscpd ./"
+  },
+  "jscpd": {
+    "threshold": 0.25,
+    "reporters": [
+      "html",
+      "console"
+    ],
+    "ignore": [
+      ".next"
+    ],
+    "absolute": false,
+    "gitignore": true
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
