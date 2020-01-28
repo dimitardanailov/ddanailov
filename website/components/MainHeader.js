@@ -14,6 +14,8 @@ function MainHeader() {
         <meta name="author" content="Dimitar Danailov" />
         <meta charSet="utf-8" />
 
+        <link rel="canonical" href="https://ddanailov.dev" />
+
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-156006558-1"
