@@ -6,6 +6,7 @@ import PersonalStory from '../components/PersonalStory';
 import OpenSourceProjects from '../components/OpenSourceProjects';
 import Skills from '../components/Skills';
 import Sidebar from '../components/Sidebar';
+import ContactForm from '../components/FormComponents/ContactForm';
 
 const PageTemplate = styled.section`
   position: relative;
@@ -40,6 +41,7 @@ const Page = () => (
     <Sidebar />
 
     <PageHolder>
+      <ContactForm />
       <Slogan>Dear Guest,</Slogan>
       <PersonalStory />
       <OpenSourceProjects />
