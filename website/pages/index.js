@@ -41,7 +41,6 @@ const Page = () => (
     <Sidebar />
 
     <PageHolder>
-      <ContactForm />
       <Slogan>Dear Guest,</Slogan>
       <PersonalStory />
       <OpenSourceProjects />
