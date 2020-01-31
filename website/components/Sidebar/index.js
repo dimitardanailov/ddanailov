@@ -44,6 +44,7 @@ const Box = styled.div`
 
 const info = JSON.stringify({
   "name": "Dimitar Danailov",
+  "email": "dimityr.danailov@gmail.com"
 })
 
 function Sidebar() {
@@ -52,9 +53,7 @@ function Sidebar() {
       <Text>&lt;ddanailov&nbsp;&frasl;&gt;</Text>
       <Box>
         <pre>
-          <code>
-            {info}
-          </code>
+          {info}
         </pre>
       </Box>
     </Wrapper>
