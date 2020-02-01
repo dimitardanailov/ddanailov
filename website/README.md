@@ -35,4 +35,11 @@ Positions:
 - Team Leader - June 2011 - June 2014
 - Developer June 2010 - June 2014
 
+--- 
+
+Todo list
+
+- Hire me button
+- Brand page
+- About me page
 
