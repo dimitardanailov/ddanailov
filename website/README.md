@@ -42,4 +42,5 @@ Todo list
 - Hire me button
 - Brand page
 - About me page
-
+- Icons to social media profiles
+- Blog
