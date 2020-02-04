@@ -48,12 +48,20 @@ go tool objdump
 
 ```bash
 go tool nm codegen | grep main.main
+```
 
+```bash
 go build -gcflags="-N -l"
+```
 
+```bash
 GOSSAFUNC=main go build
+```
 
+```bash
 go build -gcflags="-m"
+```
 
+```bash
 go build -gcflags="-live"
 ```
