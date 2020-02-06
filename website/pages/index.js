@@ -6,7 +6,7 @@ import PersonalStory from '../components/PersonalStory';
 import OpenSourceProjects from '../components/OpenSourceProjects';
 import Skills from '../components/Skills';
 import Sidebar from '../components/Sidebar';
-import ContactForm from '../components/FormComponents/ContactForm';
+// TODO: import ContactForm from '../components/FormComponents/ContactForm';
 import SocialIcons from '../components/SocialIcons';
 
 const PageTemplate = styled.section`
