@@ -11,8 +11,8 @@ const ContactFormTitle = styled.span`
   position: relative;
 
   display: block;
-  margin: .2rem 0;
-  
+  margin: 0.2rem 0;
+
   font-size: 1.4rem;
   text-align: center;
 `;
@@ -31,9 +31,9 @@ const InputBox = styled.input`
   display: block;
   width: 100%;
   padding: 5px 0;
-  border-radius: .25rem;
-  text-indent: .2em;
-  font-size: .9rem;
+  border-radius: 0.25rem;
+  text-indent: 0.2em;
+  font-size: 0.9rem;
 `;
 
 const TextArea = styled.textarea`
@@ -44,8 +44,8 @@ const TextArea = styled.textarea`
   padding: 20px 0;
 
   border-radius: 1rem;
-  font-size: .9rem;
-  text-indent: .2em;
+  font-size: 0.9rem;
+  text-indent: 0.2em;
 `;
 
 const FieldSetButton = styled.fieldset`
@@ -60,12 +60,12 @@ const Button = styled.button`
 
   display: block;
   width: 40%;
-  margin: 0 auto;  
-  padding: .45rem;
+  margin: 0 auto;
+  padding: 0.45rem;
 
   font-size: 1rem;
   background-color: #ccc;
-  border-radius: .2rem; 
+  border-radius: 0.2rem;
 `;
 
 function ContactForm() {
@@ -94,7 +94,7 @@ function ContactForm() {
       </FieldSet>
 
       <FieldSetButton>
-        <Button onClick={onclickLister}>Contact me!!!</Button>  
+        <Button onClick={onclickLister}>Contact me!!!</Button>
       </FieldSetButton>
     </Wrapper>
   );
