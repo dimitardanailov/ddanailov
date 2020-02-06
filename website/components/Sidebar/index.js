@@ -47,15 +47,20 @@ const info = JSON.stringify({
   "email": "dimityr.danailov@gmail.com"
 })
 
+function Info() {
+  return (
+    <Box>
+      <pre>
+        {info}
+      </pre>
+    </Box>
+  )
+}
+
 function Sidebar() {
   return (
     <Wrapper>
       <Text>&lt;ddanailov&nbsp;&frasl;&gt;</Text>
-      <Box>
-        <pre>
-          {info}
-        </pre>
-      </Box>
     </Wrapper>
   );
 }
