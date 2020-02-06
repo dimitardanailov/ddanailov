@@ -7,6 +7,7 @@ import OpenSourceProjects from '../components/OpenSourceProjects';
 import Skills from '../components/Skills';
 import Sidebar from '../components/Sidebar';
 import ContactForm from '../components/FormComponents/ContactForm';
+import SocialIcons from '../components/SocialIcons';
 
 const PageTemplate = styled.section`
   position: relative;
@@ -42,6 +43,7 @@ const Page = () => (
 
     <PageHolder>
       <Slogan>Dear Guest,</Slogan>
+      <SocialIcons />
       <PersonalStory />
       <OpenSourceProjects />
       <Skills />
