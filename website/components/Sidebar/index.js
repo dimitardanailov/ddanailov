@@ -43,18 +43,16 @@ const Box = styled.div`
 `;
 
 const info = JSON.stringify({
-  "name": "Dimitar Danailov",
-  "email": "dimityr.danailov@gmail.com"
-})
+  name: 'Dimitar Danailov',
+  email: 'dimityr.danailov@gmail.com',
+});
 
 function Info() {
   return (
     <Box>
-      <pre>
-        {info}
-      </pre>
+      <pre>{info}</pre>
     </Box>
-  )
+  );
 }
 
 function Sidebar() {
