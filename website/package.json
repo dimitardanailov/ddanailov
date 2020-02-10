@@ -7,7 +7,9 @@
   "license": "MIT",
   "description": "Javascript contractor",
   "scripts": {
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "check-format": "yarn prettier --list-different",
+    "format": "yarn prettier --write",
     "clean": "yarn clean:public",
     "clean:public": "rm -rf ./public & mkdir -p public",
     "dev": "next",
