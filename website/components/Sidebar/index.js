@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import img from './black.gif';
+import styled from 'styled-components'
+import img from './black.gif'
 
 const Wrapper = styled.section`
   position: relative;
@@ -13,7 +13,7 @@ const Wrapper = styled.section`
   background-image: url(${img});
 
   padding: 10px;
-`;
+`
 
 const Text = styled.h4`
   position: relative;
@@ -29,7 +29,7 @@ const Text = styled.h4`
   text-shadow: 0 0 4px #000;
 
   font-size: 2.75rem;
-`;
+`
 
 const Box = styled.div`
   position: relative;
@@ -40,19 +40,19 @@ const Box = styled.div`
   padding: 2rem 2rem;
 
   background-color: white;
-`;
+`
 
 const info = JSON.stringify({
   name: 'Dimitar Danailov',
   email: 'dimityr.danailov@gmail.com',
-});
+})
 
 function Info() {
   return (
     <Box>
       <pre>{info}</pre>
     </Box>
-  );
+  )
 }
 
 function Sidebar() {
@@ -60,7 +60,7 @@ function Sidebar() {
     <Wrapper>
       <Text>&lt;ddanailov&nbsp;&frasl;&gt;</Text>
     </Wrapper>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar

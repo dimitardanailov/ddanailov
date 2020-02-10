@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from 'next/head'
 
 function MainHeader() {
   return (
@@ -70,7 +70,7 @@ function MainHeader() {
         }
       `}</style>
     </div>
-  );
+  )
 }
 
-export default MainHeader;
+export default MainHeader

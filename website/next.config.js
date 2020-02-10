@@ -1,4 +1,4 @@
-const withCSS = require('@zeit/next-css');
+const withCSS = require('@zeit/next-css')
 
 module.exports = withCSS({
   webpack(config) {
@@ -10,8 +10,8 @@ module.exports = withCSS({
           limit: 100000,
         },
       },
-    });
+    })
 
-    return config;
+    return config
   },
-});
+})

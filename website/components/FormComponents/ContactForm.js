@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Wrapper = styled.section`
   position: relative;
 
   display: flex;
   flex-direction: column;
-`;
+`
 
 const ContactFormTitle = styled.span`
   position: relative;
@@ -15,7 +15,7 @@ const ContactFormTitle = styled.span`
 
   font-size: 1.4rem;
   text-align: center;
-`;
+`
 
 const FieldSet = styled.fieldset`
   position: relative;
@@ -23,7 +23,7 @@ const FieldSet = styled.fieldset`
   display: block;
   border: none;
   margin: 0.25rem;
-`;
+`
 
 const InputBox = styled.input`
   position: relative;
@@ -34,7 +34,7 @@ const InputBox = styled.input`
   border-radius: 0.25rem;
   text-indent: 0.2em;
   font-size: 0.9rem;
-`;
+`
 
 const TextArea = styled.textarea`
   position: relative;
@@ -46,14 +46,14 @@ const TextArea = styled.textarea`
   border-radius: 1rem;
   font-size: 0.9rem;
   text-indent: 0.2em;
-`;
+`
 
 const FieldSetButton = styled.fieldset`
   position: relative;
 
   display: flex;
   border: none;
-`;
+`
 
 const Button = styled.button`
   position: relative;
@@ -66,12 +66,12 @@ const Button = styled.button`
   font-size: 1rem;
   background-color: #ccc;
   border-radius: 0.2rem;
-`;
+`
 
 function ContactForm() {
   const onclickLister = e => {
-    e.preventDefault();
-  };
+    e.preventDefault()
+  }
 
   return (
     <Wrapper>
@@ -97,7 +97,7 @@ function ContactForm() {
         <Button onClick={onclickLister}>Contact me!!!</Button>
       </FieldSetButton>
     </Wrapper>
-  );
+  )
 }
 
-export default ContactForm;
+export default ContactForm

@@ -28,7 +28,7 @@ function PersonalStory() {
         skills to complete: fast and efficient stakeholders requirements.
       </div>
     </div>
-  );
+  )
 }
 
-export default PersonalStory;
+export default PersonalStory

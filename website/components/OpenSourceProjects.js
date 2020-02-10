@@ -53,7 +53,7 @@ function OpenSourceProjects() {
         </li>
       </ul>
     </div>
-  );
+  )
 }
 
-export default OpenSourceProjects;
+export default OpenSourceProjects

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Footer = styled.footer`
   position: absolute;
@@ -8,7 +8,7 @@ const Footer = styled.footer`
   height: 60px;
 
   text-align: center;
-`;
+`
 
 function MainFooter() {
   return (
@@ -23,7 +23,7 @@ function MainFooter() {
         </a>
       </div>
     </Footer>
-  );
+  )
 }
 
-export default MainFooter;
+export default MainFooter

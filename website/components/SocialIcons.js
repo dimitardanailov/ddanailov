@@ -1,8 +1,8 @@
-import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@material-ui/icons/Twitter'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import GitHubIcon from '@material-ui/icons/GitHub'
 
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const List = styled.ul`
   position: relative;
@@ -13,12 +13,12 @@ const List = styled.ul`
 
   display: flex;
   flex-direction: row;
-`;
+`
 
 const ListItem = styled.li`
   position: relative;
   margin-right: 1rem;
-`;
+`
 
 function SocialIcons() {
   return (
@@ -53,7 +53,7 @@ function SocialIcons() {
         </ListItem>
       </List>
     </div>
-  );
+  )
 }
 
-export default SocialIcons;
+export default SocialIcons

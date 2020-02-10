@@ -23,7 +23,7 @@ function Skills() {
         <li>🎧 Android, Swift and Objective - C;</li>
       </ul>
     </div>
-  );
+  )
 }
 
-export default Skills;
+export default Skills

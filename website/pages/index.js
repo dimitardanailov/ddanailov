@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-import MainLayout from '../layouts/MainLayout';
+import MainLayout from '../layouts/MainLayout'
 
-import PersonalStory from '../components/PersonalStory';
-import OpenSourceProjects from '../components/OpenSourceProjects';
-import Skills from '../components/Skills';
-import Sidebar from '../components/Sidebar';
+import PersonalStory from '../components/PersonalStory'
+import OpenSourceProjects from '../components/OpenSourceProjects'
+import Skills from '../components/Skills'
+import Sidebar from '../components/Sidebar'
 // TODO: import ContactForm from '../components/FormComponents/ContactForm';
-import SocialIcons from '../components/SocialIcons';
+import SocialIcons from '../components/SocialIcons'
 
 const PageTemplate = styled.section`
   position: relative;
@@ -19,14 +19,14 @@ const PageTemplate = styled.section`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`;
+`
 
 const PageHolder = styled.section`
   position: relative;
   margin: 1rem 1.2rem;
 
   padding-bottom: 60px;
-`;
+`
 
 const Slogan = styled.div`
   position: relative;
@@ -35,7 +35,7 @@ const Slogan = styled.div`
   margin: 10px 0 10px;
   font-size: 2rem;
   font-weight: bold;
-`;
+`
 
 const Page = () => (
   <PageTemplate>
@@ -49,6 +49,6 @@ const Page = () => (
       <Skills />
     </PageHolder>
   </PageTemplate>
-);
+)
 
-export default MainLayout(Page);
+export default MainLayout(Page)
