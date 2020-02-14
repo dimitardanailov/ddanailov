@@ -5,15 +5,28 @@ const Footer = styled.footer`
   bottom: 0;
   width: 100%;
 
+  display: flex;
+  justify-content: content;
+  text-align: center;
   height: 60px;
 
   text-align: center;
 `
 
+const ContentWrapper = styled.div`
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 100%;
+`
+
 function MainFooter() {
   return (
     <Footer>
-      <div>
+      <ContentWrapper>
         Contacts:{' '}
         <a
           href="mailto:dimityr.danailov@gmail.com"
@@ -21,7 +34,7 @@ function MainFooter() {
         >
           dimityr.danailov@gmail.com
         </a>
-      </div>
+      </ContentWrapper>
     </Footer>
   )
 }
