@@ -17,23 +17,40 @@ const ContentWrapper = styled.div`
   position: relative;
 
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   justify-content: center;
 
   width: 100%;
+
+  font-size: 1.4rem;
+`
+
+const ContentItem = styled.span`
+  position: relative;
+
+  display: block;
+  width: 100%;
+  color: #515151;
+`
+
+const ContentItemLink = styled.a`
+  color: #515151;
 `
 
 function MainFooter() {
   return (
     <Footer>
       <ContentWrapper>
-        Contacts:{' '}
-        <a
-          href="mailto:dimityr.danailov@gmail.com"
-          title="Javascript Consultant"
-        >
-          dimityr.danailov@gmail.com
-        </a>
+        <ContentItem>Contact me:</ContentItem>
+        <ContentItem>
+          <ContentItemLink
+            href="milto:dimityr.danailov@gmail.com"
+            title="Javascript Consultant"
+          >
+            dimityr.danailov@gmail.com
+          </ContentItemLink>
+        </ContentItem>
       </ContentWrapper>
     </Footer>
   )
