@@ -64,6 +64,7 @@ function Info() {
     'Humanity',
     'Mentorship',
     'Servant Leadership',
+    'Open Source'
   ],
   'technical interests': [
     'Software Archictures',
@@ -72,6 +73,8 @@ function Info() {
     'State machines',
     'Redux',
     'Golang',
+    'Cloud',
+    'Kubernetes'
   ],
 }
 
