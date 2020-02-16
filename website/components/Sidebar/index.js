@@ -35,22 +35,51 @@ const Box = styled.div`
   position: relative;
 
   display: block;
-  width: 75%;
-
-  padding: 2rem 2rem;
-
+  width: 280px;
+  border-radius: 2.5rem;
+  padding: 20px;
   background-color: white;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
-const info = JSON.stringify({
-  name: 'Dimitar Danailov',
-  email: 'dimityr.danailov@gmail.com',
-})
+const Pre = styled.pre`
+  width: 100%;
+  border: 0;
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  margin: 0;
+  white-space: pre-wrap;
+`
 
 function Info() {
+  var title = String.raw`$ cat info.json {
+  'name': 'Dimitar Danailov',
+  'work': 'Contractor',
+  'location': 'Earth'
+  'interests': [
+    'Humanity',
+    'Mentorship',
+    'Servant Leadership',
+  ],
+  'technical interests': [
+    'Software Archictures',
+    'Clean Code',
+    'React',
+    'State machines',
+    'Redux',
+    'Golang',
+  ],
+}
+
+$`
+
   return (
     <Box>
-      <pre>{info}</pre>
+      <Pre>{title}</Pre>
     </Box>
   )
 }
@@ -59,6 +88,7 @@ function Sidebar() {
   return (
     <Wrapper>
       <Text>&lt;ddanailov&nbsp;&frasl;&gt;</Text>
+      <Info />
     </Wrapper>
   )
 }
