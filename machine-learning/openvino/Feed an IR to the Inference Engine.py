@@ -21,7 +21,7 @@ def get_args():
 
 def load_to_IE(model_xml):
     ### Load the Inference Engine API
-    plugin = IIcore()
+    plugin = IECore()
 
     ### Load IR files into their related class
     model_bin = os.path.splitext(model_xml)[0]+ ".bin"
