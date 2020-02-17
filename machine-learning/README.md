@@ -77,6 +77,7 @@ The two files are required by inference.
 - Loading IENetwork into IECore creates Executable Network
 - Inference Requests sent to the ExecutableNetwork
 - Two metods of inference: Synchronous and Asynchronous
+- `infer` (Sync) or `start_sync` and `wait` (Async)
 
 ### Problems
 
