@@ -2,7 +2,7 @@
 - **Examples** - An output/output pair used for training
 - **Labels** - The output of the model
 - **Layer** - A collection of nodes connected together within a neural network.
-- **Model** -  The representation of your neural network.
+- **Model** - The representation of your neural network.
 - **Dense and Fully Connected (FC)**: Each node in one layer is connected to each node in the previous layer.
 - **Weights and biases** - The internal variables of model
 - **Loss** - The disperancy between the desired output and the actiual output
@@ -34,7 +34,7 @@ The model Optimizer affects Accuracy
 
 Quantization is related to the topic of precision I mentioned before, or how many bits are used to represents the weights and biases of the model. During training. having these very accurate numbers can be helpful, but it's often the case in inference that the precision can be reduced without substantial loss of accuracy. Quantization is the process of reducing the precision of a model.
 
-##### Freezing 
+##### Freezing
 
 Freezing in this context is used for TensorFlow models. Freezing TensorFlow models will remove certain options and metadata only needed for training, sucs as those related to backpropagation. Freezing a TensorFlow model is usually a good idea whether before performing direct inference or converting wit the Model Optimizer.
 
@@ -50,7 +50,8 @@ Fusion relates to combining multiple layer operations into a single operation. F
 
 Intermediate Representations (IR) details
 
-Requires two file types: 
+Requires two file types:
+
 - `.xml` - model architecture
 - `.bin` - weights and biases
 
@@ -70,6 +71,12 @@ The two files are required by inference.
 - Too complex/unsupported ops
 - SSD models post-processing
 - Lacalize an issue
+
+### Making Inference Requests
+
+- Loading IENetwork into IECore creates Executable Network
+- Inference Requests sent to the ExecutableNetwork
+- Two metods of inference: Synchronous and Asynchronous
 
 ### Problems
 
