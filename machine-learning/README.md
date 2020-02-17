@@ -79,6 +79,18 @@ The two files are required by inference.
 - Two metods of inference: Synchronous and Asynchronous
 - `infer` (Sync) or `start_sync` and `wait` (Async)
 
+### Synchronous Requests
+
+- Waits and does nothing else until inference is complete
+- The main thread is "blocked"
+- The next frame is not gathered until the current frame's inference request is complete
+
+### Asynchronous Requests
+
+- Similar to front-end/networking concept
+- Doesn't hold everything up if response is slow
+- Send frame for inference, start preprocessing next frame while waiting on inference result
+
 ### Problems
 
 - **Regression** - A model that outputs a single value. For example, an estimate of a house’s value.
