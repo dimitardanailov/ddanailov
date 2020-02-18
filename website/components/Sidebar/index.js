@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import img from './black.gif'
+import avatar from './ddanailov-avatar.jpg'
 
 const Wrapper = styled.section`
   position: relative;
@@ -7,7 +8,7 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   background-color: #1d1d1d;
   background-image: url(${img});
@@ -43,6 +44,30 @@ const Box = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
+`
+
+const Frame = styled.div`
+  position: relative;
+
+  display: block;
+  margin-top: 3.5rem;
+  width: 240px;
+  height: 180px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+const Avatar = styled.img`
+  position: relative;
+
+  display: block;
+  width: 240px;
+  height: 180px;
+
+  border: 0.2rem solid #fff;
+  border-radius: 12.5%;
 `
 
 const Pre = styled.pre`
@@ -88,8 +113,19 @@ $`
 }
 
 function Sidebar() {
+  const title = 'Javascript consultant'
+
   return (
     <Wrapper>
+      <Frame>
+        <Avatar
+          src={avatar}
+          title={title}
+          alt={title}
+          width="240"
+          height="180"
+        />
+      </Frame>
       <Text>&lt;ddanailov&nbsp;&frasl;&gt;</Text>
       <Info />
     </Wrapper>
