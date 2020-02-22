@@ -36,7 +36,7 @@ function SocialIcons() {
         <ListItem>
           <a
             href="https://www.linkedin.com/in/ddanailov/"
-            title="Dimitar Danailov: Twitter account"
+            title="Dimitar Danailov: Linkedin account"
             target="_blank"
           >
             <LinkedInIcon fontSize="large" />
