@@ -18,7 +18,7 @@ I'm looking for the next kingdom 🏯
 - Software architectures;
 - Software and Technical Lead;
 - Front - end experience (Polymer, React, D3js, Custom Elements v1, Vanilla Javascript);
-- Backend experience. (Nodejs, Asp.Net, PHP, Ruby on Rails);
+- Backend experience. (Nodejs, Asp.Net, Go, PHP, Ruby on Rails);
 - Cloud providers(Azure, AWS, Heroku, Engine Yard, Google Cloud);
 - DevOps and Linux Experience;
 - Mobile applications(Android, iOS and Hybrid);
