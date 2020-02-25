@@ -4,8 +4,8 @@ function Skills() {
       <h3>Skills</h3>
       <ul>
         <li>
-          🔥 React and Monorepo, Redux, Custom Elements v1, D3js, Safari Push
-          notifications, Polymer, Draftjs;
+          🔥 React and Monorepo, Redux, State Machines, Custom Elements v1,
+          D3js, Safari Push notifications, Polymer, Draftjs;
         </li>
         <li>🛡 Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant;</li>
         <li>🗳 Nodejs, PHP, Golang;</li>
