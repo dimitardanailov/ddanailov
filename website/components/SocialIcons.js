@@ -30,7 +30,12 @@ function SocialIcons() {
             title="Dimitar Danailov: Twitter account"
             target="_blank"
           >
-            <TwitterIcon fontSize="large" />
+            <TwitterIcon
+              css={`
+                border: 1px solid red;
+              `}
+              fontSize="large"
+            />
           </a>
         </ListItem>
         <ListItem>
