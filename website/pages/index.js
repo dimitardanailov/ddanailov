@@ -1,3 +1,5 @@
+import dynamic from 'next/dynamic'
+
 import styled from 'styled-components'
 
 import MainLayout from '../layouts/MainLayout'
@@ -8,7 +10,7 @@ import Skills from '../components/Skills'
 import Sidebar from '../components/Sidebar'
 // TODO: import ContactForm from '../components/FormComponents/ContactForm';
 
-import SocialIcons from '../components/SocialIcons'
+const SocialIcons = dynamic(() => import('../components/SocialIcons'))
 
 const PageTemplate = styled.section`
   position: relative;
