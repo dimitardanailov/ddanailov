@@ -18,6 +18,9 @@ const List = styled.ul`
 const ListItem = styled.li`
   position: relative;
   margin-right: 1rem;
+
+  max-width: 50px;
+  overflow: hidden;
 `
 
 function SocialIcons() {
@@ -30,12 +33,7 @@ function SocialIcons() {
             title="Dimitar Danailov: Twitter account"
             target="_blank"
           >
-            <TwitterIcon
-              css={`
-                border: 1px solid red;
-              `}
-              fontSize="large"
-            />
+            <TwitterIcon fontSize="large" />
           </a>
         </ListItem>
         <ListItem>
