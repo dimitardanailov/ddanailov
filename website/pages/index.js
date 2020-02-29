@@ -1,5 +1,3 @@
-import {Suspense} from 'react'
-
 import styled from 'styled-components'
 
 import MainLayout from '../layouts/MainLayout'
@@ -10,7 +8,7 @@ import Skills from '../components/Skills'
 import Sidebar from '../components/Sidebar'
 // TODO: import ContactForm from '../components/FormComponents/ContactForm';
 
-const SocialIcons = React.lazy(() => import('../components/SocialIcons'))
+import SocialIcons from '../components/SocialIcons'
 
 const PageTemplate = styled.section`
   position: relative;
@@ -46,9 +44,7 @@ const Page = () => (
 
     <PageHolder>
       <Slogan>Dear Guest,</Slogan>
-      <Suspense fallback={<div>Loading...</div>}>
-        <SocialIcons />
-      </Suspense>
+      <SocialIcons />
       <PersonalStory />
       <OpenSourceProjects />
       <Skills />
