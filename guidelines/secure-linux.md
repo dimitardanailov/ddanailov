@@ -1,8 +1,15 @@
 # Secure linux
 
 - fail2ban
-- disable root user
 - [ntp server](https://www.howtoforge.com/tutorial/ubuntu-ntp-server/)
+
+### Disable root user
+
+`sshd_config` PermitRootLogin should be equal to `no`
+
+```bash
+PermitRootLogin no
+```
 
 ### Secure shared memory
 
@@ -36,7 +43,7 @@ There is a very simple way to prevent source routing of incoming packets (and lo
 ​
 ​# Disable source packet routing
 ​net.ipv4.conf.all.accept_source_route = 0
-​net.ipv6.conf.all.accept_source_route = 0 
+​net.ipv6.conf.all.accept_source_route = 0
 ​net.ipv4.conf.default.accept_source_route = 0
 ​net.ipv6.conf.default.accept_source_route = 0
 ​
@@ -57,7 +64,7 @@ There is a very simple way to prevent source routing of incoming packets (and lo
 ​# Ignore ICMP redirects
 ​net.ipv4.conf.all.accept_redirects = 0
 ​net.ipv6.conf.all.accept_redirects = 0
-​net.ipv4.conf.default.accept_redirects = 0 
+​net.ipv4.conf.default.accept_redirects = 0
 ​net.ipv6.conf.default.accept_redirects = 0
 ​
 ​# Ignore Directed pings
@@ -104,4 +111,3 @@ To enable UFW, use this command:
 ```bash
 sudo ufw enable
 ```
-
