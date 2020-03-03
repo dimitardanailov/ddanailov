@@ -45,7 +45,7 @@ function MainFooter() {
         <ContentItem>Contact me:</ContentItem>
         <ContentItem>
           <ContentItemLink
-            href="milto:dimityr.danailov@gmail.com"
+            href="mailto:dimityr.danailov@gmail.com"
             title="Javascript Consultant"
           >
             dimityr.danailov@gmail.com
