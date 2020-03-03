@@ -31,6 +31,7 @@ function SocialIcons() {
           <a
             href="https://twitter.com/d_danailov"
             title="Dimitar Danailov: Twitter account"
+            rel="noopener"
             target="_blank"
           >
             <TwitterIcon fontSize="large" />
@@ -40,6 +41,7 @@ function SocialIcons() {
           <a
             href="https://www.linkedin.com/in/ddanailov/"
             title="Dimitar Danailov: Linkedin account"
+            rel="noopener"
             target="_blank"
           >
             <LinkedInIcon fontSize="large" />
@@ -49,6 +51,7 @@ function SocialIcons() {
           <a
             href="https://github.com/dimitardanailov"
             title="Dimitar Danailov: Github account"
+            rel="noopener"
             target="_blank"
           >
             <GitHubIcon fontSize="large" />
