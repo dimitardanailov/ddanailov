@@ -111,3 +111,9 @@ To enable UFW, use this command:
 ```bash
 sudo ufw enable
 ```
+
+To allow all incoming SSH connections run this command:
+
+```bash
+sudo ufw allow ssh
+```
