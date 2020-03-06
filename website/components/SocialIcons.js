@@ -1,6 +1,8 @@
-import TwitterIcon from '@material-ui/icons/Twitter'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import GitHubIcon from '@material-ui/icons/GitHub'
+import dynamic from 'next/dynamic'
+
+const TwitterIcon = dynamic(() => import('@material-ui/icons/Twitter'))
+const LinkedInIcon = dynamic(() => import('@material-ui/icons/Linkedin'))
+const GitHubIcon = dynamic(() => import('@material-ui/icons/GitHub'))
 
 import styled from 'styled-components'
 
