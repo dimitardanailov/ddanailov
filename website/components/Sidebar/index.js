@@ -1,6 +1,9 @@
+import dynamic from 'next/dynamic'
+
 import styled from 'styled-components'
 import img from './black.gif'
-import avatar from './ddanailov-avatar.jpg'
+
+const Avatar = dynamic(() => import('./Avatar'))
 
 const Wrapper = styled.section`
   position: relative;
@@ -59,17 +62,6 @@ const Frame = styled.div`
   }
 `
 
-const Avatar = styled.img`
-  position: relative;
-
-  display: block;
-  width: 240px;
-  height: 180px;
-
-  border: 0.2rem solid #fff;
-  border-radius: 12.5%;
-`
-
 const Pre = styled.pre`
   width: 100%;
   border: 0;
@@ -113,18 +105,10 @@ $`
 }
 
 function Sidebar() {
-  const title = 'Javascript consultant'
-
   return (
     <Wrapper>
       <Frame>
-        <Avatar
-          src={avatar}
-          title={title}
-          alt={title}
-          width="240"
-          height="180"
-        />
+        <Avatar />
       </Frame>
       <Text>&lt;ddanailov&nbsp;&frasl;&gt;</Text>
       <Info />
