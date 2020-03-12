@@ -1,6 +1,6 @@
 ![https://www.codewars.com/users/dimitardanailov/badges/small](https://www.codewars.com/users/dimitardanailov/badges/small)
 
-My personal journey begun before nine years ago. For these period I "visited" a signification amount of kingdoms 👑. My roles were "warrior" (backend developer), "engineer" (front - end developer), "magician" (team leader and software architect), "the assassin" (freelancer) and even the "main officer" (CTO). 
+My personal journey begun before nine years ago. For these period I "visited" a signification amount of kingdoms 👑. My roles were "warrior" (backend developer), "engineer" (front - end developer), "magician" (team leader and software architect), "the assassin" (freelancer) and even the "main officer" (CTO).
 
 When I worked like a warrior 💪 I wrote a significant amount of scripts which automated some boring repetitive tasks for my stakeholders and the end - users.
 
@@ -25,39 +25,43 @@ I'm looking for the next kingdom 🏯
 - UI and UX experience;
 - Project Management (Jira, Trello);
 
-#### Goals and passions for this year
+#### Goals and passions
 
-- Native Web Components and React 
+- React;
+- Google Cloud and Kubernetes;
+- Azure;
+- Amazon;
 - [Artificial intelligence](https://www.coursera.org/learn/introduction-tensorflow/home/welcome);
 - Voice and Image Recognition;
-- [Microservices, Feature Toggles, Service-based architecture](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures); 
-- Kubernetes;
+- [Microservices, Feature Toggles, Service-based architecture](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures);
 
 ---
 
-### Experience : 
+### Experience :
 
 ##### Positions
 
-***Founder of Company***
+**_Founder of Company_**
 
 Period: August 2018 - until now
 
-Remote contractor with 
-- [Getcraft.com](https://getcraft.com); 
+Remote contractor with
+
+- [Getcraft.com](https://getcraft.com);
 - [Asian Absolute](https://asianabsolute.co.uk);
 - [Sashido.io](https://www.sashido.io/en);
 - [Camplight](https://camplight.net);
-- [Consento](https://consento.bg), 
+- [Consento](https://consento.bg),
 - [https://www.scalewest.com](https://www.scalewest.com)
-- [Newly.com] (https://getnewly.com)
+- [Newly.com](https://getnewly.com)
 
 Positions:
+
 - React Developer, DevOps and IT consultant: April 2019 - until now
 - Azure Consultant: August 2018 - until now
 - Nodejs Developer: August 2018 - March 2019
 
-***Employee***
+**_Employee_**
 
 - iOS Developer (Objective - C) and Android Team Lead: June - August 2018
 - Technical Architect (Salesforce Commerce Cloud): December 2017 - April 2018
@@ -72,9 +76,9 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 
 ---
 
-### Client feedback: 
+### Client feedback:
 
-> "Dimitar helped to build a new solution for a current product that needed revisions based on usage in a newer OS. He worked with our enterprise architect and a dedicated dev team and QA team to define requirements, ask questions, and to think ahead of our solution. He was punctual, positive, and helped to drive the process forward on a daily basis. Thanks for your help, Dimitar!" 
+> "Dimitar helped to build a new solution for a current product that needed revisions based on usage in a newer OS. He worked with our enterprise architect and a dedicated dev team and QA team to define requirements, ask questions, and to think ahead of our solution. He was punctual, positive, and helped to drive the process forward on a daily basis. Thanks for your help, Dimitar!"
 
 [`Heidi Lund, Associate Product Manager at Questar Assessment Inc.` (October 2017)](https://www.linkedin.com/in/heidilundproductmanager)
 
@@ -86,14 +90,13 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 
 [Mo Hamdouna - Founder, Creative Director](https://www.linkedin.com/in/mohamdouna)
 
-
 > "Even though my time with Dimitar was limited, I found him consistently pleasant, professional, and tackled all programming assignments with dedication and a view of total success. Besides being a joy to work with, Dimitar is a take - charge person who is able to present creative ideas and communicate the benefits. I highly recommend Dimitar for employment. He is a team player and would make a great asset of any organization."
 
 `Ashton Cunningham, IT Manager Campion` (October 2015)
 
 ### Team members
 
-> "Dimitar is an outstanding mentor. His guidance helped me progress with Ruby on Rails with ease and discover more about developing web-based software. Even after my internship at 158ltd ended, he continued assisting me with advice. Definitely a great person to learn from and to work with!" 
+> "Dimitar is an outstanding mentor. His guidance helped me progress with Ruby on Rails with ease and discover more about developing web-based software. Even after my internship at 158ltd ended, he continued assisting me with advice. Definitely a great person to learn from and to work with!"
 
 [Hristo Georgiev - Software Engineer at Avrios ](https://www.linkedin.com/in/hggeorgiev/)
 
@@ -107,12 +110,11 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 
 ---
 
-
 ### Ideal roles & experience
 
 - Software architect: 2 - 4 years
 - Engineering Manager: 2 - 4 years
-- Frontend Engineer: 6 - 8 years      
+- Frontend Engineer: 6 - 8 years
 - Javascript Backend Engineer: 4 - 6 years
 - Fullstack Engineer: 6 - 8 years
 - Product Manager < 1 year
@@ -121,51 +123,51 @@ I've experience as an Agile and Scrum coach. My experience includes Agile and Sc
 
 ### Technical background
 
-|               |               |       |
-| :-----------: | :-----------: | :---: |
-| | Front - end skills | |
-| [JavaScript / Vanilla ](https://www.codewars.com/users/dimitardanailov/badges/small) | [Custom Elements v1](https://github.com/dimitardanailov/gmail-helper) | Polymer / WebComponents |
-| React | JSX | Flow |
-| Yarn | [D3js](https://github.com/dimitardanailov/d3-examples) | Gulp |
-| Lerna | Babel | Grunt |
-| Yeoman | [Oval](https://github.com/node-organic/organic-oval) | a11y / Web Accessibility |
-| TypeScript | Webpack | jQuery |
-| GraphQL | AngularJS (v1) | Vuejs |
-| PWA | Service workers | IndexDB |
-| | | |
-| | JavaScript Test Libraries | |
-| Mocha | Chai | Jest |
-| Jasmine | Karma | TestCafe |
-| | | |
-| | JavaScript Backend skills | |
-| Nodejs | Express | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
-| [routing-controllers](https://github.com/typestack/routing-controllers) | [tus.io](https://tus.io) | [node organic](https://github.com/node-organic) |
-| [grpc.io](https://grpc.io/) | [Nestjs](https://nestjs.com) | |
-| | | |
-| | Azure | |
-| Azure App Services | Azure SQL Databases | Kusto Query Language |
-| Azure Log Analytics | Azure Sync Data | |
-| | | |
-| | GCloud | |
-| AppEngine |  | |
-| | Cloud experience | |
-| Azure | AWS | Google Cloud |
-| Docker | Heroku | Engine Yard |
-| Grafana | [Vagrant](https://github.com/dimitardanailov/vagrant-configuration-ruby-on-rails) | Jenkins |
-| OpenShift | Kubernetes | | 
-| | | |
-| | Mobile experience | |
-| Android | Objective - C | Swift |
-| | | |
-| | Additional experience | |
-| PHP / Laravel | Asp.NET | Ruby on Rails |
-| Linux | BashScript | Apache |
-| Nginx | MySQL | PostgreSQL | Oracle PL/SQL |
-| | | |
-| | Additional experience | |
-| Blockchain | Hadoop | Electron |
-| Nwjs | Google Chrome Extensions | Go |
-| Qt | Salesforce Commerce Cloud (SFC) | Tensorflow |
+|                                                                                      |                                                                                   |                                                                               |
+| :----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+|                                                                                      |                                Front - end skills                                 |                                                                               |
+| [JavaScript / Vanilla ](https://www.codewars.com/users/dimitardanailov/badges/small) |       [Custom Elements v1](https://github.com/dimitardanailov/gmail-helper)       |                            Polymer / WebComponents                            |
+|                                        React                                         |                                        JSX                                        |                                     Flow                                      |
+|                                         Yarn                                         |              [D3js](https://github.com/dimitardanailov/d3-examples)               |                                     Gulp                                      |
+|                                        Lerna                                         |                                       Babel                                       |                                     Grunt                                     |
+|                                        Yeoman                                        |               [Oval](https://github.com/node-organic/organic-oval)                |                           a11y / Web Accessibility                            |
+|                                      TypeScript                                      |                                      Webpack                                      |                                    jQuery                                     |
+|                                       GraphQL                                        |                                  AngularJS (v1)                                   |                                     Vuejs                                     |
+|                                         PWA                                          |                                  Service workers                                  |                                    IndexDB                                    |
+|                                                                                      |                                                                                   |                                                                               |
+|                                                                                      |                             JavaScript Test Libraries                             |                                                                               |
+|                                        Mocha                                         |                                       Chai                                        |                                     Jest                                      |
+|                                       Jasmine                                        |                                       Karma                                       |                                   TestCafe                                    |
+|                                                                                      |                                                                                   |                                                                               |
+|                                                                                      |                             JavaScript Backend skills                             |                                                                               |
+|                                        Nodejs                                        |                                      Express                                      | [NodeServer Generator](https://github.com/ibm-developer/generator-nodeserver) |
+|       [routing-controllers](https://github.com/typestack/routing-controllers)        |                             [tus.io](https://tus.io)                              |                [node organic](https://github.com/node-organic)                |
+|                             [grpc.io](https://grpc.io/)                              |                           [Nestjs](https://nestjs.com)                            |                                                                               |
+|                                                                                      |                                                                                   |                                                                               |
+|                                                                                      |                                       Azure                                       |                                                                               |
+|                                  Azure App Services                                  |                                Azure SQL Databases                                |                             Kusto Query Language                              |
+|                                 Azure Log Analytics                                  |                                  Azure Sync Data                                  |                                                                               |
+|                                                                                      |                                                                                   |                                                                               |
+|                                                                                      |                                      GCloud                                       |                                                                               |
+|                                      AppEngine                                       |                                                                                   |                                                                               |
+|                                                                                      |                                 Cloud experience                                  |                                                                               |
+|                                        Azure                                         |                                        AWS                                        |                                 Google Cloud                                  |
+|                                        Docker                                        |                                      Heroku                                       |                                  Engine Yard                                  |
+|                                       Grafana                                        | [Vagrant](https://github.com/dimitardanailov/vagrant-configuration-ruby-on-rails) |                                    Jenkins                                    |
+|                                      OpenShift                                       |                                    Kubernetes                                     |                                                                               |
+|                                                                                      |                                                                                   |                                                                               |
+|                                                                                      |                                 Mobile experience                                 |                                                                               |
+|                                       Android                                        |                                   Objective - C                                   |                                     Swift                                     |
+|                                                                                      |                                                                                   |                                                                               |
+|                                                                                      |                               Additional experience                               |                                                                               |
+|                                    PHP / Laravel                                     |                                      Asp.NET                                      |                                 Ruby on Rails                                 |
+|                                        Linux                                         |                                    BashScript                                     |                                    Apache                                     |
+|                                        Nginx                                         |                                       MySQL                                       |                                  PostgreSQL                                   | Oracle PL/SQL |
+|                                                                                      |                                                                                   |                                                                               |
+|                                                                                      |                               Additional experience                               |                                                                               |
+|                                      Blockchain                                      |                                      Hadoop                                       |                                   Electron                                    |
+|                                         Nwjs                                         |                             Google Chrome Extensions                              |                                      Go                                       |
+|                                          Qt                                          |                          Salesforce Commerce Cloud (SFC)                          |                                  Tensorflow                                   |
 
 ---
 
@@ -190,7 +192,7 @@ I wrote series of articles about my Microservices journey: [Nodejs Microservice:
 
 ##### [Push notification playgroung](https://github.com/dimitardanailov/push-notifications)
 
-Push notification playground. 
+Push notification playground.
 
 ##### [Google Maps Cluster Markers](https://github.com/dimitardanailov/googlemapsclustermarkers)
 
@@ -198,13 +200,13 @@ Android application with main focus google maps clusterization. Application uses
 
 ##### [Objective - c and AWS playground](https://github.com/dimitardanailov/objc-aws-playground)
 
-Repository uses [AWSS3TransferUtility](https://aws-amplify.github.io/aws-sdk-ios/docs/reference/Classes/AWSS3TransferUtility.html) to upload and download files from AWS. Demo of application: https://www.youtube.com/watch?v=o1pNdjg-uLY 
+Repository uses [AWSS3TransferUtility](https://aws-amplify.github.io/aws-sdk-ios/docs/reference/Classes/AWSS3TransferUtility.html) to upload and download files from AWS. Demo of application: https://www.youtube.com/watch?v=o1pNdjg-uLY
 
 ### Open source projects (Co - founder)
 
 ##### [MyTeletouch](https://github.com/MyTeletouch)
 
-[MyTeletouch](https://www.indiegogo.com/projects/myteletouch-control-tv-pc-from-smartphone#/). Project won the title best Bulgarian IoT project for 2016. MyTeletouch did a succesful Indiegogo campaign end of 2016 - first quoter of 2017. 
+[MyTeletouch](https://www.indiegogo.com/projects/myteletouch-control-tv-pc-from-smartphone#/). Project won the title best Bulgarian IoT project for 2016. MyTeletouch did a succesful Indiegogo campaign end of 2016 - first quoter of 2017.
 
 Technology stack: IoT, Raspberry Pi, [Asp.Net MVC](https://github.com/MyTeletouch/web)
 
@@ -220,7 +222,8 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 - [https://github.com/node-organic](https://github.com/node-organic)
 
 ### Startup weekend awards
-- Startup Weekend Sofia May 2014 - Third Place 
+
+- Startup Weekend Sofia May 2014 - Third Place
 - Startup Weekend Sofia November 2013 - Award of SuperHosting.bg
 - Startup Weekend Sofia November 2013 - Award of Vivakom
 - Startup Weekend Sofia November 2013 - Third Place
@@ -228,7 +231,7 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 
 ---
 
-### Technical articles: 
+### Technical articles:
 
 - [How to protect my Ubuntu server ?](https://medium.com/@d_danailov/how-to-protect-my-ubuntu-server-6a2ecc056722)
 - [Git useful commands](https://medium.com/@d_danailov/git-useful-commands-b3c4dcd0dd97)
@@ -236,11 +239,12 @@ Live demo: https://play.google.com/store/apps/details?id=com.madeit.julian.mytel
 - [Productivity with VS Code (Tips and Tricks)](https://medium.com/@d_danailov/productivity-with-vs-code-tips-and-tricks-51ae11e2e087)
 - [Polymer vs Angular vs React: Using Web Components to Evolve the Experience](https://mentormate.com/blog/polymer-vs-angular-future-web-apps/)
 
+### International trainings:
 
-### International trainings: 
 - [Building Evolutionary Architectures](http://2018.net.developerdays.pl/schedule/building-evolutionary-architectures/). Tutor: [Neal Ford](http://nealford.com/)
 
-### International conferencies: 
+### International conferencies:
+
 - [FOSDEM is the biggest open source conference](https://fosdem.org/2019/). Editions: 2011 and 2015 - 2019
 - [IoT Tech Expo is the biggest Tech Expo at Europe with subjects: #IoT, #AI, #BlockChain](https://www.iottechexpo.com/) - Edition: Amsterdam (2018)
 - [.Net Developer Days is the biggest .Net Developers Conference at Central and Eastern Europe](http://net.developerdays.pl) - Edition: 2018
