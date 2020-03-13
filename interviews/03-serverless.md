@@ -23,6 +23,13 @@ Serverless.js is growing so fast few years. The project has 12 000+ commits whic
 
 ### Questions
 
-#### Please share with me information about company culture. 
+#### Please share with me information about the company culture. 
 
 #### How company invest in employees in long term ?
+
+#### I'd like to understand more about company goals: 
+
+1. Company wants to make a higher profit
+2. Company wants to make a wonderful and useful product
+
+Which is more more important for you ?
