@@ -1,6 +1,6 @@
 {
   "name": "dimitar-danailov-portfolio",
-  "version": "1.11.4",
+  "version": "1.11.5",
   "main": "index.js",
   "repository": "https://github.com/dimitardanailov",
   "author": "Dimitar Danailov<dimityr.danailov@gmail.com>",
@@ -55,10 +55,12 @@
   "dependencies": {
     "@material-ui/core": "^4.9.3",
     "@material-ui/icons": "^4.9.1",
+    "@xstate/react": "^0.8.1",
     "@zeit/next-css": "^1.0.1",
     "next": "^9.2.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "styled-components": "5.0.1"
+    "styled-components": "5.0.1",
+    "xstate": "^4.8.0"
   }
 }
