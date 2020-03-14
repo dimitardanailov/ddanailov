@@ -1,3 +1,5 @@
+import Keyword from './Keyword'
+
 function OpenSourceProjects() {
   return (
     <div>
@@ -13,7 +15,8 @@ function OpenSourceProjects() {
             Gmail Helper
           </a>
           : Gmail helper creates gmail labels and features. Technologies: Custom
-          Elements v1, Redux, Webpack, Lerna, Mocha, Chai, Karma
+          Elements v1, <Keyword word="React" />, Webpack, Lerna, Mocha, Chai,
+          Karma
         </li>
         <li>
           <a
@@ -24,9 +27,10 @@ function OpenSourceProjects() {
           >
             Tantalus
           </a>
-          : is a Nodejs Microservices application. Project uploads big streams
-          from custom cloud provider to AWS. Tantalus uses: NodeServer
-          Generator, routing-controllers, tus.io, Typescript.
+          : is a <Keyword word="Nodejs Microservices" /> application. Project
+          uploads big streams from custom cloud provider to AWS. Tantalus uses:
+          NodeServer Generator, routing-controllers, tus.io,{' '}
+          <Keyword word="Typescript" />.
         </li>
         <li>
           <a
@@ -49,7 +53,7 @@ function OpenSourceProjects() {
           >
             React components
           </a>
-          : React catalog with different useful components.
+          : <Keyword word="React" /> catalog with different useful components.
         </li>
       </ul>
     </div>
