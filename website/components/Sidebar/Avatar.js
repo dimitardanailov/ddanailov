@@ -4,6 +4,9 @@ import styled from 'styled-components'
 
 import avatar from './ddanailov-avatar.jpg'
 
+import {useMachine} from '@xstate/react'
+// import deviceMachine from '../../machines/deviceMachine'
+
 const Wrapper = styled.img`
   position: relative;
 
@@ -15,35 +18,6 @@ const Wrapper = styled.img`
   border-radius: 12.5%;
 `
 
-/**
- * Resources:
- * - https://davidwalsh.name/detect-iphone
- */
-
-function isIphone() {
-  return window.navigator.userAgent.match(/iPhone/i)
-}
-
-function isPad() {
-  return window.navigator.userAgent.match(/iPad/i)
-}
-
-function isAndroid() {
-  return window.navigator.userAgent.match(/Android/i)
-}
-
-function detectDevice() {
-  if (isPad()) {
-    return 'tablet'
-  }
-
-  if (isIphone() || isAndroid()) {
-    return 'mobile'
-  }
-
-  return 'desktop'
-}
-
 function Image() {
   const title = 'Javascript consultant'
 
@@ -53,19 +27,18 @@ function Image() {
 }
 
 function Avatar() {
-  // const device = detectDevice()
-
-  React.useEffect(() => {
-    // window is accessible here.
-    console.log('navigator', navigator)
-  })
+  // const [current, send] = useMachine(deviceMachine)
+  // console.log(current)
+  // const device = deviceMachine.initialState.value
 
   /*
-  if (device === 'desktop') {
-    return Image()
-  } else {
-    return null
-  } */
+  React.useEffect(() => {
+    if (device === 'desktop' || device === 'tablet') {
+      return Image()
+    } else {
+      return null
+    }
+  }) */
 
   return null
 }
