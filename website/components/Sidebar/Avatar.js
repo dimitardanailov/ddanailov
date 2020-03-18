@@ -67,7 +67,7 @@ function Avatar() {
     return null
   } */
 
-  return null
+  return Image()
 }
 
 export default Avatar
