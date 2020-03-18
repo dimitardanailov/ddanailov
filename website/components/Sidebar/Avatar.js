@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, {useEffect} from 'react'
 
 import styled from 'styled-components'
 
@@ -53,21 +53,14 @@ function Image() {
 }
 
 function Avatar() {
-  // const device = detectDevice()
+  const [device, setDevice] = React.useState('')
 
-  React.useEffect(() => {
-    // window is accessible here.
-    console.log('navigator', navigator)
-  })
+  useEffect(() => {
+    const tempDevice = detectDevice()
+    setDevice(tempDevice)
+  }, [device])
 
-  /*
-  if (device === 'desktop') {
-    return Image()
-  } else {
-    return null
-  } */
-
-  return Image()
+  return device === 'desktop' ? Image() : null
 }
 
 export default Avatar
