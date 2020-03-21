@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 
 const TwitterIcon = dynamic(() => import('@material-ui/icons/Twitter'))
-const LinkedInIcon = dynamic(() => import('@material-ui/icons/Linkedin'))
+const LinkedInIcon = dynamic(() => import('@material-ui/icons/LinkedIn'))
 const GitHubIcon = dynamic(() => import('@material-ui/icons/GitHub'))
 
 import styled from 'styled-components'
