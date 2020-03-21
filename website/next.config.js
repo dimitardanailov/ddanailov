@@ -1,6 +1,7 @@
 const withCSS = require('@zeit/next-css')
+const withMDX = require('@next/mdx')()
 
-module.exports = withCSS({
+const cssSetup = withCSS({
   webpack(config) {
     config.module.rules.push({
       test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
@@ -15,3 +16,5 @@ module.exports = withCSS({
     return config
   },
 })
+
+module.exports = withMDX(cssSetup)
