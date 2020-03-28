@@ -1,6 +1,6 @@
 const withCSS = require('@zeit/next-css')
 
-const {STYLES_DIR, COMPONENTS_DIR} = require('./utils/folders')
+const {STYLES_DIR, COMPONENTS_DIR, LAYOUT_DIR} = require('./utils/folders')
 
 module.exports = withCSS({
   webpack: config => {
@@ -17,6 +17,7 @@ module.exports = withCSS({
 
     config.resolve.alias['@ddanailov/styles'] = STYLES_DIR
     config.resolve.alias['@ddanailov/components'] = COMPONENTS_DIR
+    config.resolve.alias['@ddanailov/layouts'] = LAYOUT_DIR
 
     return config
   },
