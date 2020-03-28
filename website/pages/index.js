@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
 
 import MainLayout from '../layouts/MainLayout'
 
