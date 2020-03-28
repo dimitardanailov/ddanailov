@@ -9,16 +9,9 @@ import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
 import Skills from '@ddanailov/components/Skills'
 import Blob from '@ddanailov/components/Animations/Blob'
 
+import Slogan from '@ddanailov/styled/Slogan'
+
 const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
-
-const Slogan = styled.div`
-  position: relative;
-
-  display: block;
-  margin: 10px 0 10px;
-  font-size: 2rem;
-  font-weight: bold;
-`
 
 const Page = () => (
   <>
