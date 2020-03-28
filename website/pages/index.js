@@ -7,7 +7,7 @@ import MainLayout from '@ddanailov/layouts/MainLayout'
 import PersonalStory from '@ddanailov/components/PersonalStory'
 import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
 import Skills from '@ddanailov/components/Skills'
-import Blob from '@ddanailov/components/Blob'
+import Blob from '@ddanailov/components/Animations/Blob'
 
 const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 
