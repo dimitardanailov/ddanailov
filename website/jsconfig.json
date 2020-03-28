@@ -6,7 +6,8 @@
     "paths": {
       "@ddanailov/styles/*": ["styles/*.css"],
       "@ddanailov/components/*": ["components/*"],
-      "@ddanailov/layouts/*": ["layouts/*"]
+      "@ddanailov/layouts/*": ["layouts/*"],
+      "@ddanailov/styled/*": ["styled/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
