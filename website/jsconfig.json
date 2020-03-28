@@ -4,9 +4,9 @@
     "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
-      "@ddanailov/styles/*": ["styles/*"],
-      "@ddanailov/components/*": ["components/*"],
-      "@ddanailov/layouts/*": ["layouts/*"]
+      "@ddanailov/styles/*": ["styles/*.css"],
+      "@ddanailov/components/*": ["components/*.js"],
+      "@ddanailov/layouts/*": ["layouts/*.js"]
     }
   },
   "exclude": ["node_modules", "dist"]
