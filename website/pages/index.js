@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 
-import styled, { css } from 'styled-components'
+import styled, {css} from 'styled-components'
 
 import MainLayout from '../layouts/MainLayout'
 
@@ -48,7 +48,13 @@ const Page = () => (
     <PageHolder>
       <Slogan>Dear Guest,</Slogan>
       <SocialIcons />
-      <Blob width="80%" size="40px" height="60px" rightBackground="#0ff" leftBlobBackground="#fff" />
+      <Blob
+        width="80%"
+        size="40px"
+        height="60px"
+        rightBackground="#0ff"
+        leftBlobBackground="#fff"
+      />
       <PersonalStory />
       <OpenSourceProjects />
       <Skills />
