@@ -40,3 +40,8 @@ module.exports.STYLES_DIR = path.resolve(BASE_DIR, 'styles')
  * COMPONENTS_DIR stores project components
  */
 module.exports.COMPONENTS_DIR = path.resolve(BASE_DIR, 'components')
+
+/**
+ * LAYOUT_DIR stores all project components
+ */
+module.exports.LAYOUT_DIR = path.resolve(BASE_DIR, 'LAYOUTS')
