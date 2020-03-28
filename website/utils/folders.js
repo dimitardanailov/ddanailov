@@ -44,4 +44,4 @@ module.exports.COMPONENTS_DIR = path.resolve(BASE_DIR, 'components')
 /**
  * LAYOUT_DIR stores all project components
  */
-module.exports.LAYOUT_DIR = path.resolve(BASE_DIR, 'LAYOUTS')
+module.exports.LAYOUT_DIR = path.resolve(BASE_DIR, 'layouts')
