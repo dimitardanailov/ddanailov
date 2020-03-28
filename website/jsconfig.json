@@ -5,8 +5,8 @@
     "baseUrl": "./",
     "paths": {
       "@ddanailov/styles/*": ["styles/*.css"],
-      "@ddanailov/components/*": ["components/*.js"],
-      "@ddanailov/layouts/*": ["layouts/*.js"]
+      "@ddanailov/components/*": ["components/*"],
+      "@ddanailov/layouts/*": ["layouts/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
