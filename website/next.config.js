@@ -1,7 +1,10 @@
 const withCSS = require('@zeit/next-css')
 
+const {STYLES_DIR, COMPONENTS_DIR} = require('./utils/folders')
+
 module.exports = withCSS({
-  webpack(config) {
+  webpack: config => {
+    // file and url loader webpack support.
     config.module.rules.push({
       test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
       use: {
@@ -11,6 +14,9 @@ module.exports = withCSS({
         },
       },
     })
+
+    config.resolve.alias['@ddanailov/styles'] = STYLES_DIR
+    config.resolve.alias['@ddanailov/components'] = COMPONENTS_DIR
 
     return config
   },
