@@ -1,7 +1,5 @@
 import dynamic from 'next/dynamic'
 
-import styled from 'styled-components'
-
 import MainLayout from '@ddanailov/layouts/MainLayout'
 
 import PersonalStory from '@ddanailov/components/PersonalStory'
