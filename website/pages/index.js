@@ -2,15 +2,14 @@ import dynamic from 'next/dynamic'
 
 import styled from 'styled-components'
 
-import MainLayout from '../layouts/MainLayout'
+import MainLayout from '@ddanailov/layouts/MainLayout'
 
-import PersonalStory from '../components/PersonalStory'
-import OpenSourceProjects from '../components/OpenSourceProjects'
-import Skills from '../components/Skills'
-import Blob from '../components/Animations/Blob'
-// TODO: import ContactForm from '../components/FormComponents/ContactForm';
+import PersonalStory from '@ddanailov/components/PersonalStory'
+import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
+import Skills from '@ddanailov/components/Skills'
+import Blob from '@ddanailov/components/Blob'
 
-const SocialIcons = dynamic(() => import('../components/SocialIcons'))
+const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 
 const Slogan = styled.div`
   position: relative;
