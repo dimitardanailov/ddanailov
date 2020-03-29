@@ -8,6 +8,14 @@ const {
 } = require('./utils/folders')
 const getBuildNumber = require('./utils/nextjs/getBuildNumber')
 
+async function copyManifestFile(filename) {
+  const buildNumber = await getBuildNumber()
+  const source = `${NEXT_BUILD_DIR}/static/${buildNumber}/${filename}.js`
+  const destination = `${PUBLIC_DIR}/_next/static/${buildNumber}`
+
+  return src(source).pipe(dest(destination))
+}
+
 async function copyRuntimeResources() {
   const source = `${NEXT_BUILD_DIR}/static/runtime/*.js`
   const destination = `${PUBLIC_DIR}/_next/static/runtime`
@@ -16,11 +24,11 @@ async function copyRuntimeResources() {
 }
 
 async function copyBuildManifest() {
-  const buildNumber = await getBuildNumber()
-  const source = `${NEXT_BUILD_DIR}/static/${buildNumber}/_buildManifest.js`
-  const destination = `${PUBLIC_DIR}/_next/static/${buildNumber}`
+  return await copyManifestFile('_buildManifest')
+}
 
-  return src(source).pipe(dest(destination))
+async function copySSGBuildManifest() {
+  return await copyManifestFile('_ssgManifest')
 }
 
 async function copyStaticResources() {
@@ -43,13 +51,22 @@ async function copyNextResources() {
   return src(path).pipe(dest(PUBLIC_DIR))
 }
 
+async function copyStyles() {
+  const path = `${NEXT_BUILD_DIR}/static/css/*`
+  const destination = `${PUBLIC_DIR}/_next/static/css`
+
+  return src(path).pipe(dest(destination))
+}
+
 function copyStaticFiles() {
   return src(`${STATIC_DIR}/**.*`).pipe(dest(PUBLIC_DIR))
 }
 
 exports.default = series(
   copyRuntimeResources,
+  copySSGBuildManifest,
   copyBuildManifest,
+  copyStyles,
   copyStaticResources,
   copyChunk,
   copyNextResources,
