@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 function PersonalStory() {
   return (
     <div>
@@ -27,6 +29,9 @@ function PersonalStory() {
         Like an assassin 🔪 I learned how to be a solo player. I improved my
         skills to complete: fast and efficient stakeholders requirements.
       </div>
+      <Link href="/about">
+        <a title="Dimitar Danailov: Bio">More details about me.</a>
+      </Link>
     </div>
   )
 }
