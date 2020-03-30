@@ -23,14 +23,7 @@ function Avatar({href, src, title}) {
   return (
     <Frame>
       <a href={href} title={title} rel="noopener" target="_blank">
-        <Image
-          src={src}
-          alt={title}
-          title={title}
-          width="200"
-          height="200"
-          loading="lazy"
-        />
+        <Image src={src} alt={title} title={title} width="200" height="200" />
       </a>
     </Frame>
   )
