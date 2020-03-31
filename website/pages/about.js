@@ -152,7 +152,13 @@ const AboutPage = () => (
 
     <section>
       <TestimonialBody>
-        <RecommendationBodyLeft>
+        <Avatar
+          href="https://www.linkedin.com/in/henryclough/"
+          title="Chairperson, Asian Absolute | Translation and Localisation Services"
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQFiUqHZUWET4g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=E_NKDtbuUNFi0ZKoIJ3NP3xUfDXc133R0b6O-xTIR_8"
+        />
+
+        <RecommendationBodyRight>
           <p>
             "Dimitar Danailov led the development work on our primary project
             management and production application from 2013 to 2015. He and his
@@ -184,13 +190,7 @@ const AboutPage = () => (
             </TargetBlankLink>
             , Managing Director Asian Absolute
           </PersonInfo>
-        </RecommendationBodyLeft>
-
-        <Avatar
-          href="https://www.linkedin.com/in/henryclough/"
-          title="Chairperson, Asian Absolute | Translation and Localisation Services"
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQFiUqHZUWET4g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=E_NKDtbuUNFi0ZKoIJ3NP3xUfDXc133R0b6O-xTIR_8"
-        />
+        </RecommendationBodyRight>
       </TestimonialBody>
     </section>
 
@@ -269,7 +269,12 @@ const AboutPage = () => (
 
     <section>
       <TestimonialBody>
-        <RecommendationBodyLeft>
+        <Avatar
+          title="Software Engineer at Avrios | Former Founder of Centroida"
+          src="https://media-exp1.licdn.com/dms/image/C5603AQGyvzQ4DWJMoA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=JEKmMKOXzpsPUkhmhbrVFvwxA6EwBYJMsdh9kF4H-pw"
+          href="https://www.linkedin.com/in/hggeorgiev/"
+        />
+        <RecommendationBodyRight>
           <p>
             "Dimitar is an outstanding mentor. His guidance helped me progress
             with Ruby on Rails with ease and discover more about developing
@@ -287,13 +292,7 @@ const AboutPage = () => (
             </TargetBlankLink>
             , Software Engineer at Avrios
           </PersonInfo>
-        </RecommendationBodyLeft>
-
-        <Avatar
-          title="Software Engineer at Avrios | Former Founder of Centroida"
-          src="https://media-exp1.licdn.com/dms/image/C5603AQGyvzQ4DWJMoA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=JEKmMKOXzpsPUkhmhbrVFvwxA6EwBYJMsdh9kF4H-pw"
-          href="https://www.linkedin.com/in/hggeorgiev/"
-        />
+        </RecommendationBodyRight>
       </TestimonialBody>
     </section>
 
@@ -330,7 +329,12 @@ const AboutPage = () => (
 
     <section>
       <TestimonialBody>
-        <RecommendationBodyLeft>
+        <Avatar
+          src="https://media-exp1.licdn.com/dms/image/C5103AQFFyBz1SbLkOA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=uhMw85xRVWiK6Fmv6SJ_i2GcyfEXs19dBd5giJdWYts"
+          href="https://www.linkedin.com/in/vladimirdimov1/"
+          title="Vladimir Dimov - Mobile Application Developer at Prime Holding JSC"
+        />
+        <RecommendationBodyRight>
           <p>
             Dimitar is an excellent programmer and soul of the team. I am glad
             that I be given the opportunity to recommend it because I have a
@@ -349,12 +353,7 @@ const AboutPage = () => (
             </TargetBlankLink>
             , Mobile Application Developer at Prime Holding JSC
           </PersonInfo>
-        </RecommendationBodyLeft>
-        <Avatar
-          src="https://media-exp1.licdn.com/dms/image/C5103AQFFyBz1SbLkOA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=uhMw85xRVWiK6Fmv6SJ_i2GcyfEXs19dBd5giJdWYts"
-          href="https://www.linkedin.com/in/vladimirdimov1/"
-          title="Vladimir Dimov - Mobile Application Developer at Prime Holding JSC"
-        />
+        </RecommendationBodyRight>
       </TestimonialBody>
     </section>
   </>
