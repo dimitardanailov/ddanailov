@@ -7,7 +7,9 @@
       "@ddanailov/styles/*": ["styles/*.css"],
       "@ddanailov/components/*": ["components/*"],
       "@ddanailov/layouts/*": ["layouts/*"],
-      "@ddanailov/styled/*": ["styled/*"]
+      "@ddanailov/styled/*": ["styled/*"],
+
+      "data": ["data/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
