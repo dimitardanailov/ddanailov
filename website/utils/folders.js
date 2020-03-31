@@ -50,3 +50,8 @@ module.exports.LAYOUT_DIR = path.resolve(BASE_DIR, 'layouts')
  * STYLED_DIR stores all styled components
  */
 module.exports.STYLED_DIR = path.resolve(BASE_DIR, 'styled')
+
+/**
+ * DATA_DIR stores all predefined resources
+ */
+module.exports.DATA_DIR = path.resolve(BASE_DIR, 'data')
