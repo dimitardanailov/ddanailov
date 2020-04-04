@@ -55,3 +55,8 @@ module.exports.STYLED_DIR = path.resolve(BASE_DIR, 'styled')
  * DATA_DIR stores all predefined resources
  */
 module.exports.DATA_DIR = path.resolve(BASE_DIR, 'data')
+
+/**
+ * UTILS_DIR stores all helper methods
+ */
+module.exports.UTILS_DIR = path.resolve(BASE_DIR, 'utils')
