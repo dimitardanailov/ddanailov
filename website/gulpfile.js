@@ -46,7 +46,6 @@ async function copyChunk() {
 
 async function copyServiceWorker() {
   const path = `${NEXT_BUILD_DIR}/service-worker.js`
-  console.log('path', path)
 
   return src(path).pipe(dest(PUBLIC_DIR))
 }
@@ -69,11 +68,17 @@ function copyStaticFiles() {
   return src(`${STATIC_DIR}/**.*`).pipe(dest(PUBLIC_DIR))
 }
 
+function copyServiceWorkerStaticFiles() {
+  const destination = `${PUBLIC_DIR}/_next/static/`
+  return src(`${STATIC_DIR}/**.*`).pipe(dest(destination))
+}
+
 exports.default = series(
   copyRuntimeResources,
   copySSGBuildManifest,
   copyBuildManifest,
   copyServiceWorker,
+  copyServiceWorkerStaticFiles,
   copyStyles,
   copyStaticResources,
   copyChunk,
