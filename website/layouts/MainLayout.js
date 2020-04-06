@@ -1,5 +1,3 @@
-import dynamic from 'next/dynamic'
-
 import MainHeader from '../components/MainHeader'
 import MainFooter from '../components/MainFooter'
 
@@ -13,15 +11,11 @@ const Container = styled.section`
   min-height: 100%;
 `
 
-const Sidebar = dynamic(() => import('../components/Sidebar'))
-
 const MainLayout = Page => () => (
   <Container>
     <MainHeader />
 
     <PageTemplate>
-      <Sidebar />
-
       <PageHolder>
         <Page />
       </PageHolder>
