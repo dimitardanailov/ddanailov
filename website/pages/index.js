@@ -1,23 +1,21 @@
-import dynamic from 'next/dynamic'
+import React, {useEffect} from 'react'
 
-import MainLayout from '@ddanailov/layouts/MainLayout'
+import detectDevice from '@ddanailov/utils/devices/detectDevice'
+import Switch from './homepage/Switch'
 
-import PersonalStory from '@ddanailov/components/PersonalStory'
-import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
-import Skills from '@ddanailov/components/Skills'
+const Homepage = () => {
+  const [device, setDevice] = React.useState('')
 
-import Slogan from '@ddanailov/styled/Slogan'
+  useEffect(() => {
+    const tempDevice = detectDevice()
+    setDevice(tempDevice)
+  }, [device])
 
-const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
+  return (
+    <>
+      <Switch device={device} />
+    </>
+  )
+}
 
-const Page = () => (
-  <>
-    <Slogan>Dear Guest,</Slogan>
-    <SocialIcons />
-    <PersonalStory />
-    <OpenSourceProjects />
-    <Skills />
-  </>
-)
-
-export default MainLayout(Page)
+export default Homepage
