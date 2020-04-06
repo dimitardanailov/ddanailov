@@ -5,6 +5,7 @@ const {
   COMPONENTS_DIR,
   LAYOUT_DIR,
   STYLED_DIR,
+  UTILS_DIR,
 } = require('./utils/folders')
 
 module.exports = withCSS({
@@ -24,6 +25,7 @@ module.exports = withCSS({
     config.resolve.alias['@ddanailov/components'] = COMPONENTS_DIR
     config.resolve.alias['@ddanailov/layouts'] = LAYOUT_DIR
     config.resolve.alias['@ddanailov/styled'] = STYLED_DIR
+    config.resolve.alias['@ddanailov/utils'] = UTILS_DIR
 
     return config
   },
