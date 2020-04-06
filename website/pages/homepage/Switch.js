@@ -2,20 +2,18 @@ import dynamic from 'next/dynamic'
 
 import PropTypes from 'prop-types'
 
+import ComponentLoader from '@ddanailov/components/ComponentLoader'
+
 const HomePageDesktop = dynamic(() => import('./_Desktop'))
 const HomePageMobile = dynamic(() => import('./_Mobile'))
 
 const Switch = ({device}) => {
-  switch (device) {
-    case 'desktop':
-      return <HomePageDesktop />
-    case 'tablet':
-      return <HomePageMobile />
-    case 'mobile':
-      return <HomePageMobile />
-    default:
-      return null
-  }
+  return ComponentLoader(
+    device,
+    HomePageDesktop,
+    HomePageMobile,
+    HomePageMobile,
+  )
 }
 
 Switch.defaultProps = {
