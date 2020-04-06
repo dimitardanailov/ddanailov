@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 
 import MainHeader from '@ddanailov/components/MainHeader'
+import MainFooter from '@ddanailov/components/MainFooter'
 
 import {PageTemplate, PageHolder} from '@ddanailov/styled/layouts/Desktop'
 
@@ -32,6 +33,8 @@ const HomePageDesktop = () => (
         <PersonalStory />
         <OpenSourceProjects />
         <Skills />
+
+        <MainFooter />
       </PageHolder>
     </PageTemplate>
   </Container>
