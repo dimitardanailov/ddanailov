@@ -1,4 +1,5 @@
 const withCSS = require('@zeit/next-css')
+const withOffline = require('next-offline')
 
 const {
   STYLES_DIR,
@@ -8,7 +9,7 @@ const {
   UTILS_DIR,
 } = require('./utils/folders')
 
-module.exports = withCSS({
+const nextConfig = withCSS({
   webpack: config => {
     // file and url loader webpack support.
     config.module.rules.push({
@@ -30,3 +31,5 @@ module.exports = withCSS({
     return config
   },
 })
+
+module.exports = withOffline(nextConfig)
