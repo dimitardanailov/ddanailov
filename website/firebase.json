@@ -20,6 +20,15 @@
         ]
       },
       {
+        "source": "**/*.@(js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=36000"
+          }
+        ]
+      },
+      {
         "source": "404.html",
         "headers": [
           {
