@@ -6,7 +6,6 @@ const GitHubIcon = dynamic(() => import('@material-ui/icons/GitHub'))
 const EmailRoundedIcon = dynamic(() =>
   import('@material-ui/icons/EmailRounded'),
 )
-//import EmailRoundedIcon from '@material-ui/icons/EmailRounded';
 
 import styled from 'styled-components'
 
@@ -19,6 +18,7 @@ const List = styled.ul`
 
   display: flex;
   flex-direction: row;
+  height: 41px;
 `
 
 const ListItem = styled.li`
