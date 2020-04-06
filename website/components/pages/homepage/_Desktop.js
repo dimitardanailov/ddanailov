@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
 
 import MainHeader from '@ddanailov/components/MainHeader'
-import MainFooter from '@ddanailov/components/MainFooter'
 
 import {PageTemplate, PageHolder} from '@ddanailov/styled/layouts/Desktop'
 
@@ -20,6 +19,7 @@ const Container = styled.section`
 
 const Sidebar = dynamic(() => import('@ddanailov/components/Sidebar'))
 const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
+const MainFooter = dynamic(() => import('@ddanailov/components/MainFooter'))
 
 const HomePageDesktop = () => (
   <Container>
