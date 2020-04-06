@@ -22,7 +22,6 @@ function MainHeader() {
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-156006558-1"
         ></script>
-        <script async src="https://ddanailov.dev/ga.js"></script>
 
         <base href="/" />
       </Head>
