@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import items from 'data/menu-items'
 import NavItem from './NavItem'
 
+import themes from 'styles/colors/light'
+
 const List = styled.ul`
   list-style: none;
   padding: 0;
@@ -14,17 +16,19 @@ const List = styled.ul`
   justify-content: center;
 `
 
+const Item = styled.li`
+  padding: 0 0.5rem;
+  color: ${themes.secondary.main};
+`
+
 function DesktopMenu() {
   return (
     <nav>
       <List>
         {items.map((item, i) => (
-          <NavItem
-            key={i}
-            href={item.href}
-            title={item.title}
-            text={item.text}
-          />
+          <Item key={i}>
+            <NavItem href={item.href} title={item.title} text={item.text} />
+          </Item>
         ))}
       </List>
     </nav>
