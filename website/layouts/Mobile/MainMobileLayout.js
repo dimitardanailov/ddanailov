@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import MainHeader from '@ddanailov/components/MainHeader'
 import MainFooter from '@ddanailov/components/MainFooter'
 import MobileSidebar from '@ddanailov/components/Sidebar/Mobille'
+import MobileMenu from '@ddanailov/components/Menu/Mobile'
 
 const PageHolder = styled.section`
   position: relative;
@@ -17,6 +18,8 @@ const MainMobileLayout = Page => () => (
     <MainHeader />
 
     <MobileSidebar />
+
+    <MobileMenu />
 
     <PageHolder>
       <Page />
