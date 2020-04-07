@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "@ddanailov/styles/*": ["styles/*.css"],
+      "@ddanailov/components/*": ["components/*"],
+      "@ddanailov/layouts/*": ["layouts/*"],
+      "@ddanailov/styled/*": ["styled/*"],
+      "@ddanailov/utils/*": ["utils/*"],
+
+      "data": ["data/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

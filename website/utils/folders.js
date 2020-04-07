@@ -30,3 +30,33 @@ module.exports.PUBLIC_DIR_CHUNKS = path.resolve(
   'static',
   'chunks',
 )
+
+/**
+ * STYLES_DIR stores all css files and styled components
+ */
+module.exports.STYLES_DIR = path.resolve(BASE_DIR, 'styles')
+
+/**
+ * COMPONENTS_DIR stores project components
+ */
+module.exports.COMPONENTS_DIR = path.resolve(BASE_DIR, 'components')
+
+/**
+ * LAYOUT_DIR stores all project layouts
+ */
+module.exports.LAYOUT_DIR = path.resolve(BASE_DIR, 'layouts')
+
+/**
+ * STYLED_DIR stores all styled components
+ */
+module.exports.STYLED_DIR = path.resolve(BASE_DIR, 'styled')
+
+/**
+ * DATA_DIR stores all predefined resources
+ */
+module.exports.DATA_DIR = path.resolve(BASE_DIR, 'data')
+
+/**
+ * UTILS_DIR stores all helper methods
+ */
+module.exports.UTILS_DIR = path.resolve(BASE_DIR, 'utils')

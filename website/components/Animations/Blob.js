@@ -1,13 +1,26 @@
 /**
  * Idea: https://codepen.io/megatroncoder/pen/Xqeyva
  */
+
+/**
+ * Usage:
+ * 
+ * <Blob
+    width="80%"
+    size="40px"
+    height="60px"
+    rightBackground="#0ff"
+    leftBlobBackground="#fff"
+    />
+ */
+
 import React from 'react'
 
 import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 
-import { left, right } from './keyframe'
+import {left, right} from './keyframe'
 
 const Wrapper = styled.section`
   position: relative;
@@ -59,7 +72,7 @@ const RightBlob = styled(BasicBlob)`
   background-color: ${props => props.backgroundColor};
 `
 
-function Blob({ width, size, height, leftBlobBackground, rightBackground }) {
+function Blob({width, size, height, leftBlobBackground, rightBackground}) {
   return (
     <>
       <Wrapper height={height} width={width}>

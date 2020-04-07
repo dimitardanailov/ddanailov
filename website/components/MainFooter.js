@@ -1,3 +1,4 @@
+import {register, unregister} from 'next-offline/runtime'
 import styled from 'styled-components'
 
 const Footer = styled.footer`
@@ -38,22 +39,31 @@ const ContentItemLink = styled.a`
   color: #515151;
 `
 
-function MainFooter() {
-  return (
-    <Footer>
-      <ContentWrapper>
-        <ContentItem>Contact me:</ContentItem>
-        <ContentItem>
-          <ContentItemLink
-            href="mailto:dimityr.danailov@gmail.com"
-            title="Javascript Consultant"
-          >
-            dimityr.danailov@gmail.com
-          </ContentItemLink>
-        </ContentItem>
-      </ContentWrapper>
-    </Footer>
-  )
+class MainFooter extends React.Component {
+  componentDidMount() {
+    register()
+  }
+  componentWillUnmount() {
+    unregister()
+  }
+
+  render() {
+    return (
+      <Footer>
+        <ContentWrapper>
+          <ContentItem>Contact me:</ContentItem>
+          <ContentItem>
+            <ContentItemLink
+              href="mailto:dimityr.danailov@gmail.com"
+              title="Javascript Consultant"
+            >
+              dimityr.danailov@gmail.com
+            </ContentItemLink>
+          </ContentItem>
+        </ContentWrapper>
+      </Footer>
+    )
+  }
 }
 
 export default MainFooter

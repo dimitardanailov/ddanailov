@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+  </head>
+
+  <body>
+    <script>
+      window.onload = async () => {
+        if (window.navigator.geolocation) {
+          const position = geoFindMe();
+          console.log("position", position);
+        }
+      };
+
+      function geoFindMe() {
+        const promise = new Promise((resolve, reject) => {
+          navigator.geolocation.getCurrentPosition(
+            position => {
+              console.log("position", position);
+              resolve(position);
+            },
+            err => {
+              reject(err);
+            }
+          );
+        });
+      }
+    </script>
+  </body>
+</html>

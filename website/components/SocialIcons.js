@@ -3,6 +3,9 @@ import dynamic from 'next/dynamic'
 const TwitterIcon = dynamic(() => import('@material-ui/icons/Twitter'))
 const LinkedInIcon = dynamic(() => import('@material-ui/icons/LinkedIn'))
 const GitHubIcon = dynamic(() => import('@material-ui/icons/GitHub'))
+const EmailRoundedIcon = dynamic(() =>
+  import('@material-ui/icons/EmailRounded'),
+)
 
 import styled from 'styled-components'
 
@@ -15,6 +18,7 @@ const List = styled.ul`
 
   display: flex;
   flex-direction: row;
+  height: 41px;
 `
 
 const ListItem = styled.li`
@@ -57,6 +61,14 @@ function SocialIcons() {
             target="_blank"
           >
             <GitHubIcon fontSize="large" />
+          </a>
+        </ListItem>
+        <ListItem>
+          <a
+            href="mailto:dimityr.danailov@gmail.com"
+            title="Javascript and Cloud consulting"
+          >
+            <EmailRoundedIcon fontSize="large" />
           </a>
         </ListItem>
       </List>
