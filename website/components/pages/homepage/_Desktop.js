@@ -4,6 +4,7 @@ import MainHeader from '@ddanailov/components/MainHeader'
 
 import {PageTemplate, PageHolder} from '@ddanailov/styled/layouts/Desktop'
 
+import DesktopMenu from '@ddanailov/components/Menu/Desktop'
 import PersonalStory from '@ddanailov/components/PersonalStory'
 import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
 import Skills from '@ddanailov/components/Skills'
@@ -28,6 +29,8 @@ const HomePageDesktop = () => (
       <Sidebar />
 
       <PageHolder>
+        <DesktopMenu />
+
         <Slogan>Dear Guest,</Slogan>
         <SocialIcons />
         <PersonalStory />
