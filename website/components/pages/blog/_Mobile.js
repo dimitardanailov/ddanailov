@@ -1,3 +1,10 @@
-const BlogPageMobile = () => <>Hello Mobile</>
+import MainMobileLayout from '@ddanailov/layouts/Mobile/MainMobileLayout'
 
-export default BlogPageMobile
+const BlogPageMobile = () => (
+  <>
+    <div>Hello world</div>
+    <div>Hello world</div>
+  </>
+)
+
+export default MainMobileLayout(BlogPageMobile)
