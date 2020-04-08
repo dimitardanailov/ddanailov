@@ -19,6 +19,8 @@ const List = styled.ul`
 const Item = styled.li`
   padding: 0 0.5rem;
   color: ${themes.secondary.main};
+
+  cursor: pointer;
 `
 
 function DesktopMenu() {
