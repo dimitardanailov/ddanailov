@@ -1,5 +1,7 @@
 require('dotenv').config()
 
+const withPlugins = require('next-compose-plugins')
+
 const withMDX = require('@next/mdx')()
 const withCSS = require('@zeit/next-css')
 const withOffline = require('next-offline')
@@ -12,7 +14,7 @@ const {
   UTILS_DIR,
 } = require('./utils/folders')
 
-const cssSetup = withCSS({
+const nextConfig = {
   webpack: config => {
     // file and url loader webpack support.
     config.module.rules.push({
@@ -33,8 +35,14 @@ const cssSetup = withCSS({
 
     return config
   },
-})
+}
 
-const mdxSetup = withMDX(cssSetup)
+// prettier-ignore
+module.exports = withPlugins([
+  withCSS,
 
-module.exports = withOffline(mdxSetup)
+  withMDX,
+
+  withOffline
+
+], nextConfig);
