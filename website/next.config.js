@@ -1,5 +1,6 @@
 require('dotenv').config()
 
+const withMDX = require('@next/mdx')()
 const withCSS = require('@zeit/next-css')
 const withOffline = require('next-offline')
 
@@ -11,7 +12,7 @@ const {
   UTILS_DIR,
 } = require('./utils/folders')
 
-const nextConfig = withCSS({
+const cssSetup = withCSS({
   webpack: config => {
     // file and url loader webpack support.
     config.module.rules.push({
@@ -34,4 +35,6 @@ const nextConfig = withCSS({
   },
 })
 
-module.exports = withOffline(nextConfig)
+const mdxSetup = withMDX(cssSetup)
+
+module.exports = withOffline(mdxSetup)
