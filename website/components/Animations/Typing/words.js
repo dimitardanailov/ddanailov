@@ -1,6 +1,7 @@
 const words = [
   'Javascript Consultant',
-  'Technical Architect',
+  'Cloud Architect',
+  'Open source contributor',
   'Husband',
   'Father',
 ]
