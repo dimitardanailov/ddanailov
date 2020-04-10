@@ -399,4 +399,4 @@ const AboutPage = () => (
   </>
 )
 
-export default MainLayout(AboutPage)
+export default MainLayout(AboutPage, '/about')
