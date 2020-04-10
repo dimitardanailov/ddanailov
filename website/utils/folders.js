@@ -60,3 +60,12 @@ module.exports.DATA_DIR = path.resolve(BASE_DIR, 'data')
  * UTILS_DIR stores all helper methods
  */
 module.exports.UTILS_DIR = path.resolve(BASE_DIR, 'utils')
+
+/**
+ * DATA_DIR stores all predefined resources
+ * Generator:
+ * https://favicon.io/favicon-generator/
+ *
+ * Font: Leckerli One
+ */
+module.exports.ICON_DIR = path.resolve(BASE_DIR, 'icons')
