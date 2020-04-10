@@ -8,6 +8,7 @@ import DesktopMenu from '@ddanailov/components/Menu/Desktop'
 import PersonalStory from '@ddanailov/components/PersonalStory'
 import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
 import Skills from '@ddanailov/components/Skills'
+import Typing from '@ddanailov/components/Animations/Typing'
 
 import Slogan from '@ddanailov/styled/Slogan'
 
@@ -30,6 +31,8 @@ const HomePageDesktop = () => (
 
       <PageHolder>
         <DesktopMenu />
+
+        <Typing />
 
         <Slogan>Dear Guest,</Slogan>
         <SocialIcons />
