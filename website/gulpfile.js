@@ -4,6 +4,7 @@ const {
   PUBLIC_DIR,
   STATIC_DIR,
   NEXT_BUILD_DIR,
+  ICON_DIR,
   PUBLIC_DIR_CHUNKS,
 } = require('./utils/folders')
 const getBuildNumber = require('./utils/nextjs/getBuildNumber')
@@ -64,11 +65,15 @@ async function copyStyles() {
   return src(path).pipe(dest(destination))
 }
 
-function copyStaticFiles() {
+async function copyStaticFiles() {
   return src(`${STATIC_DIR}/**.*`).pipe(dest(PUBLIC_DIR))
 }
 
-function copyServiceWorkerStaticFiles() {
+async function copyIcons() {
+  return src(`${ICON_DIR}/**.*`).pipe(dest(PUBLIC_DIR))
+}
+
+async function copyServiceWorkerStaticFiles() {
   const destination = `${PUBLIC_DIR}/_next/static/`
   return src(`${STATIC_DIR}/**.*`).pipe(dest(destination))
 }
@@ -84,4 +89,5 @@ exports.default = series(
   copyChunk,
   copyNextResources,
   copyStaticFiles,
+  copyIcons,
 )
