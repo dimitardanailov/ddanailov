@@ -41,3 +41,8 @@ a {
   color: #5472d3;
   text-decoration: none;
 }
+
+.typed-cursor {
+  color: #5472d3;
+  font-size: 2rem;
+}
