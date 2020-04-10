@@ -20,7 +20,7 @@ import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 
-import {left, right} from './keyframe'
+import {left, right} from '../keyframe'
 
 const Wrapper = styled.section`
   position: relative;
