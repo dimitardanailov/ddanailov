@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import PropTypes from 'prop-types'
 
-function MainHeader() {
+function MainHeader({canonical}) {
   return (
     <div>
       <Head>
@@ -16,7 +17,7 @@ function MainHeader() {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="canonical" href="https://ddanailov.dev" />
+        <link rel="canonical" href={`https://ddanailov.dev${canonical}`} />
 
         <script
           async
@@ -43,9 +44,19 @@ function MainHeader() {
           href="https://ddanailov.dev/favicon-16x16.png"
         />
         <link rel="manifest" href="https://ddanailov.dev/site.webmanifest" />
+
+        <script defer async src="https://ddanailov.dev/ga.js"></script>
       </Head>
     </div>
   )
+}
+
+MainHeader.defaultProps = {
+  canonical: '/',
+}
+
+MainHeader.propTypes = {
+  canonical: PropTypes.string,
 }
 
 export default MainHeader

@@ -13,8 +13,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-
-          <script async src="https://ddanailov.dev/ga.js"></script>
         </body>
       </Html>
     )
