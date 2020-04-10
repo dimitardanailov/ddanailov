@@ -11,9 +11,9 @@ const Container = styled.section`
   min-height: 100%;
 `
 
-const MainLayout = Page => () => (
+const MainLayout = (Page, canonical) => () => (
   <Container>
-    <MainHeader />
+    <MainHeader canonical={canonical} />
 
     <PageTemplate>
       <PageHolder>
