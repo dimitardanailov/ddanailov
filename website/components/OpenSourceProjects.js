@@ -1,4 +1,5 @@
 import Keyword from './Keyword'
+import Space from '@ddanailov/styled/Space'
 
 function OpenSourceProjects() {
   return (
@@ -7,10 +8,27 @@ function OpenSourceProjects() {
       <ul>
         <li>
           <a
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Nextjs"
+            href="https://github.com/dimitardanailov/ddanailov/tree/master/website"
+          >
+            ddanailov.dev
+          </a>
+          : The source code behind my blog / portfolio website. Technologies:
+          <Space />
+          <Keyword word="React" />,
+          <Space />
+          <Keyword word="nextjs" />,
+          <Space />
+          <Keyword word="Front-end devops" />
+        </li>
+        <li>
+          <a
             href="https://github.com/dimitardanailov/gmail-helper"
             target="_blank"
             rel="noopener noreferrer"
-            title="Native web componets consultant"
+            title="Native web componets"
           >
             Gmail Helper
           </a>
@@ -21,7 +39,7 @@ function OpenSourceProjects() {
         <li>
           <a
             href="https://github.com/dimitardanailov/tantalus"
-            title="Nodejs consultant"
+            title="Nodejs and Microservices"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -35,7 +53,7 @@ function OpenSourceProjects() {
         <li>
           <a
             href="https://github.com/dimitardanailov/push-notifications"
-            title="Push notification demo"
+            title="Safari and Google Chrome Push notifications"
             target="_blank"
             rel="noopener noreferrer"
           >
