@@ -6,8 +6,9 @@ function Skills() {
       <h3>Skills</h3>
       <ul>
         <li>
-          🔥 <Keyword word="React" /> and Monorepo, Redux, State Machines,
-          Custom Elements v1, D3js, Safari Push notifications, Polymer, Draftjs;
+          🔥 <Keyword word="React" /> and Monorepo, <Keyword word="nextjs" />,
+          Redux, State Machines, Custom Elements v1, D3js, Safari Push
+          notifications, Polymer, Draftjs;
         </li>
         <li>🛡 Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant;</li>
         <li>
