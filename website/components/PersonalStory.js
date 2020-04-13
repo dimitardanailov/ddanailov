@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Keyword from './Keyword'
 
 function PersonalStory() {
   return (
@@ -7,8 +8,8 @@ function PersonalStory() {
         My personal journey begun before ten years ago. For these period I
         "visited" a signification amount of kingdoms 👑. My roles were "warrior"
         (backend developer), "engineer" (front - end developer), "magician"
-        (team leader and software architect), "the assassin" (freelancer) and
-        even the "main officer" (CTO).
+        (team leader and software architect), "the assassin" (freelancer /
+        <Keyword word="remote contractor" />) and even the "main officer" (CTO).
       </div>
       <div>
         When I worked like a warrior 💪 I wrote a significant amount of scripts
@@ -30,7 +31,9 @@ function PersonalStory() {
         skills to complete: fast and efficient stakeholders requirements.
       </div>
       <Link href="/about">
-        <a title="Dimitar Danailov: Bio">More details about me.</a>
+        <a title="Dimitar Danailov: Portfolio details">
+          The second chapter of my book
+        </a>
       </Link>
     </div>
   )
