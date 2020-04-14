@@ -9,11 +9,8 @@ const Homepage = () => {
   const [device, setDevice] = React.useState('')
 
   useEffect(() => {
-    const fetchDevice = async () => {
-      const tempDevice = await detectDevice()
-      setDevice(tempDevice)
-    }
-    fetchDevice()
+    const tempDevice = detectDevice()
+    setDevice(tempDevice)
   }, [device])
 
   const loading = {
