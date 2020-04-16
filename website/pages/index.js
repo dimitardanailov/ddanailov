@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic'
 
 import React, {useEffect} from 'react'
 
+import App from '@ddanailov/components/App'
 import detectDevice from '@ddanailov/utils/devices/detectDevice'
 import Switch from '@ddanailov/components/pages/shared/devices/Switch'
 
@@ -18,7 +19,7 @@ const Homepage = () => {
   }
 
   return (
-    <>
+    <App>
       <Switch
         device={device}
         MobilePage={dynamic(
@@ -30,7 +31,7 @@ const Homepage = () => {
           loading,
         )}
       />
-    </>
+    </App>
   )
 }
 
