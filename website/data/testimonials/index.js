@@ -1,8 +1,5 @@
-import dynamic from 'next/dynamic'
-
-const loading = {
-  loading: () => <p>Loading...</p>,
-}
+import Heidi from './Heidi'
+import Henry from './Henry'
 
 export const heidi = {
   name: 'Heidi Lund',
@@ -13,13 +10,19 @@ export const heidi = {
   },
   title:
     'Product Manager, Educational Software; Pragmatic Marketing Certified: Level VI',
-  component: dynamic(import('data/testimonials/Heidi'), loading),
+  component: <Heidi />,
+  testimonialTitle: 'Associate Product Manager at Questar Assessment Inc.',
 }
 
 export const henry = {
   name: 'Henry Clough',
-  linkedin: 'https://www.linkedin.com/in/henryclough/',
+  linkedin: {
+    profile: 'https://www.linkedin.com/in/henryclough/',
+    image:
+      'https://media-exp1.licdn.com/dms/image/C4E03AQFiUqHZUWET4g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=E_NKDtbuUNFi0ZKoIJ3NP3xUfDXc133R0b6O-xTIR_8',
+  },
   title: 'Chairperson, Asian Absolute | Translation and Localisation Services',
+  component: <Henry />,
 }
 
 export const ivelin = {
