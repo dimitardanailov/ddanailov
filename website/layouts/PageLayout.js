@@ -1,3 +1,5 @@
+import MainHeader from '../components/MainHeader'
+
 import styled from 'styled-components'
 
 const Container = styled.section`
