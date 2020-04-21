@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
-import {ivelin} from 'data/testimonials'
+import {heidi, ivelin, henry} from 'data/testimonials'
 
 import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 
 import Slogan from '@ddanailov/styled/Slogan'
 import Avatar from '@ddanailov/components/Testimonials/Avatar'
 import PersonInfo from '@ddanailov/components/Testimonials/PersonInfo'
+
+import AboutMe from '@ddanailov/components/pages/about/AboutMe'
+import Roles from '@ddanailov/components/pages/about/Roles'
 
 const TestimonialBody = styled.div`
   position: relative;
@@ -39,148 +42,45 @@ const RecommendationBody = styled.div`
 
 const AboutPage = () => (
   <>
-    <Slogan>Dimitar Danailov</Slogan>
-
-    <p>
-      Remote consultant / Full stack Web Developer with more than 10 years of
-      profesional experience
-    </p>
-
-    <ul>
-      <li>
-        Fine with both front-end (React.js, Native web components, D3.js,
-        Polymer and SPA) and back-end(Nodejs, Go)
-      </li>
-      <li>Amazon web services, Azure and Google Cloud are my best friends</li>
-      <li>Creating software is my hobby</li>
-      <li>Mentorship: I love to share my experience with the world</li>
-      <li>I love open source and Stackoverflow</li>
-      <li>I'm a guy with good self - education discipline</li>
-    </ul>
-
-    <Slogan>Consultant / Javascript Developer</Slogan>
-
-    <ul>
-      <li>
-        Present Remote consultant in{' '}
-        <a
-          href="https://getcraft.com/"
-          title="Remote consultant in GetCraft"
-          rel="noopener"
-          target="_blank"
-        >
-          GetCraft
-        </a>{' '}
-        and
-        <a
-          href="https://asianabsolute.com/"
-          title="Remote consultant in Asian Absolute"
-          rel="noopener"
-          target="_blank"
-        >
-          Asian Absolute
-        </a>
-      </li>
-      <li>
-        Former software architect in{' '}
-        <a
-          href="https://mentormate.com/"
-          title="Software architect in MentorMate"
-          rel="noopener"
-          target="_blank"
-        >
-          Mentormate
-        </a>
-      </li>
-      <li>
-        Former Developer and CTO in{' '}
-        <a
-          href="https://wollow-soft.com/en-US/"
-          title="Software Developer and CTO in Wollow soft"
-          rel="noopener"
-          target="_blank"
-        >
-          Wollow soft
-        </a>
-      </li>
-      <li>
-        Passion to work with React, Nodejs, Go, Amazon Web Services, Azure,
-        Google Cloud
-      </li>
-      <li>
-        Experience with Remote teams: (US, UK, Australia, Indonesia, Singapore)
-      </li>
-      <li>Encourage clear code, tests, and good documentation.</li>
-    </ul>
+    <AboutMe />
+    <Roles />
 
     <Slogan>Testimonials and Recommendations</Slogan>
 
     <TestimonialBody>
       <Avatar
-        href="https://www.linkedin.com/in/heidilundproductmanager/"
-        src="https://media-exp1.licdn.com/dms/image/C4E03AQHGevnu6Z8NZw/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=X39amMwD-8dyLFsPSJSkjO55H6slKHW7viGqZWI24cw"
-        title="Product Manager, Educational Software; Pragmatic Marketing Certified: Level VI"
+        href={heidi.linkedin.profile}
+        src={heidi.linkedin.image}
+        title={heidi.linkedin.title}
       />
 
       <RecommendationBody>
-        <p>
-          "Dimitar helped to build a new solution for a current product that
-          needed revisions based on usage in a newer OS. He worked with our
-          enterprise architect and a dedicated dev team and QA team to define
-          requirements, ask questions, and to think ahead of our solution. He
-          was punctual, positive, and helped to drive the process forward on a
-          daily basis. Thanks for your help, Dimitar!"
-        </p>
+        {heidi.component}
 
         <PersonInfo>
-          <TargetBlankLink
-            href="https://www.linkedin.com/in/heidilundproductmanager/"
-            title="Product Manager, Educational Software; Pragmatic Marketing Certified: Level VI"
-          >
-            Heidi Lund
+          <TargetBlankLink href={heidi.linkedin.profile} title={heidi.title}>
+            {heidi.name}
           </TargetBlankLink>
-          , Associate Product Manager at Questar Assessment Inc.
+          , {heidi.testimonialTitle}
         </PersonInfo>
       </RecommendationBody>
     </TestimonialBody>
 
     <TestimonialBodyCenter>
       <Avatar
-        href="https://www.linkedin.com/in/henryclough/"
-        title="Chairperson, Asian Absolute | Translation and Localisation Services"
-        src="https://media-exp1.licdn.com/dms/image/C4E03AQFiUqHZUWET4g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=E_NKDtbuUNFi0ZKoIJ3NP3xUfDXc133R0b6O-xTIR_8"
+        href={henry.linkedin.profile}
+        title={henry.title}
+        src={henry.linkedin.image}
       />
 
       <RecommendationBody>
-        <p>
-          "Dimitar Danailov led the development work on our primary project
-          management and production application from 2013 to 2015. He and his
-          team took over the responsibility for supporting and updating our
-          existing application written in VB on ASP.NET, and they developed a
-          new application written in C# on ASP.NET MVC. Both applications ran on
-          Microsoft Azure and used a SQL database. The applications covered
-          functionality ranging from CRM, a vendor database, production tasks
-          for our operations team working on translation and localisation
-          projects, and finance. I was impressed by Dimitar’s technical skills –
-          as a solutions architect designing both front-end and back-end, his
-          efficient coding and his ability to propose elegant solutions to meet
-          our requirements. Dimitar was proactive in suggesting new technical
-          approaches to overcome our particular challenges and I appreciated his
-          willingness to research new technologies specifically for our project.
-          Dimitar displayed admirable personal commitment in investing his
-          personal time to work on our project and I considered him a true
-          partner in our endeavour. I have no hesitation in recommending Dimitar
-          and I am confident that he will be an asset to any employer."
-        </p>
+        {henry.component}
 
         <PersonInfo>
-          <TargetBlankLink
-            href="https://www.linkedin.com/in/henryclough/"
-            title="Chairperson, Asian Absolute | Translation and Localisation Services"
-          >
+          <TargetBlankLink href={henry.linkedin.profile} title={henry.title}>
             Henry Clough
           </TargetBlankLink>
-          , Managing Director Asian Absolute
+          , {henry.title}
         </PersonInfo>
       </RecommendationBody>
     </TestimonialBodyCenter>
