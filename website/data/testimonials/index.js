@@ -28,9 +28,9 @@ export const henry = {
 export const ivelin = {
   name: 'Ivelin Ivanov',
   linkedin: {
-    title: 'Company Owner',
     profile: 'https://www.linkedin.com/in/ivelinivanov158/',
     image:
       'https://media-exp1.licdn.com/dms/image/C4D03AQHNOZQoZHcutg/profile-displayphoto-shrink_800_800/0?e=1591228800&v=beta&t=4wE5W6N2dhPcYr3zr1HN2t2DvWVlcGu8S3sp5I-_1fA',
   },
+  title: 'Company Owner',
 }
