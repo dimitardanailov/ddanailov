@@ -15,6 +15,7 @@ I'm looking for the next kingdom 🏯
 ### Expertise / Technical background
 
 - Working with Remote teams (US, UK, Australia, Indonesia, Singapore);
+- Working on big picture;
 - Software architectures;
 - Software and Technical Lead;
 - Front - end experience (Polymer, React, D3js, Custom Elements v1, Vanilla Javascript);
