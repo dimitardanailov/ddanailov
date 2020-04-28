@@ -6,7 +6,7 @@ function IvelinLetter() {
       <p>
         I am writing this recommendation for Dimitar Danailov with great
         pleasure and respect. Dimitar has worked for me and with me for more
-        than five years in 158Ltd. He has started as programmer and passed all
+        than five years in 158Ltd. He has started as a programmer and passed all
         the levels to CTO in the last year. In terms of technical skills, he has
         an undeniable qualification, but for me and for the company he was
         highly esteemed for his loyalty and devotion. He is a person with whom I
