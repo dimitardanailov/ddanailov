@@ -1,3 +1,4 @@
+import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 import PersonInfo from '@ddanailov/components/pages/about/Testimonials/Components/PersonInfo'
 
 import {ivelin} from 'data/testimonials'
