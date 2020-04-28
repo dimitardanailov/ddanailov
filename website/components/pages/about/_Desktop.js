@@ -11,8 +11,12 @@ import PersonInfo from '@ddanailov/components/Testimonials/PersonInfo'
 import AboutMe from '@ddanailov/components/pages/about/AboutMe'
 import Roles from '@ddanailov/components/pages/about/Roles'
 
+// Ivelin
 import IvelinLetter from '@ddanailov/components/pages/about/Testimonials/Ivelin/Letter'
 import IvelinInfo from '@ddanailov/components/pages/about/Testimonials/Ivelin/Info'
+
+// Tsvetan
+import TsvetanLetter from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Letter'
 
 const TestimonialBody = styled.div`
   position: relative;
@@ -212,14 +216,7 @@ const AboutPage = () => (
       />
 
       <RecommendationBody>
-        <p>
-          "Dimitar is a personable individual that gets on well with those
-          around him. He is focused and dedicated to producing his very best at
-          all times. He has shown that he is able to deal with uncertainty and
-          dislocation. He is very good software engineer knows a lot of
-          technologies. Also great teamleader. I recommend him highly – he will
-          not let you down!"
-        </p>
+        <TsvetanLetter />
 
         <PersonInfo>
           <TargetBlankLink
