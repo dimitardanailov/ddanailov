@@ -11,6 +11,9 @@ import PersonInfo from '@ddanailov/components/Testimonials/PersonInfo'
 import AboutMe from '@ddanailov/components/pages/about/AboutMe'
 import Roles from '@ddanailov/components/pages/about/Roles'
 
+// Heidi
+import HeidiLetter from '@ddanailov/components/pages/about/Testimonials/Heidi/Letter'
+
 // Ivelin
 import IvelinLetter from '@ddanailov/components/pages/about/Testimonials/Ivelin/Letter'
 import IvelinInfo from '@ddanailov/components/pages/about/Testimonials/Ivelin/Info'
@@ -58,11 +61,11 @@ const AboutPage = () => (
       <Avatar
         href={heidi.linkedin.profile}
         src={heidi.linkedin.image}
-        title={heidi.linkedin.title}
+        title={heidi.title}
       />
 
       <RecommendationBody>
-        {heidi.component}
+        <HeidiLetter />
 
         <PersonInfo>
           <TargetBlankLink href={heidi.linkedin.profile} title={heidi.title}>
@@ -95,7 +98,7 @@ const AboutPage = () => (
     <TestimonialBodyCenter>
       <Avatar
         href={ivelin.linkedin.profile}
-        title={ivelin.linkedin.title}
+        title={ivelin.title}
         src={ivelin.linkedin.image}
       />
 
