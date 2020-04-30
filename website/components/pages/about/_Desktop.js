@@ -13,6 +13,7 @@ import Roles from '@ddanailov/components/pages/about/Roles'
 
 // Heidi
 import HeidiLetter from '@ddanailov/components/pages/about/Testimonials/Heidi/Letter'
+import HeidiInfo from '@ddanailov/components/pages/about/Testimonials/Heidi/Info'
 
 // Ivelin
 import IvelinLetter from '@ddanailov/components/pages/about/Testimonials/Ivelin/Letter'
@@ -67,12 +68,7 @@ const AboutPage = () => (
       <RecommendationBody>
         <HeidiLetter />
 
-        <PersonInfo>
-          <TargetBlankLink href={heidi.linkedin.profile} title={heidi.title}>
-            {heidi.name}
-          </TargetBlankLink>
-          , {heidi.testimonialTitle}
-        </PersonInfo>
+        <HeidiInfo />
       </RecommendationBody>
     </TestimonialBody>
 
