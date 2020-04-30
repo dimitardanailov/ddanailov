@@ -33,6 +33,16 @@ export const ivelin = {
   title: 'Company Owner',
 }
 
+export const tsvetan = {
+  name: 'Cvetan Himchev',
+  linkedin: {
+    profile: 'https://www.linkedin.com/in/cvetan-himchev-7134492b/',
+    image:
+      'https://media-exp1.licdn.com/dms/image/C5603AQE277jEMcn4PQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=7gcVVJgkA20ikSr1g8TvuniZmh4icaZfcvBrhJ4clj4',
+  },
+  title: 'Senior Application Developer at Vertinity LTD',
+}
+
 export const vladimir = {
   name: 'Vladimir Dimov',
   linkedin: {
