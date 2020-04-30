@@ -1,4 +1,4 @@
-function Heidi() {
+function HeidiLetter() {
   return (
     <p>
       "Dimitar helped to build a new solution for a current product that needed
@@ -11,4 +11,4 @@ function Heidi() {
   )
 }
 
-export default Heidi
+export default HeidiLetter

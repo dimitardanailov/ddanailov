@@ -1,4 +1,3 @@
-import Heidi from './Heidi'
 import Henry from './Henry'
 
 export const heidi = {
@@ -10,7 +9,6 @@ export const heidi = {
   },
   title:
     'Product Manager, Educational Software; Pragmatic Marketing Certified: Level VI',
-  component: <Heidi />,
   testimonialTitle: 'Associate Product Manager at Questar Assessment Inc.',
 }
 
