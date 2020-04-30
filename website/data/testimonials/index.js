@@ -34,3 +34,13 @@ export const ivelin = {
   },
   title: 'Company Owner',
 }
+
+export const vladimir = {
+  name: 'Vladimir Dimov',
+  linkedin: {
+    profile: 'https://www.linkedin.com/in/vladimirdimov1/',
+    image:
+      'https://media-exp1.licdn.com/dms/image/C5103AQFFyBz1SbLkOA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=uhMw85xRVWiK6Fmv6SJ_i2GcyfEXs19dBd5giJdWYts',
+  },
+  title: 'Mobile Application Developer at Prime Holding JSC',
+}
