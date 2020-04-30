@@ -24,6 +24,7 @@ import TsvetanLetter from '@ddanailov/components/pages/about/Testimonials/Tsveta
 
 // Vladimir
 import VladimirLetter from '@ddanailov/components/pages/about/Testimonials/Vladimir/Letter'
+import VladimirInfo from '@ddanailov/components/pages/about/Testimonials/Vladimir/Info'
 
 const TestimonialBody = styled.div`
   position: relative;
@@ -240,15 +241,7 @@ const AboutPage = () => (
       />
       <RecommendationBody>
         <VladimirLetter />
-        <PersonInfo>
-          <TargetBlankLink
-            href="https://www.linkedin.com/in/vladimirdimov1/"
-            title="Vladimir Dimov - Mobile Application Developer at Prime Holding JSC"
-          >
-            Vladimir Dimov
-          </TargetBlankLink>
-          , Mobile Application Developer at Prime Holding JSC
-        </PersonInfo>
+        <VladimirInfo />
       </RecommendationBody>
     </TestimonialBody>
   </>
