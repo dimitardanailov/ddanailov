@@ -17,6 +17,7 @@ import HeidiInfo from '@ddanailov/components/pages/about/Testimonials/Heidi/Info
 
 // Henry
 import HenryLetter from '@ddanailov/components/pages/about/Testimonials/Henry/Letter'
+import HenryInfo from '@ddanailov/components/pages/about/Testimonials/Henry/Info'
 
 // Ivelin
 import IvelinLetter from '@ddanailov/components/pages/about/Testimonials/Ivelin/Letter'
@@ -96,13 +97,7 @@ const AboutPage = () => (
 
       <RecommendationBody>
         <HenryLetter />
-
-        <PersonInfo>
-          <TargetBlankLink href={henry.linkedin.profile} title={henry.title}>
-            Henry Clough
-          </TargetBlankLink>
-          , {henry.title}
-        </PersonInfo>
+        <HenryInfo />
       </RecommendationBody>
     </TestimonialBodyCenter>
 
