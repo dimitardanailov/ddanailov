@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import {heidi, ivelin, henry, mo} from 'data/testimonials'
+import {heidi, ivelin, henry, mo, tsvetan} from 'data/testimonials'
 
 import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 
@@ -33,6 +33,7 @@ import AshtonInfo from '@ddanailov/components/pages/about/Testimonials/Ashton/In
 
 // Tsvetan
 import TsvetanLetter from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Letter'
+import TsvetanInfo from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Info'
 
 // Vladimir
 import VladimirLetter from '@ddanailov/components/pages/about/Testimonials/Vladimir/Letter'
@@ -161,23 +162,14 @@ const AboutPage = () => (
 
     <TestimonialBody>
       <Avatar
-        href="https://www.linkedin.com/in/cvetan-himchev-7134492b/"
-        src="https://media-exp1.licdn.com/dms/image/C5603AQE277jEMcn4PQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=7gcVVJgkA20ikSr1g8TvuniZmh4icaZfcvBrhJ4clj4"
-        title="Cvetan Himchev - Senior Application Developer at Vertinity LTD"
+        href={tsvetan.linkedin.profile}
+        src={tsvetan.linkedin.image}
+        title={tsvetan.title}
       />
 
       <RecommendationBody>
         <TsvetanLetter />
-
-        <PersonInfo>
-          <TargetBlankLink
-            href="https://www.linkedin.com/in/cvetan-himchev-7134492b/"
-            title="Cvetan Himchev - Senior Application Developer at Vertinity LTD"
-          >
-            Cvetan Himchev
-          </TargetBlankLink>
-          , Senior Application Developer at Vertinity LTD
-        </PersonInfo>
+        <TsvetanInfo />
       </RecommendationBody>
     </TestimonialBody>
 
