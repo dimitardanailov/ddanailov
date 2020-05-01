@@ -1,5 +1,3 @@
-import Henry from './Henry'
-
 export const heidi = {
   name: 'Heidi Lund',
   linkedin: {
@@ -20,7 +18,6 @@ export const henry = {
       'https://media-exp1.licdn.com/dms/image/C4E03AQFiUqHZUWET4g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=E_NKDtbuUNFi0ZKoIJ3NP3xUfDXc133R0b6O-xTIR_8',
   },
   title: 'Chairperson, Asian Absolute | Translation and Localisation Services',
-  component: <Henry />,
 }
 
 export const ivelin = {
