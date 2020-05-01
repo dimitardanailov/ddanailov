@@ -21,6 +21,7 @@ import IvelinInfo from '@ddanailov/components/pages/about/Testimonials/Ivelin/In
 
 // Mo
 import MoLetter from '@ddanailov/components/pages/about/Testimonials/Mo/Letter'
+import MoInfo from '@ddanailov/components/pages/about/Testimonials/Mo/Info'
 
 // Ashton
 import AshtonLetter from '@ddanailov/components/pages/about/Testimonials/Ashton/Letter'
@@ -124,15 +125,7 @@ const AboutPage = () => (
 
       <RecommendationBody>
         <MoLetter />
-        <PersonInfo>
-          <TargetBlankLink
-            href="https://www.linkedin.com/in/mohamdouna/"
-            title="Leading Mo Works team who can create, launch and scale your brand/tech product into Australia, APAC and MENA"
-          >
-            Mo Hamdouna
-          </TargetBlankLink>
-          , Founder, Creative Director
-        </PersonInfo>
+        <MoInfo />
       </RecommendationBody>
     </TestimonialBodyCenter>
 
