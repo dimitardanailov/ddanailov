@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import {heidi, ivelin, henry, mo, tsvetan} from 'data/testimonials'
+import {heidi, ivelin, henry, mo, tsvetan, vladimir} from 'data/testimonials'
 
 import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 
@@ -175,9 +175,9 @@ const AboutPage = () => (
 
     <TestimonialBody>
       <Avatar
-        src="https://media-exp1.licdn.com/dms/image/C5103AQFFyBz1SbLkOA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=uhMw85xRVWiK6Fmv6SJ_i2GcyfEXs19dBd5giJdWYts"
-        href="https://www.linkedin.com/in/vladimirdimov1/"
-        title="Vladimir Dimov - Mobile Application Developer at Prime Holding JSC"
+        src={vladimir.linkedin.image}
+        href={vladimir.linkedin.profile}
+        title={vladimir.title}
       />
       <RecommendationBody>
         <VladimirLetter />
