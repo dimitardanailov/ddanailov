@@ -33,6 +33,18 @@ export const ivelin = {
   title: 'Company Owner',
 }
 
+export const mo = {
+  name: 'Mo Hamdouna',
+  linkedin: {
+    profile: 'https://www.linkedin.com/in/mohamdouna/',
+    title:
+      'Leading Mo Works team who can create, launch and scale your brand/tech product into Australia, APAC and MENA',
+    image:
+      'https://media-exp1.licdn.com/dms/image/C5603AQGr82bhKnGFpA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=L8kT_ALCB5apm2_FdMnVbLJ5rThEBlJEsu553OKH7wk',
+  },
+  title: 'Founder, Creative Director',
+}
+
 export const tsvetan = {
   name: 'Cvetan Himchev',
   linkedin: {
