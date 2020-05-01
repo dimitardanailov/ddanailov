@@ -6,7 +6,7 @@ import {tsvetan} from 'data/testimonials'
 function TsvetanInfo() {
   return (
     <PersonInfo>
-      <TargetBlankLink href={tsvetan.href} title={tsvetan.title}>
+      <TargetBlankLink href={tsvetan.linkedin.profile} title={tsvetan.title}>
         {tsvetan.name}
       </TargetBlankLink>
       , {tsvetan.title}
