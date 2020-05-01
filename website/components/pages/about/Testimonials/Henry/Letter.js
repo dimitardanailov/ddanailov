@@ -1,4 +1,5 @@
 import Keyword from '@ddanailov/components/Keyword'
+import Space from '@ddanailov/styled/Space'
 
 function Henry() {
   return (
@@ -13,8 +14,11 @@ function Henry() {
       production tasks for our operations team working on translation and
       localisation projects, and finance. I was impressed by Dimitar’s technical
       skills – as a <Keyword word="solutions architect" /> designing both
+      <Space />
       <Keyword word="front-end" />
+      <Space />
       and
+      <Space />
       <Keyword word="back-end" />, his efficient coding and his ability to
       propose elegant solutions to meet our requirements. Dimitar was proactive
       in suggesting new technical approaches to overcome our particular
