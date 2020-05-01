@@ -42,6 +42,16 @@ export const mo = {
   title: 'Founder, Creative Director',
 }
 
+export const hristo = {
+  name: 'Hristo Georgiev',
+  linkedin: {
+    profile: 'https://www.linkedin.com/in/hggeorgiev/',
+    image:
+      'https://media-exp1.licdn.com/dms/image/C5603AQGyvzQ4DWJMoA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=JEKmMKOXzpsPUkhmhbrVFvwxA6EwBYJMsdh9kF4H-pw',
+  },
+  title: 'Software Engineer at Avrios | Former Founder of Centroida',
+}
+
 export const tsvetan = {
   name: 'Cvetan Himchev',
   linkedin: {
