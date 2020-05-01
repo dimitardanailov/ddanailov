@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 
-import {heidi, ivelin, henry, mo, tsvetan, vladimir} from 'data/testimonials'
+import {
+  heidi,
+  ivelin,
+  henry,
+  mo,
+  tsvetan,
+  vladimir,
+  hristo,
+} from 'data/testimonials'
 
 import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 
@@ -30,6 +38,9 @@ import MoInfo from '@ddanailov/components/pages/about/Testimonials/Mo/Info'
 // Ashton
 import AshtonLetter from '@ddanailov/components/pages/about/Testimonials/Ashton/Letter'
 import AshtonInfo from '@ddanailov/components/pages/about/Testimonials/Ashton/Info'
+
+// Hristo
+import HristoLetter from '@ddanailov/components/pages/about/Testimonials/Hristo/Letter'
 
 // Tsvetan
 import TsvetanLetter from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Letter'
@@ -135,27 +146,18 @@ const AboutPage = () => (
 
     <TestimonialBody>
       <Avatar
-        title="Software Engineer at Avrios | Former Founder of Centroida"
-        src="https://media-exp1.licdn.com/dms/image/C5603AQGyvzQ4DWJMoA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=JEKmMKOXzpsPUkhmhbrVFvwxA6EwBYJMsdh9kF4H-pw"
-        href="https://www.linkedin.com/in/hggeorgiev/"
+        title={hristo.title}
+        src={hristo.linkedin.image}
+        href={hristo.linkedin.profile}
       />
       <RecommendationBody>
-        <p>
-          "Dimitar is an outstanding mentor. His guidance helped me progress
-          with Ruby on Rails with ease and discover more about developing
-          web-based software. Even after my internship at 158ltd ended, he
-          continued assisting me with advice. Definitely a great person to learn
-          from and to work with!"
-        </p>
+        <HristoLetter />
 
         <PersonInfo>
-          <TargetBlankLink
-            title="Software Engineer at Avrios | Former Founder of Centroida"
-            href="https://www.linkedin.com/in/hggeorgiev/"
-          >
-            Hristo Georgiev
+          <TargetBlankLink title={hristo.title} href={hristo.linkedin.profile}>
+            {hristo.name}
           </TargetBlankLink>
-          , Software Engineer at Avrios
+          , {hristo.title}
         </PersonInfo>
       </RecommendationBody>
     </TestimonialBody>
