@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import {heidi, ivelin, henry} from 'data/testimonials'
+import {heidi, ivelin, henry, mo} from 'data/testimonials'
 
 import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 
@@ -18,6 +18,10 @@ import HeidiInfo from '@ddanailov/components/pages/about/Testimonials/Heidi/Info
 // Ivelin
 import IvelinLetter from '@ddanailov/components/pages/about/Testimonials/Ivelin/Letter'
 import IvelinInfo from '@ddanailov/components/pages/about/Testimonials/Ivelin/Info'
+
+// Ashton
+import AshtonLetter from '@ddanailov/components/pages/about/Testimonials/Ashton/Letter'
+import AshtonInfo from '@ddanailov/components/pages/about/Testimonials/Ashton/Info'
 
 // Tsvetan
 import TsvetanLetter from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Letter'
@@ -110,9 +114,9 @@ const AboutPage = () => (
 
     <TestimonialBodyCenter>
       <Avatar
-        href="https://www.linkedin.com/in/mohamdouna/"
-        title="Leading Mo Works team who can create, launch and scale your brand/tech product into Australia, APAC and MENA"
-        src="https://media-exp1.licdn.com/dms/image/C5603AQGr82bhKnGFpA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=L8kT_ALCB5apm2_FdMnVbLJ5rThEBlJEsu553OKH7wk"
+        href={mo.linkedin.profile}
+        title={mo.linkedin.title}
+        src={mo.linkedin.image}
       />
 
       <RecommendationBody>
@@ -166,22 +170,8 @@ const AboutPage = () => (
     </TestimonialBodyCenter>
 
     <section>
-      <p>
-        "Even though my time with Dimitar was limited, I found him consistently
-        pleasant, professional, and tackled all programming assignments with
-        dedication and a view of total success. Besides being a joy to work
-        with, Dimitar is a take - charge person who is able to present creative
-        ideas and communicate the benefits. I highly recommend Dimitar for
-        employment. He is a team player and would make a great asset of any
-        organization."
-      </p>
-
-      <PersonInfo>
-        <TargetBlankLink href="https://www.zoominfo.com/p/Ashton-Cunningham/1852035071">
-          Ashton Cunningham
-        </TargetBlankLink>
-        , IT Manager Campion
-      </PersonInfo>
+      <AshtonLetter />
+      <AshtonInfo />
     </section>
 
     <TestimonialBody>
