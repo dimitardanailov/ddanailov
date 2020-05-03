@@ -22,6 +22,7 @@ import Roles from '@ddanailov/components/pages/about/Roles'
 // Heidi
 import HeidiLetter from '@ddanailov/components/pages/about/Testimonials/Heidi/Letter'
 import HeidiInfo from '@ddanailov/components/pages/about/Testimonials/Heidi/Info'
+import HeidiAvatar from '@ddanailov/components/pages/about/Testimonials/Heidi/Avatar'
 
 // Henry
 import HenryLetter from '@ddanailov/components/pages/about/Testimonials/Henry/Letter'
@@ -87,11 +88,7 @@ const AboutPage = () => (
     <Slogan>Testimonials and Recommendations</Slogan>
 
     <TestimonialBody>
-      <Avatar
-        href={heidi.linkedin.profile}
-        src={heidi.linkedin.image}
-        title={heidi.title}
-      />
+      <HeidiAvatar />
 
       <RecommendationBody>
         <HeidiLetter />
