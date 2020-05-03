@@ -37,6 +37,7 @@ import AshtonInfo from '@ddanailov/components/pages/about/Testimonials/Ashton/In
 // Hristo
 import HristoAvatar from '@ddanailov/components/pages/about/Testimonials/Hristo/Avatar'
 import HristoLetter from '@ddanailov/components/pages/about/Testimonials/Hristo/Letter'
+import HristoInfo from '@ddanailov/components/pages/about/Testimonials/Hristo/Info'
 
 // Tsvetan
 import TsvetanAvatar from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Avatar'
@@ -131,12 +132,7 @@ const AboutPage = () => (
       <RecommendationBody>
         <HristoLetter />
 
-        <PersonInfo>
-          <TargetBlankLink title={hristo.title} href={hristo.linkedin.profile}>
-            {hristo.name}
-          </TargetBlankLink>
-          , {hristo.title}
-        </PersonInfo>
+        <HristoInfo />
       </RecommendationBody>
     </TestimonialBody>
 
