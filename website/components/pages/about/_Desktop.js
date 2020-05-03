@@ -1,19 +1,10 @@
 import styled from 'styled-components'
 
-import {
-  heidi,
-  ivelin,
-  henry,
-  mo,
-  tsvetan,
-  vladimir,
-  hristo,
-} from 'data/testimonials'
+import {hristo} from 'data/testimonials'
 
 import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 
 import Slogan from '@ddanailov/styled/Slogan'
-import Avatar from '@ddanailov/components/Testimonials/Avatar'
 import PersonInfo from '@ddanailov/components/Testimonials/PersonInfo'
 
 import AboutMe from '@ddanailov/components/pages/about/AboutMe'
@@ -27,27 +18,33 @@ import HeidiAvatar from '@ddanailov/components/pages/about/Testimonials/Heidi/Av
 // Henry
 import HenryLetter from '@ddanailov/components/pages/about/Testimonials/Henry/Letter'
 import HenryInfo from '@ddanailov/components/pages/about/Testimonials/Henry/Info'
+import HenryAvatar from '@ddanailov/components/pages/about/Testimonials/Henry/Avatar'
 
 // Ivelin
 import IvelinLetter from '@ddanailov/components/pages/about/Testimonials/Ivelin/Letter'
 import IvelinInfo from '@ddanailov/components/pages/about/Testimonials/Ivelin/Info'
+import IvelinAvatar from '@ddanailov/components/pages/about/Testimonials/Ivelin/Avatar'
 
 // Mo
 import MoLetter from '@ddanailov/components/pages/about/Testimonials/Mo/Letter'
 import MoInfo from '@ddanailov/components/pages/about/Testimonials/Mo/Info'
+import MoAvatar from '@ddanailov/components/pages/about/Testimonials/Mo/Avatar'
 
 // Ashton
 import AshtonLetter from '@ddanailov/components/pages/about/Testimonials/Ashton/Letter'
 import AshtonInfo from '@ddanailov/components/pages/about/Testimonials/Ashton/Info'
 
 // Hristo
+import HristoAvatar from '@ddanailov/components/pages/about/Testimonials/Hristo/Avatar'
 import HristoLetter from '@ddanailov/components/pages/about/Testimonials/Hristo/Letter'
 
 // Tsvetan
+import TsvetanAvatar from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Avatar'
 import TsvetanLetter from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Letter'
 import TsvetanInfo from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Info'
 
 // Vladimir
+import VladimirAvatar from '@ddanailov/components/pages/about/Testimonials/Vladimir/Avatar'
 import VladimirLetter from '@ddanailov/components/pages/about/Testimonials/Vladimir/Letter'
 import VladimirInfo from '@ddanailov/components/pages/about/Testimonials/Vladimir/Info'
 
@@ -98,11 +95,7 @@ const AboutPage = () => (
     </TestimonialBody>
 
     <TestimonialBodyCenter>
-      <Avatar
-        href={henry.linkedin.profile}
-        title={henry.title}
-        src={henry.linkedin.image}
-      />
+      <HenryAvatar />
 
       <RecommendationBody>
         <HenryLetter />
@@ -111,11 +104,7 @@ const AboutPage = () => (
     </TestimonialBodyCenter>
 
     <TestimonialBodyCenter>
-      <Avatar
-        href={ivelin.linkedin.profile}
-        title={ivelin.title}
-        src={ivelin.linkedin.image}
-      />
+      <IvelinAvatar />
 
       <RecommendationBody>
         <IvelinLetter />
@@ -124,11 +113,7 @@ const AboutPage = () => (
     </TestimonialBodyCenter>
 
     <TestimonialBodyCenter>
-      <Avatar
-        href={mo.linkedin.profile}
-        title={mo.linkedin.title}
-        src={mo.linkedin.image}
-      />
+      <MoAvatar />
 
       <RecommendationBody>
         <MoLetter />
@@ -142,11 +127,7 @@ const AboutPage = () => (
     </section>
 
     <TestimonialBody>
-      <Avatar
-        title={hristo.title}
-        src={hristo.linkedin.image}
-        href={hristo.linkedin.profile}
-      />
+      <HristoAvatar />
       <RecommendationBody>
         <HristoLetter />
 
@@ -160,11 +141,7 @@ const AboutPage = () => (
     </TestimonialBody>
 
     <TestimonialBody>
-      <Avatar
-        href={tsvetan.linkedin.profile}
-        src={tsvetan.linkedin.image}
-        title={tsvetan.title}
-      />
+      <TsvetanAvatar />
 
       <RecommendationBody>
         <TsvetanLetter />
@@ -173,11 +150,7 @@ const AboutPage = () => (
     </TestimonialBody>
 
     <TestimonialBody>
-      <Avatar
-        src={vladimir.linkedin.image}
-        href={vladimir.linkedin.profile}
-        title={vladimir.title}
-      />
+      <VladimirAvatar />
       <RecommendationBody>
         <VladimirLetter />
         <VladimirInfo />
