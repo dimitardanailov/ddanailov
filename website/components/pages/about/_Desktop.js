@@ -1,11 +1,6 @@
 import styled from 'styled-components'
 
-import {hristo} from 'data/testimonials'
-
-import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
-
 import Slogan from '@ddanailov/styled/Slogan'
-import PersonInfo from '@ddanailov/components/Testimonials/PersonInfo'
 
 import AboutMe from '@ddanailov/components/pages/about/AboutMe'
 import Roles from '@ddanailov/components/pages/about/Roles'
