@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-function MainHeader({canonical}) {
+function MainHeader({canonicalTag}) {
   return (
     <div>
       <Head>
@@ -17,7 +17,7 @@ function MainHeader({canonical}) {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="canonical" href={`https://ddanailov.dev${canonical}`} />
+        <link rel="canonical" href={`https://ddanailov.dev${canonicalTag}`} />
 
         <script
           async
@@ -52,11 +52,11 @@ function MainHeader({canonical}) {
 }
 
 MainHeader.defaultProps = {
-  canonical: '/',
+  canonicalTag: '/',
 }
 
 MainHeader.propTypes = {
-  canonical: PropTypes.string,
+  canonicalTag: PropTypes.string,
 }
 
 export default MainHeader
