@@ -1,9 +1,16 @@
+import dynamic from 'next/dynamic'
+
 import Slogan from '@ddanailov/styled/Slogan'
+
+const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 
 function AboutMe() {
   return (
     <>
       <Slogan>Dimitar Danailov</Slogan>
+
+      <SocialIcons />
+
       <p>
         Remote consultant / Full stack Web Developer with more than 10 years of
         profesional experience
