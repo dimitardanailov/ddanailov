@@ -69,3 +69,8 @@ module.exports.UTILS_DIR = path.resolve(BASE_DIR, 'utils')
  * Font: Leckerli One
  */
 module.exports.ICON_DIR = path.resolve(BASE_DIR, 'icons')
+
+/**
+ * NEXTJS_PAGES creates a folder for each page per device
+ */
+module.exports.NEXTJS_PAGES = path.resolve(BASE_DIR, 'pages-nextjs')
