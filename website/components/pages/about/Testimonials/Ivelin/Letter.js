@@ -1,4 +1,4 @@
-import Keyword from '@ddanailov/components/Pages/about/Testimonials/Ivelin/@ddanailov/components/Keyword'
+import Keyword from '@ddanailov/components/Keyword'
 
 function IvelinLetter() {
   return (

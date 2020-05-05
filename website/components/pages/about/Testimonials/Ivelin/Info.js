@@ -1,7 +1,7 @@
-import TargetBlankLink from '@ddanailov/components/Pages/about/Testimonials/Ivelin/@ddanailov/components/TargetBlankLink'
+import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 import PersonInfo from '@ddanailov/components/Pages/about/Testimonials/Components/PersonInfo'
 
-import {ivelin} from '@ddanailov/components/Pages/about/Testimonials/Ivelin/data/testimonials'
+import {ivelin} from 'data/testimonials'
 
 function IvelinInfo() {
   return (

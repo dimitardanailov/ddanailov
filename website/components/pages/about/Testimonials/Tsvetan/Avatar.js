@@ -1,6 +1,6 @@
-import Avatar from '@ddanailov/components/Pages/about/Testimonials/Tsvetan/@ddanailov/components/Testimonials/Avatar'
+import Avatar from '@ddanailov/components/Testimonials/Avatar'
 
-import {tsvetan} from '@ddanailov/components/Pages/about/Testimonials/Tsvetan/data/testimonials'
+import {tsvetan} from 'data/testimonials'
 
 function TsvetanAvatar() {
   return (

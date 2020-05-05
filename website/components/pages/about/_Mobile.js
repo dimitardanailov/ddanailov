@@ -10,14 +10,6 @@ import Slogan from '@ddanailov/styled/Slogan'
 
 const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 
-const HomePageMobile = () => (
-  <>
-    <Slogan>Dear Guest,</Slogan>
-    <SocialIcons />
-    <PersonalStory />
-    <OpenSourceProjects />
-    <Skills />
-  </>
-)
+const AboutPageMobile = () => <>Mobile</>
 
-export default MainMobileLayout(HomePageMobile)
+export default MainMobileLayout(AboutPageMobile)

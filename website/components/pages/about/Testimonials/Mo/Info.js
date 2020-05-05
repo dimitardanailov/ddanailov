@@ -1,7 +1,7 @@
-import TargetBlankLink from '@ddanailov/components/Pages/about/Testimonials/Mo/@ddanailov/components/TargetBlankLink'
+import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 import PersonInfo from '@ddanailov/components/Pages/about/Testimonials/Components/PersonInfo'
 
-import {mo} from '@ddanailov/components/Pages/about/Testimonials/Mo/data/testimonials'
+import {mo} from 'data/testimonials'
 
 function MoInfo() {
   return (

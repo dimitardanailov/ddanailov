@@ -1,5 +1,5 @@
-import Keyword from '@ddanailov/components/Pages/about/Testimonials/Henry/@ddanailov/components/Keyword'
-import Space from '@ddanailov/components/Pages/about/Testimonials/Henry/@ddanailov/styled/Space'
+import Keyword from '@ddanailov/components/Keyword'
+import Space from '@ddanailov/styled/Space'
 
 function Henry() {
   return (

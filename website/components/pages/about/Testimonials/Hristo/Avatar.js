@@ -1,6 +1,6 @@
-import Avatar from '@ddanailov/components/Pages/about/Testimonials/Hristo/@ddanailov/components/Testimonials/Avatar'
+import Avatar from '@ddanailov/components/Testimonials/Avatar'
 
-import {hristo} from '@ddanailov/components/Pages/about/Testimonials/Hristo/data/testimonials'
+import {hristo} from 'data/testimonials'
 
 function HristoAvatar() {
   return (

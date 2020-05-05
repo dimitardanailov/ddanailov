@@ -1,6 +1,6 @@
-import Avatar from '@ddanailov/components/Pages/about/Testimonials/Ivelin/@ddanailov/components/Testimonials/Avatar'
+import Avatar from '@ddanailov/components/Testimonials/Avatar'
 
-import {ivelin} from '@ddanailov/components/Pages/about/Testimonials/Ivelin/data/testimonials'
+import {ivelin} from 'data/testimonials'
 
 function IvelinAvatar() {
   return (

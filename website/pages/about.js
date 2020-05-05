@@ -1,7 +1,35 @@
-import MainLayout from '@ddanailov/layouts/PageLayout'
+import dynamic from 'next/dynamic'
 
-import Desktop from '@ddanailov/components/pages/about/_Desktop'
+import React, {useEffect} from 'react'
 
-const AboutPage = () => <Desktop />
+import App from '@ddanailov/components/App'
+import detectDevice from '@ddanailov/utils/devices/detectDevice'
+import Switch from '@ddanailov/components/Pages/shared/devices/Switch'
+import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 
-export default MainLayout(AboutPage, '/about')
+const AboutPage = () => {
+  const [device, setDevice] = React.useState('')
+
+  useEffect(() => {
+    const tempDevice = detectDevice()
+    setDevice(tempDevice)
+  }, [device])
+
+  return (
+    <App canonicalTag="/about">
+      <Switch
+        device={device}
+        MobilePage={dynamic(
+          import('@ddanailov/components/Pages/about/_Mobile'),
+          PageLoader,
+        )}
+        DesktopPage={dynamic(
+          import('@ddanailov/components/Pages/about/_Desktop'),
+          PageLoader,
+        )}
+      />
+    </App>
+  )
+}
+
+export default AboutPage

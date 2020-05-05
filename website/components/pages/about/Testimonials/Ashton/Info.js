@@ -1,5 +1,5 @@
-import TargetBlankLink from '@ddanailov/components/Pages/about/Testimonials/Ashton/@ddanailov/components/TargetBlankLink'
-import PersonInfo from '@ddanailov/components/Pages/about/Testimonials/Components/PersonInfo'
+import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
+import PersonInfo from '@ddanailov/components/pages/about/Testimonials/Components/PersonInfo'
 
 function AshtonInfo() {
   return (
