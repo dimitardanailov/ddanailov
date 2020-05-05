@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import React, {useEffect} from 'react'
 
 import detectDevice from '@ddanailov/utils/devices/detectDevice'
-import Switch from '@ddanailov/components/pages/shared/devices/Switch'
+import Switch from '@ddanailov/components/Pages/shared/devices/Switch'
 
 const BlogPage = () => {
   const [device, setDevice] = React.useState('')
@@ -22,11 +22,11 @@ const BlogPage = () => {
       <Switch
         device={device}
         MobilePage={dynamic(
-          import('@ddanailov/components/pages/blog/_Mobile'),
+          import('@ddanailov/components/Pages/blog/_Mobile'),
           loading,
         )}
         DesktopPage={dynamic(
-          import('@ddanailov/components/pages/blog/_Desktop'),
+          import('@ddanailov/components/Pages/blog/_Desktop'),
           loading,
         )}
       />
