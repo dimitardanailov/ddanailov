@@ -12,10 +12,24 @@ const {
   LAYOUT_DIR,
   STYLED_DIR,
   UTILS_DIR,
+  NEXTJS_PAGES,
 } = require('./utils/folders')
 
-function getPageComponents(page) {
-  return `${COMPONENTS_DIR}/Pages/${page}/Components`
+/**
+ * Each page has two main layouts
+ * - Desktop
+ * - Mobile
+ *
+ * Nextjs uses page folder. This is the reason to create a new folder.
+ * The new folder is responsible to hold
+ * - Desktop layout
+ * - Mobile layout
+ * - Page Components (Desktop or Mobile)
+ *
+ * @param {string} page
+ */
+function getNextJSPageDeviceLayout(page) {
+  return `${NEXTJS_PAGES}/${page}/`
 }
 
 const nextConfig = {
@@ -34,8 +48,9 @@ const nextConfig = {
     config.resolve.alias['@ddanailov/styles'] = STYLES_DIR
     config.resolve.alias['@ddanailov/components'] = COMPONENTS_DIR
 
-    // pages
-    config.resolve.alias['@pages/components/about'] = getPageComponents('About')
+    // device layouts
+    config.resolve.alias['@homepage'] = getNextJSPageDeviceLayout('Homepage')
+    config.resolve.alias['@about'] = getNextJSPageDeviceLayout('About')
 
     config.resolve.alias['@ddanailov/layouts'] = LAYOUT_DIR
     config.resolve.alias['@ddanailov/styled'] = STYLED_DIR
