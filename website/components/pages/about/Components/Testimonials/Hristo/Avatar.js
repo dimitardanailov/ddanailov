@@ -1,4 +1,4 @@
-import Avatar from '@ddanailov/components/Testimonials/Avatar'
+import Avatar from '@pages/components/about/Avatar'
 
 import {hristo} from 'data/testimonials'
 
