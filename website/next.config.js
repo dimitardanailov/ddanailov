@@ -14,6 +14,10 @@ const {
   UTILS_DIR,
 } = require('./utils/folders')
 
+function getPageComponents(page) {
+  return `${COMPONENTS_DIR}/Pages/${page}/Components`
+}
+
 const nextConfig = {
   webpack: config => {
     // file and url loader webpack support.
@@ -29,6 +33,10 @@ const nextConfig = {
 
     config.resolve.alias['@ddanailov/styles'] = STYLES_DIR
     config.resolve.alias['@ddanailov/components'] = COMPONENTS_DIR
+
+    // pages
+    config.resolve.alias['@pages/components/about'] = getPageComponents('About')
+
     config.resolve.alias['@ddanailov/layouts'] = LAYOUT_DIR
     config.resolve.alias['@ddanailov/styled'] = STYLED_DIR
     config.resolve.alias['@ddanailov/utils'] = UTILS_DIR
