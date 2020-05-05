@@ -19,14 +19,8 @@ const AboutPage = () => {
     <App canonicalTag="/about">
       <Switch
         device={device}
-        MobilePage={dynamic(
-          import('@ddanailov/components/Pages/about/_Mobile'),
-          PageLoader,
-        )}
-        DesktopPage={dynamic(
-          import('@ddanailov/components/Pages/about/_Desktop'),
-          PageLoader,
-        )}
+        MobilePage={dynamic(import('@about/_Mobile'), PageLoader)}
+        DesktopPage={dynamic(import('@about/_Desktop'), PageLoader)}
       />
     </App>
   )
