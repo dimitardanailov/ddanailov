@@ -1,7 +1,7 @@
-import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
-import PersonInfo from '@ddanailov/components/pages/about/Testimonials/Components/PersonInfo'
+import TargetBlankLink from '@ddanailov/components/Pages/about/Testimonials/Henry/@ddanailov/components/TargetBlankLink'
+import PersonInfo from '@ddanailov/components/Pages/about/Testimonials/Components/PersonInfo'
 
-import {henry} from 'data/testimonials'
+import {henry} from '@ddanailov/components/Pages/about/Testimonials/Henry/data/testimonials'
 
 function HenryInfo() {
   return (

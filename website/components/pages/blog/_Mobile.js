@@ -1,6 +1,6 @@
-import MainMobileLayout from '@ddanailov/layouts/Mobile/MainMobileLayout'
+import MainMobileLayout from '@ddanailov/components/Pages/blog/@ddanailov/layouts/Mobile/MainMobileLayout'
 
-import {MDXProvider} from '@mdx-js/react'
+import {MDXProvider} from '@ddanailov/components/Pages/blog/@mdx-js/react'
 import Test from './Content.mdx'
 
 const BlogPageMobile = () => (

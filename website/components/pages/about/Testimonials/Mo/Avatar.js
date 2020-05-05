@@ -1,6 +1,6 @@
-import Avatar from '@ddanailov/components/Testimonials/Avatar'
+import Avatar from '@ddanailov/components/Pages/about/Testimonials/Mo/@ddanailov/components/Testimonials/Avatar'
 
-import {mo} from 'data/testimonials'
+import {mo} from '@ddanailov/components/Pages/about/Testimonials/Mo/data/testimonials'
 
 function MoAvatar() {
   return (

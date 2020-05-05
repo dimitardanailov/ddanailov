@@ -1,7 +1,7 @@
-import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
-import PersonInfo from '@ddanailov/components/pages/about/Testimonials/Components/PersonInfo'
+import TargetBlankLink from '@ddanailov/components/Pages/about/Testimonials/Tsvetan/@ddanailov/components/TargetBlankLink'
+import PersonInfo from '@ddanailov/components/Pages/about/Testimonials/Components/PersonInfo'
 
-import {tsvetan} from 'data/testimonials'
+import {tsvetan} from '@ddanailov/components/Pages/about/Testimonials/Tsvetan/data/testimonials'
 
 function TsvetanInfo() {
   return (

@@ -1,4 +1,4 @@
-import Slogan from '@ddanailov/styled/Slogan'
+import Slogan from '@ddanailov/components/Pages/about/@ddanailov/styled/Slogan'
 
 function Roles() {
   return (

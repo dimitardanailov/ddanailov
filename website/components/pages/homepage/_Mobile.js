@@ -1,14 +1,18 @@
-import dynamic from 'next/dynamic'
+import dynamic from '@ddanailov/components/Pages/homepage/next/dynamic'
 
-import MainMobileLayout from '@ddanailov/layouts/Mobile/MainMobileLayout'
+import MainMobileLayout from '@ddanailov/components/Pages/homepage/@ddanailov/layouts/Mobile/MainMobileLayout'
 
-import PersonalStory from '@ddanailov/components/PersonalStory'
-import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
-import Skills from '@ddanailov/components/Skills'
+import PersonalStory from '@ddanailov/components/Pages/homepage/@ddanailov/components/PersonalStory'
+import OpenSourceProjects from '@ddanailov/components/Pages/homepage/@ddanailov/components/OpenSourceProjects'
+import Skills from '@ddanailov/components/Pages/homepage/@ddanailov/components/Skills'
 
-import Slogan from '@ddanailov/styled/Slogan'
+import Slogan from '@ddanailov/components/Pages/homepage/@ddanailov/styled/Slogan'
 
-const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
+const SocialIcons = dynamic(() =>
+  import(
+    '@ddanailov/components/Pages/homepage/@ddanailov/components/SocialIcons'
+  ),
+)
 
 const HomePageMobile = () => (
   <>

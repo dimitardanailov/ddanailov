@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from '@ddanailov/components/Pages/shared/devices/prop-types'
 
 /**
  * Switch component helps code spliting

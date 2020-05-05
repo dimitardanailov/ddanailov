@@ -1,8 +1,10 @@
-import dynamic from 'next/dynamic'
+import dynamic from '@ddanailov/components/Pages/about/next/dynamic'
 
-import Slogan from '@ddanailov/styled/Slogan'
+import Slogan from '@ddanailov/components/Pages/about/@ddanailov/styled/Slogan'
 
-const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
+const SocialIcons = dynamic(() =>
+  import('@ddanailov/components/Pages/about/@ddanailov/components/SocialIcons'),
+)
 
 function AboutMe() {
   return (

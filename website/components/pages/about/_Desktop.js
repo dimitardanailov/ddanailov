@@ -1,48 +1,48 @@
-import styled from 'styled-components'
+import styled from '@ddanailov/components/Pages/about/styled-components'
 
-import Slogan from '@ddanailov/styled/Slogan'
+import Slogan from '@ddanailov/components/Pages/about/@ddanailov/styled/Slogan'
 
-import AboutMe from '@ddanailov/components/pages/about/AboutMe'
-import Roles from '@ddanailov/components/pages/about/Roles'
+import AboutMe from '@ddanailov/components/Pages/about/AboutMe'
+import Roles from '@ddanailov/components/Pages/about/Roles'
 
 // Heidi
-import HeidiLetter from '@ddanailov/components/pages/about/Testimonials/Heidi/Letter'
-import HeidiInfo from '@ddanailov/components/pages/about/Testimonials/Heidi/Info'
-import HeidiAvatar from '@ddanailov/components/pages/about/Testimonials/Heidi/Avatar'
+import HeidiLetter from '@ddanailov/components/Pages/about/Testimonials/Heidi/Letter'
+import HeidiInfo from '@ddanailov/components/Pages/about/Testimonials/Heidi/Info'
+import HeidiAvatar from '@ddanailov/components/Pages/about/Testimonials/Heidi/Avatar'
 
 // Henry
-import HenryLetter from '@ddanailov/components/pages/about/Testimonials/Henry/Letter'
-import HenryInfo from '@ddanailov/components/pages/about/Testimonials/Henry/Info'
-import HenryAvatar from '@ddanailov/components/pages/about/Testimonials/Henry/Avatar'
+import HenryLetter from '@ddanailov/components/Pages/about/Testimonials/Henry/Letter'
+import HenryInfo from '@ddanailov/components/Pages/about/Testimonials/Henry/Info'
+import HenryAvatar from '@ddanailov/components/Pages/about/Testimonials/Henry/Avatar'
 
 // Ivelin
-import IvelinLetter from '@ddanailov/components/pages/about/Testimonials/Ivelin/Letter'
-import IvelinInfo from '@ddanailov/components/pages/about/Testimonials/Ivelin/Info'
-import IvelinAvatar from '@ddanailov/components/pages/about/Testimonials/Ivelin/Avatar'
+import IvelinLetter from '@ddanailov/components/Pages/about/Testimonials/Ivelin/Letter'
+import IvelinInfo from '@ddanailov/components/Pages/about/Testimonials/Ivelin/Info'
+import IvelinAvatar from '@ddanailov/components/Pages/about/Testimonials/Ivelin/Avatar'
 
 // Mo
-import MoLetter from '@ddanailov/components/pages/about/Testimonials/Mo/Letter'
-import MoInfo from '@ddanailov/components/pages/about/Testimonials/Mo/Info'
-import MoAvatar from '@ddanailov/components/pages/about/Testimonials/Mo/Avatar'
+import MoLetter from '@ddanailov/components/Pages/about/Testimonials/Mo/Letter'
+import MoInfo from '@ddanailov/components/Pages/about/Testimonials/Mo/Info'
+import MoAvatar from '@ddanailov/components/Pages/about/Testimonials/Mo/Avatar'
 
 // Ashton
-import AshtonLetter from '@ddanailov/components/pages/about/Testimonials/Ashton/Letter'
-import AshtonInfo from '@ddanailov/components/pages/about/Testimonials/Ashton/Info'
+import AshtonLetter from '@ddanailov/components/Pages/about/Testimonials/Ashton/Letter'
+import AshtonInfo from '@ddanailov/components/Pages/about/Testimonials/Ashton/Info'
 
 // Hristo
-import HristoAvatar from '@ddanailov/components/pages/about/Testimonials/Hristo/Avatar'
-import HristoLetter from '@ddanailov/components/pages/about/Testimonials/Hristo/Letter'
-import HristoInfo from '@ddanailov/components/pages/about/Testimonials/Hristo/Info'
+import HristoAvatar from '@ddanailov/components/Pages/about/Testimonials/Hristo/Avatar'
+import HristoLetter from '@ddanailov/components/Pages/about/Testimonials/Hristo/Letter'
+import HristoInfo from '@ddanailov/components/Pages/about/Testimonials/Hristo/Info'
 
 // Tsvetan
-import TsvetanAvatar from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Avatar'
-import TsvetanLetter from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Letter'
-import TsvetanInfo from '@ddanailov/components/pages/about/Testimonials/Tsvetan/Info'
+import TsvetanAvatar from '@ddanailov/components/Pages/about/Testimonials/Tsvetan/Avatar'
+import TsvetanLetter from '@ddanailov/components/Pages/about/Testimonials/Tsvetan/Letter'
+import TsvetanInfo from '@ddanailov/components/Pages/about/Testimonials/Tsvetan/Info'
 
 // Vladimir
-import VladimirAvatar from '@ddanailov/components/pages/about/Testimonials/Vladimir/Avatar'
-import VladimirLetter from '@ddanailov/components/pages/about/Testimonials/Vladimir/Letter'
-import VladimirInfo from '@ddanailov/components/pages/about/Testimonials/Vladimir/Info'
+import VladimirAvatar from '@ddanailov/components/Pages/about/Testimonials/Vladimir/Avatar'
+import VladimirLetter from '@ddanailov/components/Pages/about/Testimonials/Vladimir/Letter'
+import VladimirInfo from '@ddanailov/components/Pages/about/Testimonials/Vladimir/Info'
 
 const TestimonialBody = styled.div`
   position: relative;

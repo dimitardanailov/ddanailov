@@ -1,8 +1,8 @@
-import dynamic from 'next/dynamic'
+import dynamic from '@ddanailov/components/Pages/blog/next/dynamic'
 
-import PropTypes from 'prop-types'
+import PropTypes from '@ddanailov/components/Pages/blog/prop-types'
 
-import ComponentLoader from '@ddanailov/components/ComponentLoader'
+import ComponentLoader from '@ddanailov/components/Pages/blog/@ddanailov/components/ComponentLoader'
 
 const BlogPageDesktop = dynamic(() => import('./_Desktop'))
 const BlogPageMobile = dynamic(() => import('./_Mobile'))

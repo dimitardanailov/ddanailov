@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
+import PropTypes from '@ddanailov/components/Pages/about/Testimonials/Components/prop-types'
 
-import styled from 'styled-components'
+import styled from '@ddanailov/components/Pages/about/Testimonials/Components/styled-components'
 
 const Frame = styled.div`
   position: relative;
