@@ -4,7 +4,8 @@ import React, {useEffect} from 'react'
 
 import App from '@ddanailov/components/App'
 import detectDevice from '@ddanailov/utils/devices/detectDevice'
-import Switch from '@ddanailov/components/pages/shared/devices/Switch'
+import Switch from '@ddanailov/components/Pages/shared/devices/Switch'
+import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 
 const Homepage = () => {
   const [device, setDevice] = React.useState('')
@@ -14,21 +15,17 @@ const Homepage = () => {
     setDevice(tempDevice)
   }, [device])
 
-  const loading = {
-    loading: () => <p>Loading...</p>,
-  }
-
   return (
     <App canonicalTag="/">
       <Switch
         device={device}
         MobilePage={dynamic(
-          import('@ddanailov/components/pages/homepage/_Mobile'),
-          loading,
+          import('@ddanailov/components/Pages/homepage/_Mobile'),
+          PageLoader,
         )}
         DesktopPage={dynamic(
-          import('@ddanailov/components/pages/homepage/_Desktop'),
-          loading,
+          import('@ddanailov/components/Pages/homepage/_Desktop'),
+          PageLoader,
         )}
       />
     </App>
