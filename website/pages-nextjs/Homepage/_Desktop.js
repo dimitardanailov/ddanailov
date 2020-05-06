@@ -12,18 +12,12 @@ import Slogan from '@ddanailov/styled/Slogan'
 
 import styled from 'styled-components'
 
-const Container = styled.section`
-  position: relative;
-  min-height: 100%;
-`
-
 const Sidebar = dynamic(() => import('@ddanailov/components/Sidebar'))
 const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 const MainFooter = dynamic(() => import('@ddanailov/components/MainFooter'))
 
 const HomePageDesktop = () => (
-  <Container>
-    <MainHeader />
+  <>
     <PageTemplate>
       <Sidebar />
 
@@ -41,7 +35,7 @@ const HomePageDesktop = () => (
         <MainFooter />
       </PageHolder>
     </PageTemplate>
-  </Container>
+  </>
 )
 
 export default HomePageDesktop
