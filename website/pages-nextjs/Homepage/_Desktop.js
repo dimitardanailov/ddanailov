@@ -10,8 +10,6 @@ import Typing from '@ddanailov/components/Animations/Typing'
 
 import Slogan from '@ddanailov/styled/Slogan'
 
-import styled from 'styled-components'
-
 const Sidebar = dynamic(() => import('@ddanailov/components/Sidebar'))
 const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 const MainFooter = dynamic(() => import('@ddanailov/components/MainFooter'))
