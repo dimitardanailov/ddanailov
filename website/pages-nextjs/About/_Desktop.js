@@ -5,42 +5,46 @@ import Slogan from '@ddanailov/styled/Slogan'
 import AboutMe from '@about/Components/AboutMe'
 import Roles from '@about/Components/Roles'
 
+// Avatars
+import {
+  HeidiAvatar,
+  HenryAvatar,
+  IvelinAvatar,
+  MoAvatar,
+  HristoAvatar,
+  TsvetanAvatar,
+  VladimirAvatar,
+} from '@about/Components/Testimonials/Avatars'
+
 // Heidi
 import HeidiLetter from '@about/Components/Testimonials/Heidi/Letter'
 import HeidiInfo from '@about/Components/Testimonials/Heidi/Info'
-import HeidiAvatar from '@about/Components/Testimonials/Heidi/Avatar'
 
 // Henry
 import HenryLetter from '@about/Components/Testimonials/Henry/Letter'
 import HenryInfo from '@about/Components/Testimonials/Henry/Info'
-import HenryAvatar from '@about/Components/Testimonials/Henry/Avatar'
 
 // Ivelin
 import IvelinLetter from '@about/Components/Testimonials/Ivelin/Letter'
 import IvelinInfo from '@about/Components/Testimonials/Ivelin/Info'
-import IvelinAvatar from '@about/Components/Testimonials/Ivelin/Avatar'
 
 // Mo
 import MoLetter from '@about/Components/Testimonials/Mo/Letter'
 import MoInfo from '@about/Components/Testimonials/Mo/Info'
-import MoAvatar from '@about/Components/Testimonials/Mo/Avatar'
 
 // Ashton
 import AshtonLetter from '@about/Components/Testimonials/Ashton/Letter'
 import AshtonInfo from '@about/Components/Testimonials/Ashton/Info'
 
 // Hristo
-import HristoAvatar from '@about/Components/Testimonials/Hristo/Avatar'
 import HristoLetter from '@about/Components/Testimonials/Hristo/Letter'
 import HristoInfo from '@about/Components/Testimonials/Hristo/Info'
 
 // Tsvetan
-import TsvetanAvatar from '@about/Components/Testimonials/Tsvetan/Avatar'
 import TsvetanLetter from '@about/Components/Testimonials/Tsvetan/Letter'
 import TsvetanInfo from '@about/Components/Testimonials/Tsvetan/Info'
 
 // Vladimir
-import VladimirAvatar from '@about/Components/Testimonials/Vladimir/Avatar'
 import VladimirLetter from '@about/Components/Testimonials/Vladimir/Letter'
 import VladimirInfo from '@about/Components/Testimonials/Vladimir/Info'
 
