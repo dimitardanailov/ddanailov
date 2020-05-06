@@ -1,7 +1,5 @@
 import dynamic from 'next/dynamic'
 
-import MainHeader from '@ddanailov/components/MainHeader'
-
 import {PageTemplate, PageHolder} from '@ddanailov/styled/layouts/Desktop'
 
 import DesktopMenu from '@ddanailov/components/Menu/Desktop'
