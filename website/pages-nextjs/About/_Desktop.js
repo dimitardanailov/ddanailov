@@ -1,5 +1,3 @@
-import styled from 'styled-components'
-
 import Slogan from '@ddanailov/styled/Slogan'
 
 import {AboutMe, Roles} from '@about/Components'
@@ -34,34 +32,11 @@ import {
   VladimirInfo,
 } from '@about/Components/Testimonials'
 
-const TestimonialBody = styled.div`
-  position: relative;
-
-  display: flex;
-  flex-direction: row;
-
-  margin: 1rem 0;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-  }
-`
-
-const TestimonialBodyCenter = styled(TestimonialBody)`
-  align-items: center;
-`
-
-const RecommendationBody = styled.div`
-  position: relative;
-
-  text-align: justify;
-
-  margin-left: 2rem;
-
-  @media (max-width: 1024px) {
-    margin-left: 0rem;
-  }
-`
+import {
+  TestimonialBody,
+  TestimonialBodyCenter,
+  RecommendationBody,
+} from '@about/StyledComponents'
 
 const AboutPage = () => (
   <>
