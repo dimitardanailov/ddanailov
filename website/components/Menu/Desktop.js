@@ -13,7 +13,7 @@ const List = styled.ul`
   flex-direction: row;
 
   font-size: 2rem;
-  justify-content: center;
+  justify-content: left;
 `
 
 const Item = styled.li`
