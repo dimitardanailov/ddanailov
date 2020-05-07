@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 import Slogan from '@ddanailov/styled/Slogan'
 
-import AboutMe from '@about/Components/AboutMe'
-import Roles from '@about/Components/Roles'
+import {AboutMe, Roles} from '@about/Components'
 
 // Avatars
 import {
@@ -16,37 +15,24 @@ import {
   VladimirAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
-// Heidi
-import HeidiLetter from '@about/Components/Testimonials/Heidi/Letter'
-import HeidiInfo from '@about/Components/Testimonials/Heidi/Info'
-
-// Henry
-import HenryLetter from '@about/Components/Testimonials/Henry/Letter'
-import HenryInfo from '@about/Components/Testimonials/Henry/Info'
-
-// Ivelin
-import IvelinLetter from '@about/Components/Testimonials/Ivelin/Letter'
-import IvelinInfo from '@about/Components/Testimonials/Ivelin/Info'
-
-// Mo
-import MoLetter from '@about/Components/Testimonials/Mo/Letter'
-import MoInfo from '@about/Components/Testimonials/Mo/Info'
-
-// Ashton
-import AshtonLetter from '@about/Components/Testimonials/Ashton/Letter'
-import AshtonInfo from '@about/Components/Testimonials/Ashton/Info'
-
-// Hristo
-import HristoLetter from '@about/Components/Testimonials/Hristo/Letter'
-import HristoInfo from '@about/Components/Testimonials/Hristo/Info'
-
-// Tsvetan
-import TsvetanLetter from '@about/Components/Testimonials/Tsvetan/Letter'
-import TsvetanInfo from '@about/Components/Testimonials/Tsvetan/Info'
-
-// Vladimir
-import VladimirLetter from '@about/Components/Testimonials/Vladimir/Letter'
-import VladimirInfo from '@about/Components/Testimonials/Vladimir/Info'
+import {
+  HeidiLetter,
+  HeidiInfo,
+  HenryLetter,
+  HenryInfo,
+  IvelinLetter,
+  IvelinInfo,
+  MoLetter,
+  MoInfo,
+  AshtonLetter,
+  AshtonInfo,
+  HristoLetter,
+  HristoInfo,
+  TsvetanLetter,
+  TsvetanInfo,
+  VladimirLetter,
+  VladimirInfo,
+} from '@about/Components/Testimonials'
 
 const TestimonialBody = styled.div`
   position: relative;
