@@ -14,8 +14,6 @@ const PageHolder = styled.section`
 
 const MainMobileLayout = Page => () => (
   <>
-    <MainHeader />
-
     <MobileSidebar />
 
     <MobileMenu />
