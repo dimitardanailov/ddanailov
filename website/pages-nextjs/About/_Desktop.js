@@ -1,4 +1,9 @@
+import dynamic from 'next/dynamic'
+
 import Slogan from '@ddanailov/styled/Slogan'
+
+import DesktopMenu from '@ddanailov/components/Menu/Desktop'
+import {PageTemplate, PageHolder} from '@ddanailov/styled/layouts/Desktop'
 
 import {AboutMe, Roles} from '@about/Components'
 
@@ -38,81 +43,89 @@ import {
   RecommendationBody,
 } from '@about/StyledComponents'
 
+const MainFooter = dynamic(() => import('@ddanailov/components/MainFooter'))
+
 const AboutPage = () => (
-  <>
-    <AboutMe />
-    <Roles />
+  <PageTemplate>
+    <PageHolder>
+      <DesktopMenu />
 
-    <Slogan>Testimonials and Recommendations</Slogan>
+      <AboutMe />
+      <Roles />
 
-    <TestimonialBody>
-      <HeidiAvatar />
+      <Slogan>Testimonials and Recommendations</Slogan>
 
-      <RecommendationBody>
-        <HeidiLetter />
+      <TestimonialBody>
+        <HeidiAvatar />
 
-        <HeidiInfo />
-      </RecommendationBody>
-    </TestimonialBody>
+        <RecommendationBody>
+          <HeidiLetter />
 
-    <TestimonialBodyCenter>
-      <HenryAvatar />
+          <HeidiInfo />
+        </RecommendationBody>
+      </TestimonialBody>
 
-      <RecommendationBody>
-        <HenryLetter />
-        <HenryInfo />
-      </RecommendationBody>
-    </TestimonialBodyCenter>
+      <TestimonialBodyCenter>
+        <HenryAvatar />
 
-    <TestimonialBodyCenter>
-      <IvelinAvatar />
+        <RecommendationBody>
+          <HenryLetter />
+          <HenryInfo />
+        </RecommendationBody>
+      </TestimonialBodyCenter>
 
-      <RecommendationBody>
-        <IvelinLetter />
-        <IvelinInfo />
-      </RecommendationBody>
-    </TestimonialBodyCenter>
+      <TestimonialBodyCenter>
+        <IvelinAvatar />
 
-    <TestimonialBodyCenter>
-      <MoAvatar />
+        <RecommendationBody>
+          <IvelinLetter />
+          <IvelinInfo />
+        </RecommendationBody>
+      </TestimonialBodyCenter>
 
-      <RecommendationBody>
-        <MoLetter />
-        <MoInfo />
-      </RecommendationBody>
-    </TestimonialBodyCenter>
+      <TestimonialBodyCenter>
+        <MoAvatar />
 
-    <section>
-      <AshtonLetter />
-      <AshtonInfo />
-    </section>
+        <RecommendationBody>
+          <MoLetter />
+          <MoInfo />
+        </RecommendationBody>
+      </TestimonialBodyCenter>
 
-    <TestimonialBody>
-      <HristoAvatar />
-      <RecommendationBody>
-        <HristoLetter />
+      <section>
+        <AshtonLetter />
+        <AshtonInfo />
+      </section>
 
-        <HristoInfo />
-      </RecommendationBody>
-    </TestimonialBody>
+      <TestimonialBody>
+        <HristoAvatar />
+        <RecommendationBody>
+          <HristoLetter />
 
-    <TestimonialBody>
-      <TsvetanAvatar />
+          <HristoInfo />
+        </RecommendationBody>
+      </TestimonialBody>
 
-      <RecommendationBody>
-        <TsvetanLetter />
-        <TsvetanInfo />
-      </RecommendationBody>
-    </TestimonialBody>
+      <TestimonialBody>
+        <TsvetanAvatar />
 
-    <TestimonialBody>
-      <VladimirAvatar />
-      <RecommendationBody>
-        <VladimirLetter />
-        <VladimirInfo />
-      </RecommendationBody>
-    </TestimonialBody>
-  </>
+        <RecommendationBody>
+          <TsvetanLetter />
+          <TsvetanInfo />
+        </RecommendationBody>
+      </TestimonialBody>
+
+      <TestimonialBody>
+        <VladimirAvatar />
+        <RecommendationBody>
+          <VladimirLetter />
+          <VladimirInfo />
+        </RecommendationBody>
+      </TestimonialBody>
+
+      <MainFooter />
+    </PageHolder>
+  </PageTemplate>
 )
 
 export default AboutPage
