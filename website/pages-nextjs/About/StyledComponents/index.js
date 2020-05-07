@@ -8,8 +8,9 @@ const TestimonialBody = styled.div`
 
   margin: 1rem 0;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
   }
 `
 
@@ -24,7 +25,7 @@ const RecommendationBody = styled.div`
 
   margin-left: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     margin-left: 0rem;
   }
 `
