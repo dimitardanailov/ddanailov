@@ -1,15 +1,116 @@
-import dynamic from 'next/dynamic'
-
 import MainMobileLayout from '@ddanailov/layouts/Mobile/MainMobileLayout'
-
-import PersonalStory from '@ddanailov/components/PersonalStory'
-import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
-import Skills from '@ddanailov/components/Skills'
 
 import Slogan from '@ddanailov/styled/Slogan'
 
-const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
+import {AboutMe, Roles} from '@about/Components'
 
-const AboutPageMobile = () => <>Mobile</>
+// Avatars
+import {
+  HeidiAvatar,
+  HenryAvatar,
+  IvelinAvatar,
+  MoAvatar,
+  HristoAvatar,
+  TsvetanAvatar,
+  VladimirAvatar,
+} from '@about/Components/Testimonials/Avatars'
+
+import {
+  HeidiLetter,
+  HeidiInfo,
+  HenryLetter,
+  HenryInfo,
+  IvelinLetter,
+  IvelinInfo,
+  MoLetter,
+  MoInfo,
+  AshtonLetter,
+  AshtonInfo,
+  HristoLetter,
+  HristoInfo,
+  TsvetanLetter,
+  TsvetanInfo,
+  VladimirLetter,
+  VladimirInfo,
+} from '@about/Components/Testimonials'
+
+import {TestimonialBody, RecommendationBody} from '@about/StyledComponents'
+
+const AboutPageMobile = () => (
+  <>
+    <AboutMe />
+    <Roles />
+
+    <Slogan>Testimonials and Recommendations</Slogan>
+
+    <TestimonialBody>
+      <HeidiAvatar />
+
+      <RecommendationBody>
+        <HeidiLetter />
+
+        <HeidiInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <HenryAvatar />
+
+      <RecommendationBody>
+        <HenryLetter />
+        <HenryInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <IvelinAvatar />
+
+      <RecommendationBody>
+        <IvelinLetter />
+        <IvelinInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <MoAvatar />
+
+      <RecommendationBody>
+        <MoLetter />
+        <MoInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <AshtonLetter />
+      <AshtonInfo />
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <HristoAvatar />
+      <RecommendationBody>
+        <HristoLetter />
+
+        <HristoInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <TsvetanAvatar />
+
+      <RecommendationBody>
+        <TsvetanLetter />
+        <TsvetanInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <VladimirAvatar />
+      <RecommendationBody>
+        <VladimirLetter />
+        <VladimirInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+  </>
+)
 
 export default MainMobileLayout(AboutPageMobile)
