@@ -19,6 +19,10 @@ const List = styled.ul`
   display: flex;
   flex-direction: row;
   height: 41px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 const ListItem = styled.li`
