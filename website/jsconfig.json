@@ -10,11 +10,11 @@
       "@ddanailov/styled/*": ["styled/*"],
       "@ddanailov/utils/*": ["utils/*"],
 
+      "data": ["data/*"],
+
       "@homgepage": ["pages-nextjs/Homepage/*"],
       "@about": ["pages-nextjs/About/*"],
-      "@pages/components/about/*": ["components/Pages/About/Components/*"],
-
-      "data": ["data/*"]
+      "@thanks": ["pages-nextjs/Thanks"]
     }
   },
   "exclude": ["node_modules", "dist"]
