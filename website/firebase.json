@@ -7,6 +7,10 @@
       {
         "source": "/about",
         "destination": "/about.html"
+      },
+      {
+        "source": "/thanks",
+        "destination": "/thanks.html"
       }
     ],
     "headers": [
