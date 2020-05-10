@@ -1,8 +1,19 @@
 import Keyword from './Keyword'
 import Space from '@ddanailov/styled/Space'
-import NextJsLink from '@ddanailov/components/Navigation/NextJsLink'
+// import NextJsLink from '@ddanailov/components/Navigation/NextJsLink'
+// import theme from 'styles/colors/light'
 
-import theme from 'styles/colors/light'
+function SponsorshipInfo() {
+  return (
+    <p>
+      If you like me or my open source projects:
+      <Space />
+      <NextJsLink color={theme.secondary.light} href="/thanks">
+        You can sponsorship my work.
+      </NextJsLink>
+    </p>
+  )
+}
 
 function OpenSourceProjects() {
   return (
@@ -77,14 +88,6 @@ function OpenSourceProjects() {
           : <Keyword word="React" /> catalog with different useful components.
         </li>
       </ul>
-
-      <p>
-        If you like me or my open source projects:
-        <Space />
-        <NextJsLink color={theme.secondary.light} href="/thanks">
-          You can sponsorship my work.
-        </NextJsLink>
-      </p>
     </div>
   )
 }
