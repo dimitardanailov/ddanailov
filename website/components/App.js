@@ -7,7 +7,9 @@ import styled from 'styled-components'
 const Container = styled.section`
   position: relative;
 
+  display: block;
   min-height: 100%;
+  width: 100%;
 `
 
 function App({canonicalTag, children}) {
