@@ -46,3 +46,10 @@ a {
   color: #5472d3;
   font-size: 2rem;
 }
+
+#__next {
+  position: relative;
+  min-height: 100%;
+
+  display: flex;
+}
