@@ -9,7 +9,7 @@ const Footer = styled.footer`
   display: flex;
   justify-content: content;
   text-align: center;
-  height: 60px;
+  height: 70px;
 
   text-align: center;
 `
