@@ -12,10 +12,10 @@ const Container = styled.section`
   width: 100%;
 `
 
-function App({canonicalTag, children}) {
+function App({canonicalTag, children, SEO}) {
   return (
     <Container>
-      <MainHeader canonicalTag={canonicalTag} />
+      <MainHeader canonicalTag={canonicalTag} SEO={SEO} />
       {children}
     </Container>
   )
@@ -24,6 +24,7 @@ function App({canonicalTag, children}) {
 App.propTypes = {
   canonicalTag: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  SEO: PropTypes.node.isRequired,
 }
 
 export default App
