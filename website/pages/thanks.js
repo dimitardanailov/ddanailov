@@ -16,7 +16,7 @@ const Homepage = () => {
   }, [device])
 
   return (
-    <App canonicalTag="/">
+    <App canonicalTag="/thanks">
       <Switch
         device={device}
         MobilePage={dynamic(import('@thanks/_Mobile'), PageLoader)}
