@@ -1,19 +1,14 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-function MainHeader({canonicalTag}) {
+function MainHeader({canonicalTag, SEO}) {
   return (
     <div>
       <Head>
-        <title>
-          Danailov Consulting: Javascript Consultant and Remote architect
-        </title>
-        <meta
-          name="description"
-          content="Javascript Consultant and Remote architect"
-        />
-        <meta name="author" content="Dimitar Danailov" />
         <meta charSet="utf-8" />
+
+        {SEO}
+        <meta name="author" content="Dimitar Danailov" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -57,6 +52,7 @@ MainHeader.defaultProps = {
 
 MainHeader.propTypes = {
   canonicalTag: PropTypes.string,
+  SEO: PropTypes.node.isRequired,
 }
 
 export default MainHeader
