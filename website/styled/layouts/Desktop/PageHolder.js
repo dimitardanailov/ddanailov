@@ -4,7 +4,7 @@ const PageHolder = styled.section`
   position: relative;
   margin: 1rem 1.2rem;
 
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 `
 
 export default PageHolder
