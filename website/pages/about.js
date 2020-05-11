@@ -10,7 +10,9 @@ import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 function SEO() {
   return (
     <>
-      <title>Front-end, Nodejs and Go remote consultant</title>
+      <title>
+        Remote consultant with technology stack: React, Nodejs and Go
+      </title>
 
       <meta
         name="description"
