@@ -14,7 +14,8 @@
 
       "@homgepage": ["pages-nextjs/Homepage/*"],
       "@about": ["pages-nextjs/About/*"],
-      "@thanks": ["pages-nextjs/Thanks"]
+      "@thanks": ["pages-nextjs/Thanks"],
+      "@pages": ["pages-nextjs/Pages"]
     }
   },
   "exclude": ["node_modules", "dist"]
