@@ -46,11 +46,25 @@ function ProfitPageContent() {
       <p>Question: Where is the dinner ?</p>
       <p>Most of the time: I skip the dinner. I'm a big fan of 16/8 fasting.</p>
 
+      <Slogan>Intro</Slogan>
+
+      <p>
+        I worked in two different bussines unites eight years. After that I was
+        FIRED twice in roll. August 2018 was my kickoff call. I decided to
+        create my company. In the first six months my profit was 0. The good
+        news were: outcome was not so big.
+      </p>
+
       <Slogan>You’re the boss</Slogan>
       <p>
-        In these eight years I met so many great leaders and friends. They
-        showed me : How you can build a successful business.
+        Client relationship, in and outcome, time management, how much will be
+        your rate per hour. If the end of month your company doesn't have a
+        profit is YOUR FAIL.
       </p>
+
+      <Slogan>You’re the product </Slogan>
+
+      <p>My background is software engineering. In these</p>
     </>
   )
 }
