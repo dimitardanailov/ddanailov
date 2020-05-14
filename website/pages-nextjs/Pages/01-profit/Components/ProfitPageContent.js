@@ -62,9 +62,19 @@ function ProfitPageContent() {
         profit is YOUR FAIL.
       </p>
 
-      <Slogan>You’re the product </Slogan>
+      <Slogan>You’re the product</Slogan>
 
-      <p>My background is software engineering. In these</p>
+      <p>If you've already client: Please skip the following bullet point</p>
+
+      <p>Why ?</p>
+      <p>
+        Several friends are working with clients as freelancers. For them the
+        transition was not so hard. The client was happy from them. My friends
+        were not happy from the company and they just switch the contract. Be
+        careful with NDA. The NDA angreenment can't be a huge blocker for you.
+      </p>
+      <p></p>
+      <p>Without good marketing and selling: Your company is dead. </p>
     </>
   )
 }
