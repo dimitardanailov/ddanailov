@@ -1,0 +1,37 @@
+{
+  "name": "venera-sokolova-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dimitardanailov",
+  "author": "Dimitar Danailov<dimityr.danailov@gmail.com>",
+  "license": "MIT",
+  "description": "IT Operations IT Recruiter/HR  Career Councelor",
+  "scripts": {
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "check-format": "yarn prettier --list-different",
+    "format": "yarn prettier --write",
+    "clean": "yarn clean:public",
+    "clean:public": "rm -rf ./public & mkdir -p public",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint . --fix",
+    "publish": "yarn clean && yarn build && yarn gulp && firebase deploy --only hosting:dimitar",
+    "reports": "npx jscpd ./"
+  },
+  "jscpd": {
+    "threshold": 0.25,
+    "reporters": [
+      "html",
+      "console"
+    ],
+    "ignore": [
+      ".next"
+    ],
+    "absolute": false,
+    "gitignore": true
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
