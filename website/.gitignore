@@ -9,3 +9,5 @@ yarn-error.log
 report
 
 .env
+
+lerna-debug.log
