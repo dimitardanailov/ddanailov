@@ -13,6 +13,11 @@ function MainHeader({canonicalTag, SEO}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="canonical" href={`https://ddanailov.dev${canonicalTag}`} />
+        <meta
+          property="og:url"
+          content={`https://ddanailov.dev${canonicalTag}`}
+        />
+        <meta property="og:type" content="website" />
 
         <script
           async
