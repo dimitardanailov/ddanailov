@@ -18,6 +18,15 @@ function SEO() {
         name="description"
         content="My skills are: React, Web Components, Cloud (Amazon, Google Cloud, Azure), Project leadership and mentorship"
       />
+
+      <meta
+        property="og:title"
+        content="Danailov Consulting: Javascript Consultant and Remote architect"
+      />
+      <meta
+        property="og:description"
+        content="My skills are: React, Web Components, Cloud (Amazon, Google Cloud, Azure), Project leadership and mentorship"
+      />
     </>
   )
 }
