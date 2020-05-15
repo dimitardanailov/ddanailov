@@ -11,12 +11,13 @@
     "email": "dimityr.danailov@gmail.com",
     "url": "https://ddanailov.dev/"
   },
-  "homepage": "https://ddanailov.dev",
+  "homepage": "https://github.com/dimitardanailov/ddanailov/tree/master/website/packages/nextjs-utils",
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dimitardanailov/ddanailov.git"
+    "url": "git+https://github.com/dimitardanailov/ddanailov.git",
+    "directory": "website/packages/nextjs-utils"
   },
   "scripts": {},
   "bugs": {
