@@ -1,0 +1,25 @@
+{
+  "name": "nextjs-utils",
+  "version": "1.0.0",
+  "description": "The repo contains different useful nextjs methods.",
+  "keywords": [
+    "nextjs",
+    "nextjs-utils"
+  ],
+  "author": {
+    "name": "Dimitar Danailov",
+    "email": "dimityr.danailov@gmail.com",
+    "url": "https://ddanailov.dev/"
+  },
+  "homepage": "https://ddanailov.dev",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitardanailov/ddanailov.git"
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://github.com/dimitardanailov/ddanailov/issues"
+  }
+}
