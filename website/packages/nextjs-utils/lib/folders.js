@@ -1,6 +1,6 @@
 const path = require('path')
 
-const BASE_DIR = __dirname.replace('utils', '')
+const BASE_DIR = __dirname.replace('node_modules/nextjs-utils/lib', '')
 
 module.exports.BASE_DIR = BASE_DIR
 
