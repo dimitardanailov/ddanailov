@@ -1,0 +1,4 @@
+{
+  "packages": ["sites/*"],
+  "version": "0.0.0"
+}
