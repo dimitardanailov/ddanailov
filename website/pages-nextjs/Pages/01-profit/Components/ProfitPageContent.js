@@ -75,6 +75,25 @@ function ProfitPageContent() {
       </p>
       <p></p>
       <p>Without good marketing and selling: Your company is dead. </p>
+
+      <Slogan>Summary</Slogan>
+
+      <p>
+        If more people follow their dream the earth will be a better place. The
+        working gap between 09am and 5pm is too old and unproductive. I want to
+        share again: Forbes: 70% Of Your Employees Hate Their Jobs
+        https://www.forbes.com/sites/carminegallo/2011/11/11/your-emotionally-disconnected-employees/
+        If you in these 70%: Don't waste one, two or three years in your life.
+      </p>
+
+      <ul>
+        <li>What's your dreams ?</li>
+        <li>Do you want to be a dreamer or hater ?</li>
+        <li>Are You Ready to Put Your Life in Order?</li>
+        <li>
+          Are you ready to take your place as King or Queen of the your destiny?
+        </li>
+      </ul>
     </>
   )
 }
