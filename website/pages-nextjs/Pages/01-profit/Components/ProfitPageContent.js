@@ -5,21 +5,48 @@ function ProfitPageContent() {
     <>
       <Slogan>From zero to 25000+ euro profit less than an year</Slogan>
 
-      <p>I want the article the summary / takeaway to be:</p>
+      <p>
+        Dear Friend, I’m sure you’re a busy person. I want to ask you to spend
+        ten or fifteen minutes of your life. The big price and the takeaway for
+        you will be:
+      </p>
 
-      <ul>
-        <li>You’re the boss</li>
-        <li>You’re the product</li>
-        <li>You need a good accountant</li>
+      <ol>
+        <li>You’re the boss in your life. Stop wasting time to complain!!!!</li>
+        <li>
+          You’re the product: Wake up everyone can be a product in the Digital
+          revolution.
+        </li>
+        <li>
+          You need a good accountant. The money are not devil. The money are
+          freedom.
+        </li>
+        <li>
+          You have the valuable contacts. Your mother, your neighbor, you school
+          teammate and … In my case my mother gave me the necessary contacts to
+          open a bank account.
+        </li>
+        <li>
+          The biggest enemy is your fear of failure. The human brain has two
+          million cells. The main goal of these cells: Protection. If you want
+          to control your life: You must control these two million cells.
+        </li>
+        <li>
+          Your business will make a stronger person. Your mindset must as a
+          wolf: You’re alone in this journey!!!
+        </li>
+        <li>
+          24/7 vs 40 Working Hours. I worked on Christmas. The bank holidays are
+          working days for me.
+        </li>
         <li>
           You have the valuable contacts: Your mother, your neighbor and ...
         </li>
-        <li>The biggest enemy is your fear of failure </li>
-        <li>The whole journey will change your life </li>
-        <li>Your business will make a stronger person</li>
-        <li>24/7 vs 40 working hours per week</li>
-        <li>The dreams are achievable</li>
-      </ul>
+        <li>
+          The dreams are achievable: Fight for your dreams and your dreams will
+          fight for you
+        </li>
+      </ol>
 
       <Slogan>Why I'm sharing my journey ?</Slogan>
 
