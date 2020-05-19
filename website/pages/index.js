@@ -8,25 +8,18 @@ import Switch from '@ddanailov/components/Pages/shared/devices/Switch'
 import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 
 function SEO() {
+  const title =
+    'Danailov Consulting: Javascript Consultant and Remote architect'
+  const description =
+    'My skills are: React, Web Components, Cloud (Amazon, Google Cloud, Azure), Project leadership and mentorship'
+
   return (
     <>
-      <title>
-        Danailov Consulting: Javascript Consultant and Remote architect
-      </title>
+      <title>{title}</title>
+      <meta name="description" content={description} />
 
-      <meta
-        name="description"
-        content="My skills are: React, Web Components, Cloud (Amazon, Google Cloud, Azure), Project leadership and mentorship"
-      />
-
-      <meta
-        property="og:title"
-        content="Danailov Consulting: Javascript Consultant and Remote architect"
-      />
-      <meta
-        property="og:description"
-        content="My skills are: React, Web Components, Cloud (Amazon, Google Cloud, Azure), Project leadership and mentorship"
-      />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
     </>
   )
 }
