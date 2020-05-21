@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 
+import Keyword from '@ddanailov/components/Keyword'
 import TargetBlank from '@ddanailov/components/TargetBlankLink'
 import Space from '@ddanailov/styled/Space'
 
@@ -21,8 +22,10 @@ function AboutMe() {
 
       <ul>
         <li>
-          Fine with both front-end (React.js, Native web components, D3.js,
-          Polymer and SPA) and back-end(Nodejs, Go)
+          Fine with both front-end (<Keyword word="React.js" /> and{' '}
+          <Keyword word="Nextjs" />, Native web components, D3.js, Polymer and
+          SPA) and back-end(
+          <Keyword word="Nodejs" />, <Keyword word="Go" />)
         </li>
         <li>Amazon web services, Azure and Google Cloud are my best friends</li>
         <li>Creating software is my hobby</li>
