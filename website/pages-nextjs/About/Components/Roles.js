@@ -1,5 +1,7 @@
 import Slogan from '@ddanailov/styled/Slogan'
 
+import Keyword from '@ddanailov/components/Keyword'
+
 function Roles() {
   return (
     <>
@@ -49,8 +51,9 @@ function Roles() {
           </a>
         </li>
         <li>
-          Passion to work with React, Nodejs, Go, Amazon Web Services, Azure,
-          Google Cloud
+          Passion to work with <Keyword word="React" />,{' '}
+          <Keyword word="Nextjs" />, <Keyword word="Nodejs" />,{' '}
+          <Keyword word="Go" />, Amazon Web Services, Azure, Google Cloud
         </li>
         <li>
           Experience with Remote teams: (US, UK, Australia, Indonesia,
