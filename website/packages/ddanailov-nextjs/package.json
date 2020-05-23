@@ -2,14 +2,9 @@
   "name": "ddanailov-nextjs",
   "version": "1.0.0",
   "description": "Nextjs reusable components.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dimitardanailov/ddanailov.git",
-    "directory": "website/packages/ddanailov-nextjs"
-  },
   "homepage": "https://github.com/dimitardanailov/ddanailov/tree/master/website/packages/ddanailov-nextjs",
-  "scripts": {},
+  "license": "ISC",
+  "main": "index.js",
   "keywords": [
     "nextjs",
     "nextjs-reusable-components",
@@ -21,8 +16,15 @@
     "email": "dimityr.danailov@gmail.com",
     "url": "https://ddanailov.dev/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitardanailov/ddanailov.git",
+    "directory": "website/packages/ddanailov-nextjs"
+  },
+  "scripts": {
+    
+  },
   "bugs": {
     "url": "https://github.com/dimitardanailov/ddanailov/issues"
   },
-  "license": "MIT"
 }
