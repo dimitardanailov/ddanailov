@@ -12,12 +12,13 @@
     "format": "yarn prettier --write",
     "clean": "yarn clean:public",
     "clean:public": "rm -rf ./public & mkdir -p public",
+    "hosting": "firebase deploy --only hosting:voicepay-3d12f",
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint . --fix",
-    "publish": "yarn clean && yarn build && yarn gulp && firebase deploy --only hosting:dimitar",
+    "publish": "yarn clean && yarn build && yarn gulp && yarn hosting",
     "reports": "npx jscpd ./"
   },
   "jscpd": {
