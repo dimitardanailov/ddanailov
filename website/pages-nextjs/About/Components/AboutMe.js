@@ -16,8 +16,9 @@ function AboutMe() {
       <SocialIcons />
 
       <p>
-        Remote consultant / Full stack Web Developer with more than 10 years of
-        profesional experience. My remote is experience began August 2018.
+        I've been working as a full stack engineer (front-end, backend, mobile
+        and sysadmin / devOps) since June 2010. The last two years my focus is:
+        Consulting.
       </p>
 
       <ul>
@@ -31,7 +32,7 @@ function AboutMe() {
         <li>Creating software is my hobby</li>
         <li>Mentorship: I love to share my experience with the world</li>
         <li>
-          I love open source and <Space />
+          I love the open source and <Space />
           <TargetBlank
             href="https://stackoverflow.com/users/609707/d-danailov"
             title="My top tags are: Android, MySQL, Ruby on Rails, PHP and Javascript"
