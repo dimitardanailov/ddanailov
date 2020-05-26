@@ -1,5 +1,5 @@
 import MainMobileLayout from 'layouts/Mobile/MainMobileLayout'
-import Content from '@pages/02-material-ui-custom-list-item/Components/Content'
+import Content from '@pages/02-material-ui-custom-list/Components/Content'
 
 function Page() {
   return (
