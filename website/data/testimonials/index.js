@@ -3,7 +3,7 @@ export const heidi = {
   linkedin: {
     profile: 'https://www.linkedin.com/in/heidilundproductmanager',
     image:
-      'https://media-exp1.licdn.com/dms/image/C4E03AQHGevnu6Z8NZw/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=X39amMwD-8dyLFsPSJSkjO55H6slKHW7viGqZWI24cw',
+      'https://media-exp1.licdn.com/dms/image/C4E03AQHGevnu6Z8NZw/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=Cq67Pc0QucZUURmWQhsFEUrgL7Pgay-nv88N47uuqNY',
   },
   title:
     'Product Manager, Educational Software; Pragmatic Marketing Certified: Level VI',
@@ -15,7 +15,7 @@ export const henry = {
   linkedin: {
     profile: 'https://www.linkedin.com/in/henryclough/',
     image:
-      'https://media-exp1.licdn.com/dms/image/C4E03AQFiUqHZUWET4g/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=E_NKDtbuUNFi0ZKoIJ3NP3xUfDXc133R0b6O-xTIR_8',
+      'https://media-exp1.licdn.com/dms/image/C4E03AQFiUqHZUWET4g/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=6rfNqfVT2TqE5sR2BRTnEXFwVuaDpTTR9t8sBo0hWfE',
   },
   title: 'Chairperson, Asian Absolute | Translation and Localisation Services',
 }
@@ -37,7 +37,7 @@ export const mo = {
     title:
       'Leading Mo Works team who can create, launch and scale your brand/tech product into Australia, APAC and MENA',
     image:
-      'https://media-exp1.licdn.com/dms/image/C5603AQGr82bhKnGFpA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=L8kT_ALCB5apm2_FdMnVbLJ5rThEBlJEsu553OKH7wk',
+      'https://media-exp1.licdn.com/dms/image/C5603AQGr82bhKnGFpA/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=QaiOVTqIdEdDoAGQNs8BoVkCYwV00zng0JvmmkblSKc',
   },
   title: 'Founder, Creative Director',
 }
@@ -47,7 +47,7 @@ export const hristo = {
   linkedin: {
     profile: 'https://www.linkedin.com/in/hggeorgiev/',
     image:
-      'https://media-exp1.licdn.com/dms/image/C5603AQGyvzQ4DWJMoA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=JEKmMKOXzpsPUkhmhbrVFvwxA6EwBYJMsdh9kF4H-pw',
+      'https://media-exp1.licdn.com/dms/image/C5603AQGyvzQ4DWJMoA/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=mCGKs18fP2V0I3nxaVWqXYbn8RE-JCQLElheqnIFbI4',
   },
   title: 'Software Engineer at Avrios | Former Founder of Centroida',
 }
@@ -57,7 +57,7 @@ export const tsvetan = {
   linkedin: {
     profile: 'https://www.linkedin.com/in/cvetan-himchev-7134492b/',
     image:
-      'https://media-exp1.licdn.com/dms/image/C5603AQE277jEMcn4PQ/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=7gcVVJgkA20ikSr1g8TvuniZmh4icaZfcvBrhJ4clj4',
+      'https://media-exp1.licdn.com/dms/image/C5603AQE277jEMcn4PQ/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=lwuLBqub-zSd7IeeDXL3MgOUX1ZtoZg3zSDPos56LoI',
   },
   title: 'Senior Application Developer at Vertinity LTD',
 }
@@ -67,7 +67,7 @@ export const vladimir = {
   linkedin: {
     profile: 'https://www.linkedin.com/in/vladimirdimov1/',
     image:
-      'https://media-exp1.licdn.com/dms/image/C5103AQFFyBz1SbLkOA/profile-displayphoto-shrink_200_200/0?e=1590624000&v=beta&t=uhMw85xRVWiK6Fmv6SJ_i2GcyfEXs19dBd5giJdWYts',
+      'https://media-exp1.licdn.com/dms/image/C5103AQFFyBz1SbLkOA/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=qdf1Tj204qRg7-AYzDJz83S-7mCgfEQsDtPAtv2Frn0',
   },
   title: 'Mobile Application Developer at Prime Holding JSC',
 }
