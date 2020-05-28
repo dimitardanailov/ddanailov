@@ -7,19 +7,16 @@ import detectDevice from '@ddanailov/utils/devices/detectDevice'
 import Switch from '@ddanailov/components/Pages/shared/devices/Switch'
 import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 
-function SEO() {
-  return (
-    <>
-      <title>
-        Remote consultant with technology stack: React, Nodejs and Go
-      </title>
+import SEO from '@ddanailov/utils/seo'
 
-      <meta
-        name="description"
-        content="Passion to work with React, Nodejs, Go, Amazon Web Services, Azure, Google Cloud"
-      />
-    </>
-  )
+function pageSEO() {
+  const _seo = new SEO()
+  _seo.title = 'Remote consultant with technology stack: React, Nodejs and Go'
+  _seo.canonicalTag = '/about'
+  _seo.description =
+    'Passion to work with React, Nodejs, Go, Amazon Web Services, Azure, Google Cloud'
+
+  return _seo
 }
 
 const AboutPage = () => {
@@ -31,7 +28,7 @@ const AboutPage = () => {
   }, [device])
 
   return (
-    <App canonicalTag="/about" SEO={<SEO />}>
+    <App seo={pageSEO()}>
       <Switch
         device={device}
         MobilePage={dynamic(import('@about/_Mobile'), PageLoader)}
