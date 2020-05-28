@@ -1,21 +1,32 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
+import SEO from '@ddanailov/utils/seo'
 
-function MainHeader({canonicalTag, SEO}) {
+function MainHeader({seo}) {
+  console.log('seo', seo)
+
   return (
     <div>
       <Head>
         <meta charSet="utf-8" />
 
-        {SEO}
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+
         <meta name="author" content="Dimitar Danailov" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="canonical" href={`https://ddanailov.dev${canonicalTag}`} />
+        <link
+          rel="canonical"
+          href={`https://ddanailov.dev${seo.canonicalTag}`}
+        />
         <meta
           property="og:url"
-          content={`https://ddanailov.dev${canonicalTag}`}
+          content={`https://ddanailov.dev${seo.canonicalTag}`}
         />
         <meta property="og:type" content="website" />
 
@@ -51,13 +62,8 @@ function MainHeader({canonicalTag, SEO}) {
   )
 }
 
-MainHeader.defaultProps = {
-  canonicalTag: '/',
-}
-
 MainHeader.propTypes = {
-  canonicalTag: PropTypes.string,
-  SEO: PropTypes.node.isRequired,
+  seo: PropTypes.instanceOf(SEO),
 }
 
 export default MainHeader
