@@ -17,21 +17,7 @@ const BlogPage = () => {
     loading: () => <p>Loading...</p>,
   }
 
-  return (
-    <>
-      <Switch
-        device={device}
-        MobilePage={dynamic(
-          import('@ddanailov/components/Pages/blog/_Mobile'),
-          loading,
-        )}
-        DesktopPage={dynamic(
-          import('@ddanailov/components/Pages/blog/_Desktop'),
-          loading,
-        )}
-      />
-    </>
-  )
+  return <>TODO ...</>
 }
 
 export default BlogPage
