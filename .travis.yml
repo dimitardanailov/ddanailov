@@ -4,9 +4,9 @@ addons:
   chrome: stable
 cache: yarn
 before_install:
-  - npm install -g @lhci/cli@0.4.x
-script:
   - cd website
   - ls -la
+  - npm install -g @lhci/cli@0.4.x
+script:
   - yarn build
   - lhci autorun
