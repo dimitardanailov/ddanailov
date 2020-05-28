@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 
+import SEO from '@ddanailov/utils/seo'
+
 const Container = styled.section`
   position: relative;
 
@@ -12,10 +14,10 @@ const Container = styled.section`
   width: 100%;
 `
 
-function App({canonicalTag, children, SEO}) {
+function App({children, seo}) {
   return (
     <Container>
-      <MainHeader canonicalTag={canonicalTag} SEO={SEO} />
+      <MainHeader seo={seo} />
       {children}
     </Container>
   )
@@ -24,7 +26,7 @@ function App({canonicalTag, children, SEO}) {
 App.propTypes = {
   canonicalTag: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  SEO: PropTypes.node.isRequired,
+  seo: PropTypes.node.isRequired,
 }
 
 export default App
