@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import SEO from '@ddanailov/utils/seo'
 
 function MainHeader({seo}) {
-  console.log('seo', seo)
-
   return (
     <div>
       <Head>
