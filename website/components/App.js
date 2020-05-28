@@ -24,9 +24,8 @@ function App({children, seo}) {
 }
 
 App.propTypes = {
-  canonicalTag: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  seo: PropTypes.node.isRequired,
+  seo: PropTypes.instanceOf(SEO).isRequired,
 }
 
 export default App
