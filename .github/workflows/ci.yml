@@ -7,6 +7,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: cd websitte
-      - run: npm install && npm install -g @lhci/cli@0.4.x
-      - run: npm run build
+      - run: ls -la
       - run: lhci autorun --upload.target=temporary-public-storage
