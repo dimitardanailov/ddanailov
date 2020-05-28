@@ -7,7 +7,18 @@ import detectDevice from '@ddanailov/utils/devices/detectDevice'
 import Switch from '@ddanailov/components/Pages/shared/devices/Switch'
 import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 
-const Homepage = () => {
+import SEO from '@ddanailov/utils/seo'
+
+function pageSEO() {
+  const _seo = new SEO()
+  _seo.title = 'Sponsorship my react, nodejs and GOLang contribution'
+  _seo.canonicalTag = '/thanks'
+  _seo.description = 'My goal is to create more react, nodejs and Golang tools'
+
+  return _seo
+}
+
+const ThanksPage = () => {
   const [device, setDevice] = React.useState('')
 
   useEffect(() => {
@@ -16,7 +27,7 @@ const Homepage = () => {
   }, [device])
 
   return (
-    <App canonicalTag="/thanks">
+    <App seo={pageSEO()}>
       <Switch
         device={device}
         MobilePage={dynamic(import('@thanks/_Mobile'), PageLoader)}
@@ -26,4 +37,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage
+export default ThanksPage
