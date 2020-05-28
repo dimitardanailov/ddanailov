@@ -7,14 +7,15 @@ import detectDevice from '@ddanailov/utils/devices/detectDevice'
 import Switch from '@ddanailov/components/Pages/shared/devices/Switch'
 import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 
-function SEO() {
-  return (
-    <>
-      <title>From zero to 25000+ euro profit less than an year</title>
+import SEO from '@ddanailov/utils/seo'
 
-      <meta name="description" content="" />
-    </>
-  )
+function pageSEO() {
+  const _seo = new SEO()
+  _seo.title = 'From zero to 25000+ euro profit less than an year'
+  _seo.canonicalTag = '/blog/profit'
+  _seo.description = ''
+
+  return _seo
 }
 
 const ProfitPage = () => {
@@ -26,7 +27,7 @@ const ProfitPage = () => {
   }, [device])
 
   return (
-    <App canonicalTag="/blog/profit" SEO={<SEO />}>
+    <App seo={pageSEO()}>
       <Switch
         device={device}
         MobilePage={dynamic(import('@pages/01-profit/_Mobile'), PageLoader)}
