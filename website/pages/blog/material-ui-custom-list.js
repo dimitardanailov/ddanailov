@@ -7,17 +7,16 @@ import detectDevice from '@ddanailov/utils/devices/detectDevice'
 import Switch from '@ddanailov/components/Pages/shared/devices/Switch'
 import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 
-function SEO() {
-  return (
-    <>
-      <title>Material UI creating Custom List and List Item</title>
+import SEO from '@ddanailov/utils/seo'
 
-      <meta
-        name="description"
-        content="Material is a great library but sometimes we want to extend Material UI features"
-      />
-    </>
-  )
+function pageSEO() {
+  const _seo = new SEO()
+  _seo.title = 'Material UI creating Custom List and List Item'
+  _seo.canonicalTag = '/blog/02-material-ui-custom-list'
+  _seo.description =
+    'Material is a great library but sometimes we want to extend Material UI features'
+
+  return _seo
 }
 
 const ProfitPage = () => {
@@ -29,7 +28,7 @@ const ProfitPage = () => {
   }, [device])
 
   return (
-    <App canonicalTag="/blog/02-material-ui-custom-list" SEO={<SEO />}>
+    <App seo={pageSEO()}>
       <Switch
         device={device}
         MobilePage={dynamic(
