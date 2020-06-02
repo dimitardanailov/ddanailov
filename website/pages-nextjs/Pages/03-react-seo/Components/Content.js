@@ -14,9 +14,10 @@ class Content extends React.Component {
         <Slogan>Make your React web apps discoverable - JavaScript SEO</Slogan>
 
         <p>My goal is to share my experience with you.</p>
-        <p>Article takeaway is:</p>
+        <p>The article takeaway is:</p>
         <ul>
           <li>What is behing GoogleBot</li>
+          <li>Why React ?</li>
         </ul>
 
         <h5>What is behind GoogleBot</h5>
@@ -40,13 +41,20 @@ class Content extends React.Component {
 
         <p>
           If you still don't understand what means my previous paragraph: I'll
-          try to expain. Google uses almost the same version like your browser
-          to fetch the important data. Of course the browser has limitions and
-          advantages if you compare with your browser but the version is almost
-          the same.
+          try to expain. Google uses the latest Google Chrome version to fetch
+          the useful data from your website. I want to emphasize the GoogleBot
+          version has
         </p>
 
-        <p></p>
+        <p>
+          I want to add a personal tought: Googlebot Chrome version is not a
+          Google Chrome mirror. I'm almost sure: Googlebot Chrome version must
+          be between 70 % and 85 % percent Google Chrome mirror. The other
+          fifteen percent are a crawler advantages: CPU, Memory, Network
+          optimization.
+        </p>
+
+        <h5>Why React ?</h5>
       </div>
     )
   }
