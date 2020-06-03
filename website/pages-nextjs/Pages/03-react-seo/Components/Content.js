@@ -1,7 +1,32 @@
 import React from 'react'
 import Prism from 'prismjs'
+import 'prismjs/themes/prism.css'
 
 import Slogan from '@ddanailov/styled/Slogan'
+
+function TargetBlankExample() {
+  // prettier-ignore
+  const raw = 
+`import React from 'react';
+   
+function CustomComponent() {
+  return (
+    <a href="http://ddanailov.dev/">
+      My website
+    </Button>
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('#app'));`
+
+  return (
+    <>
+      <pre>
+        <code className="language-javascript">{raw}</code>
+      </pre>
+    </>
+  )
+}
 
 class Content extends React.Component {
   componentDidMount() {
@@ -17,7 +42,7 @@ class Content extends React.Component {
         <p>The article takeaway is:</p>
         <ul>
           <li>What is behing GoogleBot</li>
-          <li>Why React ?</li>
+          <li>The common mistake in my practice are ... ?</li>
         </ul>
 
         <h5>What is behind GoogleBot</h5>
@@ -54,7 +79,14 @@ class Content extends React.Component {
           optimization.
         </p>
 
-        <h5>Why React ?</h5>
+        <h5>The common mistake in my practice are ... ?</h5>
+
+        <h6>Hyperlinks</h6>
+        <p>
+          If the hyperlink must be `target` blank. The item requires rel
+          nofollow. Example:
+        </p>
+        <TargetBlankExample />
       </div>
     )
   }
