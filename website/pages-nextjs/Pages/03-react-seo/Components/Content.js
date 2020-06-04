@@ -43,9 +43,10 @@ class Content extends React.Component {
         <ul>
           <li>What is behing GoogleBot</li>
           <li>The common mistake in my practice are ... ?</li>
+          <li></li>
         </ul>
 
-        <h5>What is behind GoogleBot</h5>
+        <h4>What is behind GoogleBot</h4>
 
         <p>My article wants to start with the official information by Google</p>
         <blockquote>
@@ -79,7 +80,9 @@ class Content extends React.Component {
           optimization.
         </p>
 
-        <h5>The common mistake in my practice are ... ?</h5>
+        <h4>The common mistakes?</h4>
+
+        <h5>Don't focus to much in GoogleBot</h5>
 
         <h6>Hyperlinks</h6>
         <p>
@@ -87,6 +90,12 @@ class Content extends React.Component {
           nofollow. Example:
         </p>
         <TargetBlankExample />
+
+        <h6>Images</h6>
+
+        <h6>Webp and Webm</h6>
+
+        <h6>Image compression</h6>
       </div>
     )
   }
