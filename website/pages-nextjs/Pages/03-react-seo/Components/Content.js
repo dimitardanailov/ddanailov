@@ -84,6 +84,12 @@ class Content extends React.Component {
 
         <h5>Don't focus to much in GoogleBot</h5>
 
+        <p>
+          The main goal must be the end user!!! My advice is focus on mobile
+          performance: UI and UX. You primary goal must be the design to reduce
+          all questions
+        </p>
+
         <h6>Hyperlinks</h6>
         <p>
           If the hyperlink must be `target` blank. The item requires rel
