@@ -38,12 +38,11 @@ class Content extends React.Component {
       <div>
         <Slogan>Make your React web apps discoverable - JavaScript SEO</Slogan>
 
-        <p>My goal is to share my experience with you.</p>
         <p>The article takeaway is:</p>
         <ul>
           <li>What is behing GoogleBot</li>
-          <li>The common mistake in my practice are ... ?</li>
-          <li></li>
+          <li>The common SEO mistake ?</li>
+          <li>Advance Google LightHouse</li>
         </ul>
 
         <h4>What is behind GoogleBot</h4>
@@ -67,9 +66,8 @@ class Content extends React.Component {
 
         <p>
           If you still don't understand what means my previous paragraph: I'll
-          try to expain. Google uses the latest Google Chrome version to fetch
-          the useful data from your website. I want to emphasize the GoogleBot
-          version has
+          try to expain. Google Search Engine uses the latest Google Chrome
+          version to fetch the useful data from your website.
         </p>
 
         <p>
@@ -82,12 +80,18 @@ class Content extends React.Component {
 
         <h4>The common mistakes?</h4>
 
-        <h5>Don't focus to much in GoogleBot</h5>
+        <h5>GoogleBot is more important vs the end user</h5>
 
         <p>
-          The main goal must be the end user!!! My advice is focus on mobile
-          performance: UI and UX. You primary goal must be the design to reduce
-          all questions
+          The main Traffic in your website will be Google Searches. The next
+          three sources are: Social Links, Direct Traffic, Link Building.
+        </p>
+
+        <p>
+          Old: Please don't forget: The main goal is the end user!!! Most of the
+          time between 50 and 80 percent The main goal must be the end user!!!
+          My advice is focus on mobile performance: UI and UX. You primary goal
+          must be the design to reduce all questions
         </p>
 
         <h6>Hyperlinks</h6>
