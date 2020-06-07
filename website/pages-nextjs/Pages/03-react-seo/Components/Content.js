@@ -84,14 +84,18 @@ class Content extends React.Component {
 
         <p>
           The main Traffic in your website will be Google Searches. The next
-          three sources are: Social Links, Direct Traffic, Link Building.
+          three sources are: Social Links, Direct Traffic, Link Building. SEO
+          optimization is important and critical for us but if the content
+          matches more GoogleBot soon or later the end result will be: bounce
+          rate.
         </p>
 
+        <h6>What's bounce rate ?</h6>
+
         <p>
-          Old: Please don't forget: The main goal is the end user!!! Most of the
-          time between 50 and 80 percent The main goal must be the end user!!!
-          My advice is focus on mobile performance: UI and UX. You primary goal
-          must be the design to reduce all questions
+          Bounce rate are unhappy users. The typical bounce rate session is
+          between 1 second and 45 seconds. If the end user is not happy from the
+          page content he or she will close the page.
         </p>
 
         <h6>Hyperlinks</h6>
