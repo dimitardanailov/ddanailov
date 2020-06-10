@@ -129,20 +129,19 @@ class Content extends React.Component {
         <h5>Images</h5>
         <p>Image optimization is a tricky subject. The common mistakes:</p>
         <h6>#1 Random / stupid names</h6>
-        <p>I'd like to start with example:</p>
         <p>
           If you want image optimization please be careful with image
           conventation. My advice is: the images must be meaningful.
         </p>
         <ImageInvalidName />
-        <ul>
-          <li>. Example: 1.jpeg or name with long string.</li>
-          <li>
-            The page requires image with dimensions 200x200. The response
-            returns image with dimensions 2000x2000
-          </li>
-          <li></li>
-        </ul>
+        <h6>Image dimensions</h6>
+        <p>
+          If the page requires image with size 180x150 you must provide image
+          with these dimensions. One of the common mistake is the server
+          response returns image with size 2000x2000. Google ads seo penalties:
+          Your page is not mobile friendly, the internet traffic in our days is
+          a hot subject, the browser must resize image.
+        </p>
         <h6>Webp and Webm</h6>
         <h6>Image compression</h6>
       </div>
