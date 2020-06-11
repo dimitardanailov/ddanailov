@@ -142,7 +142,23 @@ class Content extends React.Component {
           Your page is not mobile friendly, the internet traffic in our days is
           a hot subject, the browser must resize image.
         </p>
+        <h5>Compression</h5>
         <h6>Webp and Webm</h6>
+        <p>
+          Webp and Webm are a new standard in the web development. The numbers
+          behind Webp are:
+        </p>
+        <blockquote>
+          WebP lossless images are 26% smaller in size compared to PNGs. WebP
+          lossy images are 25-34% smaller than comparable JPEG images at
+          equivalent SSIM quality index.
+        </blockquote>
+        <p>Source: https://developers.google.com/speed/webp</p>
+        <p>
+          Webp is not supported by Safari, iOS Safari and IE. The main reason
+          Apple to be not interested by Webp is the browser war with Google.
+        </p>
+        <p>I'd like to share how we can create reusable web component</p>
         <h6>Image compression</h6>
       </div>
     )
