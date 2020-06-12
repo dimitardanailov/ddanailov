@@ -7,8 +7,7 @@ import Slogan from '@ddanailov/styled/Slogan'
 function TargetBlankExample() {
   // prettier-ignore
   const raw = 
-`
-function CustomComponent() {
+`function CustomComponent() {
   return (
     <a href="http://ddanailov.dev/" target="_blank" rel="noopener">
       My website
@@ -17,33 +16,45 @@ function CustomComponent() {
 }`
 
   return (
-    <>
-      <pre>
-        <code className="language-javascript">{raw}</code>
-      </pre>
-    </>
+    <pre>
+      <code className="language-javascript">{raw}</code>
+    </pre>
   )
 }
 
 function ImageInvalidName() {
   // prettier-ignore
   const raw = 
-`
-/*** SEO penalty ***/
+`/*** SEO penalty ***/
 <img src="./1.jpeg" />
 
 /*** My recommendation is ***/
 <img src="./tv-sony-led-display.jpeg" />`
 
   return (
-    <>
-      <pre>
-        <code className="language-html">{raw}</code>
-      </pre>
-    </>
+    <pre>
+      <code className="language-html">{raw}</code>
+    </pre>
   )
 }
-;``
+
+function ImageReusable() {
+  // prettier-ignore
+  const raw = 
+`<picture>
+  <source src="foo.webp" type="image/webp" />
+  <source src="foo.png" type="image/png" />
+  <!-- fallback content -->
+  <img src="foo.png" alt="insert alt text here">
+</picture>
+`
+
+  return (
+    <pre>
+      <code className="language-html">{raw}</code>
+    </pre>
+  )
+}
 
 class Content extends React.Component {
   componentDidMount() {
@@ -160,6 +171,7 @@ class Content extends React.Component {
         </p>
         <p>I'd like to share how we can create reusable web component</p>
         <h6>Image compression</h6>
+        <ImageReusable />
       </div>
     )
   }
