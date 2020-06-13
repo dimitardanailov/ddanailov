@@ -172,6 +172,19 @@ class Content extends React.Component {
         <p>I'd like to share how we can create reusable web component</p>
         <h6>Image compression</h6>
         <ImageReusable />
+        <p>
+          Webm is the video equivalent. Webm has better browser support if you
+          compare with webp. The format is supported by the latest Safari, iOS
+          Safari. The important note is: The support is partial
+        </p>
+        <blockquote>Only supports VP8 used in WebRTC.</blockquote>
+        <p>
+          Unfortunately my experience in this area is not so big. I can't
+          advantages and disadvantages between VP8 and VP9. I can give you my
+          personal opinion: Our generation is living in the industrial age and
+          we're busy. The video usage is increase each year. If you want
+          competitor advantage: video is one of the hot areas.
+        </p>
       </div>
     )
   }
