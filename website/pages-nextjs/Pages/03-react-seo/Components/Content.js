@@ -67,7 +67,7 @@ class Content extends React.Component {
         <Slogan>Make your React web apps discoverable - JavaScript SEO</Slogan>
         <p>The article takeaway is:</p>
         <ul>
-          <li>What is behing GoogleBot</li>
+          <li>What is behind GoogleBot</li>
           <li>The common SEO mistake ?</li>
           <li>Advance Google LightHouse</li>
         </ul>
@@ -122,15 +122,14 @@ class Content extends React.Component {
         </p>
         <h6>onClick listener</h6>
         <p>
-          The second mistake: the engineers loves onClick events. If you want to
-          good seo results please avoid onClick listeners if the element is
+          The second mistake: the engineers love onClick events. If you want
+          good seo results please avoid onClick listeners if the element is a
           navigation element.
         </p>
         <h6>target="_blank"</h6>
-        Opens the linked document in a new window or tab
         <p>
-          The attribute is useful because open a new tab or window. The main
-          issues in our days with target="_blank" are security or performance.
+          The attribute opens the desired link in the new tab. The main issues
+          in our days with target="_blank" are security or performance.
         </p>
         <p>
           If you want google to skip penalties the magic attributes is:
@@ -156,7 +155,7 @@ class Content extends React.Component {
         <h5>Compression</h5>
         <h6>Webp and Webm</h6>
         <p>
-          Webp and Webm are a new standard in the web development. The numbers
+          Webp and Webm are a new standard in web development. The numbers
           behind Webp are:
         </p>
         <blockquote>
