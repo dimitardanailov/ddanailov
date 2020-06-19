@@ -67,11 +67,11 @@ class Content extends React.Component {
         <Slogan>Make your React web apps discoverable - JavaScript SEO</Slogan>
         <p>The article takeaway is:</p>
         <ul>
-          <li>What is behind GoogleBot</li>
+          <li>Google bot: Overview and architecture</li>
           <li>The common SEO mistake ?</li>
           <li>Advance Google LightHouse</li>
         </ul>
-        <h4>What is behind GoogleBot</h4>
+        <h4>Google bot: Overview and architecture</h4>
         <p>My article wants to start with the official information by Google</p>
         <blockquote>
           Googlebot is the crawler that visits web pages to include them within
@@ -102,11 +102,11 @@ class Content extends React.Component {
         <h4>The common mistakes?</h4>
         <h5>GoogleBot is more important vs the end user</h5>
         <p>
-          The main Traffic in your website will be Google Searches. The next
+          The main traffic in your website will be Google Searches. The next
           three sources are: Social Links, Direct Traffic, Link Building. SEO
-          optimization is important and critical for us but if the content
-          matches more GoogleBot soon or later the end result will be: bounce
-          rate.
+          optimization is important and critical for each website. My advice is
+          focus on customers / the end - user. Please be careful with bounce seo
+          penalty.
         </p>
         <h6>What's bounce rate ?</h6>
         <p>
