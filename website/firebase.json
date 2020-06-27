@@ -11,6 +11,10 @@
       {
         "source": "/thanks",
         "destination": "/thanks.html"
+      },
+      {
+        "source": "/make-your-react-web-apps-discoverable-javascript-seo",
+        "destination": "/make-your-react-web-apps-discoverable-javascript-seo.html"
       }
     ],
     "headers": [
