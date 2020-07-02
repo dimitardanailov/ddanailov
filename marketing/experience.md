@@ -4,7 +4,7 @@ Expertise: Software architect, Team Leader and full stack developer. I've been w
 
 :tada: Skills :tada: :
 
-:fire: React, Nextjs, Redux, Xstate and State machines, Material UI
+:fire: React, Nextjs, Redux, Styled components, Web Performance, Xstate and State machines, Material UI
 :snake: Nodejs (Express), GoLang (level: beginner)
 :police_car: Polymer, Web technologies (HTML5, CSS3, ES7+, a11y), D3js, Custom Elements v1
 :boom: Typescript, Flow, Prettier
@@ -25,9 +25,6 @@ Stackoverflow Story: <https://stackoverflow.com/story/dimitardanailov>
 "Talk is cheap show me the code" -> Linus torvalds
 
 :shield: ddanailov-website: My website uses React, Nextjs and Material. Source Code: <https://github.com/dimitardanailov/ddanailov/tree/master/website>
-
-:boom: boilerplate-component-hello-world: Simple boilerplate component with React, Flow, Yarn, Prettier
-Source code: <https://github.com/dimitardanailov/boilerplate-component-hello-world>
 
 :grapes: Gmail helper creates gmail labels and features. Technologies: Custom Elements v1, Redux, Webpack, Lerna, Mocha, Chai, Karma
 Source code: <https://github.com/dimitardanailov/gmail-helper>
