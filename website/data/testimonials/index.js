@@ -71,3 +71,13 @@ export const vladimir = {
   },
   title: 'Mobile Application Developer at Prime Holding JSC',
 }
+
+export const bayu = {
+  name: 'I Gusti Agung Gede Bayu Puspa Nugraha',
+  linkedin: {
+    profile:
+      'https://www.linkedin.com/in/i-gusti-agung-gede-bayu-puspa-nugraha-52811861/',
+    image: '',
+  },
+  title: 'Senior Software Engineer at GetCraft | Creative IT Learner',
+}
