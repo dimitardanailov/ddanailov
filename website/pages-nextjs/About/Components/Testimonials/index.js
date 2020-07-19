@@ -26,6 +26,10 @@ export {default as HristoInfo} from './Hristo/Info'
 export {default as TsvetanLetter} from './Tsvetan/Letter'
 export {default as TsvetanInfo} from './Tsvetan/Info'
 
+//  Bayu
+export {default as BayuLetter} from './Bayu/Letter'
+export {default as BayuInfo} from './Bayu/Info'
+
 // Vladimir
 export {default as VladimirLetter} from './Vladimir/Letter'
 export {default as VladimirInfo} from './Vladimir/Info'
