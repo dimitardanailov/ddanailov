@@ -10,6 +10,8 @@ import Typing from '@ddanailov/components/Animations/Typing'
 
 import Slogan from '@ddanailov/styled/Slogan'
 
+import ExternalArticles from '@ddanailov/components/Articles/ExternalArticles'
+
 const Sidebar = dynamic(() => import('@ddanailov/components/Sidebar'))
 const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 const MainFooter = dynamic(() => import('@ddanailov/components/MainFooter'))
@@ -29,6 +31,8 @@ const HomePageDesktop = () => (
         <PersonalStory />
         <OpenSourceProjects />
         <Skills />
+
+        <ExternalArticles />
 
         <MainFooter />
       </PageHolder>
