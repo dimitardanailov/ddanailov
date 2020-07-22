@@ -1,5 +1,30 @@
 const articles = [
   {
+    title:
+      'Http error handling with Xstate / State Machines, GraphQL and React',
+    href:
+      'https://medium.com/@d_danailov/http-error-handling-with-xstate-state-machines-graphql-and-react-b036aa2fd613',
+  },
+  {
+    title: 'Intro: Xstate and State Machines (React)',
+    href:
+      'https://medium.com/@d_danailov/intro-sstate-and-state-machines-react-3b873a6a713d',
+  },
+  {
+    title: 'React: Custom localStorage Hook',
+    href:
+      'https://medium.com/@d_danailov/react-custom-localstorage-hook-a3f50a1532a2',
+  },
+  {
+    title: 'React fragments vs div containers',
+    href: 'https://medium.com/@d_danailov/react-fragments-7c2de4c50177',
+  },
+  {
+    title: 'Typing animation with React (nextjs) and typed.js',
+    href:
+      'https://medium.com/@d_danailov/typing-animation-with-react-nextjs-and-typed-js-d690bae3976b',
+  },
+  {
     title: 'How to protect my Ubuntu server ?',
     href:
       'https://medium.com/@d_danailov/how-to-protect-my-ubuntu-server-6a2ecc056722',
