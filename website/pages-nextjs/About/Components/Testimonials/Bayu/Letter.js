@@ -1,4 +1,4 @@
-function BauyLetter() {
+function BayuLetter() {
   return (
     <>
       <p>
@@ -19,3 +19,5 @@ function BauyLetter() {
     </>
   )
 }
+
+export default BayuLetter
