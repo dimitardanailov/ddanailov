@@ -7,6 +7,7 @@ import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
 import Skills from '@ddanailov/components/Skills'
 
 import Slogan from '@ddanailov/styled/Slogan'
+import ExternalArticles from '@ddanailov/components/Articles/ExternalArticles'
 
 const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 
@@ -17,6 +18,7 @@ const HomePageMobile = () => (
     <PersonalStory />
     <OpenSourceProjects />
     <Skills />
+    <ExternalArticles />
   </>
 )
 
