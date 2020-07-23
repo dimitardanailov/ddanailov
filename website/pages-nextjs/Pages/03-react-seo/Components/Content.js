@@ -1,4 +1,8 @@
 import React from 'react'
+import {
+  BlockQuote,
+  SourceBlockQuote,
+} from '@ddanailov/components/Blog/BlockQuote'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
 
@@ -75,7 +79,10 @@ class Content extends React.Component {
         </ul>
         <h4>Google bot: Overview and architecture</h4>
         <p>The architecture behind Google crawler is: Architecture</p>
-        <blockquote>
+        <SourceBlockQuote
+          title="The new evergreen Googlebot"
+          href="https://webmasters.googleblog.com/2019/05/the-new-evergreen-googlebot.html"
+        >
           Googlebot is the crawler that visits web pages to include them within
           Google Search index. The number one question we got from the community
           at events and social media was if we could make Googlebot evergreen
@@ -84,17 +91,11 @@ class Content extends React.Component {
           time of this post) when rendering pages for Search. Moving forward,
           Googlebot will regularly update its rendering engine to ensure support
           for latest web platform features.
-        </blockquote>
+        </SourceBlockQuote>
         <p>
-          Source:
-          <TargetBlank
-            title="The new evergreen Googlebot"
-            href="https://webmasters.googleblog.com/2019/05/the-new-evergreen-googlebot.html"
-          >
-            The new evergreen Googlebot
-          </TargetBlank>
+          The announcement added more than 1000+ features. The top three
+          announcements are:
         </p>
-        <p>The updates are adding on the table:</p>
         <ul>
           <li>EcmaScript 6 support</li>
           <li>
@@ -117,7 +118,7 @@ class Content extends React.Component {
         <p>
           Why the announcement is important for the React community: Step by
           step the large enterprise applications are migrated from old Monolith
-          applications to Single Page Application. My expectations are in the
+          application to Single Page Application. My expectations are in the
           next a few years more jQuery applications to be migrated to React.
         </p>
         <p>The next chapter is common mistakes</p>
@@ -214,20 +215,14 @@ class Content extends React.Component {
           Webp and Webm are a new standard in the web development. The numbers
           behind Webp are:
         </p>
-        <blockquote>
+        <SourceBlockQuote
+          title="A new image format for the Web"
+          href="https://developers.google.com/speed/webp"
+        >
           WebP lossless images are 26% smaller in size compared to PNGs. WebP
           lossy images are 25-34% smaller than comparable JPEG images at
           equivalent SSIM quality index.
-        </blockquote>
-        <p>
-          Source:
-          <TargetBlank
-            title="A new image format for the Web"
-            href="https://developers.google.com/speed/webp"
-          >
-            A new image format for the Web
-          </TargetBlank>
-        </p>
+        </SourceBlockQuote>
         <p>
           Webp is not supported by Safari, iOS Safari and IE. The main reason
           Apple to be not interested by Webp is the browser war with Google.
@@ -240,7 +235,7 @@ class Content extends React.Component {
           compare with webp. The format is supported by the latest Safari, iOS
           Safari. The important note is: The support is partial
         </p>
-        <blockquote>Only supports VP8 used in WebRTC.</blockquote>
+        <BlockQuote>Only supports VP8 used in WebRTC.</BlockQuote>
         <p>
           Unfortunately my experience in this area is not so big. I can't
           advantages and disadvantages between VP8 and VP9. I can give you my
@@ -275,7 +270,7 @@ class Content extends React.Component {
         <p>The useful links are</p>
         <ul>
           <li>
-            Quick-start guide on using Lighthouse:
+            Quick-start guide on using Lighthouse:{' '}
             <TargetBlank
               title="Quick-start guide on using Lighthouse"
               href="https://developers.google.com/web/tools/lighthouse/"
@@ -284,13 +279,13 @@ class Content extends React.Component {
             </TargetBlank>
           </li>
           <li>
-            View and share reports online:
+            View and share reports online:{' '}
             <TargetBlank title="View and share reports online">
               https://googlechrome.github.io/lighthouse/viewer/
             </TargetBlank>
           </li>
           <li>
-            View and share reports online:
+            View and share reports online:{' '}
             <TargetBlank
               title="View and share reports online: * Github source and details"
               href="https://github.com/GoogleChrome/lighthouse"
@@ -305,7 +300,7 @@ class Content extends React.Component {
             width="560"
             height="315"
             src="https://www.youtube-nocookie.com/embed/mLjxXPHuIJo"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
