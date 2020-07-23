@@ -1,5 +1,10 @@
 const articles = [
   {
+    title: 'Make your React web apps discoverable - JavaScript SEO',
+    href:
+      'https://ddanailov.dev/make-your-react-web-apps-discoverable-javascript-seo',
+  },
+  {
     title:
       'Http error handling with Xstate / State Machines, GraphQL and React',
     href:
