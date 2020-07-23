@@ -1,21 +1,39 @@
 import PropTypes from 'prop-types'
-
 import styled from 'styled-components'
-import {secondary} from 'styles/colors/light'
 
-const Wrapper = styled.blockquote`
-  position: relative;
+const BlockQuote = styled.blockquote`
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
 
-  display: block;
-  border: 1px solid ${secondary.main};
+  font-style: italic;
+
+  &:before,
+  &:after {
+    color: #ccc;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+  }
+
+  &:before {
+    content: open-quote;
+    margin-right: 0.1em;
+  }
+
+  &:after {
+    content: close-quote;
+    margin-left: 0;
+  }
 `
 
-function BlockQuote({children}) {
-  return <Wrapper>{children}</Wrapper>
+function BlockQuoteComponent({children}) {
+  return <BlockQuote>{children}</BlockQuote>
 }
 
-BlockQuote.propTypes = {
+BlockQuoteComponent.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default BlockQuote
+export default BlockQuoteComponent
