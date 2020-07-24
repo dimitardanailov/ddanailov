@@ -13,6 +13,7 @@ import {
   HristoAvatar,
   TsvetanAvatar,
   VladimirAvatar,
+  BayuAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -32,6 +33,8 @@ import {
   TsvetanInfo,
   VladimirLetter,
   VladimirInfo,
+  BayuInfo,
+  BayuLetter,
 } from '@about/Components/Testimonials'
 
 import {TestimonialBody, RecommendationBody} from '@about/StyledComponents'
@@ -42,6 +45,16 @@ const AboutPageMobile = () => (
     <Roles />
 
     <Slogan>Testimonials and Recommendations</Slogan>
+
+    <TestimonialBody>
+      <BayuAvatar />
+
+      <RecommendationBody>
+        <BayuLetter />
+
+        <BayuInfo />
+      </RecommendationBody>
+    </TestimonialBody>
 
     <TestimonialBody>
       <HeidiAvatar />
