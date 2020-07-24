@@ -9,7 +9,7 @@ function BayuInfo() {
       <TargetBlankLink href={bayu.linkedin.profile} title={bayu.title}>
         {bayu.name}
       </TargetBlankLink>
-      , {bayu.testimonialTitle}
+      , {bayu.title}
     </PersonInfo>
   )
 }
