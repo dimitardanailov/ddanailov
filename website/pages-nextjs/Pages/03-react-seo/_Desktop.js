@@ -1,15 +1,7 @@
 import MainDesktopLayout from 'layouts/Desktop/MainDesktopLayout'
 import Content from '@pages/03-react-seo/Components/Content'
 
-import styled from 'styled-components'
-
-const Wrapper = styled.section`
-  position: relative;
-
-  display: block;
-  width: 70%;
-  margin: 0 auto;
-`
+import Wrapper from '@pages/_components/DesktopWrapper'
 
 const Page = () => {
   return (
