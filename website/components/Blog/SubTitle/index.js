@@ -1,4 +1,4 @@
-import styled from '@ddanailov/components/Blog/SubTitle/styled-components'
+import styled from 'styled-components'
 
 const Wrapper = styled.h4`
   position: relative;
@@ -12,8 +12,8 @@ const Wrapper = styled.h4`
   }
 `
 
-function SubTitles({children}) {
+function SubTitle({children}) {
   return <Wrapper>{children}</Wrapper>
 }
 
-export default SubTitles
+export default SubTitle
