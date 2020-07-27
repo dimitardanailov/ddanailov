@@ -5,10 +5,10 @@ function PersonalStory() {
   return (
     <div>
       <div>
-        My personal journey begun before ten years ago. For these period I
-        "visited" a signification amount of kingdoms 👑. My roles were "warrior"
-        (backend developer), "engineer" (front - end developer), "magician"
-        (team leader and software architect), "the assassin" (freelancer /
+        My personal journey began ten years ago. For this period I "visited" a
+        significant amount of kingdoms 👑. My roles were "warrior" (backend
+        developer), "engineer" (front - end developer), "magician" (team leader
+        and software architect), "the assassin" (freelancer /
         <Keyword word="remote contractor" />) and even the "main officer" (CTO).
       </div>
       <div>
@@ -18,8 +18,8 @@ function PersonalStory() {
       </div>
       <div>
         To be an engineer 🛠 is an awesome job because your main focus is
-        creating a beautiful and helpful instruments which reduce the main pain
-        of each system: Adding or filtering data.
+        creating beautiful and helpful instruments which reduce the main pain of
+        each system: Adding or filtering data.
       </div>
       <div>
         The magician role 🧙‍♀️ was a tough and motivational task. My leadership
@@ -32,7 +32,8 @@ function PersonalStory() {
       </div>
       <Link href="/about">
         <a title="Dimitar Danailov: Portfolio details">
-          The second chapter of my book
+          If you want to learn more about me: Please visit the second chapter of
+          my book.
         </a>
       </Link>
     </div>
