@@ -2,6 +2,8 @@ import Slogan from '@ddanailov/styled/Slogan'
 
 import Keyword from '@ddanailov/components/Keyword'
 
+import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
+
 function Roles() {
   return (
     <>
@@ -10,45 +12,37 @@ function Roles() {
       <ul>
         <li>
           Present Remote consultant in{' '}
-          <a
+          <TargetBlankLink
+            title="Remote consultant in Asian Absolute"
+            href="https://asianabsolute.com/"
+          ></TargetBlankLink>
+        </li>
+        <li>
+          Former Remote Consultant in{' '}
+          <TargetBlankLink
             href="https://getcraft.com/"
             title="Remote consultant in GetCraft"
-            rel="noopener"
-            target="_blank"
           >
             GetCraft
-          </a>{' '}
-          and
-          <a
-            href="https://asianabsolute.com/"
-            title="Remote consultant in Asian Absolute"
-            rel="noopener"
-            target="_blank"
-          >
-            Asian Absolute
-          </a>
+          </TargetBlankLink>
         </li>
         <li>
           Former software architect in{' '}
-          <a
-            href="https://mentormate.com/"
+          <TargetBlankLink
             title="Software architect in MentorMate"
-            rel="noopener"
-            target="_blank"
+            href="https://mentormate.com/"
           >
-            Mentormate
-          </a>
+            MentorMate
+          </TargetBlankLink>
         </li>
         <li>
           Former Developer and CTO in{' '}
-          <a
+          <TargetBlankLink
             href="https://wollow-soft.com/en-US/"
             title="Software Developer and CTO in Wollow soft"
-            rel="noopener"
-            target="_blank"
           >
             Wollow soft
-          </a>
+          </TargetBlankLink>
         </li>
         <li>
           Passion to work with <Keyword word="React" />,{' '}
