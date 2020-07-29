@@ -16,6 +16,7 @@ import {
   HristoAvatar,
   TsvetanAvatar,
   VladimirAvatar,
+  BayuAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -35,6 +36,8 @@ import {
   TsvetanInfo,
   VladimirLetter,
   VladimirInfo,
+  BayuInfo,
+  BayuLetter,
 } from '@about/Components/Testimonials'
 
 import {
@@ -55,6 +58,15 @@ const AboutPage = () => (
 
       <Slogan>Testimonials and Recommendations</Slogan>
 
+      <TestimonialBodyCenter>
+        <HenryAvatar />
+
+        <RecommendationBody>
+          <HenryLetter />
+          <HenryInfo />
+        </RecommendationBody>
+      </TestimonialBodyCenter>
+
       <TestimonialBody>
         <HeidiAvatar />
 
@@ -64,15 +76,6 @@ const AboutPage = () => (
           <HeidiInfo />
         </RecommendationBody>
       </TestimonialBody>
-
-      <TestimonialBodyCenter>
-        <HenryAvatar />
-
-        <RecommendationBody>
-          <HenryLetter />
-          <HenryInfo />
-        </RecommendationBody>
-      </TestimonialBodyCenter>
 
       <TestimonialBodyCenter>
         <IvelinAvatar />
@@ -103,6 +106,16 @@ const AboutPage = () => (
           <HristoLetter />
 
           <HristoInfo />
+        </RecommendationBody>
+      </TestimonialBody>
+
+      <TestimonialBody>
+        <BayuAvatar />
+
+        <RecommendationBody>
+          <BayuLetter />
+
+          <BayuInfo />
         </RecommendationBody>
       </TestimonialBody>
 

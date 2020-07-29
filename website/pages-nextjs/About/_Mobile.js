@@ -47,12 +47,11 @@ const AboutPageMobile = () => (
     <Slogan>Testimonials and Recommendations</Slogan>
 
     <TestimonialBody>
-      <BayuAvatar />
+      <HenryAvatar />
 
       <RecommendationBody>
-        <BayuLetter />
-
-        <BayuInfo />
+        <HenryLetter />
+        <HenryInfo />
       </RecommendationBody>
     </TestimonialBody>
 
@@ -104,6 +103,16 @@ const AboutPageMobile = () => (
         <HristoLetter />
 
         <HristoInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <BayuAvatar />
+
+      <RecommendationBody>
+        <BayuLetter />
+
+        <BayuInfo />
       </RecommendationBody>
     </TestimonialBody>
 
