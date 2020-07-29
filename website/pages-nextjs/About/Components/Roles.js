@@ -15,7 +15,9 @@ function Roles() {
           <TargetBlankLink
             title="Remote consultant in Asian Absolute"
             href="https://asianabsolute.com/"
-          ></TargetBlankLink>
+          >
+            Asian Absolute
+          </TargetBlankLink>
         </li>
         <li>
           Former Remote Consultant in{' '}
