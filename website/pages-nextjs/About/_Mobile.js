@@ -35,6 +35,8 @@ import {
   VladimirInfo,
   BayuInfo,
   BayuLetter,
+  FannyInfo,
+  FannyLetter,
 } from '@about/Components/Testimonials'
 
 import {TestimonialBody, RecommendationBody} from '@about/StyledComponents'
@@ -56,21 +58,17 @@ const AboutPageMobile = () => (
     </TestimonialBody>
 
     <TestimonialBody>
+      <FannyLetter />
+      <FannyInfo />
+    </TestimonialBody>
+
+    <TestimonialBody>
       <HeidiAvatar />
 
       <RecommendationBody>
         <HeidiLetter />
 
         <HeidiInfo />
-      </RecommendationBody>
-    </TestimonialBody>
-
-    <TestimonialBody>
-      <HenryAvatar />
-
-      <RecommendationBody>
-        <HenryLetter />
-        <HenryInfo />
       </RecommendationBody>
     </TestimonialBody>
 

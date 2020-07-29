@@ -38,6 +38,8 @@ import {
   VladimirInfo,
   BayuInfo,
   BayuLetter,
+  FannyInfo,
+  FannyLetter,
 } from '@about/Components/Testimonials'
 
 import {
@@ -66,6 +68,11 @@ const AboutPage = () => (
           <HenryInfo />
         </RecommendationBody>
       </TestimonialBodyCenter>
+
+      <section>
+        <FannyLetter />
+        <FannyInfo />
+      </section>
 
       <TestimonialBody>
         <HeidiAvatar />

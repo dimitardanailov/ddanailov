@@ -1,10 +1,14 @@
-// Heidi
-export {default as HeidiLetter} from './Heidi/Letter'
-export {default as HeidiInfo} from './Heidi/Info'
-
 // Henry
 export {default as HenryLetter} from './Henry/Letter'
 export {default as HenryInfo} from './Henry/Info'
+
+// Fanny
+export {default as FannyLetter} from './Fanny/Letter'
+export {default as FannyInfo} from './Fanny/Info'
+
+// Heidi
+export {default as HeidiLetter} from './Heidi/Letter'
+export {default as HeidiInfo} from './Heidi/Info'
 
 // Ivelin
 export {default as IvelinLetter} from './Ivelin/Letter'
