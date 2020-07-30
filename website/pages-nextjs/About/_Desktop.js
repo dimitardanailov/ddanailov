@@ -17,6 +17,7 @@ import {
   TsvetanAvatar,
   VladimirAvatar,
   BayuAvatar,
+  FannyAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -69,10 +70,14 @@ const AboutPage = () => (
         </RecommendationBody>
       </TestimonialBodyCenter>
 
-      <section>
-        <FannyLetter />
-        <FannyInfo />
-      </section>
+      <TestimonialBodyCenter>
+        <FannyAvatar />
+
+        <RecommendationBody>
+          <FannyLetter />
+          <FannyInfo />
+        </RecommendationBody>
+      </TestimonialBodyCenter>
 
       <TestimonialBody>
         <HeidiAvatar />

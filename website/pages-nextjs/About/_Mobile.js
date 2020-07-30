@@ -14,6 +14,7 @@ import {
   TsvetanAvatar,
   VladimirAvatar,
   BayuAvatar,
+  FannyAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -58,8 +59,12 @@ const AboutPageMobile = () => (
     </TestimonialBody>
 
     <TestimonialBody>
-      <FannyLetter />
-      <FannyInfo />
+      <FannyAvatar />
+
+      <RecommendationBody>
+        <FannyLetter />
+        <FannyInfo />
+      </RecommendationBody>
     </TestimonialBody>
 
     <TestimonialBody>
