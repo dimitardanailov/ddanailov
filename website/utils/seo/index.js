@@ -1,6 +1,11 @@
 class SEO {
   constructor() {
     this.type = 'website'
+    this.image = {
+      path: 'https://ddanailov.dev/javascript-consultant.png',
+      height: '2160',
+      width: '3840',
+    }
   }
 
   get title() {
@@ -33,6 +38,26 @@ class SEO {
 
   set type(_type) {
     this._type = _type
+  }
+
+  get image() {
+    return this._image
+  }
+
+  set image({path, width, height}) {
+    this._image = {
+      path,
+      height,
+      width,
+    }
+  }
+
+  setImagePath(path) {
+    this.image = {
+      path,
+      width: this.image.width,
+      height: this.image.height,
+    }
   }
 }
 
