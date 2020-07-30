@@ -15,6 +15,10 @@
       {
         "source": "/make-your-react-web-apps-discoverable-javascript-seo",
         "destination": "/make-your-react-web-apps-discoverable-javascript-seo.html"
+      },
+      {
+        "source": "/my-unexpected-journey-how-we-migrated-an-enterprise-react-application-from-15-to-16",
+        "destination": "/my-unexpected-journey-how-we-migrated-an-enterprise-react-application-from-15-to-16.html"
       }
     ],
     "headers": [
