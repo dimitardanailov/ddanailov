@@ -6,6 +6,7 @@ const Wrapper = styled.h4`
   display: block;
   font-size: 1.6rem;
   font-weight: bold;
+  margin: 0;
 
   @media (max-width: 768px) {
     text-align: center;
