@@ -5,6 +5,7 @@ const {
   STATIC_DIR,
   NEXT_BUILD_DIR,
   ICON_DIR,
+  SEO_IMAGES_DIR,
   PUBLIC_DIR_CHUNKS,
 } = require('./utils/folders')
 const getBuildNumber = require('./utils/nextjs/getBuildNumber')
@@ -73,6 +74,10 @@ async function copyIcons() {
   return src(`${ICON_DIR}/**.*`).pipe(dest(PUBLIC_DIR))
 }
 
+async function copySEOImages() {
+  return src(`${SEO_IMAGES_DIR}/**.*`).pipe(dest(PUBLIC_DIR))
+}
+
 async function copyServiceWorkerStaticFiles() {
   const destination = `${PUBLIC_DIR}/_next/static/`
   return src(`${STATIC_DIR}/**.*`).pipe(dest(destination))
@@ -90,4 +95,5 @@ exports.default = series(
   copyNextResources,
   copyStaticFiles,
   copyIcons,
+  copySEOImages,
 )
