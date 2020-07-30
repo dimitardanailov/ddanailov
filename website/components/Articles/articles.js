@@ -1,5 +1,11 @@
 const articles = [
   {
+    title:
+      'My unexpected journey: How we migrated an enterprise react application from 15.6 to 16.10',
+    href:
+      'https://ddanailov.dev/my-unexpected-journey-how-we-migrated-an-enterprise-react-application-from-15-to-16',
+  },
+  {
     title: 'Make your React web apps discoverable - JavaScript SEO',
     href:
       'https://ddanailov.dev/make-your-react-web-apps-discoverable-javascript-seo',
