@@ -9,6 +9,7 @@ import {
   hristo,
   vladimir,
   bayu,
+  fanny,
 } from 'data/testimonials'
 
 function PersonAvatar({href, src, title}) {
@@ -76,5 +77,13 @@ export function BayuAvatar() {
     href: bayu.linkedin.profile,
     src: bayu.linkedin.image,
     title: bayu.title,
+  })
+}
+
+export function FannyAvatar() {
+  return PersonAvatar({
+    href: fanny.linkedin.profile,
+    src: fanny.linkedin.image,
+    title: fanny.title,
   })
 }
