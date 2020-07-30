@@ -62,7 +62,7 @@ module.exports.DATA_DIR = path.resolve(BASE_DIR, 'data')
 module.exports.UTILS_DIR = path.resolve(BASE_DIR, 'utils')
 
 /**
- * DATA_DIR stores all predefined resources
+ * ICON_DIR stores all predefined resources
  * Generator:
  * https://favicon.io/favicon-generator/
  *
@@ -74,3 +74,10 @@ module.exports.ICON_DIR = path.resolve(BASE_DIR, 'icons')
  * NEXTJS_PAGES creates a folder for each page per device
  */
 module.exports.NEXTJS_PAGES = path.resolve(BASE_DIR, 'pages-nextjs')
+
+/**
+ * SEO_IMAGES_DIR stores all external seo images
+ * The sources are:
+ * - Facebook
+ */
+module.exports.SEO_IMAGES_DIR = path.resolve(BASE_DIR, 'seo-images')
