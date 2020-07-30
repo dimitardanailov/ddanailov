@@ -13,6 +13,7 @@ function pageSEO() {
   const _seo = new SEO()
   _seo.title = 'Make your React web apps discoverable - JavaScript SEO'
   _seo.canonicalTag = '/make-your-react-web-apps-discoverable-javascript-seo'
+  _seo.type = 'article'
   _seo.description =
     'Single page are not fancy word in our days. Single page are SEO are important components for the sustainable bussines.'
 

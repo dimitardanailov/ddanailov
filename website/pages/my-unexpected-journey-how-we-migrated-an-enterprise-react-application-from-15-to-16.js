@@ -15,6 +15,7 @@ function pageSEO() {
     'My unexpected journey: How we migrated an enterprise react application from 15.6 to 16.10'
   _seo.canonicalTag =
     '/my-unexpected-journey-how-we-migrated-an-enterprise-react-application-from-15-to-16'
+  _seo.type = 'article'
   _seo.description =
     "The main challenge for each enterprise project is the infinity battle between stakeholders features and source code improvements. If you're too busy with stakeholders features soon or later the source code will be a bottleneck!!!"
 

@@ -26,7 +26,7 @@ function MainHeader({seo}) {
           property="og:url"
           content={`https://ddanailov.dev${seo.canonicalTag}`}
         />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content={seo.type} />
 
         <script
           async

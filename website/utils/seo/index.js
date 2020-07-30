@@ -1,4 +1,8 @@
 class SEO {
+  constructor() {
+    this.type = 'website'
+  }
+
   get title() {
     return this._title
   }
@@ -21,6 +25,14 @@ class SEO {
 
   set description(_description) {
     this._description = _description
+  }
+
+  get type() {
+    return this._type
+  }
+
+  set type(_type) {
+    this._type = _type
   }
 }
 
