@@ -28,6 +28,8 @@ function MainHeader({seo}) {
         />
         <meta property="og:type" content={seo.type} />
 
+        <meta property="fb:app_id" content="1479131055619126" />
+
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-156006558-1"
