@@ -19,6 +19,10 @@ function pageSEO() {
   _seo.description =
     "The main challenge for each enterprise project is the infinity battle between stakeholders features and source code improvements. If you're too busy with stakeholders features soon or later the source code will be a bottleneck!!!"
 
+  _seo.setImagePath(
+    'https://ddanailov.dev/my-unexpected-journey-how-we-migrated-an-enterprise-react-application-from-15-to-16.png',
+  )
+
   return _seo
 }
 

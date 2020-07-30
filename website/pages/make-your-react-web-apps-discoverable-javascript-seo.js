@@ -17,6 +17,10 @@ function pageSEO() {
   _seo.description =
     'Single page are not fancy word in our days. Single page are SEO are important components for the sustainable bussines.'
 
+  _seo.setImagePath(
+    'https://ddanailov.dev/make-your-react-web-apps-discoverable-javascript-seo.png',
+  )
+
   return _seo
 }
 
