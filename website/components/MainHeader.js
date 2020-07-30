@@ -30,6 +30,10 @@ function MainHeader({seo}) {
 
         <meta property="fb:app_id" content="1479131055619126" />
 
+        <meta property="og:image:width" content={seo.image.width} />
+        <meta property="og:image:height" content={seo.image.height} />
+        <meta property="og:image" content={seo.image.path} />
+
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-156006558-1"
