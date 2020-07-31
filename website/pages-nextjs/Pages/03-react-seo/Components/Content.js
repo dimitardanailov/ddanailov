@@ -3,6 +3,9 @@ import {
   BlockQuote,
   SourceBlockQuote,
 } from '@ddanailov/components/Blog/BlockQuote'
+
+import {Iframe} from '@ddanailov/components/Blog/Youtube'
+
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
 
@@ -295,16 +298,7 @@ class Content extends React.Component {
           </li>
         </ul>
         <p>If you want to understand more about LightHouse</p>
-        <div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/mLjxXPHuIJo"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <Iframe url="https://www.youtube-nocookie.com/embed/mLjxXPHuIJo" />
       </div>
     )
   }
