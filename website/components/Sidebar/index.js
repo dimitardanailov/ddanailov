@@ -55,7 +55,7 @@ const Frame = styled.div`
   display: block;
   margin-top: 3.5rem;
   width: 240px;
-  height: 180px;
+  height: 240px;
 
   @media (max-width: 768px) {
     display: none;

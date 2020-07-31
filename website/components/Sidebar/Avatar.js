@@ -2,17 +2,17 @@ import React, {useEffect} from 'react'
 
 import styled from 'styled-components'
 
-import avatar from './ddanailov-avatar.jpg'
+import avatar from './dimitar-danailov-javascript-consultant.png'
 
 const Wrapper = styled.img`
   position: relative;
 
   display: block;
   width: 240px;
-  height: 180px;
+  height: 240px;
 
   border: 0.2rem solid #fff;
-  border-radius: 12.5%;
+  border-radius: 100%;
 `
 
 /**
@@ -48,7 +48,7 @@ function Image() {
   const title = 'Javascript consultant'
 
   return (
-    <Wrapper src={avatar} title={title} alt={title} width="240" height="180" />
+    <Wrapper src={avatar} title={title} alt={title} width="240" height="240" />
   )
 }
 
