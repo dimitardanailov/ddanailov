@@ -180,8 +180,9 @@ class Content extends React.Component {
         </SubTitle>
         <p>
           The devil is in the details: ReactQuill was a big blocker for us. My
-          advice is: Avoid usage of jQuery libraries in React Application. Two
-          libraries have different an idea how to access DOM elements.
+          advice is: Avoid usage of jQuery libraries in React Application. React
+          and jQuery have different an idea how to access DOM elements. My
+          recommendation is avoid usage if the main library layer uses jQuery.
         </p>
         <p>
           I'm a Bulgarian. We've a quote: Господ обича смелите / The god loves
