@@ -27,8 +27,9 @@ function PersonalStory() {
         strong and long partnership.
       </div>
       <div>
-        Like an assassin 🔪 I learned how to be a solo player. I improved my
-        skills to complete: fast and efficient stakeholders requirements.
+        My skills as an assassin 🔪 increased the company revenue. I’m not
+        afraid to work until midnight. I've confident to work if the deadlines
+        are urgent.
       </div>
       <Link href="/about">
         <a title="Dimitar Danailov: Portfolio details">
