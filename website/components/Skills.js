@@ -8,7 +8,8 @@ function Skills() {
         <li>
           🔥 <Keyword word="React" /> and Monorepo, <Keyword word="nextjs" />,
           Redux, State Machines, Immer, React Testing library, Custom Elements
-          v1, D3js, Safari Push notifications, Polymer, Draftjs;
+          v1, D3js, Safari Push notifications, Material UI, Styled Components,
+          Polymer, Draftjs;
         </li>
         <li>🛡 Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant;</li>
         <li>
