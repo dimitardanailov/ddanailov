@@ -17,7 +17,7 @@ const List = styled.ul`
 `
 
 const Item = styled.li`
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   color: ${themes.secondary.main};
 
   cursor: pointer;
