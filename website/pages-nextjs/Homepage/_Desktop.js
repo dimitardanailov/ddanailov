@@ -22,13 +22,12 @@ const HomePageDesktop = () => (
 
       <PageHolder>
         <DesktopMenu />
-        <Slogan>Hire me as: </Slogan>
-        <Typing />
         <Slogan>Dear Guest,</Slogan>
         <PersonalStory />
         <OpenSourceProjects />
         <Skills />
-
+        <Slogan>Hire me as: </Slogan>
+        <Typing />
         <ExternalArticles />
         <MainFooter />
       </PageHolder>
