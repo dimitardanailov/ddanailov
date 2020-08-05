@@ -1,9 +1,8 @@
 const words = [
+  'React Developer',
   'Javascript Consultant',
   'Cloud Architect',
-  'Open source contributor',
-  'Husband',
-  'Father',
+  'former Software Architect and CTO',
 ]
 
 export default words
