@@ -7,7 +7,7 @@ import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 function Roles() {
   return (
     <>
-      <Slogan>Consultant / Javascript Developer</Slogan>
+      <Slogan>Consultant and Javascript Developer</Slogan>
 
       <ul>
         <li>

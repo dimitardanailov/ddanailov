@@ -1,23 +1,17 @@
-import dynamic from 'next/dynamic'
-
 import Keyword from '@ddanailov/components/Keyword'
 import TargetBlank from '@ddanailov/components/TargetBlankLink'
 import Space from '@ddanailov/styled/Space'
 
 import Slogan from '@ddanailov/styled/Slogan'
 
-const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
-
 function AboutMe() {
   return (
     <>
-      <Slogan>Dimitar Danailov</Slogan>
-
-      <SocialIcons />
+      <Slogan>Who is Dimitar Danailov ?</Slogan>
 
       <p>
         I've been working as a full stack engineer (front-end, backend, mobile
-        and sysadmin / devOps) since June 2010. The last two years my focus is:
+        and sysadmin / DevOps) since June 2010. The last two years my focus is:
         Consulting.
       </p>
 
