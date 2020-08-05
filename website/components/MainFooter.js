@@ -1,5 +1,11 @@
+import dynamic from 'next/dynamic'
+
 import {register, unregister} from 'next-offline/runtime'
 import styled from 'styled-components'
+
+import {footerSize} from 'styles/_sizes'
+
+const SocialIcons = dynamic(() => import('@ddanailov/components/SocialIcons'))
 
 const Footer = styled.footer`
   position: absolute;
@@ -7,9 +13,10 @@ const Footer = styled.footer`
   width: 100%;
 
   display: flex;
+  flex-direction: column;
   justify-content: content;
   text-align: center;
-  height: 70px;
+  height: ${footerSize};
 
   text-align: center;
 `
@@ -23,8 +30,10 @@ const ContentWrapper = styled.div`
   justify-content: center;
 
   width: 100%;
+  margin-bottom: 0.5rem;
 
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 `
 
 const ContentItem = styled.span`
@@ -61,6 +70,7 @@ class MainFooter extends React.Component {
             </ContentItemLink>
           </ContentItem>
         </ContentWrapper>
+        <SocialIcons />
       </Footer>
     )
   }
