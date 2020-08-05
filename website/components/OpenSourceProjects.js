@@ -18,7 +18,7 @@ function SponsorshipInfo() {
 function OpenSourceProjects() {
   return (
     <div>
-      <h3>Open source projects 🦉</h3>
+      <h3>Talk is cheap. Show me the code: 🦉</h3>
       <ul>
         <li>
           <a
