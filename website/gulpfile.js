@@ -7,6 +7,7 @@ const {
   ICON_DIR,
   SEO_IMAGES_DIR,
   PUBLIC_DIR_CHUNKS,
+  PUBLIC_DIR_PAGES_CHUNKS,
 } = require('./utils/folders')
 const getBuildNumber = require('./utils/nextjs/getBuildNumber')
 
@@ -33,6 +34,18 @@ async function copySSGBuildManifest() {
   return await copyManifestFile('_ssgManifest')
 }
 
+async function copyPages() {
+  const source = `${NEXT_BUILD_DIR}/server/pages/*.{js,html}`
+
+  return src(source).pipe(dest(PUBLIC_DIR))
+}
+
+async function copyPagesChunks() {
+  const source = `${NEXT_BUILD_DIR}/static/chunks/pages/*.js`
+
+  return src(source).pipe(dest(PUBLIC_DIR_PAGES_CHUNKS))
+}
+
 async function copyStaticResources() {
   const buildNumber = await getBuildNumber()
   const source = `${NEXT_BUILD_DIR}/static/${buildNumber}/pages/*.js`
@@ -41,20 +54,13 @@ async function copyStaticResources() {
   return src(source).pipe(dest(destination))
 }
 
-async function copyChunk() {
+async function copyChunks() {
   const path = `${NEXT_BUILD_DIR}/static/chunks/*.js`
   return src(path).pipe(dest(PUBLIC_DIR_CHUNKS))
 }
 
 async function copyServiceWorker() {
   const path = `${NEXT_BUILD_DIR}/service-worker.js`
-
-  return src(path).pipe(dest(PUBLIC_DIR))
-}
-
-async function copyNextResources() {
-  const buildNumber = await getBuildNumber()
-  const path = `${NEXT_BUILD_DIR}/server/static/${buildNumber}/pages/*.{js,html}`
 
   return src(path).pipe(dest(PUBLIC_DIR))
 }
@@ -91,9 +97,10 @@ exports.default = series(
   copyServiceWorkerStaticFiles,
   copyStyles,
   copyStaticResources,
-  copyChunk,
-  copyNextResources,
+  copyChunks,
   copyStaticFiles,
   copyIcons,
   copySEOImages,
+  copyPages,
+  copyPagesChunks,
 )
