@@ -47,8 +47,7 @@ function OpenSourceProjects() {
             Gmail Helper
           </a>
           : Gmail helper creates gmail labels and features. Technologies: Custom
-          Elements v1, <Keyword word="React" />, Webpack, Lerna, Mocha, Chai,
-          Karma
+          Elements v1, Webpack, Lerna, Mocha, Chai, Karma
         </li>
         <li>
           <a
@@ -59,9 +58,9 @@ function OpenSourceProjects() {
           >
             Tantalus
           </a>
-          : is a <Keyword word="Nodejs Microservices" /> application. Project
-          uploads big streams from custom cloud provider to AWS. Tantalus uses:
-          NodeServer Generator, routing-controllers, tus.io,{' '}
+          : is a <Keyword word="Nodejs Microservices" /> application. The
+          project uploads big streams from custom cloud provider to AWS.
+          Tantalus uses: NodeServer Generator, routing-controllers, tus.io,{' '}
           <Keyword word="Typescript" />.
         </li>
         <li>
@@ -73,8 +72,8 @@ function OpenSourceProjects() {
           >
             Push notification playground
           </a>
-          : Google Chrome and Firefox push notifications playground, Docker
-          Safari APN creator
+          : Collection with Google Chrome and Firefox push notifications
+          examples, Docker Safari APN creator
         </li>
         <li>
           <a
