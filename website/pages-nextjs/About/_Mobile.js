@@ -50,7 +50,11 @@ const AboutPageMobile = () => (
     <AboutMe />
     <Roles />
 
-    <Slogan>Testimonials and Recommendations</Slogan>
+    <Slogan>
+      <span id="about-testimonials-recommendations">
+        Testimonials and Recommendations
+      </span>
+    </Slogan>
 
     <TestimonialBody>
       <HenryAvatar />

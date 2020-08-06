@@ -62,7 +62,11 @@ const AboutPage = () => (
       <AboutMe />
       <Roles />
 
-      <Slogan>Testimonials and Recommendations</Slogan>
+      <Slogan>
+        <span id="about-testimonials-recommendations">
+          Testimonials and Recommendations
+        </span>
+      </Slogan>
 
       <TestimonialBodyCenter>
         <HenryAvatar />

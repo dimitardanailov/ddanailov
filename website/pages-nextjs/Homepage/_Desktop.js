@@ -6,9 +6,10 @@ import DesktopMenu from '@ddanailov/components/Menu/Desktop'
 import PersonalStory from '@ddanailov/components/PersonalStory'
 import OpenSourceProjects from '@ddanailov/components/OpenSourceProjects'
 import Skills from '@ddanailov/components/Skills'
-import Typing from '@ddanailov/components/Animations/Typing'
 
 import Slogan from '@ddanailov/styled/Slogan'
+
+import HiringWrapper from '@ddanailov/components/Hiring'
 
 import ExternalArticles from '@ddanailov/components/Articles/ExternalArticles'
 
@@ -26,8 +27,7 @@ const HomePageDesktop = () => (
         <PersonalStory />
         <OpenSourceProjects />
         <Skills />
-        <Slogan>Hire me as: </Slogan>
-        <Typing />
+        <HiringWrapper />
         <ExternalArticles />
         <MainFooter />
       </PageHolder>
