@@ -1,6 +1,6 @@
 {
   "name": "dimitar-danailov-portfolio",
-  "version": "1.16.10",
+  "version": "1.16.11",
   "main": "index.js",
   "repository": "https://github.com/dimitardanailov",
   "author": "Dimitar Danailov<dimityr.danailov@gmail.com>",
@@ -10,7 +10,8 @@
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
     "check-format": "yarn prettier --list-different",
     "format": "yarn prettier --write",
-    "clean": "yarn clean:public",
+    "clean": "yarn clean:public && yarn clean:next",
+    "clean:next": "rm -rf .next/",
     "clean:public": "rm -rf ./public & mkdir -p public",
     "dev": "next",
     "build": "next build",
