@@ -93,3 +93,12 @@ export const fanny = {
   },
   title: 'Product Manager GetCraft',
 }
+
+export const antoan = {
+  name: 'Antoan Popov',
+  linkedin: {
+    profile: 'https://www.linkedin.com/in/antoan-popov/',
+    image: '',
+  },
+  title: 'Software Architect at MentorMate',
+}
