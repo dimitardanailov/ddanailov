@@ -24,11 +24,20 @@ module.exports.PUBLIC_DIR = PUBLIC_DIR
 /**
  * PUBLIC_DIR_CHUNKS stores all nextjs chunks files.
  */
-module.exports.PUBLIC_DIR_CHUNKS = path.resolve(
-  PUBLIC_DIR,
-  '_next',
-  'static',
-  'chunks',
+const PUBLIC_DIR_CHUNKS = path.resolve(PUBLIC_DIR, '_next', 'static', 'chunks')
+module.exports.PUBLIC_DIR_CHUNKS = PUBLIC_DIR_CHUNKS
+/**
+ * PUBLIC_DIR_PAGES_CHUNKS
+ *
+ * Starting with Next.js 9.5 all page JavaScript bundles will use
+ * content hashes instead of the build ID.
+ * This allows for pages that have not changed between
+ * deploys to remain in the browser and edge cache
+ * without needing to be downloaded again.
+ */
+module.exports.PUBLIC_DIR_PAGES_CHUNKS = path.resolve(
+  PUBLIC_DIR_CHUNKS,
+  'pages',
 )
 
 /**
