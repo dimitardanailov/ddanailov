@@ -36,7 +36,7 @@ const nextConfig = {
   webpack: config => {
     // file and url loader webpack support.
     config.module.rules.push({
-      test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+      test: /\.(png|jpg|webp|gif|svg|eot|ttf|woff|woff2)$/,
       use: {
         loader: 'url-loader',
         options: {
