@@ -10,7 +10,10 @@ import {
   vladimir,
   bayu,
   fanny,
+  antoan,
 } from 'data/testimonials'
+
+import Image from './Antoan/antoan.webp'
 
 function PersonAvatar({href, src, title}) {
   return <Avatar href={href} src={src} title={title} />
@@ -85,5 +88,13 @@ export function FannyAvatar() {
     href: fanny.linkedin.profile,
     src: fanny.linkedin.image,
     title: fanny.title,
+  })
+}
+
+export function AntoanAvatar() {
+  return PersonAvatar({
+    href: antoan.linkedin.profile,
+    src: Image,
+    title: antoan.title,
   })
 }

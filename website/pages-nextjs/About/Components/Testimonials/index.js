@@ -37,3 +37,7 @@ export {default as BayuInfo} from './Bayu/Info'
 // Vladimir
 export {default as VladimirLetter} from './Vladimir/Letter'
 export {default as VladimirInfo} from './Vladimir/Info'
+
+// Antoan
+export {default as AntoanLetter} from './Antoan/Letter'
+export {default as AntoanInfo} from './Antoan/Info'
