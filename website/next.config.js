@@ -13,6 +13,7 @@ const {
   STYLED_DIR,
   UTILS_DIR,
   NEXTJS_PAGES,
+  HOOKS_DIR,
 } = require('./utils/folders')
 
 /**
@@ -47,7 +48,7 @@ const nextConfig = {
 
     config.resolve.alias['@ddanailov/styles'] = STYLES_DIR
     config.resolve.alias['@ddanailov/components'] = COMPONENTS_DIR
-
+    config.resolve.alias['@ddanailov/hooks'] = HOOKS_DIR
     // device layouts
     config.resolve.alias['@homepage'] = getNextJSPageDeviceLayout('Homepage')
     config.resolve.alias['@about'] = getNextJSPageDeviceLayout('About')
