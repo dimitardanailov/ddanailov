@@ -1,2 +1,2 @@
-export const DEFAULT_STATE = 'default'
+export const DEFAULT_STATE = 'light'
 export const DARK_STATE = 'dark'
