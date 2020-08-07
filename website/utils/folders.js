@@ -56,6 +56,11 @@ module.exports.COMPONENTS_DIR = path.resolve(BASE_DIR, 'components')
 module.exports.HOOKS_DIR = path.resolve(BASE_DIR, 'hooks')
 
 /**
+ * REDUCERS_DIR stores immer reducers
+ */
+module.exports.REDUCERS_DIR = path.resolve(BASE_DIR, 'reducers')
+
+/**
  * LAYOUT_DIR stores all project layouts
  */
 module.exports.LAYOUT_DIR = path.resolve(BASE_DIR, 'layouts')
