@@ -11,8 +11,6 @@ import Slogan from '@ddanailov/styled/Slogan'
 
 import HiringWrapper from '@ddanailov/components/Hiring'
 
-import NightShiftModeToggleButton from '@ddanailov/components/NightShiftMode/ToggleButton'
-
 import ExternalArticles from '@ddanailov/components/Articles/ExternalArticles'
 
 const Sidebar = dynamic(() => import('@ddanailov/components/Sidebar'))
@@ -25,7 +23,6 @@ const HomePageDesktop = () => (
 
       <PageHolder>
         <DesktopMenu />
-        <NightShiftModeToggleButton />
         <Slogan>Dear Guest,</Slogan>
         <PersonalStory />
         <OpenSourceProjects />
