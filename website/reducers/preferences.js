@@ -15,6 +15,6 @@ export const preferencesReducer = produce(preferencesRecipe)
 
 export function getInitialState() {
   return {
-    nightShiftMode: 'default',
+    nightShiftMode: 'light',
   }
 }
