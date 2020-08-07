@@ -51,6 +51,11 @@ module.exports.STYLES_DIR = path.resolve(BASE_DIR, 'styles')
 module.exports.COMPONENTS_DIR = path.resolve(BASE_DIR, 'components')
 
 /**
+ * HOOKS_DIR stores all custom react hooks
+ */
+module.exports.HOOKS_DIR = path.resolve(BASE_DIR, 'hooks')
+
+/**
  * LAYOUT_DIR stores all project layouts
  */
 module.exports.LAYOUT_DIR = path.resolve(BASE_DIR, 'layouts')
