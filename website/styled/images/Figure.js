@@ -7,6 +7,7 @@ const Figure = styled.figure`
   flex-direction: row;
   align-items: center;
   align-content: center;
+  margin: 0;
 
   width: ${props => props.size};
   height: ${props => props.size};
