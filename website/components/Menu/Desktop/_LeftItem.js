@@ -1,9 +1,13 @@
 import styled from 'styled-components'
-
 import items from 'data/menu-items'
-import NavItem from './NavItem'
-
+import NavItem from '@ddanailov/components/Menu/NavItem'
 import themes from 'styles/colors/light'
+
+const LeftSideMember = styled.div`
+  position: relative;
+
+  display: inline-block;
+`
 
 const List = styled.ul`
   list-style: none;
@@ -23,9 +27,9 @@ const Item = styled.li`
   cursor: pointer;
 `
 
-function DesktopMenu() {
+function LeftItem() {
   return (
-    <nav>
+    <LeftSideMember>
       <List>
         {items.map((item, i) => (
           <Item key={i}>
@@ -33,8 +37,8 @@ function DesktopMenu() {
           </Item>
         ))}
       </List>
-    </nav>
+    </LeftSideMember>
   )
 }
 
-export default DesktopMenu
+export default LeftItem
