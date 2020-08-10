@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useCallback} from 'react'
 
 import {ThemeProvider} from '@material-ui/core/styles'
 
@@ -36,8 +36,9 @@ const Container = styled.section`
 `
 
 function Theme({children}) {
-  const [state, setState] = useState(() => getInitialState())
+  const [state, dispatch] = React.useState(() => getInitialState())
   const {nightShiftMode} = state
+
   const themeSetup = nightShiftModeThemeSetup(nightShiftMode)
 
   return (
