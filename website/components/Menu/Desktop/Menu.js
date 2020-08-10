@@ -17,7 +17,7 @@ function Menu() {
   return (
     <NavMenu>
       <LeftItem />
-      <NightShiftModeToggleButton />
+      {/** TODO: NightShiftMode is still not working <NightShiftModeToggleButton /> */}
     </NavMenu>
   )
 }
