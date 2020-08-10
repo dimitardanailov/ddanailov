@@ -10,11 +10,11 @@ function AboutMe() {
       <Slogan>Who is Dimitar Danailov ?</Slogan>
 
       <p>
-        I've been working as a full stack engineer (front-end, backend, mobile
-        and sysadmin / DevOps) since June 2010. The last two years my focus is:
-        Consulting.
+        I'm a remote software engineer. My expertise includes various different
+        areas: front - end development, web peformance, backend, mobile, cloud
+        security and DevOps. In the past two year my main focus is software
+        consulting.
       </p>
-
       <ul>
         <li>
           Fine with both front-end (<Keyword word="React.js" /> and{' '}
@@ -24,16 +24,16 @@ function AboutMe() {
         </li>
         <li>Amazon web services, Azure and Google Cloud are my best friends</li>
         <li>Creating software is my hobby</li>
-        <li>Mentorship: I love to share my experience with the world</li>
         <li>
-          I love the open source and <Space />
+          Mentorship:{' '}
           <TargetBlank
             href="https://stackoverflow.com/users/609707/d-danailov"
             title="My top tags are: Android, MySQL, Ruby on Rails, PHP and Javascript"
           >
-            Stackoverflow
+            I love to share my experience with the world
           </TargetBlank>
         </li>
+        <li>I love open source contribution</li>
         <li>I'm a guy with good self - education discipline</li>
       </ul>
     </>
