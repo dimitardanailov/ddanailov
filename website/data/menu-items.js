@@ -1,13 +1,20 @@
+import pages from './seo'
+
 const items = [
   {
     text: 'Home',
     href: '/',
-    title: '<ddanailov/>: Skils and Open source projects',
+    title: pages.home.title,
   },
   {
     text: 'About',
     href: '/about',
-    title: '<ddanailov/>: Testimonials and Recommendations',
+    title: pages.about.title,
+  },
+  {
+    text: 'Contacts',
+    href: '/contacts',
+    title: pages.contacts.title,
   },
 ]
 
