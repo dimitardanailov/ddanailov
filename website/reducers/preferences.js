@@ -6,6 +6,8 @@ export const preferencesRecipe = (draft, action) => {
       const {nightShiftMode} = action
       draft.nightShiftMode = nightShiftMode
       break
+    case 'GET_NIGHT_SHIFT_MODE':
+      return draft.nightShiftMode
     default:
       return getInitialState()
   }
