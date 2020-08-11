@@ -61,6 +61,11 @@ module.exports.HOOKS_DIR = path.resolve(BASE_DIR, 'hooks')
 module.exports.REDUCERS_DIR = path.resolve(BASE_DIR, 'reducers')
 
 /**
+ * MACHINES_DIR stores all global xstate machines configurations
+ */
+module.exports.MACHINES_DIR = path.resolve(BASE_DIR, 'machines')
+
+/**
  * LAYOUT_DIR stores all project layouts
  */
 module.exports.LAYOUT_DIR = path.resolve(BASE_DIR, 'layouts')
