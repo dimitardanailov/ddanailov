@@ -7,11 +7,13 @@ const BasicSubmit = styled.button`
 
   display: block;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
   border-radius: 0.5rem;
   border: none;
   background-color: ${themes.secondary.main};
   color: #fff;
+  cursor: pointer;
 
   &:disabled {
     background-color: ${themes.primary.light};
