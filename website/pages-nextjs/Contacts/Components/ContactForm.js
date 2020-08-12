@@ -47,11 +47,12 @@ function ContactForm() {
         <GridAWrapper>
           <GridItem>
             <BasicLabel htmlForm="contact-form-first-name">
-              First name
+              First name *
             </BasicLabel>
             <InputField
               id="contact-form-first-name"
               required
+              placeholder="Type your first name"
               parentTypingCallback={setFirstName}
               styles={css`
                 width: 100%;
@@ -59,7 +60,9 @@ function ContactForm() {
             />
           </GridItem>
           <GridItem>
-            <BasicLabel htmlForm="contact-form-last-name">Last name</BasicLabel>
+            <BasicLabel htmlForm="contact-form-last-name">
+              Last name *
+            </BasicLabel>
             <InputField
               id="contact-form-last-name"
               required
@@ -71,7 +74,7 @@ function ContactForm() {
           </GridItem>
         </GridAWrapper>
         <>
-          <BasicLabel id="contact-form-email">E-mail*</BasicLabel>
+          <BasicLabel id="contact-form-email">E-mail *</BasicLabel>
           <EmailField
             id="contact-form-email"
             parentTypingCallback={setEmail}
@@ -83,26 +86,23 @@ function ContactForm() {
           />
         </>
         <>
-          <BasicLabel id="contact-form-subject">Subject*</BasicLabel>
+          <BasicLabel id="contact-form-subject">Subject</BasicLabel>
           <InputField
             id="contact-form-subject"
-            required
             parentTypingCallback={setSubject}
             styles={css`
               width: 100%;
             `}
           />
         </>
-        <fieldset>
-          <Submit
-            type="submit"
-            disabled={
-              currentSubmitStateRequest.matches('disabled') ? true : false
-            }
-          >
-            Hire me!!
-          </Submit>
-        </fieldset>
+        <Submit
+          type="submit"
+          disabled={
+            currentSubmitStateRequest.matches('disabled') ? true : false
+          }
+        >
+          Hire me!!
+        </Submit>
 
         {currentStateRequest.matches('loading') ? (
           <Loader
