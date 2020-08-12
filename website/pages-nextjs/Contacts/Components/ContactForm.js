@@ -18,8 +18,7 @@ import submitButtonStateMachine from 'machines/submitButtonStateMachine'
 import {css} from 'styled-components'
 
 function ContactForm() {
-  const [firstName, setFirstName] = useState(() => '')
-  const [lastName, setLastName] = useState(() => '')
+  const [name, setName] = useState(() => '')
   const [email, setEmail] = useState(() => '')
   const [subject, setSubject] = useState(() => '')
 
@@ -36,53 +35,34 @@ function ContactForm() {
     sendStateRequest('LOADING')
     sendSubmitStateRequest('TOGGLE')
 
-    console.log('firstName', firstName)
-    console.log('lastName', lastName)
-    console.log('email', email)
+    console.log('name', name)
+    console.log('subject', subject)
   }
+
+  const inputFieldStyle = css`
+    width: 100%;
+    margin-bottom: 1rem;
+  `
 
   return (
     <Wrapper>
       <Form onSubmit={handleSubmit}>
-        <GridAWrapper>
-          <GridItem>
-            <BasicLabel htmlForm="contact-form-first-name">
-              First name *
-            </BasicLabel>
-            <InputField
-              id="contact-form-first-name"
-              required
-              placeholder="Type your first name"
-              parentTypingCallback={setFirstName}
-              styles={css`
-                width: 100%;
-              `}
-            />
-          </GridItem>
-          <GridItem>
-            <BasicLabel htmlForm="contact-form-last-name">
-              Last name *
-            </BasicLabel>
-            <InputField
-              id="contact-form-last-name"
-              required
-              parentTypingCallback={setLastName}
-              styles={css`
-                width: 100%;
-              `}
-            />
-          </GridItem>
-        </GridAWrapper>
+        <>
+          <BasicLabel htmlForm="contact-form-first-name">Name *</BasicLabel>
+          <InputField
+            id="contact-form-name"
+            required
+            parentTypingCallback={setName}
+            styles={inputFieldStyle}
+          />
+        </>
         <>
           <BasicLabel id="contact-form-email">E-mail *</BasicLabel>
           <EmailField
             id="contact-form-email"
             parentTypingCallback={setEmail}
             required
-            placeholder="Type your Email address"
-            styles={css`
-              width: 100%;
-            `}
+            styles={inputFieldStyle}
           />
         </>
         <>
@@ -90,9 +70,7 @@ function ContactForm() {
           <InputField
             id="contact-form-subject"
             parentTypingCallback={setSubject}
-            styles={css`
-              width: 100%;
-            `}
+            styles={inputFieldStyle}
           />
         </>
         <Submit
