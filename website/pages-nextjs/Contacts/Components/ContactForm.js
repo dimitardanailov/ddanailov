@@ -32,10 +32,10 @@ function ContactForm() {
   const handleSubmit = e => {
     e.preventDefault()
 
-    // sendStateRequest('LOADING')
-    // sendSubmitStateRequest('TOGGLE')
-    const mail = 'dimityr.danailov@gmail.com'
-    window.open(`mailto:${mail}?subject=${subject}`)
+    sendStateRequest('LOADING')
+    sendSubmitStateRequest('TOGGLE')
+    console.log('name', name)
+    console.log('subject', subject)
   }
 
   const inputFieldStyle = css`
@@ -46,6 +46,24 @@ function ContactForm() {
   return (
     <Wrapper>
       <Form onSubmit={handleSubmit}>
+        <>
+          <BasicLabel htmlForm="contact-form-first-name">Name *</BasicLabel>
+          <InputField
+            id="contact-form-name"
+            required
+            parentTypingCallback={setName}
+            styles={inputFieldStyle}
+          />
+        </>
+        <>
+          <BasicLabel id="contact-form-email">E-mail *</BasicLabel>
+          <EmailField
+            id="contact-form-email"
+            parentTypingCallback={setEmail}
+            required
+            styles={inputFieldStyle}
+          />
+        </>
         <>
           <BasicLabel id="contact-form-subject">Subject</BasicLabel>
           <InputField
