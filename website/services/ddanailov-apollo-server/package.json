@@ -1,7 +1,7 @@
 {
   "name": "ddanailov-apollo-server",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "Apollo express to store email messages.b",
   "keywords": [
     "apollo",
     "server"
@@ -16,7 +16,8 @@
   },
   "scripts": {
     "dev": "nodemon -r esm index.js",
-    "start": "node -r esm index.js"
+    "start": "node -r esm index.js",
+    "hosting": "firebase deploy --only hosting:ddanailov-apollo-server"
   },
   "bugs": {
     "url": "https://github.com/dimitardanailov/ddanailov/issues"
