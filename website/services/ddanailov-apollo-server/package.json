@@ -1,0 +1,28 @@
+{
+  "name": "ddanailov-apollo-server",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "keywords": [
+    "apollo",
+    "server"
+  ],
+  "author": "ddanailov <dimityr.danailov@gmail.com>",
+  "homepage": "http://ddanailov.dev",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitardanailov/ddanailov.git"
+  },
+  "scripts": {
+    "dev": "nodemon -r esm index.js",
+    "start": "node -r esm index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/dimitardanailov/ddanailov/issues"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  }
+}
