@@ -2,6 +2,16 @@
   "hosting": {
     "site": "ddanailov-apollo-server",
     "public": "public",
+    "rewrites": [
+      {
+        "source": "/hello",
+        "function": "app"
+      },
+      {
+        "source": "/timestamp",
+        "function": "app"
+      }
+    ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "headers": [
       {
@@ -13,6 +23,12 @@
           }
         ]
       }
+    ]
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint",
+      "npm --prefix \"$RESOURCE_DIR\" run build"
     ]
   }
 }
