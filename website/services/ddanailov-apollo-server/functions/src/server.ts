@@ -3,10 +3,15 @@ import * as express from 'express'
 const server = express()
 
 server.get('/hello', (_, res) => {
-  res.status(200).send('Hello').end()
+  res.status(200).send('Hello, test').end()
 })
 
 server.get('/timestamp', (_, res) => {
+  res.status(200).send(`Date: ${Date.now()}`).end()
+})
+
+server.get('/cached', (_, res) => {
+  res.set('Cache-Control', 'public, max-age=300, s-maxage=600')
   res.status(200).send(`Date: ${Date.now()}`).end()
 })
 
