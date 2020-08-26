@@ -9,6 +9,7 @@
       "@ddanailov/layouts/*": ["layouts/*"],
       "@ddanailov/styled/*": ["styled/*"],
       "@ddanailov/utils/*": ["utils/*"],
+      "@ddanailov/demos/*": ["demos/*"],
 
       "data": ["data/*"],
 
