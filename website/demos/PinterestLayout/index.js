@@ -1,9 +1,9 @@
-import getItems from './dummy/getItems'
-
 import Layout from './components/Layout'
 
+import records from './dummy/records.json'
+
 function PinterestLayout() {
-  const items = getItems()
+  const items = records.items
 
   return <Layout items={items} />
 }
