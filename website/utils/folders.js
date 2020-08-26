@@ -100,6 +100,11 @@ module.exports.ICON_DIR = path.resolve(BASE_DIR, 'icons')
 module.exports.NEXTJS_PAGES = path.resolve(BASE_DIR, 'pages-nextjs')
 
 /**
+ * DEMOS_DIR holds all demos
+ */
+module.exports.DEMOS_DIR = path.resolve(BASE_DIR, 'demos')
+
+/**
  * SEO_IMAGES_DIR stores all external seo images
  * The sources are:
  * - Facebook
