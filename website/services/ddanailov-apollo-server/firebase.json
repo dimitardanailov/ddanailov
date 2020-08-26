@@ -4,11 +4,7 @@
     "public": "public",
     "rewrites": [
       {
-        "source": "/hello",
-        "function": "app"
-      },
-      {
-        "source": "/timestamp",
+        "source": "**",
         "function": "app"
       }
     ],
