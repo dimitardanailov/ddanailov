@@ -16,6 +16,7 @@ const {
   HOOKS_DIR,
   REDUCERS_DIR,
   MACHINES_DIR,
+  DEMOS_DIR,
 } = require('./utils/folders')
 
 /**
@@ -53,6 +54,9 @@ const nextConfig = {
     config.resolve.alias['@ddanailov/hooks'] = HOOKS_DIR
     config.resolve.alias['@ddanailov/reducers'] = REDUCERS_DIR
     config.resolve.alias['@ddanailov/machines'] = MACHINES_DIR
+
+    // Demos
+    config.resolve.alias['@ddanailov/demos'] = DEMOS_DIR
 
     // device layouts
     config.resolve.alias['@homepage'] = getNextJSPageDeviceLayout('Homepage')
