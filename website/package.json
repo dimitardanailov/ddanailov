@@ -14,6 +14,8 @@
     "clean:next": "rm -rf .next/",
     "clean:public": "rm -rf ./public & mkdir -p public",
     "dev": "next",
+    "demos:pinterest-layout": "yarn demos:pinterest-layout:dummy && next",
+    "demos:pinterest-layout:dummy": "node ./demos/PinterestLayout/dummy/createJSON.js && mv ./records.json demos/PinterestLayout/dummy/",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore .",
