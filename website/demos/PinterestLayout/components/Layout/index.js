@@ -5,9 +5,13 @@ import Item from '../Item'
 function Layout({items}) {
   return (
     <>
-      {items.map(item => (
-        <Item width={item.width} height={item.height}></Item>
-      ))}
+      <ul>
+        {items.map(item => (
+          <li key={item.id}>
+            <Item width={item.width} height={item.height}></Item>
+          </li>
+        ))}
+      </ul>
     </>
   )
 }
