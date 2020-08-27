@@ -1,17 +1,12 @@
 'use strict'
 
 const fs = require('fs')
-
-const config = {
-  maxItems: 50,
-  width: 200,
-  maximumHeight: 399,
-  mimimumHeight: 50,
-}
+const config = require('../config')
 
 function generateRandomHeight() {
-  const diff = config.maximumHeight - config.mimimumHeight
-  const random = Math.floor(Math.random() * diff) + config.mimimumHeight
+  const {max, min} = config.item.height
+  const diff = max - min
+  const random = Math.floor(Math.random() * diff) + min
 
   return random
 }
@@ -22,8 +17,8 @@ function getItems() {
     const height = generateRandomHeight()
     items.push({
       // Prevents code mutations
-      id: `${i}-${config.width}-${height}`,
-      width: config.width,
+      id: `${i}-${config.item.width}-${height}`,
+      width: config.item.width,
       height: height,
     })
   }
