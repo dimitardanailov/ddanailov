@@ -7,8 +7,7 @@ import Item from '../Item'
 const ListItemContainer = styled.section`
   position: relative;
 
-  border: 4px solid blue;
-  width: 1000px;
+  width: ${props => props.width}px;
   height: ${props => props.height}px;
 `
 
@@ -16,7 +15,6 @@ const List = styled.ul`
   position: relative;
 
   list-style: none;
-  border: 3px solid green;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -47,9 +45,8 @@ function findMinimumHeight(columns) {
   return output
 }
 
-function Layout({items}) {
+function Layout({items, maximumRowItems, containerWidth}) {
   let firstRowItems = 0
-  const maximumRowItems = 5
   let top = 0
   let left = 0
   let columns = {}
@@ -93,7 +90,7 @@ function Layout({items}) {
     <>
       <h2>Pinterest Layout</h2>
 
-      <ListItemContainer height={containerHeight}>
+      <ListItemContainer height={containerHeight} width={containerWidth}>
         <List>{ListItems}</List>
       </ListItemContainer>
     </>
@@ -101,7 +98,9 @@ function Layout({items}) {
 }
 
 Layout.propTypes = {
-  items: PropTypes.array,
+  items: PropTypes.array.isRequired,
+  maximumRowItems: PropTypes.number.isRequired,
+  containerWidth: PropTypes.number,
 }
 
 export default Layout
