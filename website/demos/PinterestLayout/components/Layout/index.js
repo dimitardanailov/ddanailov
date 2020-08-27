@@ -82,7 +82,9 @@ function Layout({items}) {
 
     return (
       <ListItem key={item.id} top={top} left={left}>
-        <Item width={item.width} height={item.height}></Item>
+        <Item width={item.width} height={item.height} number={i}>
+          {i}
+        </Item>
       </ListItem>
     )
   })

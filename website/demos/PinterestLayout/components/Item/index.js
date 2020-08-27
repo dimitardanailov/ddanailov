@@ -10,11 +10,11 @@ const Wrapper = styled.section`
   height: ${props => props.height}px;
 `
 
-function Item({width, height}) {
+function Item({width, height, number}) {
   return (
     <>
       <Wrapper width={width} height={height}>
-        Item
+        Item - {number}
       </Wrapper>
     </>
   )
@@ -28,6 +28,7 @@ Item.defaultProps = {
 Item.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
+  number: PropTypes.number,
 }
 
 export default Item
