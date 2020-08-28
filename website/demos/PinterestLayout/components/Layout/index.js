@@ -28,57 +28,10 @@ const ListItem = styled.li`
   left: ${props => props.left}px;
 `
 
-function findMinimumHeight(columns) {
-  const keys = Object.keys(columns)
-  const output = {
-    height: Number.MAX_SAFE_INTEGER,
-    column: 0,
-  }
-
-  keys.forEach(key => {
-    if (output.height > columns[key]) {
-      output.height = columns[key]
-      output.column = parseInt(key)
-    }
-  })
-
-  return output
-}
-
-function Layout({items, maximumRowItems, containerWidth}) {
-  let firstRowItems = 0
-  let top = 0
-  let left = 0
-  let columns = {}
-  let containerHeight = 0
-
+function Layout({items, containerHeight, containerWidth}) {
   const ListItems = items.map(function (item, i) {
-    if (firstRowItems === maximumRowItems) {
-      const output = findMinimumHeight(columns)
-      const key = output.column
-      left = key * item.width
-      top = output.height
-
-      const columnHeight = top + item.height
-      columns[key] = columnHeight
-
-      if (columnHeight > containerHeight) {
-        containerHeight = columnHeight
-      }
-    }
-
-    if (firstRowItems < maximumRowItems) {
-      left = firstRowItems * item.width
-      columns[i] = item.height
-      firstRowItems++
-
-      if (item.height > containerHeight) {
-        containerHeight = item.height
-      }
-    }
-
     return (
-      <ListItem key={item.id} top={top} left={left}>
+      <ListItem key={item.id} top={item.top} left={item.left}>
         <Item width={item.width} height={item.height} number={i}>
           {i}
         </Item>
@@ -99,7 +52,7 @@ function Layout({items, maximumRowItems, containerWidth}) {
 
 Layout.propTypes = {
   items: PropTypes.array.isRequired,
-  maximumRowItems: PropTypes.number.isRequired,
+  containerHeight: PropTypes.number,
   containerWidth: PropTypes.number,
 }
 
