@@ -3,17 +3,19 @@ import Layout from './components/Layout'
 import config from './config'
 import records from './dummy/records.json'
 
-import {calcHeightDimensions} from './helper'
+import getLayoutParams from './getLayoutParams'
 
 function PinterestLayout() {
   const {items} = records['page0']
-  const response = calcHeightDimensions(items, config.maximumRowItems)
+
+  const width = 670
+  const params = getLayoutParams(items, width, config.item.width)
 
   return (
     <Layout
-      items={response.listItems}
-      containerHeight={response.containerHeight}
-      containerWidth={config.containerWidth}
+      items={params.items}
+      containerHeight={params.containerHeight}
+      containerWidth={params.containerWidth}
     />
   )
 }

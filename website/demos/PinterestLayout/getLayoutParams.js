@@ -60,4 +60,30 @@ function calcHeightDimensions(items, maximumRowItems) {
   }
 }
 
-export {findMinimumHeight, calcHeightDimensions}
+function calcWidthProperties(screenWidth, columnWidth) {
+  const containerWidth = Math.floor(screenWidth / columnWidth) * columnWidth
+  const maximumRowItems = Math.floor(containerWidth / columnWidth)
+
+  return {
+    containerWidth,
+    maximumRowItems,
+  }
+}
+
+function getLayoutParams(items, screenWidth, columnWidth) {
+  const widthProperties = calcWidthProperties(screenWidth, columnWidth)
+  const heightProperties = calcHeightDimensions(
+    items,
+    widthProperties.maximumRowItems,
+  )
+
+  return {
+    items: heightProperties.listItems,
+    containerHeight: heightProperties.containerHeight,
+    containerWidth: widthProperties.containerWidth,
+  }
+}
+
+export {findMinimumHeight, calcHeightDimensions, calcWidthProperties}
+
+export default getLayoutParams

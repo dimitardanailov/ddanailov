@@ -1,6 +1,6 @@
 const config = {
   maxItems: 50,
-  maximumRowItems: 5,
+  maximumRowItems: 2,
   item: {
     width: 200,
     height: {
@@ -10,7 +10,5 @@ const config = {
   },
   pages: 10,
 }
-
-config['containerWidth'] = config.maximumRowItems * config.item.width
 
 module.exports = config
