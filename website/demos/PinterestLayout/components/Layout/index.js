@@ -29,6 +29,17 @@ const ListItem = styled.li`
 `
 
 function Layout({items, containerHeight, containerWidth}) {
+  const [page, setPage] = React.useState(1)
+
+  React.useEffect(() => {
+    if (page > 1) {
+    }
+  }, [page, setPage])
+
+  const loadMoreRecords = () => {
+    setPage(page + 1)
+  }
+
   const ListItems = items.map(function (item, i) {
     return (
       <ListItem key={item.id} top={item.top} left={item.left}>
@@ -42,6 +53,11 @@ function Layout({items, containerHeight, containerWidth}) {
   return (
     <>
       <h2>Pinterest Layout</h2>
+
+      <div>
+        <div>Page: {page}</div>
+        <button onClick={loadMoreRecords}>Get More Records</button>
+      </div>
 
       <ListItemContainer height={containerHeight} width={containerWidth}>
         <List>{ListItems}</List>
