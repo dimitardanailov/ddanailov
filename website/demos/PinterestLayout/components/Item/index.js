@@ -14,7 +14,7 @@ function Item({width, height, id}) {
   return (
     <>
       <Wrapper width={width} height={height}>
-        Item - {id}
+        {id}
       </Wrapper>
     </>
   )

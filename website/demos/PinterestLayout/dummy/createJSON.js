@@ -11,13 +11,13 @@ function generateRandomHeight() {
   return random
 }
 
-function getItems() {
+function getItems(pagePrefix) {
   const items = []
   for (let i = 0; i < config.maxItems; i++) {
     const height = generateRandomHeight()
     items.push({
       // Prevents code mutations
-      id: `${i}-${config.item.width}-${height}`,
+      id: `${pagePrefix}-${i}-${config.item.width}-${height}`,
       width: config.item.width,
       height: height,
     })
@@ -31,7 +31,7 @@ function pagination() {
   for (let i = 0; i < config.pages; i++) {
     const key = `page${i}`
     pages[key] = {
-      items: getItems(),
+      items: getItems(key),
     }
   }
 
