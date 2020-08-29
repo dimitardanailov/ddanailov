@@ -26,9 +26,19 @@ function getItems() {
   return items
 }
 
-const records = {
-  items: getItems(),
+function pagination() {
+  const pages = {}
+  for (let i = 0; i < config.pages; i++) {
+    const key = `page${i}`
+    pages[key] = {
+      items: getItems(),
+    }
+  }
+
+  return pages
 }
 
-let data = JSON.stringify(records)
+const pages = pagination()
+
+let data = JSON.stringify(pages)
 fs.writeFileSync('./records.json', data)

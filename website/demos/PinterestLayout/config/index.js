@@ -8,6 +8,7 @@ const config = {
       max: 399,
     },
   },
+  pages: 10,
 }
 
 config['containerWidth'] = config.maximumRowItems * config.item.width

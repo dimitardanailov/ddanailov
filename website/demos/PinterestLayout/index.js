@@ -6,7 +6,7 @@ import records from './dummy/records.json'
 import {calcHeightDimensions} from './helper'
 
 function PinterestLayout() {
-  const {items} = records
+  const {items} = records['page0']
   const response = calcHeightDimensions(items, config.maximumRowItems)
 
   return (
