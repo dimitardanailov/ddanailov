@@ -14,7 +14,7 @@ function PinterestLayout() {
   return (
     <Layout
       items={params.items}
-      containerHeight={params.containerHeight}
+      initialContainerHeight={params.containerHeight}
       containerWidth={params.containerWidth}
     />
   )

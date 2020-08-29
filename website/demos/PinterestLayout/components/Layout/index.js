@@ -28,8 +28,11 @@ const ListItem = styled.li`
   left: ${props => props.left}px;
 `
 
-function Layout({items, containerHeight, containerWidth}) {
+function Layout({items, initialContainerHeight, containerWidth}) {
   const [page, setPage] = React.useState(1)
+  const [containerHeight, setContainerHeight] = React.useState(
+    initialContainerHeight,
+  )
 
   React.useEffect(() => {
     if (page > 1) {
@@ -54,6 +57,10 @@ function Layout({items, containerHeight, containerWidth}) {
     <>
       <h2>Pinterest Layout</h2>
 
+      <div>Height: {containerHeight}</div>
+
+      <div>Inital Height: {initialContainerHeight}</div>
+
       <div>
         <div>Page: {page}</div>
         <button onClick={loadMoreRecords}>Get More Records</button>
@@ -68,7 +75,7 @@ function Layout({items, containerHeight, containerWidth}) {
 
 Layout.propTypes = {
   items: PropTypes.array.isRequired,
-  containerHeight: PropTypes.number,
+  initialContainerHeight: PropTypes.number,
   containerWidth: PropTypes.number,
 }
 
