@@ -32,7 +32,7 @@ function Layout({items, containerHeight, containerWidth}) {
   const ListItems = items.map(function (item, i) {
     return (
       <ListItem key={item.id} top={item.top} left={item.left}>
-        <Item width={item.width} height={item.height} number={i}>
+        <Item width={item.width} height={item.height} id={item.id}>
           {i}
         </Item>
       </ListItem>
