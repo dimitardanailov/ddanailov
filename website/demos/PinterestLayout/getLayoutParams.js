@@ -16,35 +16,70 @@ function findMinimumHeight(columns) {
 }
 
 function calcHeightDimensions(items, maximumRowItems) {
-  let firstRowItems = 0
+  const firstRow = calcFirstRowHeightParams(items, maximumRowItems)
+
+  const sliceArray = items.slice(maximumRowItems)
+  const rowsData = calcRowHeightParams(
+    sliceArray,
+    firstRow.columns,
+    firstRow.containerHeight,
+  )
+
+  const listItems = firstRow.listItems.concat(rowsData.listItems)
+
+  return {
+    listItems,
+    containerHeight: rowsData.containerHeight,
+    columns: rowsData.columns,
+  }
+}
+
+function calcFirstRowHeightParams(items, maximumRowItems) {
   let top = 0
   let left = 0
-  let columns = {}
   let containerHeight = 0
+  const columns = {}
 
-  const listItems = items.map(function (item, i) {
-    if (firstRowItems === maximumRowItems) {
-      const output = findMinimumHeight(columns)
-      const key = output.column
-      left = key * item.width
-      top = output.height
+  const firstRowItems = []
+  for (let i = 0; i < maximumRowItems; i++) {
+    const item = items[i]
+    left = i * item.width
+    columns[i] = item.height
 
-      const columnHeight = top + item.height
-      columns[key] = columnHeight
-
-      if (columnHeight > containerHeight) {
-        containerHeight = columnHeight
-      }
+    if (item.height > containerHeight) {
+      containerHeight = item.height
     }
 
-    if (firstRowItems < maximumRowItems) {
-      left = firstRowItems * item.width
-      columns[i] = item.height
-      firstRowItems++
+    firstRowItems.push({
+      top,
+      left,
+      ...item,
+    })
+  }
 
-      if (item.height > containerHeight) {
-        containerHeight = item.height
-      }
+  return {
+    listItems: firstRowItems,
+    containerHeight,
+    columns,
+  }
+}
+
+function calcRowHeightParams(items, externalColumns, containerHeight) {
+  let top = 0
+  let left = 0
+  let columns = {...externalColumns}
+
+  const listItems = items.map(function (item, i) {
+    const output = findMinimumHeight(columns)
+    const key = output.column
+    left = key * item.width
+    top = output.height
+
+    const columnHeight = top + item.height
+    columns[key] = columnHeight
+
+    if (columnHeight > containerHeight) {
+      containerHeight = columnHeight
     }
 
     return {
@@ -56,6 +91,7 @@ function calcHeightDimensions(items, maximumRowItems) {
 
   return {
     listItems,
+    columns,
     containerHeight,
   }
 }
@@ -79,12 +115,18 @@ function getLayoutParams(items, screenWidth, columnWidth) {
 
   return {
     items: heightProperties.listItems,
+    columns: heightProperties.columns,
     containerHeight: heightProperties.containerHeight,
     containerWidth: widthProperties.containerWidth,
     maximumRowItems: widthProperties.maximumRowItems,
   }
 }
 
-export {findMinimumHeight, calcHeightDimensions, calcWidthProperties}
+export {
+  findMinimumHeight,
+  calcHeightDimensions,
+  calcWidthProperties,
+  calcRowHeightParams,
+}
 
 export default getLayoutParams

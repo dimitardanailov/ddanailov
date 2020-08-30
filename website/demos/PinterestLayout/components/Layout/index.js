@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import Item from '@ddanailov/demos/PinterestLayout/components/Item'
 import records from '@ddanailov/demos/PinterestLayout/dummy/records.json'
 
+import {calcRowHeightParams} from '@ddanailov/demos/PinterestLayout/getLayoutParams'
+
 const ListItemContainer = styled.section`
   position: relative;
 
@@ -34,18 +36,20 @@ function Layout({
   initialContainerHeight,
   containerWidth,
   maximumRowItems,
+  initialColumns,
 }) {
   const [page, setPage] = React.useState(1)
   const [containerHeight, setContainerHeight] = React.useState(
     initialContainerHeight,
   )
+  const [columns, setColumns] = React.useState(initialColumns)
 
   React.useEffect(() => {
     if (page > 1 && page < 9) {
-      const paginationItems = records['page' + page]
-      console.log('paginationItems', paginationItems)
+      const paginationItems = records['page' + page]['items']
+      calcRowHeightParams(paginationItems, columns, containerHeight)
     }
-  }, [page, setPage])
+  }, [page, setPage, columns, setColumns, containerHeight, setContainerHeight])
 
   const loadMoreRecords = () => {
     setPage(page + 1)
@@ -87,6 +91,7 @@ Layout.propTypes = {
   initialContainerHeight: PropTypes.number,
   containerWidth: PropTypes.number,
   maximumRowItems: PropTypes.number,
+  initialColumns: PropTypes.object,
 }
 
 export default Layout
