@@ -12,6 +12,8 @@ const ListItemContainer = styled.section`
 
   width: ${props => props.width}px;
   height: ${props => props.height}px;
+
+  border: 4px solid blue;
 `
 
 const List = styled.ul`
@@ -39,21 +41,28 @@ function Layout({
   initialColumns,
 }) {
   const [page, setPage] = React.useState(1)
+
+  React.useEffect(() => {
+    if (page > 1 && page < 9) {
+      const paginationItems = records['page' + page]['items']
+      const rowData = calcRowHeightParams(
+        paginationItems,
+        columns,
+        containerHeight,
+      )
+
+      setColumns(rowData.columns)
+      setContainerHeight(rowData.containerHeight)
+    }
+  }, [page, setPage])
+
   const [containerHeight, setContainerHeight] = React.useState(
     initialContainerHeight,
   )
   const [columns, setColumns] = React.useState(initialColumns)
 
-  React.useEffect(() => {
-    if (page > 1 && page < 9) {
-      const paginationItems = records['page' + page]['items']
-      calcRowHeightParams(paginationItems, columns, containerHeight)
-    }
-  }, [page, setPage, columns, setColumns, containerHeight, setContainerHeight])
-
   const loadMoreRecords = () => {
     setPage(page + 1)
-    setContainerHeight(containerHeight + 4000)
   }
 
   const ListItems = items.map(function (item, i) {
@@ -73,6 +82,7 @@ function Layout({
       <div>Height: {containerHeight}</div>
       <div>Inital Height: {initialContainerHeight}</div>
       <div>Maximum items per row: {maximumRowItems}</div>
+      <div>Columns: {JSON.stringify(columns)}</div>
 
       <div>
         <div>Page: {page}</div>
