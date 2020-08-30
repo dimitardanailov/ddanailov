@@ -16,6 +16,7 @@ function PinterestLayout() {
       items={params.items}
       initialContainerHeight={params.containerHeight}
       containerWidth={params.containerWidth}
+      maximumRowItems={params.maximumRowItems}
     />
   )
 }

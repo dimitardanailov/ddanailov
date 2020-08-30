@@ -81,6 +81,7 @@ function getLayoutParams(items, screenWidth, columnWidth) {
     items: heightProperties.listItems,
     containerHeight: heightProperties.containerHeight,
     containerWidth: widthProperties.containerWidth,
+    maximumRowItems: widthProperties.maximumRowItems,
   }
 }
 
