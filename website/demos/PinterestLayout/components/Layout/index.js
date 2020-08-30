@@ -34,16 +34,16 @@ const ListItem = styled.li`
 `
 
 function Layout({
-  items,
+  initialItems,
   initialContainerHeight,
   containerWidth,
   maximumRowItems,
   initialColumns,
 }) {
-  const [page, setPage] = React.useState(1)
+  const [page, setPage] = React.useState(0)
 
   React.useEffect(() => {
-    if (page > 1 && page < 9) {
+    if (page >= 1 && page < 9) {
       const paginationItems = records['page' + page]['items']
       const rowData = calcRowHeightParams(
         paginationItems,
@@ -53,6 +53,9 @@ function Layout({
 
       setColumns(rowData.columns)
       setContainerHeight(rowData.containerHeight)
+
+      const listItems = items.concat(rowData.listItems)
+      setItems(listItems)
     }
   }, [page, setPage])
 
@@ -60,6 +63,7 @@ function Layout({
     initialContainerHeight,
   )
   const [columns, setColumns] = React.useState(initialColumns)
+  const [items, setItems] = React.useState(initialItems)
 
   const loadMoreRecords = () => {
     setPage(page + 1)
@@ -83,6 +87,7 @@ function Layout({
       <div>Inital Height: {initialContainerHeight}</div>
       <div>Maximum items per row: {maximumRowItems}</div>
       <div>Columns: {JSON.stringify(columns)}</div>
+      <div>Items: {items.length}</div>
 
       <div>
         <div>Page: {page}</div>
@@ -97,7 +102,7 @@ function Layout({
 }
 
 Layout.propTypes = {
-  items: PropTypes.array.isRequired,
+  initialItems: PropTypes.array.isRequired,
   initialContainerHeight: PropTypes.number,
   containerWidth: PropTypes.number,
   maximumRowItems: PropTypes.number,
