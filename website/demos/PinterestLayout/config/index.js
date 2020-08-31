@@ -1,5 +1,5 @@
 const config = {
-  maxItems: 50,
+  maxItems: 10,
   maximumRowItems: 2,
   item: {
     width: 200,
@@ -8,7 +8,7 @@ const config = {
       max: 399,
     },
   },
-  pages: 10,
+  pages: 50,
 }
 
 module.exports = config

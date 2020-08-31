@@ -8,7 +8,7 @@ import getLayoutParams from './getLayoutParams'
 function PinterestLayout() {
   const {items} = records['page0']
 
-  const width = 670
+  const width = 415
   const params = getLayoutParams(items, width, config.item.width)
 
   return (

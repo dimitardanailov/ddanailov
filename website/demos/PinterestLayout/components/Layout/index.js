@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 
+import config from '@ddanailov/demos/PinterestLayout/config'
+
 import Item from '@ddanailov/demos/PinterestLayout/components/Item'
 import records from '@ddanailov/demos/PinterestLayout/dummy/records.json'
 
@@ -43,20 +45,20 @@ function Layout({
   const [page, setPage] = React.useState(0)
 
   React.useEffect(() => {
-    if (page >= 1 && page < 9) {
-      const paginationItems = records['page' + page]['items']
-      const rowData = calcRowHeightParams(
-        paginationItems,
-        columns,
-        containerHeight,
-      )
+    if (page === 0) return
 
-      setColumns(rowData.columns)
-      setContainerHeight(rowData.containerHeight)
+    const paginationItems = records['page' + page]['items']
+    const rowData = calcRowHeightParams(
+      paginationItems,
+      columns,
+      containerHeight,
+    )
 
-      const listItems = items.concat(rowData.listItems)
-      setItems(listItems)
-    }
+    setColumns(rowData.columns)
+    setContainerHeight(rowData.containerHeight)
+
+    const listItems = items.concat(rowData.listItems)
+    setItems(listItems)
   }, [page, setPage])
 
   const [containerHeight, setContainerHeight] = React.useState(
@@ -66,7 +68,9 @@ function Layout({
   const [items, setItems] = React.useState(initialItems)
 
   const loadMoreRecords = () => {
-    setPage(page + 1)
+    if (page < config.pages) {
+      setPage(page + 1)
+    }
   }
 
   const ListItems = items.map(function (item, i) {
@@ -97,6 +101,11 @@ function Layout({
       <ListItemContainer height={containerHeight} width={containerWidth}>
         <List>{ListItems}</List>
       </ListItemContainer>
+
+      <div>
+        <div>Page: {page}</div>
+        <button onClick={loadMoreRecords}>Get More Records</button>
+      </div>
     </>
   )
 }
