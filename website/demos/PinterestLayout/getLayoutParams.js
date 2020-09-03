@@ -41,7 +41,13 @@ function calcFirstRowHeightParams(items, maximumRowItems) {
   const columns = {}
 
   const firstRowItems = []
-  for (let i = 0; i < maximumRowItems; i++) {
+
+  let iteration = maximumRowItems
+  if (maximumRowItems > items.length) {
+    iteration = items.length
+  }
+
+  for (let i = 0; i < iteration; i++) {
     const item = items[i]
     left = i * item.width
     columns[i] = item.height

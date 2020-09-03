@@ -8,12 +8,16 @@ const Wrapper = styled.section`
   border: 1px solid red;
   width: ${props => props.width}px;
   height: ${props => props.height}px;
+  background-color: ${props => props.bgColor};
+  color: #fff;
+  justify-content: center;
+  align-items: center;
 `
 
-function Item({width, height, id}) {
+function Item({width, height, id, bgColor}) {
   return (
     <>
-      <Wrapper width={width} height={height}>
+      <Wrapper width={width} height={height} bgColor={bgColor}>
         {id}
       </Wrapper>
     </>

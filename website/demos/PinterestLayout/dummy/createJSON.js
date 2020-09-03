@@ -2,6 +2,7 @@
 
 const fs = require('fs')
 const config = require('../config')
+const getRandomColor = require('./backgroundColor')
 
 function generateRandomHeight() {
   const {max, min} = config.item.height
@@ -15,11 +16,13 @@ function getItems(pagePrefix) {
   const items = []
   for (let i = 0; i < config.maxItems; i++) {
     const height = generateRandomHeight()
+    const bgColor = getRandomColor()
     items.push({
       // Prevents code mutations
       id: `${pagePrefix}-${i}-${config.item.width}-${height}`,
       width: config.item.width,
-      height: height,
+      height,
+      bgColor,
     })
   }
 
