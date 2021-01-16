@@ -1,0 +1,22 @@
+{
+  "name": "ddanailov-colors-playground",
+  "version": "1.0.0",
+  "description": "Color quantization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dimitardanailov/ddanailov.git"
+  },
+  "keywords": [
+    "Colors"
+  ],
+  "author": "Dimitar Danailov <dimityr.danailov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimitardanailov/ddanailov/issues"
+  },
+  "homepage": "https://github.com/dimitardanailov/ddanailov#readme"
+}
