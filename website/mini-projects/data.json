@@ -1,0 +1,122 @@
+[
+  {
+    "doubleColorName": "black",
+    "doubleColorId": "60181eb54ec5d54a814940ff",
+    "hex": "#000000",
+    "predominant": 36.7
+  },
+  {
+    "doubleColorName": "maroon",
+    "doubleColorId": "60181eb54ec5d54a8149414e",
+    "hex": "#7D080F",
+    "predominant": 14.7
+  },
+  {
+    "doubleColorName": "darksienna",
+    "doubleColorId": "60181eb54ec5d54a8149418c",
+    "hex": "#3A070A",
+    "predominant": 11.3
+  },
+  {
+    "doubleColorName": "firebrick",
+    "doubleColorId": "60181eb54ec5d54a81494125",
+    "hex": "#C00B0F",
+    "predominant": 5.4
+  },
+  {
+    "doubleColorName": "cannonblack",
+    "doubleColorId": "60181eb54ec5d54a81494196",
+    "hex": "#25041A",
+    "predominant": 3.5
+  },
+  {
+    "doubleColorName": "saddlebrown",
+    "doubleColorId": "60181eb54ec5d54a81494173",
+    "hex": "#842E08",
+    "predominant": 3.1
+  },
+  {
+    "doubleColorName": "chocolate",
+    "doubleColorId": "60181eb54ec5d54a81494107",
+    "hex": "#CE4409",
+    "predominant": 3.1
+  },
+  {
+    "doubleColorName": "saddlebrown",
+    "doubleColorId": "60181eb54ec5d54a81494173",
+    "hex": "#7A5106",
+    "predominant": 1.8
+  },
+  {
+    "doubleColorName": "darksienna",
+    "doubleColorId": "60181eb54ec5d54a8149418c",
+    "hex": "#381B1A",
+    "predominant": 1.4
+  },
+  {
+    "doubleColorName": "goldenrod",
+    "doubleColorId": "60181eb54ec5d54a8149412c",
+    "hex": "#E19815",
+    "predominant": 1.4
+  },
+  {
+    "doubleColorName": "palevioletred",
+    "doubleColorId": "60181eb54ec5d54a81494167",
+    "hex": "#D06779",
+    "predominant": 1.3
+  },
+  {
+    "doubleColorName": "sandybrown",
+    "doubleColorId": "60181eb54ec5d54a81494175",
+    "hex": "#E8B964",
+    "predominant": 1.2
+  },
+  {
+    "doubleColorName": "purple",
+    "doubleColorId": "60181eb54ec5d54a8149416e",
+    "hex": "#7B1252",
+    "predominant": 1.1
+  },
+  {
+    "doubleColorName": "English Red",
+    "doubleColorId": "601bd4739f923315b43ba0cb",
+    "hex": "#8C3D6D",
+    "predominant": 1
+  },
+  {
+    "doubleColorName": "brown",
+    "doubleColorId": "60181eb54ec5d54a81494103",
+    "hex": "#7C3040",
+    "predominant": 1
+  },
+  {
+    "doubleColorName": "silver",
+    "doubleColorId": "60181eb54ec5d54a81494179",
+    "hex": "#D9C1BD",
+    "predominant": 0.9
+  },
+  {
+    "doubleColorName": "darksalmon",
+    "doubleColorId": "60181eb54ec5d54a81494119",
+    "hex": "#DE956B",
+    "predominant": 0.9
+  },
+  {
+    "doubleColorName": "blackchocolate",
+    "doubleColorId": "60181eb54ec5d54a8149418e",
+    "hex": "#1F0726",
+    "predominant": 0.7
+  },
+  {
+    "doubleColorName": "mediumaquamarine",
+    "doubleColorId": "60181eb54ec5d54a8149414f",
+    "hex": "#68C8C4",
+    "predominant": 0.5
+  },
+  {
+    "doubleColorName": "blackcurrant",
+    "doubleColorId": "60181eb54ec5d54a81494191",
+    "hex": "#2D1127",
+    "predominant": 0.5
+  }
+]
