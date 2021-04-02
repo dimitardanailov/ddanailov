@@ -25,5 +25,5 @@ function calcQuantization(colors) {
     return b.predominant - a.predominant
   })
 
-  return arr
+  return output
 }
