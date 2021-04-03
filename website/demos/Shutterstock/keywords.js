@@ -7,7 +7,17 @@ sstk.setAccessToken(process.env.SHUTTERSTOCK_API_TOKEN);
 
 const computerVisionApi = new sstk.ComputerVisionApi();
 
-const imageFile = fs.readFileSync("./images/lions.jpeg");
+const images = [
+  './images/lions.jpeg',
+  './images/nws-st-bengal-tiger.jpeg',
+]
+
+const random = Math.floor(Math.random() * images.length)
+const image = images[random]
+
+console.log('image', image)
+
+const imageFile = fs.readFileSync(image);
 const base64File = Buffer.from(imageFile).toString("base64");
 
 const body = new sstk.ImageCreateRequest(base64File);
