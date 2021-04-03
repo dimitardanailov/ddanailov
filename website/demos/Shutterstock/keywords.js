@@ -7,7 +7,7 @@ sstk.setAccessToken(process.env.SHUTTERSTOCK_API_TOKEN);
 
 const computerVisionApi = new sstk.ComputerVisionApi();
 
-const imageFile = fs.readFileSync("./lions.jpeg");
+const imageFile = fs.readFileSync("./images/lions.jpeg");
 const base64File = Buffer.from(imageFile).toString("base64");
 
 const body = new sstk.ImageCreateRequest(base64File);
