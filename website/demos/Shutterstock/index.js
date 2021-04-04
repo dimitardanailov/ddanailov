@@ -1,3 +1,9 @@
+/**
+ * Documentation:
+ * https://api-reference.shutterstock.com/#images-search
+ */
+
+
 const imagesApi = require('./_imagesApi');
 
 const popular = 'random'
