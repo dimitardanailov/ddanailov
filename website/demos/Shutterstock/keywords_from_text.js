@@ -1,7 +1,7 @@
 const imagesApi = require('./_imagesApi')
 
 const body = {
-  "text": "The beach is a wonderful place to visit. It has beautiful sand and ocean waves."
+  "text": "Abstract dark blue and magenta texture with gold inclusions background. Digital Illustration imitating oil painting on canvas"
 };
 
 console.log('body', body)
