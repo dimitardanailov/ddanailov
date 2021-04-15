@@ -1,4 +1,7 @@
 const images = [
+  './images/dubai.png',
+  './images/stock-photo-beautiful-view-on-dubai-downtown-skyline-dubai-united-arab-emirates-704369332.jpeg',
+  './images/shutterstock_example.png',
   './images/lions.jpeg',
   './images/nws-st-bengal-tiger.jpeg',
   './images/Kitchen-trends-2019-featured.jpeg',
