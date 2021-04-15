@@ -11,12 +11,12 @@ const popular = 'random'
 // const queryParams = simpleQuery()
 // const queryParams = conditionalAndQuery()
 // const queryParams = conditionalOrQuery()
-// const queryParams = conditionalNotQuery()
+const queryParams = conditionalNotQuery()
 // const queryParams = conditionalPerPage()
 // const queryParams = sortQuery(popular)
 
 // const queryParams = esLocalizingSearches()
-const queryParams = queryByCategory('People', popular)
+// const queryParams = queryByCategory('People', popular)
 
 imagesApi.searchImages(queryParams)
   .then(({ data }) => {
@@ -39,7 +39,8 @@ function simpleQuery() {
   return queryParams;
 }
 
-// AND is added implicitly between each search keyword. Therefore, searching for dog AND cat is equivalent to searching for dog cat.
+// AND is added implicitly between each search keyword. 
+// Therefore, searching for dog AND cat is equivalent to searching for dog cat.
 function conditionalAndQuery() {
   const queryParams = {
     "query": "dog AND cat",
@@ -64,7 +65,7 @@ function conditionalOrQuery() {
 // NOT searches exclude keywords from search results, such as dog NOT hot dog. You can also use NOT in the contributor search field.
 function conditionalNotQuery() {
   const queryParams = {
-    "query": "mountain NOT camping",
+    "query": "canada AND usa NOT lakes NOT green NOT people NOT building",
     "image_type": "photo",
     "orientation": "vertical",
   }
