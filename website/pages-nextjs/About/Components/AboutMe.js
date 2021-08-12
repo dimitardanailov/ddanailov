@@ -12,14 +12,14 @@ function AboutMe() {
       <p>
         I'm a remote software engineer. My expertise includes various different
         areas: front - end development, web peformance, backend, mobile, cloud
-        security and DevOps. In the past two year my main focus is software
+        security and DevOps. In the past three year my main focus is software
         consulting.
       </p>
       <ul>
         <li>
           Fine with both front-end (<Keyword word="React.js" /> and{' '}
-          <Keyword word="Nextjs" />, Native web components, D3.js, Polymer and
-          SPA) and back-end(
+          <Keyword word="Nextjs" />, Native web components, State machines,
+          D3.js, Polymer and SPA) and back-end(
           <Keyword word="Nodejs" />, <Keyword word="Go" />)
         </li>
         <li>Amazon web services, Azure and Google Cloud are my best friends</li>
@@ -33,7 +33,14 @@ function AboutMe() {
             I love to share my experience with the world
           </TargetBlank>
         </li>
-        <li>I love open source contribution</li>
+        <li>
+          <TargetBlank
+            href="https://github.com/dimitardanailov"
+            title="Founder of #Javascript Consulting Company."
+          >
+            I love open source contribution
+          </TargetBlank>
+        </li>
         <li>I'm a guy with good self - education discipline</li>
       </ul>
     </>
