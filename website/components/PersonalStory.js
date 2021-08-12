@@ -5,7 +5,7 @@ function PersonalStory() {
   return (
     <div>
       <div>
-        My professional career started ten years ago. For this period I
+        My professional career started twelve years ago. For this period I
         "visited" a significant amount of kingdoms 👑. My roles were "warrior"
         (backend developer), "engineer" (front - end developer), "magician"
         (team leader and software architect), "the assassin" (freelancer /
@@ -23,7 +23,8 @@ function PersonalStory() {
       </div>
       <p>
         My winner mentality gave me an opportunity to work with remote teams in
-        Indonesia, Singapore, US, Australia, UK, Bulgaria.{' '}
+        Israel, Indonesia, Singapore, US, Australia, Russia, Ukraine, UK,
+        Bulgaria.{' '}
         <Link href="/about#about-testimonials-recommendations">
           <a title="Dimitar Danailov: Portfolio details">
             I received several five stars reviews from stakeholders, product
