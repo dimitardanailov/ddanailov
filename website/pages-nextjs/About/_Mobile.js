@@ -16,6 +16,7 @@ import {
   BayuAvatar,
   FannyAvatar,
   AntoanAvatar,
+  DavidTarbayAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -41,6 +42,8 @@ import {
   FannyLetter,
   AntoanInfo,
   AntoanLetter,
+  DavidTarbayInfo,
+  DavidTarbayLetter,
 } from '@about/Components/Testimonials'
 
 import {TestimonialBody, RecommendationBody} from '@about/StyledComponents'
@@ -62,6 +65,15 @@ const AboutPageMobile = () => (
       <RecommendationBody>
         <HenryLetter />
         <HenryInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <DavidTarbayAvatar />
+
+      <RecommendationBody>
+        <DavidTarbayLetter />
+        <DavidTarbayInfo />
       </RecommendationBody>
     </TestimonialBody>
 
