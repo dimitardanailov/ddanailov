@@ -1,7 +1,8 @@
 import Keyword from './Keyword'
 import Space from '@ddanailov/styled/Space'
-// import NextJsLink from '@ddanailov/components/Navigation/NextJsLink'
-// import theme from 'styles/colors/light'
+import NextJsLink from '@ddanailov/components/Navigation/NextJsLink'
+import theme from 'styles/colors/light'
+import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 
 function SponsorshipInfo() {
   return (
@@ -20,6 +21,28 @@ function OpenSourceProjects() {
     <div>
       <h3>Talk is cheap. Show me the code: 🦉</h3>
       <ul>
+        <li>
+          Mix between <Keyword word="React" />
+          {', '}Xstate and D3js. The most complicated component is:{' '}
+          <a
+            href="https://github.com/dimitardanailov/react-components/blob/master/packages/d3-tree-collapsible/app/components/D3TreeRadioButton.js"
+            title="React playground"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            D3TreeRadioButton
+          </a>
+        </li>
+        <li>
+          The component is mix between draftjs, <Keyword word="React" />
+          {', '} and React hooks:{' '}
+          <TargetBlankLink
+            href="https://github.com/dimitardanailov/react-components/blob/master/packages/draft-js-playground/app/components/playground-editor/Editor.js"
+            title="Editor.js"
+          >
+            Editor.js
+          </TargetBlankLink>
+        </li>
         <li>
           <a
             target="_blank"
@@ -75,18 +98,8 @@ function OpenSourceProjects() {
           : Collection with Google Chrome and Firefox push notifications
           examples, Docker Safari APN creator
         </li>
-        <li>
-          <a
-            href="https://github.com/dimitardanailov/react-components"
-            title="React playground"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React components
-          </a>
-          : <Keyword word="React" /> catalog with different useful components.
-        </li>
       </ul>
+      <SponsorshipInfo />
     </div>
   )
 }
