@@ -7,11 +7,20 @@ import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
 function Roles() {
   return (
     <>
-      <Slogan>Consultant and Javascript Developer</Slogan>
+      <Slogan>Software Consultant or Engineering Manager</Slogan>
 
       <ul>
         <li>
-          Present Remote consultant in{' '}
+          Former Software Engineering Manager in{' '}
+          <TargetBlankLink
+            href="https://www.elephantstock.com/"
+            title="Software Engineering Manager in Elephantstock"
+          >
+            Elephantstock
+          </TargetBlankLink>
+        </li>
+        <li>
+          Former Remote Remote consultant in{' '}
           <TargetBlankLink
             title="Remote consultant in Asian Absolute"
             href="https://asianabsolute.com/"
