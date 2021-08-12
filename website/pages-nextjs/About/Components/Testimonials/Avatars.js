@@ -1,6 +1,7 @@
 import Avatar from '@about/Components/Avatar'
 
 import {
+  davidTarbay,
   heidi,
   henry,
   ivelin,
@@ -96,5 +97,13 @@ export function AntoanAvatar() {
     href: antoan.linkedin.profile,
     src: Image,
     title: antoan.title,
+  })
+}
+
+export function DavidTarbayAvatar() {
+  return PersonAvatar({
+    href: davidTarbay.linkedin.profile,
+    src: davidTarbay.linkedin.image,
+    title: davidTarbay.title,
   })
 }

@@ -41,3 +41,7 @@ export {default as VladimirInfo} from './Vladimir/Info'
 // Antoan
 export {default as AntoanLetter} from './Antoan/Letter'
 export {default as AntoanInfo} from './Antoan/Info'
+
+// David Tarbay
+export {default as DavidTarbayLetter} from './David/Letter'
+export {default as DavidTarbayInfo} from './David/Info'
