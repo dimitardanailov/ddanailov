@@ -5,7 +5,7 @@ const client = new Client({node: 'http://localhost:9200'})
 
 client.indices
   .delete({
-    index: 'game-of-thrones',
+    index: 'audit-*',
   })
   .then(
     function (resp) {

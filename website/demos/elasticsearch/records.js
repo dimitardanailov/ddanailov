@@ -8,7 +8,7 @@ const client = new Client({node: 'http://localhost:9200'})
  */
 async function read() {
   const {body} = await client.search({
-    index: 'game-of-thrones',
+    index: 'customer',
     body: {
       query: {
         match_all: {},
