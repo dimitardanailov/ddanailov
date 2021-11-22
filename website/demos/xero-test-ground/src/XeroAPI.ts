@@ -14,10 +14,19 @@ import {
   Contacts,
   Account,
   AccountType,
+  Accounts,
+  BankTransaction,
+  BankTransactions,
 } from 'xero-node'
 import jwtDecode from 'jwt-decode'
 const apiTokenSet = require('./tokenSet.json')
+const fakeBankTrancations = require('./bank-transaction.json')
 import fs from 'fs'
+
+const promiseErrorResponse = function (error: Error, resolve: Function) {
+  console.log(error)
+  resolve([])
+}
 
 class XeroAPI {
   public xero: XeroClient
@@ -81,6 +90,122 @@ class XeroAPI {
       )
 
       console.log(response.body || response.response.statusCode)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  getContacts() {
+    const promise = new Promise(resolve => {
+      this.xero.accountingApi
+        .getContacts(this.activeTenantId)
+        .then(response => {
+          resolve(response.body.contacts)
+        })
+        .catch(error => {
+          promiseErrorResponse(error, resolve)
+        })
+    })
+
+    return promise
+  }
+
+  getAccounts() {
+    const promise = new Promise(resolve => {
+      this.xero.accountingApi
+        .getAccounts(this.activeTenantId)
+        .then(response => {
+          resolve(response.body.accounts)
+        })
+        .catch(error => {
+          promiseErrorResponse(error, resolve)
+        })
+    })
+
+    return promise
+  }
+
+  async createFakeBankTransaction() {
+    const contacts = <Array<Contacts>>await this.getContacts()
+    if (!contacts) {
+      console.log('contacts array is empty!')
+      return
+    }
+    const accounts = <Array<Accounts>>await this.getAccounts()
+    if (!accounts) {
+      console.log('accounts array is empty!')
+    }
+    const contact: Contact = <Contact>contacts[0]
+    const account: Account = <Account>accounts[0]
+
+    const newBankTransaction: BankTransaction = {
+      type: BankTransaction.TypeEnum.SPEND,
+      contact: contact,
+      bankAccount: account,
+      date: '2019-09-19T00:00:00',
+      isReconciled: true,
+      lineItems: [],
+    }
+
+    const newBankTransactions: BankTransactions = new BankTransactions()
+    newBankTransactions.bankTransactions = [newBankTransaction]
+    const bankTransactionCreateResponse = await this.xero.accountingApi.createBankTransactions(
+      this.activeTenantId,
+      newBankTransactions,
+      false,
+    )
+
+    try {
+      const bankTransactionUpdateOrCreateResponse = await this.xero.accountingApi.updateOrCreateBankTransactions(
+        this.activeTenantId,
+        newBankTransactions,
+        false,
+      )
+
+      console.log('success')
+    } catch (e) {
+      console.log('error')
+    }
+
+    // console.log(bankTransactionUpdateOrCreateResponse)
+
+    // return bankTransactionCreateResponse
+  }
+
+  async createFakeBankAccount() {
+    const account: Account = {
+      name: 'DBS USD Account',
+      type: AccountType.BANK,
+    }
+
+    try {
+      const created1 = await this.xero.accountingApi.createAccount(
+        this.activeTenantId,
+        account,
+      )
+
+      console.log(created1)
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  async createFakeContacts() {
+    try {
+      const contact1: Contact = {
+        name: 'NEM Group Limited',
+      }
+      const contact2: Contact = {
+        name: 'Forbes Hare Trust Company Limited',
+      }
+      const contacts: Contacts = {
+        contacts: [contact1, contact2],
+      }
+      const response = await this.xero.accountingApi.updateOrCreateContacts(
+        this.activeTenantId,
+        contacts,
+      )
+      console.log('contacts: ', response.body.contacts)
     } catch (err) {
       console.error(err)
     }
