@@ -1,0 +1,66 @@
+[
+  {
+    "BankTransactionID": "8aa38b66-761d-4538-8cc6-aade7f7d8de7",
+    "BankAccount": {
+      "AccountID": "fbdc99af-bfff-41d0-9a71-847a37a7608e",
+      "Code": "",
+      "Name": "DBS USD Account"
+    },
+    "Type": "RECEIVE",
+    "Reference": "NEM Group",
+    "IsReconciled": true,
+    "CurrencyRate": 0.735294,
+    "HasAttachments": false,
+    "Contact": {
+      "ContactID": "8f55da9c-4444-485c-90a6-86260f8115f0",
+      "Name": "NEM Group Limited",
+      "Addresses": [],
+      "Phones": [],
+      "ContactGroups": [],
+      "ContactPersons": [],
+      "HasValidationErrors": false
+    },
+    "DateString": "2020-09-04T00:00:00",
+    "Date": "/Date(1599177600000+0000)/",
+    "Status": "AUTHORISED",
+    "LineAmountTypes": "Inclusive",
+    "LineItems": [],
+    "SubTotal": 30000,
+    "TotalTax": 0,
+    "Total": 30000,
+    "UpdatedDateUTC": "/Date(1608179365553+0000)/",
+    "CurrencyCode": "USD"
+  },
+  {
+    "BankTransactionID": "07b7091b-0ac2-40c0-bdd5-47c5b4f5353b",
+    "BankAccount": {
+      "AccountID": "fbdc99af-bfff-41d0-9a71-847a37a7608e",
+      "Code": "",
+      "Name": "DBS USD Account"
+    },
+    "Type": "SPEND",
+    "Reference": "0016OT0390700",
+    "IsReconciled": true,
+    "CurrencyRate": 0.739541,
+    "HasAttachments": false,
+    "Contact": {
+      "ContactID": "af3d0b10-738d-4f83-93fc-fe72fe01267b",
+      "Name": "Forbes Hare Trust Company Limited",
+      "Addresses": [],
+      "Phones": [],
+      "ContactGroups": [],
+      "ContactPersons": [],
+      "HasValidationErrors": false
+    },
+    "DateString": "2021-08-02T00:00:00",
+    "Date": "/Date(1627862400000+0000)/",
+    "Status": "AUTHORISED",
+    "LineAmountTypes": "Exclusive",
+    "LineItems": [],
+    "SubTotal": 11694,
+    "TotalTax": 0,
+    "Total": 11694,
+    "UpdatedDateUTC": "/Date(1632134316333+0000)/",
+    "CurrencyCode": "USD"
+  }
+]
