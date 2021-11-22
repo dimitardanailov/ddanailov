@@ -1,5 +1,6 @@
 require('dotenv').config()
 
+import {BankTransaction} from 'xero-node'
 import XeroAPI from './XeroAPI'
 ;(async () => {
   const api = new XeroAPI()
@@ -20,7 +21,11 @@ import XeroAPI from './XeroAPI'
   // const accounts = await api.getBankAccounts()
   // console.log(accounts)
 
-  const transactions = await api.getBankTransactions()
+  const xeroTransactions = <Array<BankTransaction>>(
+    await api.getBankTransactions()
+  )
+  console.log(xeroTransactions[0])
+  const transactions = api.extractBankTransactions(xeroTransactions)
   console.log(transactions)
 
   // console.log(transactions)

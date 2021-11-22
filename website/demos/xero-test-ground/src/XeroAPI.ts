@@ -108,6 +108,44 @@ class XeroAPI {
     return promise
   }
 
+  extractBankTransactions(xeroTransactions: Array<BankTransaction>) {
+    const extractBankTransaction = this.extractBankTransaction
+    const transactions = xeroTransactions.map(function (
+      xeroTransaction: BankTransaction,
+    ) {
+      return extractBankTransaction(xeroTransaction)
+    })
+
+    return transactions
+  }
+
+  extractBankTransaction(xeroTransaction: BankTransaction) {
+    const contact = {
+      id: xeroTransaction.contact?.contactID,
+      name: xeroTransaction.contact?.name,
+    }
+    const bankAccount = {
+      id: xeroTransaction.bankAccount.accountID,
+      name: xeroTransaction.bankAccount.name,
+    }
+
+    return {
+      contact,
+      bankAccount,
+      id: xeroTransaction.bankTransactionID,
+      total: xeroTransaction.total,
+      totalTax: xeroTransaction.totalTax,
+      subTotal: xeroTransaction.subTotal,
+      type: xeroTransaction.type,
+      status: xeroTransaction.status,
+      currency: xeroTransaction.currencyCode,
+      date: xeroTransaction.date,
+      updatedDateUTC: xeroTransaction.updatedDateUTC,
+      reference: xeroTransaction.reference,
+      isReconciled: xeroTransaction.isReconciled,
+    }
+  }
+
   getContacts() {
     const promise = new Promise(resolve => {
       this.xero.accountingApi
@@ -193,7 +231,7 @@ class XeroAPI {
     ]
 
     const newBankTransaction: BankTransaction = {
-      type: BankTransaction.TypeEnum.SPEND,
+      type: BankTransaction.TypeEnum.RECEIVE,
       contact: useContact,
       lineItems: lineItems,
       bankAccount: useBankAccount,
