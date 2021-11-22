@@ -83,16 +83,29 @@ class XeroAPI {
     }
   }
 
-  async getBankTransactions() {
-    try {
-      const response = await this.xero.accountingApi.getBankTransactions(
-        this.activeTenantId,
-      )
+  getBankTransactions(page = 1) {
+    const promise = new Promise(resolve => {
+      const ifModifiedSince: Date = new Date('2000-01-01')
+      const where = 'Status=="AUTHORISED"'
+      const order = 'Type DESC'
 
-      console.log(response.body || response.response.statusCode)
-    } catch (err) {
-      console.error(err)
-    }
+      this.xero.accountingApi
+        .getBankTransactions(
+          this.activeTenantId,
+          ifModifiedSince,
+          where,
+          order,
+          page,
+        )
+        .then(response => {
+          resolve(response)
+        })
+        .catch(error => {
+          promiseErrorResponse(error, resolve)
+        })
+    })
+
+    return promise
   }
 
   getContacts() {

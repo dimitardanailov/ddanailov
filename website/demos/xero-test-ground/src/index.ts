@@ -10,7 +10,8 @@ import XeroAPI from './XeroAPI'
   // await api.getContacts()
   // await api.createFakeContacts()
 
-  await api.getBankTransactions()
+  const transactions = await api.getBankTransactions()
+  console.log(transactions)
 
   // await api.createFakeContacts()
   // await api.createFakeBankAccount()
