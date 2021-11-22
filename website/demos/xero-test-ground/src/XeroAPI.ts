@@ -19,9 +19,11 @@ import {
   BankTransactions,
 } from 'xero-node'
 import jwtDecode from 'jwt-decode'
-const apiTokenSet = require('./tokenSet.json')
 const fakeBankTrancations = require('./bank-transaction.json')
 import fs from 'fs'
+
+const env = process.env.NODE_ENV
+const apiTokenSet = require(`../xero-tokens/${env}-tokenSet.json`)
 
 const promiseErrorResponse = function (error: Error, resolve: Function) {
   console.log(error)
@@ -59,7 +61,7 @@ class XeroAPI {
     if (tokenSet.expired()) {
       const validTokenSet = await this.xero.refreshToken()
       let data = JSON.stringify(validTokenSet, null, 2)
-      fs.writeFile('./src/tokenSet.json', data, err => {
+      fs.writeFile(`./xero-tokens/${env}-tokenSet.json`, data, err => {
         if (err) throw err
         console.log('Data written to file')
       })
