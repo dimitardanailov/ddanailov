@@ -98,7 +98,7 @@ class XeroAPI {
           page,
         )
         .then(response => {
-          resolve(response)
+          resolve(response.body.bankTransactions)
         })
         .catch(error => {
           promiseErrorResponse(error, resolve)
@@ -123,15 +123,38 @@ class XeroAPI {
     return promise
   }
 
-  getAccounts() {
+  getBankAccounts() {
+    const ifModifiedSince: Date = new Date('2000-01-01')
+    const where =
+      'Status=="' +
+      Account.StatusEnum.ACTIVE +
+      '" AND Type=="' +
+      Account.BankAccountTypeEnum.BANK +
+      '"'
+
     const promise = new Promise(resolve => {
       this.xero.accountingApi
-        .getAccounts(this.activeTenantId)
+        .getAccounts(this.activeTenantId, ifModifiedSince, where)
         .then(response => {
           resolve(response.body.accounts)
         })
         .catch(error => {
           promiseErrorResponse(error, resolve)
+        })
+    })
+
+    return promise
+  }
+
+  createBankTransaction(newBankTransaction: BankTransaction) {
+    const newBankTransactions: BankTransactions = new BankTransactions()
+    newBankTransactions.bankTransactions = [newBankTransaction]
+
+    const promise = new Promise(resolve => {
+      this.xero.accountingApi
+        .createBankTransactions(this.activeTenantId, newBankTransactions, false)
+        .then(response => {
+          resolve(response.body.bankTransactions)
         })
     })
 
@@ -144,63 +167,75 @@ class XeroAPI {
       console.log('contacts array is empty!')
       return
     }
-    const accounts = <Array<Accounts>>await this.getAccounts()
+    const accounts = <Array<Accounts>>await this.getBankAccounts()
     if (!accounts) {
       console.log('accounts array is empty!')
+      return
     }
     const contact: Contact = <Contact>contacts[0]
     const account: Account = <Account>accounts[0]
 
+    const useContact: Contact = {
+      contactID: contact.contactID,
+    }
+
+    const useBankAccount: Account = {
+      accountID: account.accountID,
+    }
+
+    const lineItems: LineItem[] = [
+      {
+        description: 'consulting',
+        quantity: 1.0,
+        unitAmount: 20.0,
+        accountCode: '260',
+      },
+    ]
+
     const newBankTransaction: BankTransaction = {
       type: BankTransaction.TypeEnum.SPEND,
-      contact: contact,
-      bankAccount: account,
-      date: '2019-09-19T00:00:00',
-      isReconciled: true,
-      lineItems: [],
+      contact: useContact,
+      lineItems: lineItems,
+      bankAccount: useBankAccount,
+      total: 20,
     }
 
-    const newBankTransactions: BankTransactions = new BankTransactions()
-    newBankTransactions.bankTransactions = [newBankTransaction]
-    const bankTransactionCreateResponse = await this.xero.accountingApi.createBankTransactions(
-      this.activeTenantId,
-      newBankTransactions,
-      false,
+    const transactions = <Array<BankTransactions>>(
+      await this.createBankTransaction(newBankTransaction)
     )
 
-    try {
-      const bankTransactionUpdateOrCreateResponse = await this.xero.accountingApi.updateOrCreateBankTransactions(
-        this.activeTenantId,
-        newBankTransactions,
-        false,
-      )
+    console.log(transactions[0])
+  }
 
-      console.log('success')
-    } catch (e) {
-      console.log('error')
-    }
+  createBankAccount(account: Account) {
+    const promise = new Promise(resolve => {
+      this.xero.accountingApi
+        .createAccount(this.activeTenantId, account)
+        .then(response => {
+          resolve(response.body)
+        })
+        .catch(e => {
+          console.log(e.response.request.response.body.Elements[0])
+          resolve(e)
+        })
+    })
 
-    // console.log(bankTransactionUpdateOrCreateResponse)
-
-    // return bankTransactionCreateResponse
+    return promise
   }
 
   async createFakeBankAccount() {
+    const getRandomNumber = function (range: number) {
+      return Math.round(Math.random() * ((range || 100) - 1) + 1)
+    }
+
     const account: Account = {
       name: 'DBS USD Account',
       type: AccountType.BANK,
+      bankAccountNumber: getRandomNumber(209087654321050).toString(),
     }
 
-    try {
-      const created1 = await this.xero.accountingApi.createAccount(
-        this.activeTenantId,
-        account,
-      )
-
-      console.log(created1)
-    } catch (err) {
-      console.error(err)
-    }
+    const response: any = await this.createBankAccount(account)
+    console.log(response)
   }
 
   async createFakeContacts() {
