@@ -20,10 +20,7 @@ import {
 } from 'xero-node'
 import fs from 'fs'
 
-const path = __dirname.replace('/src', '')
-const env = process.env.NODE_ENV
-const tokenPath = `${path}/xero-tokens/${env}-tokenSet.json`
-const apiTokenSet = require(tokenPath)
+const {apiTokenSet, tokenPath} = require('./apiTokenSet')
 
 const promiseErrorResponse = function (error: Error, resolve: Function) {
   console.log(error)
@@ -53,6 +50,19 @@ class XeroAPI {
     })
   }
 
+  async buildConsentUrl() {
+    const url = await this.xero.buildConsentUrl()
+
+    return url
+  }
+
+  async createTokenSet(requestUrl: string) {
+    const tokenSet = await this.xero.apiCallback(requestUrl)
+    this.updateTokenSet(tokenSet)
+
+    return tokenSet
+  }
+
   async signIn() {
     const tokenSet: TokenSet = new TokenSet(apiTokenSet)
 
@@ -60,16 +70,20 @@ class XeroAPI {
     await this.xero.setTokenSet(tokenSet)
     if (tokenSet.expired()) {
       const validTokenSet = await this.xero.refreshToken()
-      let data = JSON.stringify(validTokenSet, null, 2)
-      fs.writeFile(tokenPath, data, err => {
-        if (err) throw err
-        console.log('Data written to file')
-      })
+      this.updateTokenSet(validTokenSet)
     }
 
     await this.xero.updateTenants()
 
     this.activeTenantId = this.xero.tenants[0].tenantId
+  }
+
+  updateTokenSet(validTokenSet: object) {
+    let data = JSON.stringify(validTokenSet, null, 2)
+    fs.writeFile(tokenPath, data, err => {
+      if (err) throw err
+      console.log('Data written to file')
+    })
   }
 
   async getOrganizationInfo() {

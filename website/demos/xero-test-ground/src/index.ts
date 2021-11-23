@@ -7,6 +7,9 @@ import XeroAPI from './XeroAPI'
   await api.signIn()
   await api.getOrganizationInfo()
 
+  const url = await api.buildConsentUrl()
+  console.log(url)
+
   // Step 1: create a fake contact
   // await api.createFakeContacts()
 
