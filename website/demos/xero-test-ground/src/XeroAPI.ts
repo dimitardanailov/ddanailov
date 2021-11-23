@@ -81,7 +81,9 @@ class XeroAPI {
   updateTokenSet(validTokenSet: object) {
     let data = JSON.stringify(validTokenSet, null, 2)
     fs.writeFile(tokenPath, data, err => {
-      if (err) throw err
+      if (err) {
+        throw err
+      }
       console.log('Data written to file')
     })
   }
@@ -97,6 +99,21 @@ class XeroAPI {
     } catch (e) {
       console.log(e)
     }
+  }
+
+  getBankTransaction(transactionId: string) {
+    const promise = new Promise(resolve => {
+      this.xero.accountingApi
+        .getBankTransaction(this.activeTenantId, transactionId)
+        .then(response => {
+          resolve(response.body.bankTransactions)
+        })
+        .catch(error => {
+          promiseErrorResponse(error, resolve)
+        })
+    })
+
+    return promise
   }
 
   getBankTransactions(page = 1) {

@@ -3,39 +3,49 @@ require('dotenv').config()
 import {BankTransaction} from 'xero-node'
 import XeroAPI from './XeroAPI'
 ;(async () => {
-  const api = new XeroAPI()
-  await api.signIn()
-  await api.getOrganizationInfo()
+  const xero = new XeroAPI()
+  await xero.signIn()
+  await xero.getOrganizationInfo()
 
-  const url = await api.buildConsentUrl()
+  const url = await xero.buildConsentUrl()
   console.log(url)
 
   // Step 1: create a fake contact
-  // await api.createFakeContacts()
+  // await xero.createFakeContacts()
 
   // Step 2: create a fake bank account
-  // await api.createFakeBankAccount()
+  // await xero.createFakeBankAccount()
 
   // Step 3: create a fake bank transaction
-  // await api.createFakeBankTransaction()
+  // await xero.createFakeBankTransaction()
 
   // Testing
-  // await api.getContacts()
-  // const accounts = await api.getBankAccounts()
+  // await xero.getContacts()
+  // const accounts = await xero.getBankAccounts()
   // console.log(accounts)
 
+  console.info('getBankTransactions ....')
   const xeroTransactions = <Array<BankTransaction>>(
-    await api.getBankTransactions()
+    await xero.getBankTransactions()
   )
   console.log(xeroTransactions[0])
-  const transactions = api.extractBankTransactions(xeroTransactions)
+  const transactions = xero.extractBankTransactions(xeroTransactions)
   console.log(transactions)
 
+  console.info('getBankTransaction ....')
+  const xeroTransactionId = transactions[0]['id']!
+  const xeroTransaction = <Array<BankTransaction>>(
+    await xero.getBankTransaction(xeroTransactionId)
+  )
+  const transaction = xero.extractBankTransactions(xeroTransaction)
+  console.log(transaction[0])
+  /*
+  const transaction = xero.extractBankTransaction(xeroTransaction) */
   // console.log(transactions)
   // console.log(transactions)
 
-  // await api.createFakeContacts()
-  // await api.createFakeBankAccount()
+  // await xero.createFakeContacts()
+  // await xero.createFakeBankAccount()
 
-  // await api.getBankTransactions()
+  // await xero.getBankTransactions()
 })()
