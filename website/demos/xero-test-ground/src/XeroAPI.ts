@@ -18,8 +18,6 @@ import {
   BankTransaction,
   BankTransactions,
 } from 'xero-node'
-import jwtDecode from 'jwt-decode'
-const fakeBankTrancations = require('./bank-transaction.json')
 import fs from 'fs'
 
 const env = process.env.NODE_ENV
