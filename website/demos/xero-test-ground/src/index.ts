@@ -39,6 +39,7 @@ import XeroAPI from './XeroAPI'
   )
   const transaction = xero.extractBankTransactions(xeroTransaction)
   console.log(transaction[0])
+
   /*
   const transaction = xero.extractBankTransaction(xeroTransaction) */
   // console.log(transactions)

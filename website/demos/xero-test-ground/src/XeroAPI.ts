@@ -3,14 +3,9 @@
  */
 import {TokenSet} from 'openid-client'
 import {
-  XeroAccessToken,
-  XeroIdToken,
   XeroClient,
   Contact,
   LineItem,
-  Invoice,
-  Invoices,
-  Phone,
   Contacts,
   Account,
   AccountType,
@@ -20,7 +15,7 @@ import {
 } from 'xero-node'
 import fs from 'fs'
 
-const {apiTokenSet, tokenPath} = require('./apiTokenSet')
+const {tokenPath} = require('./apiTokenSet')
 
 const promiseErrorResponse = function (error: Error, resolve: Function) {
   console.log(error)
@@ -64,18 +59,26 @@ class XeroAPI {
   }
 
   async signIn() {
-    const tokenSet: TokenSet = new TokenSet(apiTokenSet)
+    try {
+      const jsonString = fs.readFileSync(tokenPath, 'utf8')
+      const apiTokenSet = JSON.parse(jsonString)
 
-    await this.xero.initialize()
-    await this.xero.setTokenSet(tokenSet)
-    if (tokenSet.expired()) {
-      const validTokenSet = await this.xero.refreshToken()
-      this.updateTokenSet(validTokenSet)
+      const tokenSet: TokenSet = new TokenSet(apiTokenSet)
+
+      await this.xero.initialize()
+      await this.xero.setTokenSet(tokenSet)
+      if (tokenSet.expired()) {
+        const validTokenSet = await this.xero.refreshToken()
+        this.updateTokenSet(validTokenSet)
+      }
+
+      await this.xero.updateTenants()
+
+      this.activeTenantId = this.xero.tenants[0].tenantId
+    } catch (err) {
+      console.log(err)
+      return
     }
-
-    await this.xero.updateTenants()
-
-    this.activeTenantId = this.xero.tenants[0].tenantId
   }
 
   updateTokenSet(validTokenSet: object) {
