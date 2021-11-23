@@ -20,8 +20,10 @@ import {
 } from 'xero-node'
 import fs from 'fs'
 
+const path = __dirname.replace('/src', '')
 const env = process.env.NODE_ENV
-const apiTokenSet = require(`../xero-tokens/${env}-tokenSet.json`)
+const tokenPath = `${path}/xero-tokens/${env}-tokenSet.json`
+const apiTokenSet = require(tokenPath)
 
 const promiseErrorResponse = function (error: Error, resolve: Function) {
   console.log(error)
@@ -59,7 +61,7 @@ class XeroAPI {
     if (tokenSet.expired()) {
       const validTokenSet = await this.xero.refreshToken()
       let data = JSON.stringify(validTokenSet, null, 2)
-      fs.writeFile(`./xero-tokens/${env}-tokenSet.json`, data, err => {
+      fs.writeFile(tokenPath, data, err => {
         if (err) throw err
         console.log('Data written to file')
       })
