@@ -1,9 +1,11 @@
 require('dotenv').config()
 
-import {BankTransaction} from 'xero-node'
+import {BankTransaction, BankTransactions} from 'xero-node'
 import XeroAPI from './XeroAPI'
+
+const xero = new XeroAPI()
+
 ;(async () => {
-  const xero = new XeroAPI()
   await xero.signIn()
   await xero.getOrganizationInfo()
 
@@ -38,7 +40,12 @@ import XeroAPI from './XeroAPI'
     await xero.getBankTransaction(xeroTransactionId)
   )
   const transaction = xero.extractBankTransactions(xeroTransaction)
-  console.log(transaction[0])
+  console.log(xeroTransactionId)
+
+  console.log('Update a transaction ....')
+  await updateTransaction(xeroTransactionId)
+
+  // await xero.updateTransaction(transaction['id'], null)
 
   /*
   const transaction = xero.extractBankTransaction(xeroTransaction) */
@@ -50,3 +57,33 @@ import XeroAPI from './XeroAPI'
 
   // await xero.getBankTransactions()
 })()
+
+async function updateTransaction(xeroTransactionId: string) {
+  const xeroTransactions = <Array<BankTransaction>>(
+    await xero.getBankTransaction(xeroTransactionId)
+  )
+  if (xeroTransactions.length === 0) {
+    return
+  }
+
+  const xeroTransaction: BankTransaction = xeroTransactions[0]
+  const bankTransaction: BankTransaction = {
+    type: BankTransaction.TypeEnum.SPEND,
+    lineItems: xeroTransaction.lineItems,
+    bankAccount: xeroTransaction.bankAccount,
+    isReconciled: false,
+  }
+
+  const bankTransactions: BankTransactions = {
+    bankTransactions: [bankTransaction],
+  }
+
+  const response: any = await xero.updateBankTransaction(
+    xeroTransactionId,
+    bankTransactions,
+  )
+
+  console.log('response', response)
+  // console.log('response', Object.keys(response.response.request.body))
+  // console.log(response.request.response.body.Elements[0])
+}

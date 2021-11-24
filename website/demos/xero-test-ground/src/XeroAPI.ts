@@ -17,8 +17,9 @@ import fs from 'fs'
 
 const {tokenPath} = require('./apiTokenSet')
 
-const promiseErrorResponse = function (error: Error, resolve: Function) {
-  console.log(error)
+const promiseErrorResponse = function (error: any, resolve: Function) {
+  const json = JSON.stringify(error.response.body, null, 2)
+  console.log(json)
   resolve([])
 }
 
@@ -279,6 +280,28 @@ class XeroAPI {
     )
 
     console.log(transactions[0])
+  }
+
+  async updateBankTransaction(
+    xeroTransactionId: string,
+    transactions: BankTransactions,
+  ) {
+    const promise = new Promise(resolve => {
+      this.xero.accountingApi
+        .updateBankTransaction(
+          this.activeTenantId,
+          xeroTransactionId,
+          transactions,
+        )
+        .then(response => {
+          resolve(response.body.bankTransactions)
+        })
+        .catch(error => {
+          promiseErrorResponse(error, resolve)
+        })
+    })
+
+    return promise
   }
 
   createBankAccount(account: Account) {
