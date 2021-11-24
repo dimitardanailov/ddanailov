@@ -12,6 +12,8 @@ import {
   Accounts,
   BankTransaction,
   BankTransactions,
+  HistoryRecord,
+  HistoryRecords,
 } from 'xero-node'
 import fs from 'fs'
 
@@ -230,6 +232,51 @@ class XeroAPI {
         .createBankTransactions(this.activeTenantId, newBankTransactions, false)
         .then(response => {
           resolve(response.body.bankTransactions)
+        })
+    })
+
+    return promise
+  }
+
+  createBankTransactionHistoryRecord(
+    bankTransactionID: string,
+    message: string,
+  ) {
+    const historyRecord: HistoryRecord = {
+      details: message,
+    }
+
+    const historyRecords: HistoryRecords = {
+      historyRecords: [historyRecord],
+    }
+
+    const promise = new Promise(resolve => {
+      this.xero.accountingApi
+        .createBankTransactionHistoryRecord(
+          this.activeTenantId,
+          bankTransactionID,
+          historyRecords,
+        )
+        .then(response => {
+          resolve(response.body.historyRecords)
+        })
+        .catch(error => {
+          promiseErrorResponse(error, resolve)
+        })
+    })
+
+    return promise
+  }
+
+  async getBankTransactionHistoryRecords(bankTransactionID: string) {
+    const promise = new Promise(resolve => {
+      this.xero.accountingApi
+        .getBankTransactionsHistory(this.activeTenantId, bankTransactionID)
+        .then(response => {
+          resolve(response.body.historyRecords)
+        })
+        .catch(error => {
+          promiseErrorResponse(error, resolve)
         })
     })
 

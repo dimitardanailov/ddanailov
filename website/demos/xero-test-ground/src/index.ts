@@ -45,6 +45,8 @@ const xero = new XeroAPI()
   console.log('Update a transaction ....')
   await updateTransaction(xeroTransactionId)
 
+  console.log('Add a note ....')
+  // await xero.createBankTransactionHistoryRecord(xeroTransactionId, 'Note')
   // await xero.updateTransaction(transaction['id'], null)
 
   /*
