@@ -1,6 +1,11 @@
 require('dotenv').config()
 
-import {BankTransaction, BankTransactions} from 'xero-node'
+import {
+  BankTransaction,
+  BankTransactions,
+  HistoryRecord,
+  HistoryRecords,
+} from 'xero-node'
 import XeroAPI from './XeroAPI'
 
 const xero = new XeroAPI()
@@ -40,10 +45,14 @@ const xero = new XeroAPI()
     await xero.getBankTransaction(xeroTransactionId)
   )
   const transaction = xero.extractBankTransactions(xeroTransaction)
-  console.log(xeroTransactionId)
-
-  console.log('Update a transaction ....')
-  await updateTransaction(xeroTransactionId)
+  const historyRecords = <Array<HistoryRecord>>(
+    await xero.getBankTransactionHistoryRecords(xeroTransactionId)
+  )
+  console.log(transaction[0], historyRecords)
+  const filteredRecords = xero.filterBankTransactionHistoryRecords(
+    historyRecords,
+  )
+  console.log(filteredRecords)
 
   console.log('Add a note ....')
   // await xero.createBankTransactionHistoryRecord(xeroTransactionId, 'Note')

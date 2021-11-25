@@ -283,6 +283,17 @@ class XeroAPI {
     return promise
   }
 
+  filterBankTransactionHistoryRecords(historyRecords: Array<HistoryRecord>) {
+    const prefix = 'Apollo'
+    const filterFunc = function (record: HistoryRecord) {
+      return record.details?.includes(prefix)
+    }
+
+    const records = historyRecords.filter(filterFunc)
+
+    return records
+  }
+
   async createFakeBankTransaction() {
     const contacts = <Array<Contacts>>await this.getContacts()
     if (!contacts) {
