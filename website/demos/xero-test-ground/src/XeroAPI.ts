@@ -124,9 +124,9 @@ class XeroAPI {
 
   getBankTransactions(page = 1) {
     const promise = new Promise(resolve => {
-      const ifModifiedSince: Date = new Date('2000-01-01')
-      const where = 'Status=="AUTHORISED"'
-      const order = 'Type DESC'
+      const ifModifiedSince: Date = new Date('2021-11-28')
+      const where = 'Status=="AUTHORISED" and Reference != ""'
+      const order = 'Date DESC'
 
       this.xero.accountingApi
         .getBankTransactions(
@@ -223,6 +223,30 @@ class XeroAPI {
     return promise
   }
 
+  async deleteItem(itemID: string) {
+    try {
+      const response = await this.xero.accountingApi.deleteItem(
+        this.activeTenantId,
+        itemID,
+      )
+      console.log(response.body || response.response.statusCode)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  extractBankAccounts(rawBankAccounts: Array<Account>) {
+    const bankAccounts = rawBankAccounts.map(bankAccount => {
+      return {
+        id: bankAccount.accountID,
+        name: bankAccount.name,
+        bankAccountNumber: bankAccount.bankAccountNumber,
+      }
+    })
+
+    return bankAccounts
+  }
+
   createBankTransaction(newBankTransaction: BankTransaction) {
     const newBankTransactions: BankTransactions = new BankTransactions()
     newBankTransactions.bankTransactions = [newBankTransaction]
@@ -294,19 +318,19 @@ class XeroAPI {
     return records
   }
 
-  async createFakeBankTransaction() {
-    const contacts = <Array<Contacts>>await this.getContacts()
+  async createFakeBankTransaction(
+    reference: string,
+    account: Account,
+    isReconciled: boolean,
+    total: number,
+  ) {
+    const contacts = <Array<Contact>>await this.getContacts()
     if (!contacts) {
       console.log('contacts array is empty!')
       return
     }
-    const accounts = <Array<Accounts>>await this.getBankAccounts()
-    if (!accounts) {
-      console.log('accounts array is empty!')
-      return
-    }
     const contact: Contact = <Contact>contacts[0]
-    const account: Account = <Account>accounts[0]
+    console.log(account)
 
     const useContact: Contact = {
       contactID: contact.contactID,
@@ -320,7 +344,7 @@ class XeroAPI {
       {
         description: 'consulting',
         quantity: 1.0,
-        unitAmount: 20.0,
+        unitAmount: total,
         accountCode: '260',
       },
     ]
@@ -330,8 +354,12 @@ class XeroAPI {
       contact: useContact,
       lineItems: lineItems,
       bankAccount: useBankAccount,
-      total: 20,
+      total,
+      isReconciled,
+      reference,
     }
+
+    console.log(newBankTransaction)
 
     const transactions = <Array<BankTransactions>>(
       await this.createBankTransaction(newBankTransaction)
