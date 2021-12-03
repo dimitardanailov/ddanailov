@@ -16,6 +16,7 @@ import {
   HistoryRecords,
 } from 'xero-node'
 import fs from 'fs'
+import {uploadFile, downloadToken} from './aws'
 
 const {tokenPath} = require('./apiTokenSet')
 
@@ -63,16 +64,19 @@ class XeroAPI {
 
   async signIn() {
     try {
-      const jsonString = fs.readFileSync(tokenPath, 'utf8')
-      const apiTokenSet = JSON.parse(jsonString)
+      const awsToken: string = await downloadToken()
+
+      const apiTokenSet = JSON.parse(awsToken)
 
       const tokenSet: TokenSet = new TokenSet(apiTokenSet)
 
       await this.xero.initialize()
       await this.xero.setTokenSet(tokenSet)
+
       if (tokenSet.expired()) {
+        console.log('Create a new token')
         const validTokenSet = await this.xero.refreshToken()
-        this.updateTokenSet(validTokenSet)
+        await this.updateTokenSet(validTokenSet)
       }
 
       await this.xero.updateTenants()
@@ -84,13 +88,22 @@ class XeroAPI {
     }
   }
 
-  updateTokenSet(validTokenSet: object) {
+  async updateTokenSet(validTokenSet: object) {
     let data = JSON.stringify(validTokenSet, null, 2)
     fs.writeFile(tokenPath, data, err => {
       if (err) {
         throw err
       }
+
       console.log('Data written to file')
+
+      uploadFile(tokenPath)
+        .then(() => {
+          console.log('Data written to amazon s3')
+        })
+        .catch(err => {
+          console.error('amazon s3 upload -> error', err)
+        })
     })
   }
 

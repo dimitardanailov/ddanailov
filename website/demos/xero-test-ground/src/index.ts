@@ -15,6 +15,7 @@ const xero = new XeroAPI()
 ;(async () => {
   await xero.signIn()
   await xero.getOrganizationInfo()
+  process.exit(0)
 
   const url = await xero.buildConsentUrl()
   console.log(url)
@@ -47,7 +48,7 @@ const xero = new XeroAPI()
   )
   console.log(xeroTransactions[0])
   const transactions = xero.extractBankTransactions(xeroTransactions)
-  console.log(transactions)
+  console.log(transactions.length)
   process.exit(0)
 
   console.info('getBankTransaction ....')
