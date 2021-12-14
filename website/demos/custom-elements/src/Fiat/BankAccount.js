@@ -31,35 +31,24 @@ TextFieldRow.defaultProps = {
 };
 
 function AddCustomerBankAccount(props) {
-  const {
-    bank_name,
-    iban,
-    account_number,
-    account_name,
-    swift_code,
-    currencies,
-    country,
-    countries,
-  } = props;
+  const [bankName, setBankName] = useState(props.bank_name);
+  const [swiftCode, setSwiftCode] = useState(props.swift_code);
+  const [iban, setIban] = useState(props.iban);
+  const [accountNumber, setAccountNumber] = useState(props.account_number);
+  const [accountName, setAccountName] = useState(props.account_name);
 
-  const [_bankName, setBankName] = useState(bank_name);
-  const [_swiftCode, setSwiftCode] = useState(swift_code);
-  const [_iban, setIban] = useState(iban);
-  const [_accountNumber, setAccountNumber] = useState(account_number);
-  const [_accountName, setAccountName] = useState(account_name);
-
-  const [_country, setCountry] = useState(country);
+  const [country, setCountry] = useState(props.country);
   const updateCountrySelection = event => {
     setCountry(event.target.value);
   };
 
-  const [_currencies, setCurrencies] = useState([]);
+  const [currencies, setCurrencies] = useState([]);
   const updateCurrencyList = event => {
     const isChecked = event.target.checked;
     if (isChecked) {
-      setCurrencies(_currencies => [..._currencies, event.target.value]);
+      setCurrencies(currencies => [...currencies, event.target.value]);
     } else {
-      const tempCurriencies = _currencies.filter(c => {
+      const tempCurriencies = currencies.filter(c => {
         return c !== event.target.value;
       });
       setCurrencies(tempCurriencies);
@@ -71,13 +60,13 @@ function AddCustomerBankAccount(props) {
     event.preventDefault();
     setErrors([]);
     const bankAccount = {
-      bank_name: _bankName,
-      iban: _iban,
-      account_number: _accountNumber,
-      account_name: _accountName,
-      swift_code: _swiftCode,
-      currencies: _currencies,
-      country: _country,
+      bank_name: bankName,
+      iban: iban,
+      account_number: accountNumber,
+      account_name: accountName,
+      swift_code: swiftCode,
+      currencies: currencies,
+      country: country,
     };
 
     if (bankAccount.bank_name.length === 0) {
@@ -119,13 +108,13 @@ function AddCustomerBankAccount(props) {
   };
 
   const formDataIsValid =
-    _bankName.length > 0 &&
-    _iban.length > 0 &&
-    _accountName.length > 0 &&
-    _accountNumber.length > 0 &&
-    _swiftCode.length > 0 &&
-    _country.length > 0 &&
-    _currencies.length > 0;
+    bankName.length > 0 &&
+    iban.length > 0 &&
+    accountName.length > 0 &&
+    accountNumber.length > 0 &&
+    swiftCode.length > 0 &&
+    country.length > 0 &&
+    currencies.length > 0;
 
   return (
     <div className="row">
@@ -135,13 +124,13 @@ function AddCustomerBankAccount(props) {
       <div className="col-12">
         <TextFieldRow
           label="Bank name"
-          value={bank_name}
+          value={bankName}
           setParentValue={setBankName}
         />
 
         <TextFieldRow
           label="Bank SWIFT CODE"
-          value={swift_code}
+          value={swiftCode}
           setParentValue={setSwiftCode}
         />
 
@@ -153,13 +142,13 @@ function AddCustomerBankAccount(props) {
 
         <TextFieldRow
           label="Bank account number"
-          value={account_number}
+          value={accountNumber}
           setParentValue={setAccountNumber}
         />
 
         <TextFieldRow
           label="Bank account name"
-          value={account_name}
+          value={accountName}
           setParentValue={setAccountName}
         />
 
@@ -172,7 +161,7 @@ function AddCustomerBankAccount(props) {
               onChange={updateCountrySelection}
             >
               <option></option>
-              {countries.map(country => (
+              {props.countries.map(country => (
                 <option key={country.key} value={country.key}>
                   {country.name}
                 </option>
@@ -184,7 +173,7 @@ function AddCustomerBankAccount(props) {
         <div className="row mt-1">
           <div className="col-3">Currencies</div>
           <div className="col-9">
-            {currencies.map(currency => (
+            {props.currencies.map(currency => (
               <div key={currency} className="d-inline p-1 form-check">
                 <label className="form-check-label">
                   <input
