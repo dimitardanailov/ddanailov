@@ -7,6 +7,7 @@ import StaticDatePicker from '@mui/lab/StaticDatePicker'
 import DatePicker from '@mui/lab/DatePicker'
 import CalendarPicker from '@mui/lab/CalendarPicker'
 import {styled} from '@mui/material/styles'
+import DesktopDatePicker from '@mui/lab/DesktopDatePicker'
 // import styled from 'styled-components'
 
 const CustomizedSlider = styled(Slider)`
@@ -58,17 +59,61 @@ const CustomCalendarPicker = styled(CalendarPicker)`
 
 export default function CustomDatepicker() {
   const [value, setValue] = React.useState(new Date())
+  const textField = (
+    <TextField
+      value="Read only"
+      InputProps={{
+        readOnly: true,
+      }}
+    />
+  )
+
+  const renderInput = function (params) {
+    const textFieldProps = {
+      ...params,
+      inputProps: {
+        ...params.inputProps,
+        readOnly: true,
+      },
+    }
+    console.log(textFieldProps)
+
+    return <TextField {...textFieldProps} />
+  }
+
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
+      {textField}
+
       <CustomTextField />
       <CustomizedSlider defaultValue={30} />
+
+      <div>
+        <DesktopDatePicker
+          label="Date desktop"
+          value={value}
+          inputFormat="MM/dd/yyyy"
+          onChange={newValue => {
+            setValue(newValue)
+          }}
+          renderInput={renderInput}
+        />
+      </div>
+
       <CustomizedDatepicker
         label="Basic example"
         value={value}
         onChange={newValue => {
           setValue(newValue)
         }}
-        renderInput={params => <TextField {...params} />}
+        renderInput={params => (
+          <TextField
+            InputProps={{
+              readOnly: true,
+            }}
+            {...params}
+          />
+        )}
       />
       <CustomizedCalendar
         displayStaticWrapperAs="desktop"
@@ -77,9 +122,20 @@ export default function CustomDatepicker() {
         onChange={newValue => {
           setValue(newValue)
         }}
-        renderInput={params => <TextField {...params} />}
+        renderInput={params => (
+          <TextField
+            InputProps={{
+              readOnly: true,
+            }}
+            {...params}
+          />
+        )}
       />
-      <CustomCalendarPicker />
+      <CustomCalendarPicker
+        onChange={newValue => {
+          setValue(newValue)
+        }}
+      />
     </LocalizationProvider>
   )
 }
