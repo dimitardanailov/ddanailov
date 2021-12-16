@@ -76,7 +76,6 @@ export default function CustomDatepicker() {
         readOnly: true,
       },
     }
-    console.log(textFieldProps)
 
     return <TextField {...textFieldProps} />
   }
