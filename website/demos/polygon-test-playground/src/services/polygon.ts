@@ -1,6 +1,6 @@
 import config from '../configurations/config'
 
-import {ethers} from 'ethers'
+import {ethers, logger} from 'ethers'
 import BigNumber from 'bignumber.js'
 
 import {TransactionResponse} from '@ethersproject/abstract-provider'
@@ -34,4 +34,18 @@ export async function getTransactions(walletAddress: string) {
 export async function getGasFee() {
   const gasFee = await rpcProvider.getGasPrice()
   return new BigNumber(gasFee.toNumber())
+}
+
+export async function getTransferValue(transactionHash: string) {
+  const chainTransaction = await getTransaction(transactionHash)
+
+  if (!chainTransaction) {
+    logger.info('No transaction found.')
+
+    return false
+  }
+  logger.info('TX RECEIPT')
+  logger.info(chainTransaction)
+
+  return chainTransaction.value
 }

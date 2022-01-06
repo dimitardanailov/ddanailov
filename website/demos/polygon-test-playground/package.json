@@ -6,7 +6,8 @@
   "scripts": {
     "get-balance": "ts-node src/getBalance.ts",
     "get-transaction": "ts-node src/getTransaction.ts",
-    "get-gas-fee": "ts-node src/getGasFee.ts"
+    "get-gas-fee": "ts-node src/getGasFee.ts",
+    "get-transaction-value": "ts-node src/getTransactionValue.ts"
   },
   "dependencies": {
     "@ethereumjs/common": "^2.6.0",
