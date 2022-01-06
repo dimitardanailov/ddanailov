@@ -4,9 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "get-balance": "ts-node src/getBalance.ts"
+    "get-balance": "ts-node src/getBalance.ts",
+    "get-transaction": "ts-node src/getTransaction.ts"
   },
   "dependencies": {
+    "@ethereumjs/common": "^2.6.0",
+    "@ethereumjs/tx": "^3.4.0",
     "ethers": "^5.5.2"
   },
   "devDependencies": {

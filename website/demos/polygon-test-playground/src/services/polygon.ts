@@ -2,6 +2,8 @@ import config from '../configurations/config'
 
 import {ethers} from 'ethers'
 
+import {TransactionResponse} from '@ethersproject/abstract-provider'
+
 const configName = 'testnet'
 const networkConfig = config.network[configName]
 
@@ -10,10 +12,20 @@ const rpcProvider = new ethers.providers.JsonRpcProvider(
   networkConfig.chainId,
 )
 
-async function getBalance(address: string) {
+export async function getBalance(address: string) {
   const balance = await rpcProvider.getBalance(address)
 
   return balance.toString()
 }
 
-export {getBalance}
+export async function getTransaction(
+  txHash: string,
+): Promise<TransactionResponse> {
+  const transaction = await rpcProvider.getTransaction(txHash)
+
+  return transaction
+}
+
+export async function getTransactions(walletAddress: string) {
+  return []
+}
