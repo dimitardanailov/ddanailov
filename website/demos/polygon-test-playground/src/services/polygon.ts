@@ -5,6 +5,8 @@ import BigNumber from 'bignumber.js'
 
 import {TransactionResponse} from '@ethersproject/abstract-provider'
 
+import TransactionStatusCheck from '../interfaces/TransactionStatusCheck'
+
 const configName = 'testnet'
 const networkConfig = config.network[configName]
 
@@ -48,4 +50,19 @@ export async function getTransferValue(transactionHash: string) {
   logger.info(chainTransaction)
 
   return chainTransaction.value
+}
+
+export async function monitorTransaction(transaction: TransactionStatusCheck) {
+  const chainTransaction = await getTransaction(transaction.transaction_hash)
+
+  if (!chainTransaction) {
+    logger.info('No transaction found.')
+
+    return false
+  }
+
+  logger.info('TX RECEIPT')
+  logger.info(chainTransaction)
+
+  return chainTransaction.confirmations > 15
 }
