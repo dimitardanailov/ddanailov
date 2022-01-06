@@ -1,6 +1,7 @@
 import config from '../configurations/config'
 
 import {ethers} from 'ethers'
+import BigNumber from 'bignumber.js'
 
 import {TransactionResponse} from '@ethersproject/abstract-provider'
 
@@ -28,4 +29,9 @@ export async function getTransaction(
 
 export async function getTransactions(walletAddress: string) {
   return []
+}
+
+export async function getGasFee() {
+  const gasFee = await rpcProvider.getGasPrice()
+  return new BigNumber(gasFee.toNumber())
 }

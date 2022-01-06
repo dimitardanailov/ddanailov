@@ -5,11 +5,13 @@
   "license": "MIT",
   "scripts": {
     "get-balance": "ts-node src/getBalance.ts",
-    "get-transaction": "ts-node src/getTransaction.ts"
+    "get-transaction": "ts-node src/getTransaction.ts",
+    "get-gas-fee": "ts-node src/getGasFee.ts"
   },
   "dependencies": {
     "@ethereumjs/common": "^2.6.0",
     "@ethereumjs/tx": "^3.4.0",
+    "bignumber.js": "^9.0.2",
     "ethers": "^5.5.2"
   },
   "devDependencies": {

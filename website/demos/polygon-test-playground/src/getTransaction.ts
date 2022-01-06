@@ -8,5 +8,5 @@ import {getTransaction} from './services/polygon'
   const txHash2 =
     '0x2a8b72df663d533fde254621e2949f7915a46f3a74766db574dda212c80c7a3b'
   const transaction2 = await getTransaction(txHash2)
-  // console.log('result', transaction2)
+  console.log('result', transaction2)
 })()
