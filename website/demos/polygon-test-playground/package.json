@@ -8,13 +8,19 @@
     "get-transaction": "ts-node src/getTransaction.ts",
     "get-gas-fee": "ts-node src/getGasFee.ts",
     "get-transaction-value": "ts-node src/getTransactionValue.ts",
-    "monitor-transaction": "ts-node src/monitorTransaction.ts"
+    "monitor-transaction": "ts-node src/monitorTransaction.ts",
+    "binance-transaction": "ts-node src/services/binance-transaction.ts",
+    "polygon-transaction": "ts-node src/services/polygon-transaction.ts",
+    "transaction": "ts-node src/transaction.ts"
   },
   "dependencies": {
     "@ethereumjs/common": "^2.6.0",
     "@ethereumjs/tx": "^3.4.0",
     "bignumber.js": "^9.0.2",
-    "ethers": "^5.5.2"
+    "bn.js": "^5.2.0",
+    "elliptic": "^6.5.4",
+    "ethers": "^5.5.2",
+    "js-sha256": "^0.9.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",

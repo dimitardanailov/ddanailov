@@ -2,10 +2,12 @@ import config from '../configurations/config'
 
 import {ethers, logger} from 'ethers'
 import BigNumber from 'bignumber.js'
+import BN from 'bn.js'
 
 import {TransactionResponse} from '@ethersproject/abstract-provider'
 
 import TransactionStatusCheck from '../interfaces/TransactionStatusCheck'
+import TransactionHelper from './TransactionHelper'
 
 const configName = 'testnet'
 const networkConfig = config.network[configName]
@@ -65,4 +67,37 @@ export async function monitorTransaction(transaction: TransactionStatusCheck) {
   logger.info(chainTransaction)
 
   return chainTransaction.confirmations > 15
+}
+
+export async function transfer(
+  senderPublicKey: string,
+  toAddress: string,
+  amountWei: string,
+  tokenCategory: string,
+  transactionId: string,
+  keystoreId: string,
+  signRequest: any,
+  isColdWalletRequest?: boolean,
+) {
+  const txHelper = new TransactionHelper()
+  const fromAddress = ethers.utils.computeAddress(
+    Buffer.from(senderPublicKey, 'hex'),
+  )
+  const gasFee = await txHelper.getRecommendedFee()
+  const gasLimit = await txHelper.estimateGas(
+    fromAddress,
+    toAddress,
+    amountWei,
+    '', // Empty data for a transfer txn
+  )
+  const rawTransaction = await txHelper.buildRawTransaction(
+    fromAddress,
+    toAddress,
+    new BN(gasLimit.toNumber()),
+    new BN(gasFee.toNumber()),
+    amountWei,
+    '', // Empty data for a transfer txn
+  )
+
+  console.log('gasLimit', gasLimit, rawTransaction)
 }
