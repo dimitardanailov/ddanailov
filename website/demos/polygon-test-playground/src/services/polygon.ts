@@ -12,6 +12,9 @@ import TransactionHelper from './TransactionHelper'
 const configName = 'testnet'
 const networkConfig = config.network[configName]
 
+import {} from 'ethers'
+import CryptoScanClient from './CryptoScanClient'
+
 const rpcProvider = new ethers.providers.JsonRpcProvider(
   networkConfig.httpProvider,
   networkConfig.chainId,
@@ -32,7 +35,13 @@ export async function getTransaction(
 }
 
 export async function getTransactions(walletAddress: string) {
-  return []
+  const apiKey = 'KQ8ZW1X1Y5U3E8K92RF7GZU8CXZ8K2VTAW'
+  const client = new CryptoScanClient(networkConfig.apiURL)
+  const transactions = await client.getDepositTransactions(
+    walletAddress,
+    apiKey,
+  )
+  return transactions
 }
 
 export async function getGasFee() {

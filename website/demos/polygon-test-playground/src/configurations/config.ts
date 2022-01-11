@@ -8,7 +8,7 @@ const config = {
       httpProvider: 'https://rpc-mumbai.maticvigil.com',
       chainId: 80001,
       blocksscanUrl: 'https://mumbai.polygonscan.com',
-      apiURL: '',
+      apiURL: 'https://mumbai.polygonscan.com',
     },
     mainnet: {
       httpProvider: '',
