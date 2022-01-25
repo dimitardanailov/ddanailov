@@ -45,6 +45,8 @@ export async function getTransaction(txHash: string) {
   } catch (err) {
     console.error('Algorand.getTransaction', err)
   }
+
+  return undefined
 }
 
 export async function getTransactions(address: string) {
@@ -78,8 +80,24 @@ export async function getTransactions(address: string) {
   }
 }
 
+/**
+ * @resorce https://algorand.github.io/js-algorand-sdk/modules.html#ALGORAND_MIN_TX_FEE
+ * @returns
+ */
 export async function getGasFee() {
   return new BigNumber(ALGORAND_MIN_TX_FEE)
+}
+
+export async function getTransferValue(transactionHash: string) {
+  const chainTransaction = await getTransaction(transactionHash)
+  const isValid =
+    typeof chainTransaction === 'object' && 'transaction' in chainTransaction
+
+  if (isValid) {
+    return chainTransaction['transaction']['payment-transaction']['amount']
+  }
+
+  return undefined
 }
 
 /**
