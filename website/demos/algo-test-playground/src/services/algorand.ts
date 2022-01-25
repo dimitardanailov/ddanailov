@@ -1,6 +1,7 @@
 require('dotenv').config()
 
-import algosdk from 'algosdk'
+import algosdk, {ALGORAND_MIN_TX_FEE} from 'algosdk'
+import BigNumber from 'bignumber.js'
 
 declare var TextEncoder: any
 declare var TextDecoder: any
@@ -75,6 +76,10 @@ export async function getTransactions(address: string) {
   } catch (err) {
     console.error('Algorand.getTransactions', err)
   }
+}
+
+export async function getGasFee() {
+  return new BigNumber(ALGORAND_MIN_TX_FEE)
 }
 
 /**
