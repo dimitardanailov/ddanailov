@@ -12,10 +12,12 @@ const token = {
   'x-api-key': API_KEY,
 }
 
-const ALGO_SERVER = process.env.ALGO_SERVER || ''
-let client = new algosdk.Algodv2(token, ALGO_SERVER, port)
+const ALGO_CLIENT_SERVER = process.env.ALGO_CLIENT_SERVER || ''
+const ALGO_INDEXER_SERVER = process.env.ALGO_INDEXER_SERVER || ''
 
 export async function getBalance(address: string): Promise<string> {
+  const client = new algosdk.Algodv2(token, ALGO_INDEXER_SERVER, port)
+
   try {
     const accountInfo = await client.accountInformation(address).do()
     if ('account' in accountInfo) {
@@ -29,7 +31,25 @@ export async function getBalance(address: string): Promise<string> {
 }
 
 /**
- * @Resource: https://github.com/PureStake/api-examples/blob/master/javascript-examples/algod_submit_tx.js
+ * @resource
+ * https://algorand.github.io/js-algorand-sdk/classes/Indexer.html#lookupTransactionByID
+ * @param {string} txHash
+ */
+export async function getTransaction(txHash: string) {
+  const indexerClient = new algosdk.Indexer(token, ALGO_INDEXER_SERVER, port)
+  try {
+    const transaction = await indexerClient.lookupTransactionByID(txHash).do()
+
+    return transaction
+  } catch (err) {
+    console.error('Algorand.getTransaction', err)
+  }
+}
+
+/**
+ * @resource
+ * https://github.com/PureStake/api-examples/blob/master/javascript-examples/algod_submit_tx.js
+ * https://developer.algorand.org/docs/sdks/javascript/#build-first-transaction
  */
 export async function pureTransaction() {
   const regExp = new RegExp(/\,/, 'g')
@@ -41,10 +61,11 @@ export async function pureTransaction() {
   const recoveredAccount = algosdk.mnemonicToSecretKey(mnemonic)
 
   // Construct the transaction
+  const client = new algosdk.Algodv2(token, ALGO_CLIENT_SERVER, port)
   let params = await client.getTransactionParams().do()
   // comment out the next two lines to use suggested fee
-  params.fee = 1000
-  params.flatFee = true
+  // params.fee = 1000
+  // params.flatFee = true
 
   const receiver = 'REYCTDA3AWAFPXTN5IEFFCA5LGCJN74RPKSJCFU3GTMZYXX2AWYJIZRGJY'
   const enc = new TextEncoder()
