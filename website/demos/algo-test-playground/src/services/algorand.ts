@@ -46,6 +46,37 @@ export async function getTransaction(txHash: string) {
   }
 }
 
+export async function getTransactions(address: string) {
+  const indexerClient = new algosdk.Indexer(token, ALGO_INDEXER_SERVER, port)
+  try {
+    const response = await indexerClient.lookupAccountTransactions(address).do()
+
+    if ('transactions' in response) {
+      let incomingTxns = response.transactions
+        .filter((txn: any) => {
+          const isValidTransaction =
+            txn.sender.toLowerCase() !== address.toLowerCase() &&
+            txn['confirmed-round'] !== null &&
+            txn['confirmed-round'] > 0
+
+          return isValidTransaction
+        })
+        .map((txn: any) => {
+          return {
+            hash: txn.id,
+            source: txn.sender,
+            destination: address,
+            value: Number(txn['payment-transaction'].amount),
+          }
+        })
+
+      return incomingTxns
+    }
+  } catch (err) {
+    console.error('Algorand.getTransactions', err)
+  }
+}
+
 /**
  * @resource
  * https://github.com/PureStake/api-examples/blob/master/javascript-examples/algod_submit_tx.js
