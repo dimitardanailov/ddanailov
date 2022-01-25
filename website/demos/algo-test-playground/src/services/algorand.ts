@@ -3,6 +3,8 @@ require('dotenv').config()
 import algosdk, {ALGORAND_MIN_TX_FEE} from 'algosdk'
 import BigNumber from 'bignumber.js'
 
+import TransactionStatusCheck from '../interfaces/TransactionStatusCheck'
+
 declare var TextEncoder: any
 declare var TextDecoder: any
 
@@ -98,6 +100,27 @@ export async function getTransferValue(transactionHash: string) {
   }
 
   return undefined
+}
+
+export async function monitorTransaction(address: TransactionStatusCheck) {
+  const transactionHash = address['transaction_hash']
+
+  const client = new algosdk.Algodv2(token, ALGO_CLIENT_SERVER, port)
+  const pendingInfo = await client
+    .pendingTransactionInformation(transactionHash)
+    .do()
+
+  if (pendingInfo !== undefined) {
+    if (
+      pendingInfo['confirmed-round'] !== null &&
+      pendingInfo['confirmed-round'] > 0
+    ) {
+      //Got the completed Transaction
+      return true
+    }
+  }
+
+  return false
 }
 
 /**
