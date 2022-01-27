@@ -12,7 +12,8 @@
     "get-transfer-fee": "ts-node src/getTransferFee.ts",
     "monitor-transaction": "ts-node src/monitorTransaction.ts",
     "create-address": "ts-node src/requestAddressCreation.ts",
-    "pure-transaction": "ts-node src/pureTransaction.ts"
+    "pure-transaction": "ts-node src/pureTransaction.ts",
+    "transfer": "ts-node src/transfer.ts"
   },
   "dependencies": {
     "algosdk": "^1.13.0",

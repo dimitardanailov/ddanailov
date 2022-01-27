@@ -135,6 +135,42 @@ export async function getTransferFee(transactionHash: string): Promise<string> {
   return '0'
 }
 
+export async function transfer(
+  mnemonic: string,
+  toAddress: string,
+  amount: string,
+  tokenCategory: string,
+  transactionId: string,
+  keystoreId: string,
+  signRequest: any,
+  isColdWalletRequest?: boolean,
+) {
+  const recoveredAccount = algosdk.mnemonicToSecretKey(mnemonic)
+
+  // Construct the transaction
+  const client = new algosdk.Algodv2(token, ALGO_CLIENT_SERVER, port)
+  const params = await client.getTransactionParams().do()
+
+  const bigNumberAmount = new BigNumber(amount)
+
+  const enc = new TextEncoder()
+  const note = enc.encode('Algorand transaction')
+  let sender = recoveredAccount.addr
+  let txn = algosdk.makePaymentTxnWithSuggestedParams(
+    sender,
+    toAddress,
+    bigNumberAmount.toNumber(),
+    undefined,
+    note,
+    params,
+  )
+
+  let signedTxn = txn.signTxn(recoveredAccount.sk)
+
+  // Submit the transaction
+  await client.sendRawTransaction(signedTxn).do()
+}
+
 /**
  * @resource
  * https://github.com/PureStake/api-examples/blob/master/javascript-examples/algod_submit_tx.js
