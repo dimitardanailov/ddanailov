@@ -191,8 +191,8 @@ const unsignedTxn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
 
 - How do we get Testnet tokens?
 
-- https://bank.testnet.algorand.network/
-- https://dispenser.testnet.aws.algodev.network/
+  - https://bank.testnet.algorand.network/
+  - https://dispenser.testnet.aws.algodev.network/
 
 - Can it create an issuance?
 - Can it mint new tokens?
