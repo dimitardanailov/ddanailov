@@ -9,6 +9,7 @@
     "get-transactions": "ts-node src/getTransactions.ts",
     "get-gas-fee": "ts-node src/getGasFee.ts",
     "get-transaction-value": "ts-node src/getTransactionValue.ts",
+    "get-transfer-fee": "ts-node src/getTransferFee.ts",
     "monitor-transaction": "ts-node src/monitorTransaction.ts",
     "create-address": "ts-node src/requestAddressCreation.ts",
     "pure-transaction": "ts-node src/pureTransaction.ts"

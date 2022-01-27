@@ -123,6 +123,18 @@ export async function monitorTransaction(address: TransactionStatusCheck) {
   return false
 }
 
+export async function getTransferFee(transactionHash: string): Promise<string> {
+  const chainTransaction = await getTransaction(transactionHash)
+  const isValid =
+    typeof chainTransaction === 'object' && 'transaction' in chainTransaction
+
+  if (isValid) {
+    return chainTransaction['transaction']['fee']
+  }
+
+  return '0'
+}
+
 /**
  * @resource
  * https://github.com/PureStake/api-examples/blob/master/javascript-examples/algod_submit_tx.js
