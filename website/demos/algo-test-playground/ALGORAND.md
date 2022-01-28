@@ -26,7 +26,7 @@ by BEP-20.
   - https://betanet.algoexplorer.io/
   - https://goalseeker.purestake.io/algorand/betanet
 
-* Are there APIs for querying balance?
+### Are there APIs for querying balance?
 
 Code snippet:
 
