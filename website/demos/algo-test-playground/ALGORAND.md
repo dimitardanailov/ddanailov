@@ -47,7 +47,7 @@ async function getBalance(address: string): Promise<string> {
 }
 ```
 
-- Are there APIs for submitting transactions?
+### Are there APIs for submitting transactions?
 
 Code snippet
 
@@ -174,7 +174,7 @@ const waitForConfirmation = async function (
 }
 ```
 
-- Are there APIs for querying expected transaction fees?
+### Are there APIs for querying expected transaction fees?
 
 Code snippet:
 
@@ -189,15 +189,34 @@ const unsignedTxn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
 })
 ```
 
-- How do we get Testnet tokens?
+### How do we get Testnet tokens?
 
-  - https://bank.testnet.algorand.network/
-  - https://dispenser.testnet.aws.algodev.network/
+Faucet networks are:
 
-- Can it create an issuance?
-- Can it mint new tokens?
-- Can it burn tokens?(redemption)
-- Can it lock tokens?
-- Can it unlock tokens?
-- Can it burn another party’s tokens?(recovery)
-- Can it record data(poll)
+- https://bank.testnet.algorand.network/
+- https://dispenser.testnet.aws.algodev.network/
+
+### Can it create an issuance?
+
+Yes
+
+### Can it mint new tokens?
+
+Yes
+
+### Can it burn tokens?(redemption)
+
+Yes
+
+### Can it lock and unlock tokens?
+
+> ALGO itself can never be locked - just optionally on assets people create
+> (clawback / freeze are configurable options at asset creation time).
+
+### Can it burn another party’s tokens?(recovery)
+
+Yes
+
+### Can it record data(poll)
+
+Yes
