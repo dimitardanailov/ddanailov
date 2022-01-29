@@ -38,7 +38,7 @@ function Roles() {
           </TargetBlankLink>
         </li>
         <li>
-          Former software architect in{' '}
+          Former Software architect in{' '}
           <TargetBlankLink
             title="Software architect in MentorMate"
             href="https://mentormate.com/"
@@ -56,13 +56,14 @@ function Roles() {
           </TargetBlankLink>
         </li>
         <li>
-          Passion to work with <Keyword word="React" />,{' '}
+          Passion to work with <Keyword word="Web3" />,{' '}
+          <Keyword word="Blockchain" />, <Keyword word="React" />,{' '}
           <Keyword word="Nextjs" />, <Keyword word="Nodejs" />,{' '}
           <Keyword word="Go" />, Amazon Web Services, Azure, Google Cloud
         </li>
         <li>
           Experience with Remote teams: (US, UK, Australia, Indonesia,
-          Singapore)
+          Singapore, Vietnam, India, Ukraine, Germany, Rusia)
         </li>
         <li>Encourage clear code, tests, and good documentation.</li>
       </ul>
