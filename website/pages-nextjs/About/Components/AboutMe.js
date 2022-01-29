@@ -12,10 +12,13 @@ function AboutMe() {
       <p>
         I'm a remote software engineer. My expertise includes various different
         areas: front - end development, web peformance, backend, mobile, cloud
-        security and DevOps. In the past three year my main focus is software
-        consulting.
+        security, DevOps, Blockchain. In the past four year my main focus is
+        software consulting. Technology stack:
       </p>
       <ul>
+        <li>
+          <Keyword word="Web3" /> and <Keyword word="Blockchain" />
+        </li>
         <li>
           Fine with both front-end (<Keyword word="React.js" /> and{' '}
           <Keyword word="Nextjs" />, Native web components, State machines,
