@@ -87,6 +87,7 @@ function Info() {
     'Software Archictures',
     'Clean Code',
     'React',
+    'Web3 and Blockchain',
     'State machines',
     'Redux',
     'Golang',
