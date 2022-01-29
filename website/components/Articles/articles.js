@@ -1,5 +1,10 @@
 const articles = [
   {
+    title: 'Create an Account on Algorand with Javascripts (Web3)',
+    href:
+      'https://medium.com/@d_danailov/create-an-account-on-algorand-with-javascripts-web3-1f94464df5e2',
+  },
+  {
     title:
       'My unexpected journey: How we migrated an enterprise react application from 15.6 to 16.10',
     href:
