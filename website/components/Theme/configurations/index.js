@@ -1,4 +1,4 @@
-import {createMuiTheme} from '@material-ui/core/styles'
+import {createTheme} from '@material-ui/core/styles'
 
 import {
   DEFAULT_STATE,
@@ -12,7 +12,7 @@ function nightShiftModeThemeSetup(nightShiftMode) {
   const palletState =
     nightShiftMode === DEFAULT_STATE ? DEFAULT_STATE : DARK_STATE
 
-  return createMuiTheme({
+  return createTheme({
     palette: {
       type: palletState,
       primary: {
