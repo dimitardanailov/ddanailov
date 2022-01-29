@@ -147,7 +147,6 @@ export async function transfer(
 ) {
   const recoveredAccount = algosdk.mnemonicToSecretKey(mnemonic)
 
-  // Construct the transaction
   const client = new algosdk.Algodv2(token, ALGO_CLIENT_SERVER, port)
   const params = await client.getTransactionParams().do()
 
@@ -166,6 +165,47 @@ export async function transfer(
   )
 
   let signedTxn = txn.signTxn(recoveredAccount.sk)
+
+  // Submit the transaction
+  await client.sendRawTransaction(signedTxn).do()
+}
+
+export async function pureSweepWallet() {
+  const regExp = new RegExp(/\,/, 'g')
+  const mnemonic = 'final, equal, social, attack, chimney, spend, swear, civil, sad, jungle, dumb, assault, metal, feature, monitor, marriage, fly, depart, ill, shed, burger, census, swift, absent, garlic'.replace(
+    regExp,
+    '',
+  )
+
+  const recoveredAccount = algosdk.mnemonicToSecretKey(mnemonic)
+
+  // Construct the transaction
+  const client = new algosdk.Algodv2(token, ALGO_CLIENT_SERVER, port)
+  let params = await client.getTransactionParams().do()
+  // comment out the next two lines to use suggested fee
+  // params.fee = 1000
+  // params.flatFee = true
+
+  const receiver = 'REYCTDA3AWAFPXTN5IEFFCA5LGCJN74RPKSJCFU3GTMZYXX2AWYJIZRGJY'
+  const closeRemainderTo =
+    '5PMVDZV6KK2DTGVETMRVIFJ3XB6IHDN6PNZO5G25HAM7ZK3UHZNF53VASE'
+
+  const enc = new TextEncoder()
+  const note = enc.encode('Algorand transaction')
+  let amount = 1000000 // equals 1 ALGO
+  let sender = recoveredAccount.addr
+  let txn = algosdk.makePaymentTxnWithSuggestedParams(
+    sender,
+    receiver,
+    amount,
+    closeRemainderTo,
+    note,
+    params,
+  )
+
+  let signedTxn = txn.signTxn(recoveredAccount.sk)
+  let txId = txn.txID().toString()
+  console.log('Signed transaction with txID: %s', txId)
 
   // Submit the transaction
   await client.sendRawTransaction(signedTxn).do()
