@@ -25,7 +25,7 @@ NextJsLink.defaultProps = {
 NextJsLink.propTypes = {
   href: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  text: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
   color: PropTypes.string,
 }
 
