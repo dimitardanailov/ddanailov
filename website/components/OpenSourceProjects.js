@@ -9,7 +9,11 @@ function SponsorshipInfo() {
     <p>
       If you like me or my open source projects:
       <Space />
-      <NextJsLink color={theme.secondary.light} href="/thanks">
+      <NextJsLink
+        color={theme.secondary.light}
+        href="/thanks"
+        title="I love open source. The experiences that I've had both contributing and mentoring people in open source have been among the best experiences of my life."
+      >
         You can sponsorship my work.
       </NextJsLink>
     </p>
@@ -22,8 +26,25 @@ function OpenSourceProjects() {
       <h3>Talk is cheap. Show me the code: 🦉</h3>
       <ul>
         <li>
+          Blockchain Playgrounds:{' '}
+          <TargetBlankLink
+            href="https://github.com/dimitardanailov/ddanailov/tree/master/website/demos/algo-test-playground"
+            title="Algorand and Blockchain"
+          >
+            Algorand
+          </TargetBlankLink>
+          , {', '}
+          <TargetBlankLink
+            href="https://github.com/dimitardanailov/ddanailov/tree/master/website/demos/polygon-test-playground"
+            title="Algorand and Blockchain"
+          >
+            Polygon (Matic network)
+          </TargetBlankLink>
+        </li>
+        <li>
           Mix between <Keyword word="React" />
-          {', '}Xstate and D3js. The most complicated component is:{' '}
+          {', '}Xstate and D3js. The most complicated component in the
+          repository is:{' '}
           <a
             href="https://github.com/dimitardanailov/react-components/blob/master/packages/d3-tree-collapsible/app/components/D3TreeRadioButton.js"
             title="React playground"
