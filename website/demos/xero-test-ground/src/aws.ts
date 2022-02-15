@@ -4,7 +4,7 @@
 import S3 from 'aws-sdk/clients/s3'
 import fs from 'fs'
 
-const bucketName = 'xero-development'
+const bucketName = 'xero-config.propine.com'
 const env = process.env.NODE_ENV || ''
 const fileName = env + '-token.json'
 const region = 'ap-southeast-1'
