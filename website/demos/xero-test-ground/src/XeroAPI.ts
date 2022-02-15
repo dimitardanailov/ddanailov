@@ -160,6 +160,33 @@ class XeroAPI {
     return promise
   }
 
+  getBankTransactionsByReferenceCode(referenceCode: string, page = 1) {
+    const promise = new Promise(resolve => {
+      const ifModifiedSince: Date = new Date('2021-11-28')
+      const where = `Status=="AUTHORISED" and Reference =="${referenceCode}"`
+      const order = 'Date DESC'
+
+      console.log('where', where)
+
+      this.xero.accountingApi
+        .getBankTransactions(
+          this.activeTenantId,
+          ifModifiedSince,
+          where,
+          order,
+          page,
+        )
+        .then(response => {
+          resolve(response.body.bankTransactions)
+        })
+        .catch(error => {
+          promiseErrorResponse(error, resolve)
+        })
+    })
+
+    return promise
+  }
+
   extractBankTransactions(xeroTransactions: Array<BankTransaction>) {
     const extractBankTransaction = this.extractBankTransaction
     const transactions = xeroTransactions.map(function (
@@ -419,19 +446,26 @@ class XeroAPI {
     return promise
   }
 
-  async createFakeBankAccount() {
-    const getRandomNumber = function (range: number) {
-      return Math.round(Math.random() * ((range || 100) - 1) + 1)
-    }
-
+  async createFakeBankAccount(
+    bankAccountNumber: string,
+    name = 'DBS USD Account',
+  ) {
     const account: Account = {
-      name: 'DBS USD Account',
+      name: name,
       type: AccountType.BANK,
-      bankAccountNumber: getRandomNumber(209087654321050).toString(),
+      bankAccountNumber: bankAccountNumber,
     }
 
     const response: any = await this.createBankAccount(account)
     console.log(response)
+  }
+
+  generateFakeBankAccountNumber() {
+    const getRandomNumber = function (range: number) {
+      return Math.round(Math.random() * ((range || 100) - 1) + 1)
+    }
+
+    return getRandomNumber(209087654321050).toString()
   }
 
   async createFakeContacts() {
