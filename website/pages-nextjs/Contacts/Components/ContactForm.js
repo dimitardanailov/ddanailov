@@ -34,8 +34,9 @@ function ContactForm() {
 
     sendStateRequest('LOADING')
     sendSubmitStateRequest('TOGGLE')
-    console.log('name', name)
-    console.log('subject', subject)
+
+    const body = `${name} wants to hire you!`
+    window.location.href = `mailto:dimityr.danailov@gmail.com?subject=${subject}&body=${body}`
   }
 
   const inputFieldStyle = css`
