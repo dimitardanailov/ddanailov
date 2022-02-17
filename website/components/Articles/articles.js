@@ -1,5 +1,15 @@
 const articles = [
   {
+    title: 'Payment Transactions with algorand and web3',
+    href:
+      'https://blog.cryptostars.is/transactions-with-algorand-sdk-d4cb93e8c2e',
+  },
+  {
+    title: 'Rails: How to debug my variable',
+    href:
+      'https://medium.com/@d_danailov/rails-how-to-debug-my-variable-83d9cb3107cb',
+  },
+  {
     title: 'Create an Account on Algorand with Javascripts (Web3)',
     href:
       'https://medium.com/@d_danailov/create-an-account-on-algorand-with-javascripts-web3-1f94464df5e2',
