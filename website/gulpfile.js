@@ -84,6 +84,10 @@ async function copySEOImages() {
   return src(`${SEO_IMAGES_DIR}/**.*`).pipe(dest(PUBLIC_DIR))
 }
 
+async function copyCryptoIcons() {
+  return src(`${STATIC_DIR}/crypto/**.*`).pipe(dest(PUBLIC_DIR))
+}
+
 async function copyServiceWorkerStaticFiles() {
   const destination = `${PUBLIC_DIR}/_next/static/`
   return src(`${STATIC_DIR}/**.*`).pipe(dest(destination))
@@ -101,6 +105,7 @@ exports.default = series(
   copyStaticFiles,
   copyIcons,
   copySEOImages,
+  copyCryptoIcons,
   copyPages,
   copyPagesChunks,
 )
