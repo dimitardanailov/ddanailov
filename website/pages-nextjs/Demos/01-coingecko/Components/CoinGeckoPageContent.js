@@ -48,6 +48,11 @@ const TableHeaderCell = styled.div`
 const TableRowCell = styled(TableHeaderCell)``
 
 const CoinCell = styled(TableHeaderCell)`
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   min-width: 120px;
   width: 8%;
 `
@@ -55,6 +60,13 @@ const CoinCell = styled(TableHeaderCell)`
 const PriceUSDCell = styled(TableHeaderCell)`
   min-width: 90px;
   width: 6.5%;
+`
+
+const CryptoIcon = styled.img`
+  width: 18px;
+  height: 18px;
+
+  margin-right: 0.5rem;
 `
 
 function renderRow({data, index}) {
@@ -80,10 +92,15 @@ function renderRow({data, index}) {
   const oldPriceBTC = calcOldPrice(item.btc, item['btc_24h_change'])
   const oldPriceETH = calcOldPrice(item.eth, item['eth_24h_change'])
 
+  const icon = `https://ddanailov.dev/${item.cryptoCurrency}.svg`
+
   return (
     <>
       <TableRow key={index}>
-        <CoinCell>{item.cryptoCurrency}</CoinCell>
+        <CoinCell>
+          <CryptoIcon src={icon} width="18" />
+          {item.cryptoCurrency}
+        </CoinCell>
         <PriceUSDCell>{price}</PriceUSDCell>
         <TableRowCell>
           {usdChange} % / {formatter.format(oldPriceUSD)}
