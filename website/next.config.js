@@ -64,6 +64,7 @@ const nextConfig = {
     config.resolve.alias['@thanks'] = getNextJSPageDeviceLayout('Thanks')
     config.resolve.alias['@pages'] = getNextJSPageDeviceLayout('Pages')
     config.resolve.alias['@contacts'] = getNextJSPageDeviceLayout('Contacts')
+    config.resolve.alias['@demos'] = getNextJSPageDeviceLayout('Demos')
 
     config.resolve.alias['@ddanailov/layouts'] = LAYOUT_DIR
     config.resolve.alias['@ddanailov/styled'] = STYLED_DIR
