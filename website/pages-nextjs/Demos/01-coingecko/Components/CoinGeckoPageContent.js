@@ -92,7 +92,7 @@ function renderRow({data, index}) {
   const oldPriceBTC = calcOldPrice(item.btc, item['btc_24h_change'])
   const oldPriceETH = calcOldPrice(item.eth, item['eth_24h_change'])
 
-  const icon = `https://ddanailov.dev/${item.cryptoCurrency}.svg`
+  const icon = `https://ddanailov.dev/_next/static/crypto/${item.cryptoCurrency}.svg`
 
   return (
     <>

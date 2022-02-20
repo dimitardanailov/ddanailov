@@ -85,7 +85,9 @@ async function copySEOImages() {
 }
 
 async function copyCryptoIcons() {
-  return src(`${STATIC_DIR}/crypto/**.*`).pipe(dest(PUBLIC_DIR))
+  const destination = `${PUBLIC_DIR}/_next/static/crypto`
+
+  return src(`${STATIC_DIR}/crypto/**.*`).pipe(dest(destination))
 }
 
 async function copyServiceWorkerStaticFiles() {
