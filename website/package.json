@@ -1,6 +1,6 @@
 {
   "name": "dimitar-danailov-portfolio",
-  "version": "1.16.27",
+  "version": "1.16.28",
   "main": "index.js",
   "repository": "https://github.com/dimitardanailov",
   "author": "Dimitar Danailov<dimityr.danailov@gmail.com>",
@@ -13,7 +13,7 @@
     "clean": "yarn clean:public && yarn clean:next",
     "clean:next": "rm -rf .next/",
     "clean:public": "rm -rf ./public & mkdir -p public",
-    "dev": "next",
+    "dev": "npm run clean && next",
     "demos:pinterest-layout": "yarn demos:pinterest-layout:dummy && next",
     "demos:pinterest-layout:dummy": "node ./demos/PinterestLayout/dummy/createJSON.js && mv ./records.json demos/PinterestLayout/dummy/",
     "build": "next build",
