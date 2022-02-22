@@ -16,6 +16,11 @@ const items = [
     href: '/contacts',
     title: pages.contacts.title,
   },
+  {
+    text: 'Crypto',
+    href: '/demo-coingecko',
+    title: pages.demoCoingecko.title,
+  },
 ]
 
 export default items

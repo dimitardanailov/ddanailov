@@ -69,6 +69,24 @@ const CryptoIcon = styled.img`
   margin-right: 0.5rem;
 `
 
+const colorDown = '#e15241'
+const colorUp = '#4eaf0a'
+
+const ColorInfo = styled.span`
+  color: ${props => props.color};
+`
+
+function PriceComparing({percent, children}) {
+  let color
+  if (percent > 0) {
+    color = colorUp
+  } else {
+    color = colorDown
+  }
+
+  return <ColorInfo color={color}>{children}</ColorInfo>
+}
+
 function renderRow({data, index}) {
   const item = data.prices[index]
   const usdChange = parseFloat(item['usd_24h_change']).toFixed(2)
@@ -103,7 +121,9 @@ function renderRow({data, index}) {
         </CoinCell>
         <PriceUSDCell>{price}</PriceUSDCell>
         <TableRowCell>
-          {usdChange} % / {formatter.format(oldPriceUSD)}
+          <PriceComparing percent={usdChange}>
+            {usdChange} % / {formatter.format(oldPriceUSD)}
+          </PriceComparing>
         </TableRowCell>
         <TableRowCell>{item.btc}</TableRowCell>
         <TableRowCell>
@@ -112,6 +132,11 @@ function renderRow({data, index}) {
         <TableRowCell>{item.eth}</TableRowCell>
         <TableRowCell>
           {parseFloat(item.eth_24h_change).toFixed(2)} %
+        </TableRowCell>
+        <TableRowCell>
+          <PriceComparing percent={parseFloat(item.eth_24h_change)}>
+            {oldPriceETH}
+          </PriceComparing>
         </TableRowCell>
       </TableRow>
     </>
@@ -199,6 +224,7 @@ function CoinGeckoPage() {
           <TableHeaderCell>24h</TableHeaderCell>
           <TableHeaderCell>ETH</TableHeaderCell>
           <TableHeaderCell>24h</TableHeaderCell>
+          <TableHeaderCell>Old Price</TableHeaderCell>
         </TableHeader>
         <FixedSizeList
           height={870}

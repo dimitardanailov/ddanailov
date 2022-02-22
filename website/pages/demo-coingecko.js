@@ -9,11 +9,13 @@ import PageLoader from '@ddanailov/components/DynamicImports/PageLoader'
 
 import SEO from '@ddanailov/utils/seo'
 
+import seoInfo from 'data/seo'
+
 function pageSEO() {
   const _seo = new SEO()
-  _seo.title = 'Trading from one crypto currency to another'
+  _seo.title = seoInfo.demoCoingecko.title
   _seo.canonicalTag = '/demo-coingecko'
-  _seo.description = 'SOL to BTC, ETH to SOL, COSMOS to BTC'
+  _seo.description = seoInfo.demoCoingecko.description
 
   return _seo
 }

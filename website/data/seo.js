@@ -14,6 +14,10 @@ const pages = {
     description:
       'Finding a good software engineer can be a painful task. I can assure you that if you work with me once, you will always work with me for these kind of projects!',
   },
+  demoCoingecko: {
+    title: 'Trading from one crypto currency to another',
+    description: 'SOL to BTC, ETH to SOL, COSMOS to BTC',
+  },
 }
 
 export default pages
