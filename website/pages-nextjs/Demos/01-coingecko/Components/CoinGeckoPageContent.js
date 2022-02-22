@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import axios from 'node_modules/axios/index'
 import {FixedSizeList} from 'react-window'
-import Slogan from '@ddanailov/styled/Slogan'
+import PageHeaderContainer from './PageHeaderContainer'
 
 import styled from 'styled-components'
 
@@ -164,7 +164,7 @@ function renderRow({data, index}) {
         </TableRowCell>
         <TableRowCell width={columnDimensions.btc.priceChanged.width}>
           <PriceComparing percent={parseFloat(item.eth_24h_change)}>
-            {parseFloat(item.btc_24h_change).toFixed(2)} % ({oldPriceETH})
+            {parseFloat(item.btc_24h_change).toFixed(2)} % ({oldPriceBTC})
           </PriceComparing>
         </TableRowCell>
         <TableRowCell width={columnDimensions.eth.price.width}>
@@ -251,7 +251,8 @@ function CoinGeckoPage() {
 
   return (
     <>
-      <Slogan>Coins:</Slogan>
+      <PageHeaderContainer refreshMethod={getPrices} />
+
       <Table>
         <TableHeader>
           <CoinCell width={columnDimensions.coin.width}>Coin</CoinCell>
