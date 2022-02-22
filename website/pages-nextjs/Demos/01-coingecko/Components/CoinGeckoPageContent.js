@@ -2,6 +2,8 @@ import {useEffect, useState} from 'react'
 import axios from 'node_modules/axios/index'
 import {FixedSizeList} from 'react-window'
 import PageHeaderContainer from './PageHeaderContainer'
+import Alert from '@material-ui/lab/Alert'
+import Collapse from '@material-ui/core/Collapse'
 
 import styled from 'styled-components'
 
@@ -44,6 +46,7 @@ const Table = styled.div`
   flex-direction: column;
 
   border: 0.1rem solid #000;
+  margin-top: 0.5rem;
 `
 
 const TableHeader = styled.div`
@@ -106,6 +109,10 @@ const colorUp = '#4eaf0a'
 
 const ColorInfo = styled.span`
   color: ${props => props.color};
+`
+
+const CustomAlert = styled(Alert)`
+  position: relative;
 `
 
 function PriceComparing({percent, children}) {
@@ -182,6 +189,11 @@ function renderRow({data, index}) {
 
 function CoinGeckoPage() {
   const [prices, setPrices] = useState([])
+  const [
+    priceListNotifacationIsVisible,
+    setPriceListNotifacationIsVisible,
+  ] = useState(false)
+
   const coingeckoIds = [
     'ALGORAND',
     'bitcoin',
@@ -245,6 +257,11 @@ function CoinGeckoPage() {
             })
 
           setPrices(coingeckoPrices)
+          setPriceListNotifacationIsVisible(true)
+
+          setTimeout(() => {
+            setPriceListNotifacationIsVisible(false)
+          }, 3000)
         }
       })
   }
@@ -252,7 +269,11 @@ function CoinGeckoPage() {
   return (
     <>
       <PageHeaderContainer refreshMethod={getPrices} />
-
+      <Collapse in={priceListNotifacationIsVisible}>
+        <CustomAlert severity="success">
+          The list with crypto coins has a new version !
+        </CustomAlert>
+      </Collapse>
       <Table>
         <TableHeader>
           <CoinCell width={columnDimensions.coin.width}>Coin</CoinCell>
