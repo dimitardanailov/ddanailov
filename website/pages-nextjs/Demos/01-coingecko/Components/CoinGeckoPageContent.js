@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState, useRef} from 'react'
 import axios from 'node_modules/axios/index'
 import {FixedSizeList} from 'react-window'
 import PageHeaderContainer from './PageHeaderContainer'
@@ -112,7 +112,7 @@ const CustomAlert = styled(Alert)`
 
 function PriceComparing({percent, children}) {
   let color
-  if (percent > 0) {
+  if (Math.sign(percent) === 1) {
     color = colorUp
   } else {
     color = colorDown
@@ -130,14 +130,11 @@ function renderRow({data, index, style}) {
   })
   const price = formatter.format(parseFloat(item.usd))
 
-  const calcOldPrice = (currentPriceStr, changeStr) => {
+  const calcOldPrice = (currentPriceStr, percent) => {
     const currentPrice = parseFloat(currentPriceStr)
-    const change = parseFloat(changeStr)
+    let indexChange = Math.abs(percent) / 100
 
-    let indexChange = Math.abs(change) / 100
-    let sign = change > 0 ? -1 : 1
-
-    return currentPrice + sign * (currentPrice * indexChange)
+    return currentPrice + Math.sign(percent) * (currentPrice * indexChange)
   }
 
   const oldPriceUSD = calcOldPrice(item.usd, item['usd_24h_change'])
@@ -162,7 +159,7 @@ function renderRow({data, index, style}) {
       </TableCell>
       <TableCell width={columnDimensions.btc.price.width}>{item.btc}</TableCell>
       <TableCell width={columnDimensions.btc.priceChanged.width}>
-        <PriceComparing percent={parseFloat(item.eth_24h_change)}>
+        <PriceComparing percent={parseFloat(item.btc_24h_change)}>
           {parseFloat(item.btc_24h_change).toFixed(2)} % ({oldPriceBTC})
         </PriceComparing>
       </TableCell>
@@ -178,6 +175,7 @@ function renderRow({data, index, style}) {
 
 function CoinGeckoPage() {
   const [prices, setPrices] = useState([])
+
   const [
     priceListNotifacationIsVisible,
     setPriceListNotifacationIsVisible,
@@ -202,11 +200,76 @@ function CoinGeckoPage() {
   ]
   useEffect(() => {
     if (prices.length === 0) {
-      getPrices()
+      getPrices('usd', ASC)
     }
   }, [prices])
 
-  const getPrices = () => {
+  const ASC = 'ASC'
+  const DESC = 'DESC'
+  const [sorting, setSorting] = useState({
+    column: 'usd',
+    orderBy: ASC,
+  })
+
+  useEffect(() => {
+    if (prices.length > 0) {
+      updatePriceAndUI(prices, sorting.column, sorting.orderBy)
+    }
+  }, [sorting])
+
+  const handlerSortPrices = async e => {
+    const sortDataAttribute = e.target.dataset.sort
+
+    if (sortDataAttribute === sorting.column) {
+      if (sorting.orderBy === DESC) {
+        setSorting({
+          column: sortDataAttribute,
+          orderBy: ASC,
+        })
+      } else {
+        setSorting({
+          column: sortDataAttribute,
+          orderBy: DESC,
+        })
+      }
+    } else {
+      setSorting({
+        column: sortDataAttribute,
+        orderBy: ASC,
+      })
+    }
+  }
+
+  const updatePriceAndUI = (
+    unsortedPrices = [],
+    sortKey = 'usd',
+    order = 'asc',
+  ) => {
+    const sortedPrices = sortPrices(unsortedPrices, sortKey, order)
+
+    setPrices(sortedPrices)
+    setPriceListNotifacationIsVisible(true)
+
+    setTimeout(() => {
+      setPriceListNotifacationIsVisible(false)
+    }, 3000)
+  }
+
+  const sortPrices = (unsortedPrices = [], sortKey = 'usd', order = 'asc') => {
+    return unsortedPrices.sort((a, b) => {
+      if (a[sortKey] < b[sortKey]) {
+        return order === ASC ? 1 : -1
+      }
+
+      if (a[sortKey] > b[sortKey]) {
+        return order === ASC ? -1 : 1
+      }
+
+      return 0
+    })
+  }
+
+  const getPrices = (sortKey = 'usd', order = ASC) => {
     axios
       .get(`${COINGECKO_API}/simple/price`, {
         params: {
@@ -220,37 +283,20 @@ function CoinGeckoPage() {
       .then(body => {
         if (body.status === 200) {
           const keys = Object.keys(body.data)
-          const coingeckoPrices = keys
-            .map(key => {
-              const item = body.data[key]
-              return {
-                cryptoCurrency: key,
-                btc: item.btc,
-                usd: item.usd,
-                eth: item.eth,
-                btc_24h_change: item.btc_24h_change,
-                eth_24h_change: item.eth_24h_change,
-                usd_24h_change: item.usd_24h_change,
-              }
-            })
-            .sort((a, b) => {
-              if (a.usd < b.usd) {
-                return 1
-              }
+          const coingeckoPrices = keys.map(key => {
+            const item = body.data[key]
+            return {
+              cryptoCurrency: key,
+              btc: item.btc,
+              usd: item.usd,
+              eth: item.eth,
+              btc_24h_change: item.btc_24h_change,
+              eth_24h_change: item.eth_24h_change,
+              usd_24h_change: item.usd_24h_change,
+            }
+          })
 
-              if (a.usd > b.usd) {
-                return -1
-              }
-
-              return 0
-            })
-
-          setPrices(coingeckoPrices)
-          setPriceListNotifacationIsVisible(true)
-
-          setTimeout(() => {
-            setPriceListNotifacationIsVisible(false)
-          }, 3000)
+          updatePriceAndUI(coingeckoPrices, sortKey, order)
         }
       })
   }
@@ -260,24 +306,37 @@ function CoinGeckoPage() {
       <PageHeaderContainer refreshMethod={getPrices} />
       <Collapse in={priceListNotifacationIsVisible}>
         <CustomAlert severity="success">
-          The list with crypto coins has a new version !
+          The list with crypto coins has a new version ! Sort by{' '}
+          {sorting.column}, order by {sorting.orderBy}
         </CustomAlert>
       </Collapse>
       <Table>
         <TableHeader>
           <CoinCell width={columnDimensions.coin.width}>Coin</CoinCell>
-          <PriceUSDCell width={columnDimensions.usd.price.width}>
+          <PriceUSDCell
+            data-sort="usd"
+            onClick={handlerSortPrices}
+            width={columnDimensions.usd.price.width}
+          >
             USD
           </PriceUSDCell>
           <TableCell width={columnDimensions.usd.priceChanged.width}>
             Old price USD
           </TableCell>
           <TableCell width={columnDimensions.btc.price.width}>BTC</TableCell>
-          <TableCell width={columnDimensions.btc.priceChanged.width}>
+          <TableCell
+            onClick={handlerSortPrices}
+            data-sort="btc_24h_change"
+            width={columnDimensions.btc.priceChanged.width}
+          >
             Old price BTC
           </TableCell>
           <TableCell width={columnDimensions.eth.price.width}>ETH</TableCell>
-          <TableCell width={columnDimensions.eth.priceChanged.width}>
+          <TableCell
+            onClick={handlerSortPrices}
+            data-sort="eth_24h_change"
+            width={columnDimensions.eth.priceChanged.width}
+          >
             Old price ETH
           </TableCell>
         </TableHeader>
