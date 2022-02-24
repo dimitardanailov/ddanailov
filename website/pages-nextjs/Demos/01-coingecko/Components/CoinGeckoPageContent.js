@@ -15,7 +15,7 @@ const columnDimensions = {
   },
   usd: {
     price: {
-      width: '10.5%',
+      width: '8.5%',
     },
     priceChanged: {
       width: '14%',
@@ -26,7 +26,7 @@ const columnDimensions = {
       width: '10.5%',
     },
     priceChanged: {
-      width: '23.25%',
+      width: '24.25%',
     },
   },
   eth: {
@@ -34,7 +34,7 @@ const columnDimensions = {
       width: '10.5%',
     },
     priceChanged: {
-      width: '23.25%',
+      width: '24.25%',
     },
   },
 }
@@ -54,14 +54,32 @@ const TableHeader = styled.div`
 
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 1rem 0;
 
   background-color: #000;
   color: #fff;
   justify-content: flex-start;
 `
 
+const TableCell = styled.div`
+  position: relative;
+
+  overflow: hidden;
+  width: ${props => props.width};
+  padding: 0 1rem;
+`
+
 const TableRow = styled.div`
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #cecece;
+  justify-content: flex-start;
+`
+
+const TableRow1 = styled.div`
   position: relative;
 
   display: flex;
@@ -71,30 +89,17 @@ const TableRow = styled.div`
   padding: 1rem;
 `
 
-const TableHeaderCell = styled.div`
-  position: relative;
-
-  overflow: hidden;
-  width: ${props => props.width};
-`
-
-const TableRowCell = styled(TableHeaderCell)`
-  width: ${props => props.width};
-`
-
-const CoinCell = styled(TableHeaderCell)`
+const CoinCell = styled(TableCell)`
   position: relative;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   min-width: 120px;
-  width: ${props => props.width};
 `
 
-const PriceUSDCell = styled(TableHeaderCell)`
+const PriceUSDCell = styled(TableCell)`
   min-width: 90px;
-  width: 6.5%;
 `
 
 const CryptoIcon = styled.img`
@@ -126,7 +131,7 @@ function PriceComparing({percent, children}) {
   return <ColorInfo color={color}>{children}</ColorInfo>
 }
 
-function renderRow({data, index}) {
+function renderRow({data, index, style}) {
   const item = data.prices[index]
   const usdChange = parseFloat(item['usd_24h_change']).toFixed(2)
   var formatter = new Intl.NumberFormat('en-US', {
@@ -152,38 +157,32 @@ function renderRow({data, index}) {
   const icon = `https://ddanailov.dev/_next/static/crypto/${item.cryptoCurrency}.svg`
 
   return (
-    <>
-      <TableRow key={index}>
-        <CoinCell width={columnDimensions.coin.width}>
-          <CryptoIcon src={icon} />
-          {item.cryptoCurrency}
-        </CoinCell>
-        <PriceUSDCell width={columnDimensions.usd.price.width}>
-          {price}
-        </PriceUSDCell>
-        <TableRowCell width={columnDimensions.usd.priceChanged.width}>
-          <PriceComparing percent={usdChange}>
-            {usdChange} % / {formatter.format(oldPriceUSD)}
-          </PriceComparing>
-        </TableRowCell>
-        <TableRowCell width={columnDimensions.btc.price.width}>
-          {item.btc}
-        </TableRowCell>
-        <TableRowCell width={columnDimensions.btc.priceChanged.width}>
-          <PriceComparing percent={parseFloat(item.eth_24h_change)}>
-            {parseFloat(item.btc_24h_change).toFixed(2)} % ({oldPriceBTC})
-          </PriceComparing>
-        </TableRowCell>
-        <TableRowCell width={columnDimensions.eth.price.width}>
-          {item.eth}
-        </TableRowCell>
-        <TableRowCell width={columnDimensions.eth.priceChanged.width}>
-          <PriceComparing percent={parseFloat(item.eth_24h_change)}>
-            {parseFloat(item.eth_24h_change).toFixed(2)} % ({oldPriceETH})
-          </PriceComparing>
-        </TableRowCell>
-      </TableRow>
-    </>
+    <TableRow key={index} style={style}>
+      <CoinCell width={columnDimensions.coin.width}>
+        <CryptoIcon src={icon} />
+        {item.cryptoCurrency}
+      </CoinCell>
+      <PriceUSDCell width={columnDimensions.usd.price.width}>
+        {price}
+      </PriceUSDCell>
+      <TableCell width={columnDimensions.usd.priceChanged.width}>
+        <PriceComparing percent={usdChange}>
+          {usdChange} % / {formatter.format(oldPriceUSD)}
+        </PriceComparing>
+      </TableCell>
+      <TableCell width={columnDimensions.btc.price.width}>{item.btc}</TableCell>
+      <TableCell width={columnDimensions.btc.priceChanged.width}>
+        <PriceComparing percent={parseFloat(item.eth_24h_change)}>
+          {parseFloat(item.btc_24h_change).toFixed(2)} % ({oldPriceBTC})
+        </PriceComparing>
+      </TableCell>
+      <TableCell width={columnDimensions.eth.price.width}>{item.eth}</TableCell>
+      <TableCell width={columnDimensions.eth.priceChanged.width}>
+        <PriceComparing percent={parseFloat(item.eth_24h_change)}>
+          {parseFloat(item.eth_24h_change).toFixed(2)} % ({oldPriceETH})
+        </PriceComparing>
+      </TableCell>
+    </TableRow>
   )
 }
 
@@ -277,26 +276,24 @@ function CoinGeckoPage() {
       <Table>
         <TableHeader>
           <CoinCell width={columnDimensions.coin.width}>Coin</CoinCell>
-          <PriceUSDCell>USD</PriceUSDCell>
-          <TableHeaderCell width={columnDimensions.usd.priceChanged.width}>
-            24h
-          </TableHeaderCell>
-          <TableHeaderCell width={columnDimensions.btc.price.width}>
-            BTC
-          </TableHeaderCell>
-          <TableHeaderCell width={columnDimensions.btc.priceChanged.width}>
-            24h
-          </TableHeaderCell>
-          <TableHeaderCell width={columnDimensions.eth.price.width}>
-            ETH
-          </TableHeaderCell>
-          <TableHeaderCell width={columnDimensions.eth.priceChanged.width}>
-            24h + Old Price
-          </TableHeaderCell>
+          <PriceUSDCell width={columnDimensions.usd.price.width}>
+            USD
+          </PriceUSDCell>
+          <TableCell width={columnDimensions.usd.priceChanged.width}>
+            Old price USD
+          </TableCell>
+          <TableCell width={columnDimensions.btc.price.width}>BTC</TableCell>
+          <TableCell width={columnDimensions.btc.priceChanged.width}>
+            Old price BTC
+          </TableCell>
+          <TableCell width={columnDimensions.eth.price.width}>ETH</TableCell>
+          <TableCell width={columnDimensions.eth.priceChanged.width}>
+            Old price ETH
+          </TableCell>
         </TableHeader>
         <FixedSizeList
           height={870}
-          itemSize={prices.length}
+          itemSize={57.95}
           itemCount={prices.length}
           itemData={{
             prices,
