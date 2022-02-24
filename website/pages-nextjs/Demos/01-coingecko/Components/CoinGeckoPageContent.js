@@ -133,8 +133,10 @@ function renderRow({data, index, style}) {
   const calcOldPrice = (currentPriceStr, percent) => {
     const currentPrice = parseFloat(currentPriceStr)
     let indexChange = Math.abs(percent) / 100
+    const dif = currentPrice * indexChange
+    const sign = Math.sign(percent) * -1
 
-    return currentPrice + Math.sign(percent) * (currentPrice * indexChange)
+    return currentPrice + sign * dif
   }
 
   const oldPriceUSD = calcOldPrice(item.usd, item['usd_24h_change'])
