@@ -79,16 +79,6 @@ const TableRow = styled.div`
   justify-content: flex-start;
 `
 
-const TableRow1 = styled.div`
-  position: relative;
-
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #cecece;
-  justify-content: flex-start;
-  padding: 1rem;
-`
-
 const CoinCell = styled(TableCell)`
   position: relative;
 
