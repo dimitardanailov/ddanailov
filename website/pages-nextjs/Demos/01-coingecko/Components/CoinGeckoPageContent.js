@@ -312,6 +312,10 @@ function CoinGeckoPage() {
           {sorting.column}, order by {sorting.orderBy}
         </CustomAlert>
       </Collapse>
+      <p>
+        Sort by usd price, Old price USD (24h), Old price BTC (24h), Old price
+        ETH (24h)
+      </p>
       <Table>
         <TableHeader>
           <CoinCell width={columnDimensions.coin.width}>Coin</CoinCell>
@@ -322,8 +326,12 @@ function CoinGeckoPage() {
           >
             USD
           </PriceUSDCell>
-          <TableCell width={columnDimensions.usd.priceChanged.width}>
-            Old price USD
+          <TableCell
+            data-sort="usd_24h_change"
+            onClick={handlerSortPrices}
+            width={columnDimensions.usd.priceChanged.width}
+          >
+            Old price USD (24h)
           </TableCell>
           <TableCell width={columnDimensions.btc.price.width}>BTC</TableCell>
           <TableCell
@@ -331,7 +339,7 @@ function CoinGeckoPage() {
             data-sort="btc_24h_change"
             width={columnDimensions.btc.priceChanged.width}
           >
-            Old price BTC
+            Old price BTC (24h)
           </TableCell>
           <TableCell width={columnDimensions.eth.price.width}>ETH</TableCell>
           <TableCell
@@ -339,7 +347,7 @@ function CoinGeckoPage() {
             data-sort="eth_24h_change"
             width={columnDimensions.eth.priceChanged.width}
           >
-            Old price ETH
+            Old price ETH (24h)
           </TableCell>
         </TableHeader>
         <FixedSizeList
