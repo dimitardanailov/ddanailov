@@ -67,6 +67,7 @@ const TableCell = styled.div`
   overflow: hidden;
   width: ${props => props.width};
   padding: 0 1rem;
+  cursor: ${props => props.cursor || 'default'};
 `
 
 const TableRow = styled.div`
@@ -320,6 +321,8 @@ function CoinGeckoPage() {
         <TableHeader>
           <CoinCell width={columnDimensions.coin.width}>Coin</CoinCell>
           <PriceUSDCell
+            title="sort"
+            cursor="pointer"
             data-sort="usd"
             onClick={handlerSortPrices}
             width={columnDimensions.usd.price.width}
@@ -327,6 +330,8 @@ function CoinGeckoPage() {
             USD
           </PriceUSDCell>
           <TableCell
+            title="sort"
+            cursor="pointer"
             data-sort="usd_24h_change"
             onClick={handlerSortPrices}
             width={columnDimensions.usd.priceChanged.width}
@@ -335,6 +340,8 @@ function CoinGeckoPage() {
           </TableCell>
           <TableCell width={columnDimensions.btc.price.width}>BTC</TableCell>
           <TableCell
+            title="sort"
+            cursor="pointer"
             onClick={handlerSortPrices}
             data-sort="btc_24h_change"
             width={columnDimensions.btc.priceChanged.width}
@@ -343,6 +350,8 @@ function CoinGeckoPage() {
           </TableCell>
           <TableCell width={columnDimensions.eth.price.width}>ETH</TableCell>
           <TableCell
+            title="sort"
+            cursor="pointer"
             onClick={handlerSortPrices}
             data-sort="eth_24h_change"
             width={columnDimensions.eth.priceChanged.width}
