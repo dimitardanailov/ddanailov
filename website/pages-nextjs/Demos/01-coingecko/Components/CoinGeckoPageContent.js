@@ -205,13 +205,28 @@ function CoinGeckoPage() {
     if (prices.length === 0) {
       getPrices('usd', ASC)
     }
+
+    if (prices.length > 0) {
+      let column = 'usd'
+      let orderBy = ASC
+
+      if (sorting.column !== null) {
+        column = sorting.column
+        orderBy = sorting.orderBy
+      }
+
+      setSorting({
+        column,
+        orderBy,
+      })
+    }
   }, [prices])
 
   const ASC = 'ASC'
   const DESC = 'DESC'
   const [sorting, setSorting] = useState({
-    column: 'usd',
-    orderBy: ASC,
+    column: null,
+    orderBy: null,
   })
 
   useEffect(() => {
@@ -272,7 +287,7 @@ function CoinGeckoPage() {
     })
   }
 
-  const getPrices = (sortKey = 'usd', order = ASC) => {
+  const getPrices = () => {
     axios
       .get(`${COINGECKO_API}/simple/price`, {
         params: {
@@ -299,7 +314,7 @@ function CoinGeckoPage() {
             }
           })
 
-          updatePriceAndUI(coingeckoPrices, sortKey, order)
+          setPrices(coingeckoPrices)
         }
       })
   }
@@ -360,7 +375,7 @@ function CoinGeckoPage() {
           </TableCell>
         </TableHeader>
         <FixedSizeList
-          height={870}
+          height={57.95 * prices.length}
           itemSize={57.95}
           itemCount={prices.length}
           itemData={{
