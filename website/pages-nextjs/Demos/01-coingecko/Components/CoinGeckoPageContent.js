@@ -4,6 +4,10 @@ import PageHeaderContainer from './PageHeaderContainer'
 import Alert from '@material-ui/lab/Alert'
 import Collapse from '@material-ui/core/Collapse'
 import getPrices from '@demos/01-coingecko/utils/getPrices'
+import {
+  btcPairIsSupportedByCoinbase,
+  ethPairIsSupportedByCoinbase,
+} from '@demos/01-coingecko/utils/coinbase/pairs'
 
 import styled from 'styled-components'
 
@@ -98,10 +102,25 @@ const CryptoIcon = styled.img`
   margin-right: 0.5rem;
 `
 
+const CoinbaseIcon = styled.img`
+  width: 18px;
+  height: 18px;
+
+  margin-right: 0.5rem;
+`
+
 const colorDown = '#e15241'
 const colorUp = '#4eaf0a'
 
 const ColorInfo = styled.span`
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  justify-content: left;
+  align-items: center;
   color: ${props => props.color};
 `
 
@@ -141,8 +160,16 @@ function renderRow({data, index, style}) {
   const oldPriceUSD = calcOldPrice(item.usd, item['usd_24h_change'])
   const oldPriceBTC = calcOldPrice(item.btc, item['btc_24h_change'])
   const oldPriceETH = calcOldPrice(item.eth, item['eth_24h_change'])
+  const pairSupportedByCoinbase = {
+    btc: btcPairIsSupportedByCoinbase(item.cryptoCurrency),
+    eth: ethPairIsSupportedByCoinbase(item.cryptoCurrency),
+  }
+
+  pairSupportedByCoinbase.btc = true
 
   const icon = `https://ddanailov.dev/_next/static/crypto/${item.cryptoCurrency}.svg`
+  const coinBaseIcon =
+    'https://ddanailov.dev/_next/static/crypto/coinbase-icon-symbol-1.svg'
 
   return (
     <TableRow key={index} style={style}>
@@ -161,12 +188,18 @@ function renderRow({data, index, style}) {
       <TableCell width={columnDimensions.btc.price.width}>{item.btc}</TableCell>
       <TableCell width={columnDimensions.btc.priceChanged.width}>
         <PriceComparing percent={parseFloat(item.btc_24h_change)}>
+          {pairSupportedByCoinbase.btc === true && (
+            <CoinbaseIcon src={coinBaseIcon} />
+          )}
           {parseFloat(item.btc_24h_change).toFixed(2)} % ({oldPriceBTC})
         </PriceComparing>
       </TableCell>
       <TableCell width={columnDimensions.eth.price.width}>{item.eth}</TableCell>
       <TableCell width={columnDimensions.eth.priceChanged.width}>
         <PriceComparing percent={parseFloat(item.eth_24h_change)}>
+          {pairSupportedByCoinbase.eth === true && (
+            <CoinbaseIcon src={coinBaseIcon} />
+          )}
           {parseFloat(item.eth_24h_change).toFixed(2)} % ({oldPriceETH})
         </PriceComparing>
       </TableCell>
