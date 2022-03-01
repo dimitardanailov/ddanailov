@@ -165,8 +165,6 @@ function renderRow({data, index, style}) {
     eth: ethPairIsSupportedByCoinbase(item.cryptoCurrency),
   }
 
-  pairSupportedByCoinbase.btc = true
-
   const icon = `https://ddanailov.dev/_next/static/crypto/${item.cryptoCurrency}.svg`
   const coinBaseIcon =
     'https://ddanailov.dev/_next/static/crypto/coinbase-icon-symbol-1.svg'
@@ -188,18 +186,14 @@ function renderRow({data, index, style}) {
       <TableCell width={columnDimensions.btc.price.width}>{item.btc}</TableCell>
       <TableCell width={columnDimensions.btc.priceChanged.width}>
         <PriceComparing percent={parseFloat(item.btc_24h_change)}>
-          {pairSupportedByCoinbase.btc === true && (
-            <CoinbaseIcon src={coinBaseIcon} />
-          )}
+          {pairSupportedByCoinbase.btc && <CoinbaseIcon src={coinBaseIcon} />}
           {parseFloat(item.btc_24h_change).toFixed(2)} % ({oldPriceBTC})
         </PriceComparing>
       </TableCell>
       <TableCell width={columnDimensions.eth.price.width}>{item.eth}</TableCell>
       <TableCell width={columnDimensions.eth.priceChanged.width}>
         <PriceComparing percent={parseFloat(item.eth_24h_change)}>
-          {pairSupportedByCoinbase.eth === true && (
-            <CoinbaseIcon src={coinBaseIcon} />
-          )}
+          {pairSupportedByCoinbase.eth && <CoinbaseIcon src={coinBaseIcon} />}
           {parseFloat(item.eth_24h_change).toFixed(2)} % ({oldPriceETH})
         </PriceComparing>
       </TableCell>
