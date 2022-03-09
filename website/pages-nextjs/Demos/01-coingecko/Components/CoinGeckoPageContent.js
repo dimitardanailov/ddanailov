@@ -4,10 +4,7 @@ import PageHeaderContainer from './PageHeaderContainer'
 import Alert from '@material-ui/lab/Alert'
 import Collapse from '@material-ui/core/Collapse'
 import getPrices from '@demos/01-coingecko/utils/getPrices'
-import {
-  btcPairIsSupportedByCoinbase,
-  ethPairIsSupportedByCoinbase,
-} from '@demos/01-coingecko/utils/coinbase/pairs'
+import {ethPairIsSupportedByCoinbase} from '@demos/01-coingecko/utils/coinbase/pairs'
 
 import styled from 'styled-components'
 
@@ -161,7 +158,6 @@ function renderRow({data, index, style}) {
   const oldPriceBTC = calcOldPrice(item.btc, item['btc_24h_change'])
   const oldPriceETH = calcOldPrice(item.eth, item['eth_24h_change'])
   const pairSupportedByCoinbase = {
-    btc: btcPairIsSupportedByCoinbase(item.cryptoCurrency),
     eth: ethPairIsSupportedByCoinbase(item.cryptoCurrency),
   }
 
@@ -186,7 +182,6 @@ function renderRow({data, index, style}) {
       <TableCell width={columnDimensions.btc.price.width}>{item.btc}</TableCell>
       <TableCell width={columnDimensions.btc.priceChanged.width}>
         <PriceComparing percent={parseFloat(item.btc_24h_change)}>
-          {pairSupportedByCoinbase.btc && <CoinbaseIcon src={coinBaseIcon} />}
           {parseFloat(item.btc_24h_change).toFixed(2)} % ({oldPriceBTC})
         </PriceComparing>
       </TableCell>
