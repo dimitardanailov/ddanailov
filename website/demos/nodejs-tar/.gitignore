@@ -1,0 +1,6 @@
+*.tar
+*.tgz
+*.gz
+my-node_modules/*
+test/
+some-dir/
