@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tar-files": "rm -rf ./.modules && mkdir ./.modules && node -r esm ./tar-node-modules.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bignumber.js": "^9.0.2",
+    "esm": "^3.2.25",
     "tar": "^6.1.11"
   }
 }

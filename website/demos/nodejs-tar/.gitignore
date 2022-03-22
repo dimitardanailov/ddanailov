@@ -4,3 +4,4 @@
 my-node_modules/*
 test/
 some-dir/
+.modules
