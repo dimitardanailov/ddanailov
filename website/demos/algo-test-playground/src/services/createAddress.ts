@@ -36,7 +36,7 @@ const createAddressWithPublickKey = () => {
   const pubKeyArray: Uint8Array = Uint8Array.from(Buffer.from(publicKey, 'hex'))
   const address = algosdk.encodeAddress(pubKeyArray)
 
-  console.log('address', address, algosdk.isValidAddress(address))
+  console.log('address', address, algosdk.isValidAddress(address.toLowerCase()))
 }
 
-export default createAddressWithPublickKey
+export default createAddress
