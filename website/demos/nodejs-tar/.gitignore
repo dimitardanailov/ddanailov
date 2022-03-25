@@ -2,6 +2,7 @@
 *.tgz
 *.gz
 my-node_modules/*
+custom_node_modules/*
 test/
 some-dir/
 .modules
