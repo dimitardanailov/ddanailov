@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "re-create-modules": "rm -rf ./.modules && mkdir ./.modules",
-    "tar-files": "npm run re-create-modules && node -r esm ./tar-node-modules.js",
+    "tar-files": "node -r esm ./tar-node-modules.js",
     "re-create-custom-node-modules": "rm -rf ./custom_node_modules && mkdir ./custom_node_modules",
     "move-zipped-files": "mv  -v ./custom_node_modules/node_modules/* ./custom_node_modules && rm -rf ./custom_node_modules/node_modules/",
-    "unzip-tar-files": "npm run re-create-custom-node-modules && node -r esm ./unzip-tar-files.js && npm run move-zipped-files",
+    "unzip-tar-files": "node -r esm ./unzip-tar-files.js && npm run move-zipped-files",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
