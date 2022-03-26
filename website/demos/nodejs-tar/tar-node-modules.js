@@ -1,5 +1,7 @@
-import getDirectories from './get-directories'
 import tar from 'tar'
+
+import getDirectories from './get-directories'
+import run from './command'
 
 const tarFolder = folder => {
   tar.c(
@@ -12,6 +14,7 @@ const tarFolder = folder => {
 }
 
 ;(async () => {
+  await run('rm -rf ./.modules && mkdir ./.modules')
   const folders = await getDirectories('./node_modules')
   for (let i = 0; i < folders.length; i++) {
     const folder = folders[i]
