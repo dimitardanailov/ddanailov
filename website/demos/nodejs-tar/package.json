@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "tar-files": "node -r esm ./tar-node-modules.js",
+    "tar-files": "node ./tar-node-modules.js",
     "unzip-tar-files": "node -r esm ./unzip-tar-files.js"
   },
   "author": "",
