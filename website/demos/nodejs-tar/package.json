@@ -13,6 +13,7 @@
   "dependencies": {
     "bignumber.js": "^9.0.2",
     "esm": "^3.2.25",
-    "tar": "^6.1.11"
+    "tar": "^6.1.11",
+    "tar-npm-modules": "^1.0.0"
   }
 }
