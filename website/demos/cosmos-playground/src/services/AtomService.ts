@@ -10,6 +10,7 @@ enum KeyType {
 
 import createNewKeyPair from '../mockup/createNewKeyPair'
 import customPubkeyToAddress from '././address/createCosmosAddressByEDCAKey'
+import isValidAddress from './address/isValidAddress'
 
 export default class AtomService {
   public keyType: KeyType
@@ -38,6 +39,11 @@ export default class AtomService {
   async requestAddressCreation() {
     const {publicKey, keyId} = await createNewKeyPair(this.keyType)
     const address = await customPubkeyToAddress(publicKey)
+    const addressIsValid = isValidAddress(address, 'cosmos')
+
+    if (!addressIsValid) {
+      throw new Error(`${address} is NOT valid cosmos address!`)
+    }
 
     return {
       keyId,
