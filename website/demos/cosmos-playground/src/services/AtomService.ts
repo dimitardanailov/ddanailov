@@ -1,3 +1,7 @@
+require('dotenv').config()
+
+import {StargateClient, IndexedTx} from '@cosmjs/stargate'
+
 import TransactionStatusCheck from '../interfaces/TransactionStatusCheck'
 import BigNumber from 'bignumber.js'
 import {DirectSecp256k1HdWallet} from '@cosmjs/proto-signing'
@@ -14,17 +18,46 @@ import isValidAddress from './address/isValidAddress'
 
 export default class AtomService {
   public keyType: KeyType
+  public endpoint: string
   constructor() {
     this.keyType = KeyType.ECDSA
+
+    if (process.env.NODE_ENV === 'production') {
+      this.endpoint = 'https://rpc.cosmos.network'
+    } else {
+      this.endpoint = 'https://rpc.sentry-01.theta-testnet.polypore.xyz'
+    }
+    console.log(this.endpoint)
   }
 
   async getBalance(address: string): Promise<string> {
-    return '0'
+    const denomFee = 'uatom'
+    const client = await StargateClient.connect(this.endpoint)
+    const response = await client.getBalance(address, denomFee)
+    const amount = new BigNumber(response.amount)
+
+    return amount.toString()
   }
 
-  async getTransaction(txHash: string) {}
+  async getTransaction(txHash: string): Promise<IndexedTx | null> {
+    try {
+      const client = await StargateClient.connect(this.endpoint)
+      const transaction = await client.getTx(txHash)
 
-  async getTransactions(address: string) {}
+      return transaction
+    } catch (err) {
+      console.error('Cosmos.getTransaction', err)
+    }
+
+    return null
+  }
+
+  async getTransactions(address: string) {
+    const client = await StargateClient.connect(this.endpoint)
+    const query = {sentFromOrTo: address}
+    const results = await client.searchTx(query)
+    console.log('results', results)
+  }
 
   async getGasFee() {}
 
