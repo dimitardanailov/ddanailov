@@ -16,6 +16,7 @@ enum KeyType {
 import createNewKeyPair from '../mockup/createNewKeyPair'
 import customPubkeyToAddress from '././address/createCosmosAddressByEDCAKey'
 import isValidAddress from './address/isValidAddress'
+import decodeRawLog, {AtomTransaction} from './transactions/decodeRawLog'
 
 export default class AtomService {
   public keyType: KeyType
@@ -96,7 +97,21 @@ export default class AtomService {
 
   async getGasFee() {}
 
-  async getTransferValue(transactionHash: string) {}
+  async getTransferValue(transactionHash: string) {
+    const transaction = await this.getSingleTransaction(transactionHash)
+
+    if (typeof transaction === null) {
+      return '0'
+    }
+
+    const indexedTx: IndexedTx = transaction!
+    if (indexedTx.code !== 0) {
+      return '0'
+    }
+    const cosmosTransaction: AtomTransaction = decodeRawLog(indexedTx.rawLog)
+
+    return cosmosTransaction.amount
+  }
 
   async monitorTransaction(address: TransactionStatusCheck): Promise<boolean> {
     const txHash: string = address['transaction_hash']
