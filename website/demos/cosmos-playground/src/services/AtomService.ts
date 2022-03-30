@@ -79,23 +79,31 @@ export default class AtomService {
           return false
         }
       })
-      .map(indexedTx => {
-        const log = JSON.parse(indexedTx.rawLog)
-        const response = {
-          hash: indexedTx.hash,
-          rawLog: log[0],
-        }
-        const decodedTxRaw: DecodedTxRaw = decodeTxRaw(indexedTx.tx)
-        // console.log(decodedTxRaw)
+      .map((indexedTx: IndexedTx) => {
+        const cosmosTransaction: AtomTransaction = decodeRawLog(
+          indexedTx.rawLog,
+        )
 
-        return decodedTxRaw['authInfo']['signerInfos'][0]['modeInfo']
+        return {
+          hash: indexedTx.hash,
+          source: cosmosTransaction.sender.toLowerCase(),
+          destination: cosmosTransaction.recipient.toLowerCase(),
+          value: Number(cosmosTransaction.amount),
+          rawValue: cosmosTransaction.amount,
+        }
+      })
+      .filter(indexedTx => {
+        return indexedTx.source !== address.toLowerCase()
       })
 
     return transactions
-    // console.log('transactions', transactions)
   }
 
-  async getGasFee() {}
+  async getGasFee() {
+    const fee = new BigNumber(80000)
+
+    return fee
+  }
 
   async getTransferValue(transactionHash: string) {
     const transaction = await this.getSingleTransaction(transactionHash)
