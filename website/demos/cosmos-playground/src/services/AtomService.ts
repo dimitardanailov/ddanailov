@@ -127,7 +127,14 @@ export default class AtomService {
   }
 
   async getTransferFee(transactionHash: string): Promise<string> {
-    return '0'
+    const transaction = await this.getSingleTransaction(transactionHash)
+    if (!transaction) {
+      return '0'
+    }
+
+    const indexedTx: IndexedTx = transaction!
+
+    return String(indexedTx.gasUsed)
   }
 
   async requestAddressCreation() {
