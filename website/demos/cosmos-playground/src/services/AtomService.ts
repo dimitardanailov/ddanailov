@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 import {StargateClient, IndexedTx} from '@cosmjs/stargate'
+import {decodeTxRaw, DecodedTxRaw} from '@cosmjs/proto-signing'
 
 import TransactionStatusCheck from '../interfaces/TransactionStatusCheck'
 import BigNumber from 'bignumber.js'
@@ -39,7 +40,7 @@ export default class AtomService {
     return amount.toString()
   }
 
-  async getTransaction(txHash: string): Promise<IndexedTx | null> {
+  async getSingleTransaction(txHash: string): Promise<IndexedTx | null> {
     try {
       const client = await StargateClient.connect(this.endpoint)
       const transaction = await client.getTx(txHash)
@@ -52,18 +53,63 @@ export default class AtomService {
     return null
   }
 
+  async getTransaction(txHash: string): Promise<IndexedTx | null> {
+    const transaction = await this.getSingleTransaction(txHash)
+
+    return transaction
+  }
+
   async getTransactions(address: string) {
     const client = await StargateClient.connect(this.endpoint)
     const query = {sentFromOrTo: address}
     const results = await client.searchTx(query)
-    console.log('results', results)
+
+    const transactions = results
+      .filter(transaction => {
+        return transaction.code === 0
+      })
+      .filter(transaction => {
+        try {
+          const log = JSON.parse(transaction.rawLog)
+          const arrayIsValid = log.length > 0
+
+          return arrayIsValid
+        } catch (e) {
+          return false
+        }
+      })
+      .map(indexedTx => {
+        const log = JSON.parse(indexedTx.rawLog)
+        const response = {
+          hash: indexedTx.hash,
+          rawLog: log[0],
+        }
+        const decodedTxRaw: DecodedTxRaw = decodeTxRaw(indexedTx.tx)
+        // console.log(decodedTxRaw)
+
+        return decodedTxRaw['authInfo']['signerInfos'][0]['modeInfo']
+      })
+
+    return transactions
+    // console.log('transactions', transactions)
   }
 
   async getGasFee() {}
 
   async getTransferValue(transactionHash: string) {}
 
-  async monitorTransaction(address: TransactionStatusCheck) {}
+  async monitorTransaction(address: TransactionStatusCheck): Promise<boolean> {
+    const txHash: string = address['transaction_hash']
+    const transaction = await this.getSingleTransaction(txHash)
+
+    if (typeof transaction === null) {
+      return false
+    }
+
+    const indexedTx: IndexedTx = transaction!
+
+    return indexedTx.code === 0
+  }
 
   async getTransferFee(transactionHash: string): Promise<string> {
     return '0'
