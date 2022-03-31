@@ -1,6 +1,12 @@
 require('dotenv').config()
 
-import {StargateClient, IndexedTx} from '@cosmjs/stargate'
+import {
+  StargateClient,
+  IndexedTx,
+  GasPrice,
+  StdFee,
+  calculateFee,
+} from '@cosmjs/stargate'
 import {decodeTxRaw, DecodedTxRaw} from '@cosmjs/proto-signing'
 
 import TransactionStatusCheck from '../interfaces/TransactionStatusCheck'
@@ -100,9 +106,18 @@ export default class AtomService {
   }
 
   async getGasFee() {
-    const fee = new BigNumber(80000)
+    const COSMOS_MIN_TX_FEE = 80000
+    const fee = new BigNumber(COSMOS_MIN_TX_FEE)
 
     return fee
+  }
+
+  async getDefaultGasPrice() {
+    const fee = await this.getGasFee()
+    const defaultGasPrice = GasPrice.fromString('0.025uatom')
+    const defaultSendFee: StdFee = calculateFee(fee.toNumber(), defaultGasPrice)
+
+    return defaultSendFee
   }
 
   async getTransferValue(transactionHash: string) {
