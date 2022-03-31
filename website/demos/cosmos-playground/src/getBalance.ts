@@ -13,6 +13,10 @@ import AtomService from './services/AtomService'
   const address3 = 'cosmos1cxklfwgwd80zskga7uv9245hjmnmwa6u6zuklu'
   const balance3 = await service.getBalance(address3)
   printResult(address3, balance3, 'mainnet')
+
+  const address4 = 'cosmos1lsagfzrm4gz28he4wunt63sts5xzmczw8pkek3'
+  const balance4 = await service.getBalance(address4)
+  printResult(address4, balance4, 'testnet')
 })()
 
 function printResult(address: string, balance: string, type: string) {
