@@ -4,7 +4,12 @@ import {toBech32} from '@cosmjs/encoding'
 import elliptic from 'elliptic'
 const secp256k1 = new elliptic.ec('secp256k1')
 
-function createCosmosAddressByEDCAKey(EDCAKey: string): string {
+export type AddressInfo = {
+  address: string
+  pubKey: Uint8Array
+}
+
+function createCosmosAddressInfoByEDCAKey(EDCAKey: string): AddressInfo {
   const pubKeyArray: Uint8Array = Uint8Array.from(Buffer.from(EDCAKey, 'hex'))
 
   const compressedVersion = Uint8Array.from(
@@ -15,7 +20,10 @@ function createCosmosAddressByEDCAKey(EDCAKey: string): string {
   const rawAddress = rawSecp256k1PubkeyToRawAddress(compressedVersion)
   const bench32Format = toBech32(prefix, rawAddress)
 
-  return bench32Format
+  return {
+    address: bench32Format,
+    pubKey: compressedVersion,
+  }
 }
 
-export default createCosmosAddressByEDCAKey
+export default createCosmosAddressInfoByEDCAKey
