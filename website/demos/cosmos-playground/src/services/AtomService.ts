@@ -12,7 +12,6 @@ import {decodeTxRaw, DecodedTxRaw} from '@cosmjs/proto-signing'
 import TransactionStatusCheck from '../interfaces/TransactionStatusCheck'
 import BigNumber from 'bignumber.js'
 import {DirectSecp256k1HdWallet} from '@cosmjs/proto-signing'
-import createCosmosAddressByEDCAKey from './address/createCosmosAddressByEDCAKey'
 
 enum KeyType {
   ECDSA = 'ECDSA',
@@ -20,9 +19,17 @@ enum KeyType {
 }
 
 import createNewKeyPair from '../mockup/createNewKeyPair'
-import customPubkeyToAddress from '././address/createCosmosAddressByEDCAKey'
+import createCosmosAddressInfoByEDCAKey, {
+  AddressInfo,
+} from './address/createCosmosAddressInfoByEDCAKey'
 import isValidAddress from './address/isValidAddress'
 import decodeRawLog, {AtomTransaction} from './transactions/decodeRawLog'
+
+const logger = {
+  atomservice: function (message) {
+    console.log('message', message)
+  },
+}
 
 export default class AtomService {
   public keyType: KeyType
@@ -35,7 +42,34 @@ export default class AtomService {
     } else {
       this.endpoint = 'https://rpc.sentry-01.theta-testnet.polypore.xyz'
     }
-    console.log(this.endpoint)
+  }
+
+  async sweepWallet(
+    signer: {publicKey: string; keystoreId: string},
+    partialTransfers: {toAddress: string; amount: string}[],
+    changeAddress: string,
+    tokenCategory: string,
+    transactionId: string,
+    signRequest: any,
+    depositTransactionHash: string,
+    fromAddress?: string,
+  ) {
+    logger.atomservice(
+      `Atom service sweepWallet: signer ${JSON.stringify(signer)}`,
+    )
+  }
+
+  async transfer(
+    senderPublicKey: string,
+    toAddress: string,
+    amount: string,
+    tokenCategory: string,
+    transactionId: string,
+    keystoreId: string,
+    signRequest: any,
+    isColdWalletRequest?: boolean,
+  ) {
+    return null
   }
 
   async getBalance(address: string): Promise<string> {
@@ -162,17 +196,77 @@ export default class AtomService {
 
   async requestAddressCreation() {
     const {publicKey, keyId} = await createNewKeyPair(this.keyType)
-    const address = await customPubkeyToAddress(publicKey)
-    const addressIsValid = isValidAddress(address, 'cosmos')
+    const addressInfo: AddressInfo = await createCosmosAddressInfoByEDCAKey(
+      publicKey,
+    )
+    const addressIsValid = isValidAddress(addressInfo.address, 'cosmos')
 
     if (!addressIsValid) {
-      throw new Error(`${address} is NOT valid cosmos address!`)
+      throw new Error(`${addressInfo.address} is NOT valid cosmos address!`)
     }
 
     return {
       keyId,
       publicKey,
-      address,
+      address: addressInfo.address,
     }
+  }
+
+  calculateFeeForTransfer():
+    | number
+    | void
+    | BigNumber
+    | Promise<number | BigNumber> {
+    return this.getGasFee()
+  }
+
+  handleCompletedTransaction(transaction: TransactionStatusCheck) {
+    throw new Error('Method not implemented.')
+  }
+
+  deployIssuance() {
+    return
+  }
+  getBalanceToken() {
+    return
+  }
+  distributeToken() {
+    return
+  }
+  lockToken() {
+    return
+  }
+  unlockToken() {
+    return
+  }
+  mintToken() {
+    return
+  }
+  redeemToken() {
+    return
+  }
+  recoveryToken() {
+    return
+  }
+  distributeDividend() {
+    return
+  }
+  distributeDividendRequest() {
+    return
+  }
+  onCreateCustomer() {
+    return
+  }
+  onCreateIssuance() {
+    return
+  }
+  onCreateSettlement() {
+    return
+  }
+  deployWallet() {
+    return
+  }
+  postDeployWallet() {
+    return
   }
 }
