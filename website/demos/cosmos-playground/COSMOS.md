@@ -28,6 +28,44 @@ Code snippet:
 Code snippet
 
 ```javascript
+async getTransactions(address: string) {
+    const client = await StargateClient.connect(this.endpoint)
+    const query = {sentFromOrTo: address}
+    const results = await client.searchTx(query)
+
+    const transactions = results
+      .filter(transaction => {
+        return transaction.code === 0
+      })
+      .filter(transaction => {
+        try {
+          const log = JSON.parse(transaction.rawLog)
+          const arrayIsValid = log.length > 0
+
+          return arrayIsValid
+        } catch (e) {
+          return false
+        }
+      })
+      .map((indexedTx: IndexedTx) => {
+        const cosmosTransaction: AtomTransaction = decodeRawLog(
+          indexedTx.rawLog,
+        )
+
+        return {
+          hash: indexedTx.hash,
+          source: cosmosTransaction.sender.toLowerCase(),
+          destination: cosmosTransaction.recipient.toLowerCase(),
+          value: Number(cosmosTransaction.amount),
+          rawValue: cosmosTransaction.amount,
+        }
+      })
+      .filter(indexedTx => {
+        return indexedTx.source !== address.toLowerCase()
+      })
+
+    return transactions
+  }
 ```
 
 ### Are there APIs for querying expected transaction fees?
