@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "tar-files": "node ./tar-node-modules.js",
-    "unzip-tar-files": "node -r esm ./unzip-tar-files.js"
+    "tar-npm-folder-single-file": "node ./tar-npm-folder-single-file.js",
+    "unzip-tar-files": "node ./unzip-tar-files.js",
+    "unzip-single-file": "node ./unzip-single-file.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,6 @@
     "bignumber.js": "^9.0.2",
     "esm": "^3.2.25",
     "tar": "^6.1.11",
-    "tar-npm-modules": "^1.0.0"
+    "tar-npm-modules": "^1.0.1"
   }
 }
