@@ -7,13 +7,14 @@ const tarFolder = folder => {
   tar.c(
     {
       gzip: true,
-      file: `${process.env.PWD}/.modules/${folder}.tgz`,
+      file: `./.modules/${folder}.tgz`,
     },
-    [`${process.env.PWD}/node_modules/${folder}`],
+    [`./node_modules/${folder}`],
   )
 }
 
 async function tarNpmFolders() {
+  await run(`cd ${process.env.PWD}`)
   await run('rm -rf ./.modules && mkdir ./.modules')
   const folders = await getDirectories()
   for (let i = 0; i < folders.length; i++) {
