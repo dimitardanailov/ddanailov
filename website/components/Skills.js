@@ -3,7 +3,7 @@ import Keyword from './Keyword'
 function Skills() {
   return (
     <div>
-      <h3>Skills</h3>
+      <h3>Technical Skills</h3>
       <ul>
         <li>
           🔥 <Keyword word="React" /> and Monorepo, <Keyword word="nextjs" />,
@@ -11,9 +11,14 @@ function Skills() {
           v1, D3js, Safari Push notifications, Material UI, Styled Components,
           Polymer, Draftjs;
         </li>
+        <li>
+          Blockchain Developer with experience in the several Layer 1 providers:{' '}
+          <Keyword word="Algorand" />, <Keyword word="Cosmos" />,{' '}
+          <Keyword word="Etherium" />
+        </li>
         <li>🛡 Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant;</li>
         <li>
-          🗳 Nodejs, PHP, <Keyword word="Golang" />;
+          🗳 <Keyword word="Nodejs" />, PHP, <Keyword word="Golang" />;
         </li>
         <li>🚓 Web technologies (HTML5, CSS3, ES7+, a11y);</li>
         <li>
