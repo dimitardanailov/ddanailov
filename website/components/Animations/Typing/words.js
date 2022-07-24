@@ -1,4 +1,5 @@
 const words = [
+  'Blockchain Staff Engineer',
   'React Developer',
   'Javascript Consultant',
   'Nodejs Developer',
@@ -6,6 +7,7 @@ const words = [
   'Azure Developer',
   'Firebase Developer',
   'Google Cloud Developer',
+  'DevOps',
 ]
 
 export default words
