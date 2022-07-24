@@ -1,4 +1,5 @@
 import TargetBlank from '@ddanailov/components/TargetBlankLink'
+import Keyword from '@ddanailov/components/Keyword'
 
 import styled from 'styled-components'
 
@@ -29,6 +30,9 @@ function HiringMotivation() {
         how the solution can be elegant. If your business needs are
       </p>
       <ul>
+        <li>
+          <Keyword word="Blockchain" /> Staff Enginer
+        </li>
         <li>React Developer with expertise in large applications;</li>
         <li>Web Performance and offline compatibility;</li>
         <li>SEO consultation;</li>
