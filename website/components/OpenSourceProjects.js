@@ -43,8 +43,8 @@ function OpenSourceProjects() {
         </li>
         <li>
           Mix between <Keyword word="React" />
-          {', '}Xstate and D3js. The most complicated component in the
-          repository is:{' '}
+          {', '}Xstate and D3js. The project represents my skils to create a
+          complex UI react components from scratch:
           <a
             href="https://github.com/dimitardanailov/react-components/blob/master/packages/d3-tree-collapsible/app/components/D3TreeRadioButton.js"
             title="React playground"
