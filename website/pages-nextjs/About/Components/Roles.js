@@ -11,6 +11,15 @@ function Roles() {
 
       <ul>
         <li>
+          Former Blockchain Staff Engineer{' '}
+          <TargetBlankLink
+            href="https://propine.com/"
+            title="Blockchain Staff Engineer in Propine"
+          >
+            Propine
+          </TargetBlankLink>
+        </li>
+        <li>
           Former Software Engineering Manager in{' '}
           <TargetBlankLink
             href="https://www.elephantstock.com/"
