@@ -51,10 +51,10 @@ function HiringMotivation() {
         skill-set will work best for you. I'd like to share a quick link to my
         calendar:{' '}
         <TargetBlank
-          href="https://calendly.com/danailov-consulting/15min"
+          href="https://calendly.com/danailov-consulting/partnership"
           title="Book your free session"
         >
-          https://calendly.com/danailov-consulting/15min
+          https://calendly.com/danailov-consulting/partnership
         </TargetBlank>
       </p>
     </>
