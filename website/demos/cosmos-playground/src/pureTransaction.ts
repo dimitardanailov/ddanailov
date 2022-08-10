@@ -7,6 +7,11 @@ import {
   GasPrice,
   coins,
 } from '@cosmjs/stargate'
+
+function randomIntFromInterval(min: number, max: number) {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
 ;(async () => {
   const wallet = await createAddress()
   await sendTransaction(wallet)
@@ -27,10 +32,12 @@ async function sendTransaction(wallet: OfflineSigner) {
     wallet,
   )
 
-  const recipient = 'cosmos1xv9tklw7d82sezh9haa573wufgy59vmwe6xxe5'
-  const amount = coins(7890, 'uatom')
+  const recipient = 'cosmos1yw82568drpg80fmqlelylhq3tfnk66xccp2asa'
+  const randomAmount = randomIntFromInterval(112000, 119999)
+  const amount = coins(randomAmount, 'uatom')
 
   const [firstAccount] = await wallet.getAccounts()
+  // console.log('firstAccount', Buffer.from(firstAccount.pubkey).toString('hex'))
 
   const defaultGasPrice = GasPrice.fromString('0.025uatom')
   const defaultSendFee: StdFee = calculateFee(80_000, defaultGasPrice)
