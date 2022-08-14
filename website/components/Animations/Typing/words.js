@@ -1,7 +1,12 @@
 const words = [
   'Blockchain Staff Engineer',
-  'React Developer',
+  'Staff Engineer',
+  'Team Leader',
+  'IT manager',
+  'Head of Engineering',
   'Javascript Consultant',
+  'Blockchain Developer',
+  'React Developer',
   'Nodejs Developer',
   'AWS Developer',
   'Azure Developer',
