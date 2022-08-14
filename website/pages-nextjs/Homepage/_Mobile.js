@@ -14,6 +14,7 @@ const HomePageMobile = () => (
   <>
     <Slogan>Dear Guest,</Slogan>
     <PersonalStory />
+    <Accomplishments />
     <OpenSourceProjects />
     <Skills />
     <HiringWrapper />

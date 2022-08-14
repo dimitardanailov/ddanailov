@@ -16,6 +16,7 @@ const Sidebar = dynamic(() => import('@ddanailov/components/Sidebar'))
 const MainFooter = dynamic(() => import('@ddanailov/components/MainFooter'))
 
 import PersonalStory from './Components/PersonalStory'
+import Accomplishments from './Components/Accomplishments'
 
 const HomePageDesktop = () => (
   <>
@@ -26,6 +27,7 @@ const HomePageDesktop = () => (
         <DesktopMenu />
         <Slogan>Dear Guest,</Slogan>
         <PersonalStory />
+        <Accomplishments />
         <OpenSourceProjects />
         <Skills />
         <HiringWrapper />
