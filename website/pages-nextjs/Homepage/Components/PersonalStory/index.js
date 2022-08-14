@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Keyword from './Keyword'
+import Keyword from '@ddanailov/components/Keyword'
 
 function PersonalStory() {
   return (
