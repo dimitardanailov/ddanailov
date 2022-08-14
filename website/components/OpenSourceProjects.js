@@ -3,6 +3,7 @@ import Space from '@ddanailov/styled/Space'
 import NextJsLink from '@ddanailov/components/Navigation/NextJsLink'
 import theme from 'styles/colors/light'
 import TargetBlankLink from '@ddanailov/components/TargetBlankLink'
+import Title from '@ddanailov/styled/headers/paragraph/title/index'
 
 function SponsorshipInfo() {
   return (
@@ -23,7 +24,7 @@ function SponsorshipInfo() {
 function OpenSourceProjects() {
   return (
     <div>
-      <h3>Talk is cheap. Show me the code: 🦉</h3>
+      <Title>Talk is cheap. Show me the source code:</Title>
       <ul>
         <li>
           Blockchain Playgrounds:{' '}
