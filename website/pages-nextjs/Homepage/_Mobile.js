@@ -9,6 +9,7 @@ import Slogan from '@ddanailov/styled/Slogan'
 import ExternalArticles from '@ddanailov/components/Articles/ExternalArticles'
 
 import PersonalStory from './Components/PersonalStory'
+import Accomplishments from './Components/Accomplishments'
 
 const HomePageMobile = () => (
   <>
