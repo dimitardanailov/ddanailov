@@ -29,8 +29,8 @@ function Certificates() {
         <li>
           March 2016 -{' '}
           <TargetBlankLink
-            title="https://university.mongodb.com/course_completion/9ca5d4d6826747d7a7a7875914a1f51e"
-            href="M101JS: MongoDB for Node.js Developers. Authorized by MongoDB University"
+            href="https://university.mongodb.com/course_completion/9ca5d4d6826747d7a7a7875914a1f51e"
+            title="M101JS: MongoDB for Node.js Developers. Authorized by MongoDB University"
           >
             M101JS: MongoDB for Node.js Developers. Authorized by MongoDB
             University;
