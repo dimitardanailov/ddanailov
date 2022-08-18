@@ -10,12 +10,14 @@ import ExternalArticles from '@ddanailov/components/Articles/ExternalArticles'
 
 import PersonalStory from './Components/PersonalStory'
 import Accomplishments from './Components/Accomplishments'
+import Certificates from './Components/Certificates'
 
 const HomePageMobile = () => (
   <>
     <Slogan>Dear Guest,</Slogan>
     <PersonalStory />
     <Accomplishments />
+    <Certificates />
     <OpenSourceProjects />
     <Skills />
     <HiringWrapper />
