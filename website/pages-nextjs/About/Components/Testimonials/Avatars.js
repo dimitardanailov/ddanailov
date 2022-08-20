@@ -12,6 +12,7 @@ import {
   bayu,
   fanny,
   antoan,
+  annaMetelska,
 } from 'data/testimonials'
 
 import Image from './Antoan/antoan.webp'
@@ -105,5 +106,13 @@ export function DavidTarbayAvatar() {
     href: davidTarbay.linkedin.profile,
     src: davidTarbay.linkedin.image,
     title: davidTarbay.title,
+  })
+}
+
+export function AnnaMetelskaAvatar() {
+  return PersonAvatar({
+    href: annaMetelska.linkedin.profile,
+    src: annaMetelska.linkedin.image,
+    title: annaMetelska.title,
   })
 }

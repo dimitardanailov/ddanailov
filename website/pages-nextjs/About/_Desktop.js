@@ -20,6 +20,7 @@ import {
   FannyAvatar,
   AntoanAvatar,
   DavidTarbayAvatar,
+  AnnaMetelskaAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -47,6 +48,8 @@ import {
   AntoanLetter,
   DavidTarbayInfo,
   DavidTarbayLetter,
+  AnnaMetelskaInfo,
+  AnnaMetelskaLetter,
 } from '@about/Components/Testimonials'
 
 import {
@@ -137,6 +140,14 @@ const AboutPage = () => (
           <HristoLetter />
 
           <HristoInfo />
+        </RecommendationBody>
+      </TestimonialBody>
+
+      <TestimonialBody>
+        <AnnaMetelskaAvatar />
+        <RecommendationBody>
+          <AnnaMetelskaLetter />
+          <AnnaMetelskaInfo />
         </RecommendationBody>
       </TestimonialBody>
 
