@@ -21,6 +21,7 @@ import {
   AntoanAvatar,
   DavidTarbayAvatar,
   AnnaMetelskaAvatar,
+  AjengPuspaAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -50,6 +51,8 @@ import {
   DavidTarbayLetter,
   AnnaMetelskaInfo,
   AnnaMetelskaLetter,
+  AjengPuspaInfo,
+  AjengPuspaLetter,
 } from '@about/Components/Testimonials'
 
 import {
@@ -183,6 +186,14 @@ const AboutPage = () => (
         <RecommendationBody>
           <VladimirLetter />
           <VladimirInfo />
+        </RecommendationBody>
+      </TestimonialBody>
+
+      <TestimonialBody>
+        <AjengPuspaAvatar />
+        <RecommendationBody>
+          <AjengPuspaLetter />
+          <AjengPuspaInfo />
         </RecommendationBody>
       </TestimonialBody>
 

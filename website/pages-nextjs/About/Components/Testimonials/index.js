@@ -49,3 +49,7 @@ export {default as DavidTarbayInfo} from './David/Info'
 // Anna Metelska
 export {default as AnnaMetelskaLetter} from './AnnaMetelska/Letter'
 export {default as AnnaMetelskaInfo} from './AnnaMetelska/Info'
+
+// Ajeng Puspa
+export {default as AjengPuspaLetter} from './AjengPuspa/Letter'
+export {default as AjengPuspaInfo} from './AjengPuspa/Info'
