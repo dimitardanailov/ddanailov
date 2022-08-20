@@ -14,7 +14,10 @@ import {
   antoan,
   annaMetelska,
   ajengPuspa,
+  ashton,
 } from 'data/testimonials'
+
+import noImageBase64Version from 'data/testimonials/images/noImage'
 
 import Image from './Antoan/antoan.webp'
 
@@ -123,5 +126,13 @@ export function AjengPuspaAvatar() {
     href: ajengPuspa.linkedin.profile,
     src: ajengPuspa.linkedin.image,
     title: ajengPuspa.title,
+  })
+}
+
+export function AshtonAvatar() {
+  return PersonAvatar({
+    href: ashton.externalLink,
+    src: noImageBase64Version,
+    title: ashton.title,
   })
 }

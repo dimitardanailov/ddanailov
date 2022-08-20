@@ -19,6 +19,7 @@ import {
   DavidTarbayAvatar,
   AnnaMetelskaAvatar,
   AjengPuspaAvatar,
+  AshtonAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -121,8 +122,12 @@ const AboutPageMobile = () => (
     </TestimonialBody>
 
     <TestimonialBody>
-      <AshtonLetter />
-      <AshtonInfo />
+      <AshtonAvatar />
+
+      <RecommendationBody>
+        <AshtonLetter />
+        <AshtonInfo />
+      </RecommendationBody>
     </TestimonialBody>
 
     <TestimonialBody>

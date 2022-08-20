@@ -22,6 +22,7 @@ import {
   DavidTarbayAvatar,
   AnnaMetelskaAvatar,
   AjengPuspaAvatar,
+  AshtonAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -132,10 +133,14 @@ const AboutPage = () => (
         </RecommendationBody>
       </TestimonialBodyCenter>
 
-      <section>
-        <AshtonLetter />
-        <AshtonInfo />
-      </section>
+      <TestimonialBody>
+        <AshtonAvatar />
+
+        <RecommendationBody>
+          <AshtonLetter />
+          <AshtonInfo />
+        </RecommendationBody>
+      </TestimonialBody>
 
       <TestimonialBody>
         <HristoAvatar />

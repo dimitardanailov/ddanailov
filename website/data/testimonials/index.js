@@ -136,3 +136,9 @@ export const ajengPuspa = {
   },
   title: 'Senior Frontend Developer at Populix',
 }
+
+export const ashton = {
+  name: 'Ashton Cunningham',
+  title: 'IT Manager Campion',
+  externalLink: 'https://rocketreach.co/ashton-cunningham-email_52322042',
+}
