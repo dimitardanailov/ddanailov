@@ -13,6 +13,7 @@ import {
   fanny,
   antoan,
   annaMetelska,
+  ajengPuspa,
 } from 'data/testimonials'
 
 import Image from './Antoan/antoan.webp'
@@ -114,5 +115,13 @@ export function AnnaMetelskaAvatar() {
     href: annaMetelska.linkedin.profile,
     src: annaMetelska.linkedin.image,
     title: annaMetelska.title,
+  })
+}
+
+export function AjengPuspaAvatar() {
+  return PersonAvatar({
+    href: ajengPuspa.linkedin.profile,
+    src: ajengPuspa.linkedin.image,
+    title: ajengPuspa.title,
   })
 }
