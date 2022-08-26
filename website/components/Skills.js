@@ -1,9 +1,10 @@
+import Title from '@ddanailov/styled/headers/paragraph/title/index'
 import Keyword from './Keyword'
 
 function Skills() {
   return (
     <div>
-      <h3>Technical Skills</h3>
+      <Title>Technical Skills</Title>
       <ul>
         <li>
           🔥 <Keyword word="React" /> and Monorepo, <Keyword word="nextjs" />,
@@ -12,9 +13,10 @@ function Skills() {
           Polymer, Draftjs;
         </li>
         <li>
-          Blockchain Developer with experience in the several Layer 1 providers:{' '}
-          <Keyword word="Algorand" />, <Keyword word="Cosmos" />,{' '}
-          <Keyword word="Etherium" />
+          🚣 Blockchain Developer with experience in the several Layer 1
+          providers: <Keyword word="Algorand" />, <Keyword word="Cosmos" />,{' '}
+          <Keyword word="Etherium" />, <Keyword word="Binance Smart Chain" />,{' '}
+          <Keyword word="Elrond" />
         </li>
         <li>🛡 Webpack, Gulp, Lerna, Bash Script, Docker and Vagrant;</li>
         <li>

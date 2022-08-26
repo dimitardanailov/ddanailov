@@ -17,6 +17,9 @@ import {
   FannyAvatar,
   AntoanAvatar,
   DavidTarbayAvatar,
+  AnnaMetelskaAvatar,
+  AjengPuspaAvatar,
+  AshtonAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -44,6 +47,10 @@ import {
   AntoanLetter,
   DavidTarbayInfo,
   DavidTarbayLetter,
+  AnnaMetelskaInfo,
+  AnnaMetelskaLetter,
+  AjengPuspaInfo,
+  AjengPuspaLetter,
 } from '@about/Components/Testimonials'
 
 import {TestimonialBody, RecommendationBody} from '@about/StyledComponents'
@@ -115,8 +122,12 @@ const AboutPageMobile = () => (
     </TestimonialBody>
 
     <TestimonialBody>
-      <AshtonLetter />
-      <AshtonInfo />
+      <AshtonAvatar />
+
+      <RecommendationBody>
+        <AshtonLetter />
+        <AshtonInfo />
+      </RecommendationBody>
     </TestimonialBody>
 
     <TestimonialBody>
@@ -125,6 +136,16 @@ const AboutPageMobile = () => (
         <HristoLetter />
 
         <HristoInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <AnnaMetelskaAvatar />
+
+      <RecommendationBody>
+        <AnnaMetelskaLetter />
+
+        <AnnaMetelskaInfo />
       </RecommendationBody>
     </TestimonialBody>
 
@@ -161,6 +182,14 @@ const AboutPageMobile = () => (
       <RecommendationBody>
         <VladimirLetter />
         <VladimirInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <AjengPuspaAvatar />
+      <RecommendationBody>
+        <AjengPuspaLetter />
+        <AjengPuspaInfo />
       </RecommendationBody>
     </TestimonialBody>
   </>

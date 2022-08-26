@@ -26,7 +26,7 @@ import isValidAddress from './address/isValidAddress'
 import decodeRawLog, {AtomTransaction} from './transactions/decodeRawLog'
 
 const logger = {
-  atomservice: function (message) {
+  atomservice: function (message: string) {
     console.log('message', message)
   },
 }

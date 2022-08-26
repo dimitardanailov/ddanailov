@@ -12,7 +12,12 @@ import {
   bayu,
   fanny,
   antoan,
+  annaMetelska,
+  ajengPuspa,
+  ashton,
 } from 'data/testimonials'
+
+import noImageBase64Version from 'data/testimonials/images/noImage'
 
 import Image from './Antoan/antoan.webp'
 
@@ -105,5 +110,29 @@ export function DavidTarbayAvatar() {
     href: davidTarbay.linkedin.profile,
     src: davidTarbay.linkedin.image,
     title: davidTarbay.title,
+  })
+}
+
+export function AnnaMetelskaAvatar() {
+  return PersonAvatar({
+    href: annaMetelska.linkedin.profile,
+    src: annaMetelska.linkedin.image,
+    title: annaMetelska.title,
+  })
+}
+
+export function AjengPuspaAvatar() {
+  return PersonAvatar({
+    href: ajengPuspa.linkedin.profile,
+    src: ajengPuspa.linkedin.image,
+    title: ajengPuspa.title,
+  })
+}
+
+export function AshtonAvatar() {
+  return PersonAvatar({
+    href: ashton.externalLink,
+    src: noImageBase64Version,
+    title: ashton.title,
   })
 }
