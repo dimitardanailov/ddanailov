@@ -114,8 +114,7 @@ export const davidTarbay = {
     profile: 'https://www.linkedin.com/in/davidtarbay/',
     image: davidTarbayImage,
   },
-  title:
-    'Community manager: Geekle.us Taking care of Flutter, Node.js, React.js and iOS communities',
+  title: 'Head of Product elephantstock.com',
 }
 
 export const annaMetelska = {
@@ -125,7 +124,7 @@ export const annaMetelska = {
     image: annaMetelskaImage,
   },
   title:
-    'Community manager – Geekle.us Taking care of Flutter, Node.js, React.js and iOS communities',
+    'Community manager: Geekle.us Taking care of Flutter, Node.js, React.js and iOS communities',
 }
 
 export const ajengPuspa = {
