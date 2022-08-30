@@ -11,6 +11,7 @@ import bayuImage from './images/bayu'
 import fannyImage from './images/fanny'
 import annaMetelskaImage from './images/annaMetelska'
 import ajengPuspaImage from './images/ajengPuspa'
+import mikeValnevImage from './images/mikeValnev'
 
 export const heidi = {
   name: 'Heidi Lund',
@@ -140,4 +141,13 @@ export const ashton = {
   name: 'Ashton Cunningham',
   title: 'IT Manager Campion',
   externalLink: 'https://rocketreach.co/ashton-cunningham-email_52322042',
+}
+
+export const mikeValnev = {
+  name: 'Mike Valnev',
+  linkedin: {
+    profile: 'https://www.linkedin.com/in/mikevalnev/',
+    image: mikeValnevImage,
+  },
+  title: 'CEO & Co-Founder at fleetpal.io',
 }
