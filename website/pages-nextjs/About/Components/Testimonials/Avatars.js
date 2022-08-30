@@ -15,6 +15,7 @@ import {
   annaMetelska,
   ajengPuspa,
   ashton,
+  mikeValnev,
 } from 'data/testimonials'
 
 import noImageBase64Version from 'data/testimonials/images/noImage'
@@ -134,5 +135,13 @@ export function AshtonAvatar() {
     href: ashton.externalLink,
     src: noImageBase64Version,
     title: ashton.title,
+  })
+}
+
+export function MikeValnevAvatar() {
+  return PersonAvatar({
+    href: mikeValnev.linkedin.profile,
+    src: mikeValnev.linkedin.image,
+    title: mikeValnev.title,
   })
 }

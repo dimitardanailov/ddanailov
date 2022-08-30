@@ -53,3 +53,7 @@ export {default as AnnaMetelskaInfo} from './AnnaMetelska/Info'
 // Ajeng Puspa
 export {default as AjengPuspaLetter} from './AjengPuspa/Letter'
 export {default as AjengPuspaInfo} from './AjengPuspa/Info'
+
+// Mike Valnev
+export {default as MikeValnevLetter} from './MikeValnev/Letter'
+export {default as MikeValnevInfo} from './MikeValnev/Info'

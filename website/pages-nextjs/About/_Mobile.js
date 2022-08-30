@@ -20,6 +20,7 @@ import {
   AnnaMetelskaAvatar,
   AjengPuspaAvatar,
   AshtonAvatar,
+  MikeValnevAvatar,
 } from '@about/Components/Testimonials/Avatars'
 
 import {
@@ -51,6 +52,8 @@ import {
   AnnaMetelskaLetter,
   AjengPuspaInfo,
   AjengPuspaLetter,
+  MikeValnevInfo,
+  MikeValnevLetter,
 } from '@about/Components/Testimonials'
 
 import {TestimonialBody, RecommendationBody} from '@about/StyledComponents'
@@ -81,6 +84,15 @@ const AboutPageMobile = () => (
       <RecommendationBody>
         <DavidTarbayLetter />
         <DavidTarbayInfo />
+      </RecommendationBody>
+    </TestimonialBody>
+
+    <TestimonialBody>
+      <MikeValnevAvatar />
+
+      <RecommendationBody>
+        <MikeValnevLetter />
+        <MikeValnevInfo />
       </RecommendationBody>
     </TestimonialBody>
 
