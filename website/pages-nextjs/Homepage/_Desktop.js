@@ -18,6 +18,7 @@ const MainFooter = dynamic(() => import('@ddanailov/components/MainFooter'))
 import PersonalStory from './Components/PersonalStory'
 import Accomplishments from './Components/Accomplishments'
 import Certificates from './Components/Certificates'
+import FreelanceProfiles from './Components/FreelanceProfiles'
 
 const HomePageDesktop = () => (
   <>
@@ -30,6 +31,7 @@ const HomePageDesktop = () => (
         <PersonalStory />
         <Accomplishments />
         <Certificates />
+        <FreelanceProfiles />
         <OpenSourceProjects />
         <Skills />
         <HiringWrapper />

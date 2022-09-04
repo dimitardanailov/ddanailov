@@ -18,6 +18,7 @@ const HomePageMobile = () => (
     <PersonalStory />
     <Accomplishments />
     <Certificates />
+    <FreelanceProfiles />
     <OpenSourceProjects />
     <Skills />
     <HiringWrapper />
