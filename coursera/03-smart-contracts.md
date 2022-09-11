@@ -38,8 +38,7 @@ Assert statement in the winningProposal method of BallotWithModifier.sol makes s
 Question 7
 Compile and create BallotWithModifier.sol. Immediately try and vote. What is the status of the transaction? [After the transaction is initiated observe the console window at the bottom of Remix IDE. Click on Details button to check if transaction was successful or failed]
 
-Transaction failed and execution succeeds
-Transaction mined and execution fails
+??? - Transaction mined and execution fails
 
 8.
 Question 8
@@ -50,8 +49,6 @@ Even though we have specified only tens of seconds (30 and 60 seconds) as the st
 9.
 Question 9
 What stage does the contract have to be in for winningProposal to produce a result?
-
-0 (Init Stage)
 
 10.
 Question 10
