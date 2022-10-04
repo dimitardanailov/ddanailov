@@ -80,6 +80,7 @@
     "react-window": "^1.8.6",
     "styled-components": "5.1.1",
     "typed.js": "^2.0.12",
+    "web-vitals": "^3.0.2",
     "xstate": "^4.11.0"
   }
 }
