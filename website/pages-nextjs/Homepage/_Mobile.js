@@ -11,6 +11,7 @@ import ExternalArticles from '@ddanailov/components/Articles/ExternalArticles'
 import PersonalStory from './Components/PersonalStory'
 import Accomplishments from './Components/Accomplishments'
 import Certificates from './Components/Certificates'
+import FreelanceProfiles from './Components/FreelanceProfiles'
 
 const HomePageMobile = () => (
   <>
