@@ -8,6 +8,52 @@ function Certificates() {
       <Title>Certificates</Title>
       <ul>
         <li>
+          January 2023 -{' '}
+          <TargetBlankLink
+            title="Introduction to Mobile Development"
+            href="https://coursera.org/share/2557b7128d988426768e32870a58a085"
+          >
+            Introduction to Mobile Development
+          </TargetBlankLink>
+        </li>
+        <li>
+          October 2022 -{' '}
+          <TargetBlankLink
+            title="Project Initiation: Starting a Successful Project"
+            href="https://coursera.org/share/4bde15f65b72b7ea5624bed1f3ebebd3"
+          >
+            Project Initiation: Starting a Successful Project. Authorized by
+            Google
+          </TargetBlankLink>
+        </li>
+        <li>
+          September 2022 -{' '}
+          <TargetBlankLink
+            title="Smart Contracts"
+            href="https://coursera.org/share/a0776edc92595b61be8f9d49ebe535f0"
+          >
+            Smart Contracts. Authorized by University at Buffalo
+          </TargetBlankLink>
+        </li>
+        <li>
+          September 2022 -{' '}
+          <TargetBlankLink
+            title="Blockchain Basics"
+            href="https://coursera.org/share/d8f9cf3cdfab46a79590f1c173d8336a"
+          >
+            Blockchain Basics. Authorized by University at Buffalo
+          </TargetBlankLink>
+        </li>
+        <li>
+          September 2022 -{' '}
+          <TargetBlankLink
+            title="Containerized Applications on AWS"
+            href="https://coursera.org/share/fddab19f00937c844b2cdf357102a365"
+          >
+            Containerized Applications on AWS. Authorized by AWS;
+          </TargetBlankLink>
+        </li>
+        <li>
           August 2022 -{' '}
           <TargetBlankLink
             title="Foundations of Project Management. Authorized by Google"
