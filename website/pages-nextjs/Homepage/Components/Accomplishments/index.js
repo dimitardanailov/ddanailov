@@ -18,12 +18,24 @@ function Accomplishments() {
           . (My points are 9400+)
         </li>
         <li>
-          Management and Leadership skills - 10+ years. Positions:{' '}
-          <Keyword word="Fullstack JS DevOps Architect " />,{' '}
-          <Keyword word="Team Leader" />,
-          <Keyword word="Software Architect" />,{' '}
-          <Keyword word="Blockchain Staff Engineer" />,{' '}
-          <Keyword word="Software Engineering Manager" />,{' '}
+          Management and Leadership skills - 10+ years. Positions:
+          <ul>
+            <li>
+              <Keyword word="Fullstack JS DevOps Architect " />;
+            </li>
+            <li>
+              <Keyword word="Blockchain Staff Engineer" />
+            </li>
+            <li>
+              <Keyword word="Software Engineering Manager" />
+            </li>
+            <li>
+              <Keyword word="Software Architect" />
+            </li>
+            <li>
+              <Keyword word="Team Leader" />
+            </li>
+          </ul>
         </li>
         <li>
           Backend Developer - 10+ years
