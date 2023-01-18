@@ -15,31 +15,33 @@ function Accomplishments() {
           >
             Stack Overflow
           </TargetBlankLink>
-          . (My points are 9000+)
+          . (My points are 9400+)
         </li>
         <li>
-          Management and Leadership skills - 8+ years. Positions:{' '}
-          <Keyword word="Team Leader" />, <Keyword word="Software Architect" />,{' '}
+          Management and Leadership skills - 10+ years. Positions:{' '}
+          <Keyword word="Fullstack JS DevOps Architect " />,{' '}
+          <Keyword word="Team Leader" />,
+          <Keyword word="Software Architect" />,{' '}
           <Keyword word="Blockchain Staff Engineer" />,{' '}
-          <Keyword word="Software Engineering Manager" />
+          <Keyword word="Software Engineering Manager" />,{' '}
         </li>
         <li>
-          Backend Developer - 8+ years
+          Backend Developer - 10+ years
           <ul>
-            <li>Nodejs Developer - 6+ years</li>
+            <li>Nodejs Developer - 8+ years</li>
             <li>.Net Developer - 2+ years</li>
           </ul>
         </li>
         <li>
-          Full Stack Developer and Front-End Developer - 8+ years. Frameworks:
-          React, Angular, Polymer, WebComponents, jQuery, Vanilla Javascript
+          Full Stack Developer and Front-End Developer - 10+ years. Frameworks:
+          React and React Native
         </li>
         <li>Blockchain Developer - 1 year</li>
         <li>
-          Mobile Developer - 2 years
+          Mobile Developer - 2+ years
           <ul>
-            <li>Android Developer - 1.5 years</li>
-            <li>iOS Developer - 4 months</li>
+            <li>Android Developer - 2 years</li>
+            <li>iOS Developer - 6 months</li>
           </ul>
         </li>
       </ul>
