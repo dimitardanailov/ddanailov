@@ -11,6 +11,15 @@ function Roles() {
 
       <ul>
         <li>
+          Fullstack JS DevOps Architect (Contract) -
+          <TargetBlankLink
+            href="https://www.icrc.org/"
+            title="Fullstack JS DevOps Architect"
+          >
+            https://www.icrc.org/
+          </TargetBlankLink>
+        </li>
+        <li>
           Former Blockchain Staff Engineer{' '}
           <TargetBlankLink
             href="https://propine.com/"
