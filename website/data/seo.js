@@ -18,6 +18,11 @@ const pages = {
     title: 'Trading from one crypto currency to another',
     description: 'SOL to BTC, ETH to SOL, COSMOS to BTC',
   },
+  defiResources: {
+    title: 'Defi - Ethereum, Algorand, Solana, Avalanche, Cosmos resources',
+    describe:
+      'Resources about Staking, Liquidity pools / automated market making, Lending/Borrowing',
+  },
 }
 
 export default pages
