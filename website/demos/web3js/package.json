@@ -6,7 +6,7 @@
   "scripts": {
     "balance": "ts-node src/balance.ts",
     "contract": "ts-node src/contract.ts",
-    "contract:past-events": "ts-node src/contract-event-subscriber.ts"
+    "contract:subscribe": "ts-node src/contract-event-subscriber.ts"
   },
   "author": "",
   "license": "ISC",
