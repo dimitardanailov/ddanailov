@@ -3,15 +3,18 @@
 import Web3 from 'web3'
 const Web3Quorum = require('web3js-quorum')
 
-const web3 = new Web3Quorum(
-  new Web3('http://cec-eth.mosaic-dev.siemens-energy.cloud/'),
-)
+import besuConfig from './config/besuConfig'
+
+const web3 = new Web3Quorum(new Web3(besuConfig.uri))
 
 // Define the smart contract ABI and contract address
-const contractAbi = [] // Replace with the actual ABI
-const contractAddress = '0x...' // Replace with the actual address
-
-console.log('web3', web3)
+// const contractAbi = [] // Replace with the actual ABI
+// const contractAddress = '0x...' // Replace with the actual address
 
 // Create a contract instance
-const contract = new web3.eth.Contract(contractAbi, contractAddress)
+const contractInstance = new web3.eth.Contract(
+  besuConfig.contractAbi,
+  besuConfig.contractAddress,
+)
+
+console.log('contract', contractInstance)
