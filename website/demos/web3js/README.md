@@ -11,16 +11,20 @@ contract and etc.
 
 ```bash
 # Uses Etherium public blockchain to check the specific balance
-npm run balance
+yarn run balance
 
 # Uses Etherium public blockchain to retrieve a public blockchain contract
-npm run contract
+yarn run contract
 
 # Uses Etherium public blockchain to subscribe to contract past events
-nprm run contract:subscribe
-npm run contract:filter
+yarn run contract:subscribe
+yarn run contract:filter
 ```
 
 ### Hyperledger BESU
 
 `src/config/token.json` is abi contract configuration.
+
+```bash
+yarn run besu
+```
