@@ -26,5 +26,9 @@ yarn run contract:filter
 `src/config/token.json` is abi contract configuration.
 
 ```bash
+# script uses web3 + web3js-quorum
 yarn run besu
+
+# script uses web3
+yarn run besu:block
 ```
