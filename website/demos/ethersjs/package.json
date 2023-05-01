@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "balance": "ts-node src/balance.ts"
+    "balance": "ts-node src/balance.ts",
+    "besu:block": "ts-node src/besu-block.ts"
   },
   "author": "",
   "license": "ISC",
