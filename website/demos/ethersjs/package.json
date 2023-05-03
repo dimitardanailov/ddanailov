@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "balance": "ts-node src/balance.ts",
-    "besu:block": "ts-node src/besu-block.ts"
+    "events": "ts-node src/events.ts",
+    "events-eth": "ts-node src/events-eth.ts",
+    "events:pets": "ts-node src/events-pets.ts"
   },
   "author": "",
   "license": "ISC",
