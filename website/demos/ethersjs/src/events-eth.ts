@@ -8,6 +8,9 @@ const ERC20_ABI = [
   'function symbol() view returns (string)',
   'function totalSupply() view returns (uint256)',
   'function balanceOf(address) view returns(uint)',
+
+  // events
+  'event Transfer(address indexed from, address indexed to, uint amount)',
 ]
 
 // DAI Contract
@@ -15,7 +18,7 @@ const address = '0x6B175474E89094C44Da98b954EedeAC495271d0F'
 const contract = new Contract(address, ERC20_ABI, provider)
 
 ;(async () => {
-  await getBlockNumber(provider)
+  const block = await getBlockNumber(provider)
 
   const name = await contract.name()
   const symbol = await contract.symbol()
@@ -31,4 +34,7 @@ const contract = new Contract(address, ERC20_ABI, provider)
   )
 
   console.log(`Balance Returned: ${balance}`)
+
+  const events = await contract.queryFilter('Transfer', block - 20, block)
+  console.log('events', events)
 })()
