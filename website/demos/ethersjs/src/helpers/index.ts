@@ -1,3 +1,4 @@
+import printContractVersion from './printContractVersion'
 import getBlockNumber from './getBlockNumber'
 
-export {getBlockNumber}
+export {getBlockNumber, printContractVersion}
