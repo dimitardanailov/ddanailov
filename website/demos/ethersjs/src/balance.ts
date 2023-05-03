@@ -1,5 +1,5 @@
 import {ethers} from 'ethers'
-import rpcURL from './config/rpcURL'
+import rpcURL from './config/etherium/rpcURL'
 
 const rpcProvider = new ethers.JsonRpcProvider(rpcURL)
 
