@@ -1,3 +1,8 @@
 node_modules
 .env
 token.json
+
+src/config/contracts/**
+src/config/pets-contracts/**
+
+src/_*.ts
