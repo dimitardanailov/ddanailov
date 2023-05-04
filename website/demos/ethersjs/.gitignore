@@ -7,4 +7,5 @@ src/config/pets-contracts/**
 
 src/_*.ts
 src/events.ts
+src/config/contractData.ts
 
