@@ -3,7 +3,7 @@ import {Contract} from 'ethers'
 import provider from './config/providerConfig'
 import data from './config/contractData'
 
-import {getBlockNumber, printContractVersion} from './helpers'
+import {getBlockNumber} from './helpers'
 import loadOrganizationManagerEvents from './_organizationManager'
 import loadCertificationManagerEvents from './_certificationManagerEvents'
 import loadElectricityTokenEvents from './_electricityTokenEvents'

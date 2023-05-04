@@ -6,3 +6,5 @@ src/config/contracts/**
 src/config/pets-contracts/**
 
 src/_*.ts
+src/events.ts
+
