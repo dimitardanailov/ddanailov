@@ -75,25 +75,37 @@ const Pre = styled.pre`
 function Info() {
   var title = String.raw`$ cat info.json {
   'name': 'Dimitar Danailov',
-  'work': 'Contractor',
-  'location': 'Earth'
-  'interests': [
-    'Humanity',
-    'Mentorship',
-    'Servant Leadership',
-    'Open Source'
+  'hire me as': 'Software Development Contractor',
+  'Experience': [
+    'Software Architect',
+    'Fullstack JS DevOps Architect',
+    'Blockchain Staff Engineer',
+    'Software Engineering Manager',
+    'Software Architect',
+    'Azure Software Consultant',
+    'Technical Architect',
+    'Software Architect',
+    'CTO',
+    'Full Stack Senior Developer',
+    'Development Team Lead',
+    'Full Stack Software Engineer',
   ],
-  'technical interests': [
-    'Software Archictures',
-    'Clean Code',
-    'React',
-    'Web3 and Blockchain',
-    'State machines',
-    'Redux',
-    'Golang',
-    'Cloud',
-    'Kubernetes'
+  'skills': [
+    'Reactjs',
+    'Nodejs',
+    'AWS',
+    'Blockchain'
   ],
+  'portfolio': [
+    'Siemens',
+    'The ',
+    'Propine.com',
+    'Elephantstock.com',
+    'GetCraft.com',
+    'Fleetpal.io',
+    'Asian Absolute',
+    'Questar.io'
+  ]
 }
 
 $`
