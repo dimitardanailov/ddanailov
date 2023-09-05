@@ -1,0 +1,22 @@
+- Design Pastebin / Bit.ly: https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/pastebin/README.md
+- Design Twitter (X)'s timeline and search: https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/twitter/README.md
+- Design Google: https://www.youtube.com/watch?v=0LTXCcVRQi0
+- Design Amazon's sales ranking: https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/sales_rank/README.md
+- Design Youtube: https://www.youtube.com/watch?v=jPKTo1iGQiE
+- Design Instagram: https://www.youtube.com/watch?v=VJpfO6KdyWE
+- Design a ride-sharing system (Uber/Lyft): https://www.youtube.com/watch?v=R_agd5qZ26Y
+- Design a chat-app (eg: WhatsApp/Messenger): https://www.youtube.com/watch?v=vvhC64hQZMk
+- Design a payment system: https://www.youtube.com/watch?v=olfaBgJrUBI
+- Design Spotify: https://www.youtube.com/watch?v=_K-eupuDVEc
+- Designing a file sharing system (Dropbox/Drive): https://www.youtube.com/watch?v=jLM1nGgsT-I
+- Design TikTok: https://www.youtube.com/watch?v=NHqdG-aZxOk
+- Design a parking garage: https://www.youtube.com/watch?v=NtMvNh0WFVM
+- Design a rate-limiter: https://www.youtube.com/watch?v=SgWb6tWx3S8
+- Design food delivery service: https://www.youtube.com/watch?v=_aybyMlU7-E
+- Design a hotel booking system: https://www.youtube.com/watch?v=kO0EQNfE2x4
+- Design ChatGPT: https://www.youtube.com/watch?v=I9-PUPYZyiw
+- Design an analytics platform (metrics & logging): https://www.youtube.com/watch?v=kIcq1_pBQSY4
+- Design a flight reservation system: https://www.youtube.com/watch?v=qsGcfVGvFSs
+- Design an authentication system: https://www.youtube.com/watch?v=uj_4vxm9u90
+- Designing a crawler: https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/web_crawler/README.md
+- Design StackOverflow: https://shivam-sinha.medium.com/system-design-architecture-stackoverflow-40c16d59f4e1
